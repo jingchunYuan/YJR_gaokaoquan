@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FengYunHotCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HPv-gB-r9d">
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="HPv-gB-r9d" secondAttribute="height" multiplier="1:1" id="J7I-pz-f79"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="罗琳" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3R-gS-iV1">
+                        <frame key="frameInset" minX="127" minY="12" width="34" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="本科|北京大学|计算机专业" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pl1-sV-Jsk">
+                        <frame key="frameInset" minX="127" minY="41" width="173" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.25" green="0.25" blue="0.25" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="175" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwp-TG-Lqa">
+                        <frame key="frameInset" minX="166" minY="14" width="23" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.25" green="0.25" blue="0.25" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HPv-gB-r9d" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.8" id="6cH-jA-MFs"/>
+                    <constraint firstItem="HPv-gB-r9d" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="6yt-67-pWz"/>
+                    <constraint firstItem="lwp-TG-Lqa" firstAttribute="leading" secondItem="w3R-gS-iV1" secondAttribute="trailing" constant="5" id="FSh-MD-ldt"/>
+                    <constraint firstItem="lwp-TG-Lqa" firstAttribute="centerY" secondItem="w3R-gS-iV1" secondAttribute="centerY" id="FeO-Nd-Uua"/>
+                    <constraint firstAttribute="trailing" secondItem="Pl1-sV-Jsk" secondAttribute="trailing" constant="20" id="Kof-x8-iCs"/>
+                    <constraint firstItem="HPv-gB-r9d" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="KrE-bm-Y4E"/>
+                    <constraint firstItem="w3R-gS-iV1" firstAttribute="leading" secondItem="HPv-gB-r9d" secondAttribute="trailing" constant="40" id="TgI-jZ-iIv"/>
+                    <constraint firstItem="Pl1-sV-Jsk" firstAttribute="leading" secondItem="w3R-gS-iV1" secondAttribute="leading" id="ZKD-yK-Kb0"/>
+                    <constraint firstItem="Pl1-sV-Jsk" firstAttribute="centerY" secondItem="HPv-gB-r9d" secondAttribute="centerY" id="Zkp-YR-Wf5"/>
+                    <constraint firstItem="w3R-gS-iV1" firstAttribute="top" secondItem="HPv-gB-r9d" secondAttribute="top" multiplier="1.2" id="ooH-cq-0TD"/>
+                    <constraint firstItem="lwp-TG-Lqa" firstAttribute="top" secondItem="w3R-gS-iV1" secondAttribute="top" id="rZg-sY-Y2H"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="rZg-sY-Y2H"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="countLb" destination="lwp-TG-Lqa" id="hp5-sy-fpS"/>
+                <outlet property="eduLb" destination="Pl1-sV-Jsk" id="wWC-Tm-0D4"/>
+                <outlet property="headIcon" destination="HPv-gB-r9d" id="Imu-kh-6qV"/>
+                <outlet property="nameLb" destination="w3R-gS-iV1" id="eZT-Ct-XGb"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

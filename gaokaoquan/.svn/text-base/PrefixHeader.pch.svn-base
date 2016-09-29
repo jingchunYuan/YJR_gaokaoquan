@@ -1,0 +1,139 @@
+//
+//  PrefixHeader.pch
+//  gaokaoquan
+//
+//  Created by Nevis on 16/8/25.
+//  Copyright © 2016年 袁静茹. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#define KWIDTH  [UIScreen mainScreen].bounds.size.width
+#define KHEIGHT [UIScreen mainScreen].bounds.size.height
+#import "UIBarButtonItem+GKBarButtonltem.h"
+#import "UIView+GKViewFrame.h"
+#import "JYNetWorkTool.h"
+#import "UIView+ZJFrame.h"
+#import "GXQUIDefine.h"
+#import "GXBInterface.h"
+#import "BaseRequest.h"
+#import "UIView+Frame.h"
+#import "CALayer+JYLayer.h"
+#import "MJExtension.h"
+#import "MJRefresh.h"
+#import "GXQNavigationController.h"
+#define MAN_GETALLLIST @"http://192.168.1.10/advisor/lists?p=3&pageSize=20&city=1&q=%E5%8C%97%E4%BA%AC"
+#define ENTER_COUNT @"enter_count"
+
+//请求一个数据http://api.dev.gaokaoq.com/index?text=0231
+
+//首页线上接口地址
+//http://api.dev.gaokaoq.com/smart/data?alias=index
+//导师获赞榜接口
+//http://api.dev.gaokaoq.com/top/praise?cycle=all&limit=10
+//http://api.dev.gaokaoq.com//top/praise?cycle=week&limit=10
+
+
+//第二个界面
+//http://api.dev.gaokaoq.com/service/index
+
+//高校查询首页http://api.dev.gaokaoq.com/college/lists?p=1&pageSize=20&q=%E5%8C%97%E4%BA%AC
+/*  高校查询
+ http://api.dev.gaokaoq.com/college/view?id=1 大学内页- 简介
+ http://api.dev.gaokaoq.com/college/about?id=1 概况 - 学校概况
+ http://api.dev.gaokaoq.com/college/rule?id=1  概况 - 招生章程
+ http://api.dev.gaokaoq.com/college/score?id=1&city_id=1&type=1 录取 - 院校分数线
+ http://api.dev.gaokaoq.com/college/majorScore?id=1&city=1&type=1&year=2015&p=1&pageSize=20 录取 - 专业分数线
+ http://api.dev.gaokaoq.com/college/plan?id=1&city_id=1&type=1&year=2015&p=1&pageSize=20    录取 - 招生计划
+ http://api.dev.gaokaoq.com/college/comment?id=1&p=1&pageSize=20 校园映像
+ http://api.dev.gaokaoq.com/college/img?id=1&p=1&pageSize=20  校园风光
+ */
+
+/*分数线查询
+ 高校分数线 http://api.dev.gaokaoq.com/score?source=1&batch=2&q=&type=1&p=1&pageSize=20
+ 专业分数线 http://api.dev.gaokaoq.com/scores/major?type=2&city=1&batch=2&year=2015&college=%E5%8C%97%E4%BA%AC%E5%A4%A7%E5%AD%A6&p=1&pageSize=20&p=1&pageSize=20
+ 省控线 http://api.dev.gaokaoq.com/score/province?city=1&batch=2&type=1&p=1&pageSize=20&p=1&pageSize=20
+ 
+ */
+
+/*大学排名接口
+ http://api.dev.gaokaoq.com/rank/rccse?p=1&pageSize=20  RCCSE排行榜单
+ http://api.dev.gaokaoq.com/rank/wsl?p=1&pageSize=20           武书连榜单
+ http://api.dev.gaokaoq.com/rank/xyh?p=1&pageSize=20           校友会榜单
+ http://api.dev.gaokaoq.com/rank/rccse?p=1&pageSize=20&type=1 RCCSE排行榜单 =》详细榜单 =》 总榜单
+ http://api.dev.gaokaoq.com/rank/rccse?p=1&pageSize=20&type=2 RCCSE排行榜单 =》详细榜单 =》 重点大学
+ http://api.dev.gaokaoq.com/rank/rccse?p=1&pageSize=20&type=3 RCCSE排行榜单 =》详细榜单 =》 一般大学
+ http://api.dev.gaokaoq.com/rank/rccse?p=1&pageSize=20&type=4 RCCSE排行榜单 =》详细榜单 =》 独立学院
+ http://api.dev.gaokaoq.com/rank/rccse?p=1&pageSize=20&type=5 RCCSE排行榜单 =》详细榜单 =》 专科学院
+ */
+
+/*专业查询
+ http://api.dev.gaokaoq.com/major?level=1  专业查询 - 首页
+ http://api.dev.gaokaoq.com/major/view?id=2 专业查询 - 详情页 - 专业介绍
+ http://api.dev.gaokaoq.com/major/college?id=2 专业查询 - 详情页 - 开设高校
+ http://api.dev.gaokaoq.com/major/comment?id=2 专业查询 - 详情页 - 学友评论
+ http://api.dev.gaokaoq.com/major/across?id=2 专业查询 - 详情页 - 就业情况
+ http://api.dev.gaokaoq.com/major/search?q=%E8%AE%A1%E7%AE%97%E6%9C%BA 专业查询 - 搜索
+ 
+ */
+
+
+
+/*职业查询
+ http://api.dev.gaokaoq.com/job/index 职业查询 - 首页
+ http://api.dev.gaokaoq.com/job/lists?cid=24&p=1&pageSize=10 职业查询 - 二级页面
+ http://api.dev.gaokaoq.com/job/view?id=1 职业查询 - 结果页
+ http://api.dev.gaokaoq.com/Smart/data?alias=job_banner  职业查询上面的图
+ http://api.dev.gaokaoq.com/job/search?q=%E8%AE%A1%E7%AE%97%E6%9C%BA
+ 职业查询 搜索
+
+ */
+/*专业职业通
+ http://api.dev.gaokaoq.com/job/job2major?q=%E7%A8%8B%E5%BA%8F%E5%91%98&p=1&pageSize=20 专业职业通 - 职业查专业
+ http://api.dev.gaokaoq.com/job/major2job?q=%E5%93%B2%E5%AD%A6&p=1&pageSize=20 专业职业通 - 专业查职业
+ */
+
+
+
+//第三个界面http://api.dev.gaokaoq.com//advisor/lists?p=2&pageSize=20&city=1&q=%E5%8C%97%E4%BA%AC
+//问题列表和内页  http://api.dev.gaokaoq.com/ask/lists?p=2&pageSize=20&type=host&tid=1&q=%E6%95%B0%E5%AD%A6
+//内页：http://api.dev.gaokaoq.com/ask/view?id=68589
+
+//导师详情最新  http://api.dev.gaokaoq.com/advisor/view?uid=2567
+//导师评论接口
+//http://api.dev.gaokaoq.com/advisor/comment?uid=2567&p=1&pageSize=20
+
+//导师动态接口(不支持分页, 只显示最近的20条)
+//http://api.dev.gaokaoq.com/advisor/feed?uid=2567
+
+
+//第五个界面
+// http://192.168.1.14/user/register   注册
+// http://192.168.1.14/user/logins 登录
+//预约详情http://api.dev.gaokaoq.com/UserCenter/orderView2?order_no=20160720758738
+
+
+
+//问题
+//http://api.dev.gaokaoq.com/ask/answer?ask_id=73514p=1&pageSize=10
+
+//问题列表高考圈 秘书
+//http://api.dev.gaokaoq.com/ask/lists
+
+//问题和回答详情列表
+//http://api.dev.gaokaoq.com/ask/view?id=73514
+
+//回答列表
+//http://api.dev.gaokaoq.com/ask/answer?ask_id=73514p=1&pageSize=10
+
+//问题列表
+//http://api.dev.gaokaoq.com/ask/lists?p=1&pageSize=10&tid=1&type=new&q=%E5%AD%A6%E4%B9%A0
+//问题详情接口升级 增加回答第一页列表 支持pageSize
+//http://api.dev.gaokaoq.com/ask/view?id=73514&pageSize=5
+
+//学员-个人中心-首页：http://api.dev.gaokaoq.com/user_center/index
+
+
+
+
+#endif /* PrefixHeader_pch */

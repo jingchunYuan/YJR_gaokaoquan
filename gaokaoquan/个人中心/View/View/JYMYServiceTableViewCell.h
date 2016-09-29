@@ -1,0 +1,16 @@
+//
+//  JYMYServiceTableViewCell.h
+//  gaokaoquan
+//
+//  Created by 家跃 on 16/9/9.
+//  Copyright © 2016年 袁静茹. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "JYMyServiceModel.h"
+
+@interface JYMYServiceTableViewCell : UITableViewCell
+
+@property (nonatomic,strong) JYMyServiceModel *model;
+
+@end

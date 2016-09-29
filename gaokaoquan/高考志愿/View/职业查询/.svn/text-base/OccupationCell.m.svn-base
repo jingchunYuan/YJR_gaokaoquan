@@ -1,0 +1,29 @@
+//
+//  OccupationCell.m
+//  gaokaoquan
+//
+//  Created by Nevis on 16/9/25.
+//  Copyright © 2016年 袁静茹. All rights reserved.
+//
+
+#import "OccupationCell.h"
+
+@implementation OccupationCell
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    _bgView.layer.borderColor = [UIColor grayColor].CGColor;
+    _bgView.layer.borderWidth = 1;
+}
+-(void)setModel:(JobListModel *)model{
+    _textLB.text = model.job.name;
+}
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    [super setSelected:selected animated:animated];
+
+    // Configure the view for the selected state
+}
+- (IBAction)showOrHIde:(UIButton *)sender {
+}
+
+@end

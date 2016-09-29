@@ -1,0 +1,150 @@
+//
+//  OccupationController.m
+//  gaokaoquan
+//
+//  Created by Nevis on 16/9/25.
+//  Copyright © 2016年 袁静茹. All rights reserved.
+//
+
+#import "OccupationController.h"
+#import "OccupationCell.h"
+#import "JobListModel+Request.h"
+@interface OccupationController ()<UITableViewDelegate,UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) UITableView *tableView1;
+@property (nonatomic,strong)NSArray * dataArr1;
+
+
+
+@end
+
+@implementation OccupationController
+{
+    UIImageView *banner;
+    UITableView *table;
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self createUI];
+    [self loadData];
+}
+-(void)awakeFromNib{
+    [super awakeFromNib];
+}
+
+
+-(void)createUI{
+    self.navigationItem.title = @"高校志愿";
+//    banner = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT*0.2)];
+//    [self.view addSubview:banner];
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    
+    table = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+    table.scrollEnabled = YES;
+    //大小
+    table.contentSize = CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT);
+    table.backgroundColor = [UIColor lightGrayColor];
+    [self.view addSubview:table];
+    
+//    UIImageView * imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 150)];
+//    imageView.image = [UIImage imageNamed:@"banner01"];
+//    [table addSubview:imageView];
+    
+
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem initWithImageName:@"返回" highlightedImage:nil title:nil target:self action:@selector(leftBarButtonItemClick)];
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem initWithImageName:@"搜索" highlightedImage:nil title:nil target:self action:@selector(rightBarButtonItemClick)];
+    self.navigationItem.titleView = [self.view titleWithNavigat:@"职业查询"];
+    [self.tableView1 registerNib:[UINib nibWithNibName:@"OccupationCell" bundle:nil] forCellReuseIdentifier:@"OccupationCell"];
+    [self.view addSubview:self.tableView1];
+    
+}
+-(UITableView *)tableView1{
+    if (!_tableView1) {
+        _tableView1 = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) style:UITableViewStylePlain];
+        _tableView1.delegate=self;
+        _tableView1.dataSource=self;
+    }
+    return _tableView1;
+}
+-(void)loadData{
+    __weak typeof(self) weakSelf = self;
+    [JobListModel RequestWithUrl:@"http://api.dev.gaokaoq.com/job/index" andPara:nil andCallBack:^(NSArray *arr, NSError *err) {
+        if (!err) {
+            weakSelf.dataArr1=arr;
+            [weakSelf.tableView1 reloadData];
+        }
+    }];
+    
+}
+-(void)leftBarButtonItemClick
+{
+    
+    [self.navigationController popViewControllerAnimated:YES];
+    
+    
+}
+-(void)rightBarButtonItemClick
+{
+    
+    [self.navigationController popViewControllerAnimated:YES];
+    
+}
+
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+   
+
+    UIView *v_headerVeiw = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 150)];
+    UIImageView *v_headerImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 150)];
+    v_headerImageView.image = [UIImage imageNamed:@"路径"];
+    [v_headerVeiw addSubview:v_headerImageView];
+   // [v_headerImageView release];
+    
+    return v_headerVeiw;
+}
+
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.dataArr1.count;
+}
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    OccupationCell * cell  = [tableView dequeueReusableCellWithIdentifier:@"OccupationCell"];
+    if (!cell) {
+        cell = [[OccupationCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"OccupationCell"];
+    }
+    [cell setModel:_dataArr1[indexPath.row]];
+    return cell;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 150;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    if (indexPath == [tableView indexPathForSelectedRow]) {
+        return 160;
+    }else{
+        return 60;
+    }
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    OccupationCell * cell = [tableView cellForRowAtIndexPath:indexPath];
+    UIView * bgView = [[UIView alloc]initWithFrame:CGRectMake(0, cell.height, SCREEN_WIDTH, 60)];
+    bgView.backgroundColor = [UIColor yellowColor];
+    [cell addSubview:bgView];
+//    cell.height +=60;
+    [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+}
+
+
+//设置行高
+
+
+@end

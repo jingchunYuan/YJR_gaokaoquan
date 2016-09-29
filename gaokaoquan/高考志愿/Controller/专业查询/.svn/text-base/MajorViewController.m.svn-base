@@ -1,0 +1,77 @@
+//
+//  MajorViewController.m
+//  gaokaoquan
+//
+//  Created by 高考圈 on 16/9/24.
+//  Copyright © 2016年 袁静茹. All rights reserved.
+//
+
+#import "MajorViewController.h"
+
+@interface MajorViewController ()<UITableViewDataSource,UITableViewDelegate>
+
+@property (nonatomic,strong) UITableView *tableview;
+// 存放本科数据
+@property (nonatomic,strong) NSMutableArray *DataArray;
+//存放专科数据
+@property (nonatomic,strong) NSMutableArray *DataArray1;
+/// tableview根据它去加载不同的数据
+@property (nonatomic,assign) BOOL ISMajor;
+
+@end
+static NSString *inder = @"jobcell";
+
+@implementation MajorViewController
+//{
+//    NSMutableArray * _dataArray;
+//    NSArray * _urls;
+//    UITableView *_table;
+//}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self createUI];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.tabBarController.tabBar.hidden = YES;
+}
+
+
+-(void)createUI {
+    
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem initWithImageName:@"返回" highlightedImage:nil title:nil target:self action:@selector(leftBarButtonItemClick)];
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem initWithImageName:@"搜索" highlightedImage:nil title:nil target:self action:@selector(rightBarButtonItemClick)];
+    self.navigationItem.titleView = [self.view titleWithNavigat:@"专业查询"];
+//    _urls = @[@"http://api.dev.gaokaoq.com/major?level=1"
+//              ,@"http://api.dev.gaokaoq.com/major?level=2"];
+//    _table.delegate = self;
+//    _table.dataSource= self;
+//    [_table registerNib:[UINib nibWithNibName:@"FengYunHotCell" bundle:nil] forCellReuseIdentifier:@"FengYunHotCell"];
+//    [self.view addSubview:_table];
+
+}
+
+-(void)leftBarButtonItemClick
+{
+    
+    [self.navigationController popViewControllerAnimated:YES];
+    
+    
+}
+-(void)rightBarButtonItemClick
+{
+    
+    [self.navigationController popViewControllerAnimated:YES];
+    
+    
+}
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+}
+
+
+
+@end

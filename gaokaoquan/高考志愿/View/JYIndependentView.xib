@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="xcg-tA-E4T" customClass="JYIndependentView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qVG-xD-eze">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="排序" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1iW-Tm-4A1">
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="院校名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzl-ru-8Td">
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地区排名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfD-Hf-pbD">
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="总分" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIK-di-SUc">
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.33333333329999998" green="0.75686274509999996" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="1iW-Tm-4A1" firstAttribute="centerY" secondItem="qVG-xD-eze" secondAttribute="centerY" id="3RQ-3m-vik"/>
+                        <constraint firstItem="wzl-ru-8Td" firstAttribute="centerY" secondItem="qVG-xD-eze" secondAttribute="centerY" id="KC0-af-LrY"/>
+                        <constraint firstItem="1iW-Tm-4A1" firstAttribute="leading" secondItem="qVG-xD-eze" secondAttribute="leading" constant="8" id="OwF-wi-4wG"/>
+                        <constraint firstItem="RIK-di-SUc" firstAttribute="centerY" secondItem="qVG-xD-eze" secondAttribute="centerY" id="al2-jD-PMb"/>
+                        <constraint firstItem="xfD-Hf-pbD" firstAttribute="leading" secondItem="RIK-di-SUc" secondAttribute="trailing" constant="40" id="cJF-bL-Hn2"/>
+                        <constraint firstItem="wzl-ru-8Td" firstAttribute="leading" secondItem="1iW-Tm-4A1" secondAttribute="trailing" constant="45" id="dI6-mU-RTL"/>
+                        <constraint firstItem="xfD-Hf-pbD" firstAttribute="centerY" secondItem="qVG-xD-eze" secondAttribute="centerY" id="glR-jz-kuw"/>
+                        <constraint firstAttribute="trailing" secondItem="xfD-Hf-pbD" secondAttribute="trailing" constant="20" id="tDG-fL-si0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qVG-xD-eze" secondAttribute="trailing" id="8pq-GD-GMu"/>
+                <constraint firstItem="qVG-xD-eze" firstAttribute="top" secondItem="xcg-tA-E4T" secondAttribute="top" id="EDn-na-itn"/>
+                <constraint firstAttribute="bottom" secondItem="qVG-xD-eze" secondAttribute="bottom" id="Mhs-RQ-hQk"/>
+                <constraint firstItem="qVG-xD-eze" firstAttribute="leading" secondItem="xcg-tA-E4T" secondAttribute="leading" id="uYS-bV-eu1"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

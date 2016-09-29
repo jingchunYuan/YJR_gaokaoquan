@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "fb2bb458-5cc4-4480-b9f9-fa103fa640be++505+++099ECBC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "fb2bb458-5cc4-4480-b9f9-fa103fa640be++505+++099ECBC" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "fb2bb458-5cc4-4480-b9f9-fa103fa640be++505+++099ECBC" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F0521653-F233-462A-A4CB-9D4C53A1D1E1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "fb2bb458-5cc4-4480-b9f9-fa103fa640be++505+++099ECBC" : "dev_ios\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "gaokaoquan",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "gaokaoquan\/gaokaoquan.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/47.90.56.31\/dev_ios",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "fb2bb458-5cc4-4480-b9f9-fa103fa640be++505+++099ECBC"
+    }
+  ]
+}

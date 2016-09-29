@@ -1,0 +1,23 @@
+//
+//  CollegeYinxiangCell.h
+//  gaokaoquan
+//
+//  Created by 高考圈 on 16/9/27.
+//  Copyright © 2016年 袁静茹. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "CollegeYinxiangModel.h"
+
+@interface CollegeYinxiangCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *headerImg;
+
+@property (weak, nonatomic) IBOutlet UILabel *infoLb;
+
+@property (weak, nonatomic) IBOutlet UILabel *ctimeLb;
+
+- (IBAction)totalBtn:(id)sender;
+
+@property(nonatomic,strong) CollegeYinxiangModel *model;
+
+@end

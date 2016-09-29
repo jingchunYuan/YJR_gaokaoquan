@@ -1,0 +1,20 @@
+//
+//  JYStudentInformModel.m
+//  gaokaoquan
+//
+//  Created by 家跃 on 16/9/7.
+//  Copyright © 2016年 袁静茹. All rights reserved.
+//
+
+#import "JYStudentInformModel.h"
+
+@implementation JYStudentInformModel
+
++ (NSDictionary *)replacedKeyFromPropertyName{
+    return @{
+             @"ID" : @"id",
+             
+             };
+}
+
+@end

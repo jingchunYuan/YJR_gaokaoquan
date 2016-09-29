@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UniversityViewController">
+            <connections>
+                <outlet property="table" destination="OWK-nG-Yfh" id="a3G-yK-qZY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OWK-nG-Yfh">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jdd-h1-cxH">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="mZL-Ub-fXG"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8HP-Vk-gGt">
+                    <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="EfI-QE-keO"/>
+                    </constraints>
+                    <state key="normal" title="测录取概率">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXJ-f0-k29">
+                    <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="已关注">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Jdd-h1-cxH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4pe-Dj-Mfc"/>
+                <constraint firstAttribute="bottom" secondItem="Jdd-h1-cxH" secondAttribute="bottom" id="Aki-lj-db4"/>
+                <constraint firstItem="XXJ-f0-k29" firstAttribute="width" secondItem="8HP-Vk-gGt" secondAttribute="width" id="GAI-Ey-jOj"/>
+                <constraint firstAttribute="bottom" secondItem="OWK-nG-Yfh" secondAttribute="bottom" id="XcR-0J-ZRg"/>
+                <constraint firstItem="XXJ-f0-k29" firstAttribute="centerY" secondItem="Jdd-h1-cxH" secondAttribute="centerY" id="ZXG-O4-2OE"/>
+                <constraint firstItem="OWK-nG-Yfh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ecD-cU-yg6"/>
+                <constraint firstAttribute="trailing" secondItem="Jdd-h1-cxH" secondAttribute="trailing" id="mBm-sD-R72"/>
+                <constraint firstItem="8HP-Vk-gGt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="pNg-Zs-6Nr"/>
+                <constraint firstItem="OWK-nG-Yfh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pZk-N2-Ale"/>
+                <constraint firstAttribute="trailing" secondItem="OWK-nG-Yfh" secondAttribute="trailing" id="qa4-7a-5y2"/>
+                <constraint firstItem="XXJ-f0-k29" firstAttribute="leading" secondItem="8HP-Vk-gGt" secondAttribute="trailing" constant="10" id="xj4-jN-Wyc"/>
+                <constraint firstItem="XXJ-f0-k29" firstAttribute="height" secondItem="8HP-Vk-gGt" secondAttribute="height" id="xpA-42-KOC"/>
+                <constraint firstItem="8HP-Vk-gGt" firstAttribute="centerY" secondItem="Jdd-h1-cxH" secondAttribute="centerY" id="z2f-7n-rXn"/>
+                <constraint firstAttribute="trailing" secondItem="XXJ-f0-k29" secondAttribute="trailing" constant="30" id="zXb-kU-IWd"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

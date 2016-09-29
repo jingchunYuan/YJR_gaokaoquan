@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JYTutorInformFootView">
+            <rect key="frame" x="0.0" y="0.0" width="327" height="263"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OGN-Xf-PwL">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="教育经历" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAF-xl-elc">
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cs8-h0-ckQ">
+                            <subviews>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E6y-Yq-vHf">
+                                    <frame key="frameInset" minX="6" minY="222" width="320" height="128"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DxU-cf-f8h">
+                                            <frame key="frameInset" minX="65" minY="21" width="35" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="学校" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qx-JE-wbY">
+                                            <frame key="frameInset" minX="65" minY="50" width="35" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.98039215690000003" green="0.43529411759999997" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbu-d5-6Cd">
+                                    <frame key="frameInset" minX="127" minY="126" width="62" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="添加经历"/>
+                                    <connections>
+                                        <action selector="addclick:" destination="iN0-l3-epB" eventType="touchUpInside" id="AJb-cM-Sfd"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.91372549020000005" green="0.90588235289999997" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="JAF-xl-elc" firstAttribute="top" secondItem="OGN-Xf-PwL" secondAttribute="top" constant="15" id="Gxg-UZ-gRT"/>
+                        <constraint firstItem="cs8-h0-ckQ" firstAttribute="top" secondItem="JAF-xl-elc" secondAttribute="bottom" constant="8" id="RS4-g9-OcL"/>
+                        <constraint firstAttribute="trailing" secondItem="cs8-h0-ckQ" secondAttribute="trailing" id="Yhb-qc-yeC"/>
+                        <constraint firstAttribute="bottom" secondItem="cs8-h0-ckQ" secondAttribute="bottom" constant="8" id="a1a-pe-Uo4"/>
+                        <constraint firstItem="JAF-xl-elc" firstAttribute="leading" secondItem="OGN-Xf-PwL" secondAttribute="leading" constant="15" id="ray-gM-LI3"/>
+                        <constraint firstItem="cs8-h0-ckQ" firstAttribute="leading" secondItem="OGN-Xf-PwL" secondAttribute="leading" id="san-uk-Nkl"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="OGN-Xf-PwL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6h3-6k-VcR"/>
+                <constraint firstItem="OGN-Xf-PwL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="MWq-7g-CjQ"/>
+                <constraint firstAttribute="trailing" secondItem="OGN-Xf-PwL" secondAttribute="trailing" id="Q5j-K5-mMI"/>
+                <constraint firstAttribute="bottom" secondItem="OGN-Xf-PwL" secondAttribute="bottom" id="yQ6-dG-P1u"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addView" destination="E6y-Yq-vHf" id="av4-cu-qEx"/>
+            </connections>
+            <point key="canvasLocation" x="37.5" y="67.5"/>
+        </view>
+    </objects>
+</document>

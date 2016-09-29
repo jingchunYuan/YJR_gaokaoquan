@@ -1,0 +1,15 @@
+//
+//  OccupationCell.h
+//  gaokaoquan
+//
+//  Created by Nevis on 16/9/25.
+//  Copyright © 2016年 袁静茹. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "JobListModel.h"
+@interface OccupationCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIView *bgView;
+@property (weak, nonatomic) IBOutlet UILabel *textLB;
+@property (nonatomic,strong)JobListModel * model;
+@end

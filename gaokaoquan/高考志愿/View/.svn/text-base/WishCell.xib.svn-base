@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="WishCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="专业查询@3x" translatesAutoresizingMaskIntoConstraints="NO" id="VTb-ud-zi2">
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="VTb-ud-zi2" secondAttribute="height" multiplier="1:1" id="6gl-pe-8dC"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6gl-pe-8dC"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="搞笑查询" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1mX-X9-V6r">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="1mX-X9-V6r" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Bmr-b6-Cu1"/>
+                <constraint firstItem="1mX-X9-V6r" firstAttribute="top" secondItem="VTb-ud-zi2" secondAttribute="bottom" constant="4" id="Hdy-0V-t3a"/>
+                <constraint firstItem="VTb-ud-zi2" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="kSe-yM-9TM"/>
+                <constraint firstAttribute="trailing" secondItem="1mX-X9-V6r" secondAttribute="trailing" id="p3M-xq-Odk"/>
+                <constraint firstItem="VTb-ud-zi2" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.6" id="tdf-mn-4YI"/>
+                <constraint firstItem="VTb-ud-zi2" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" multiplier="0.8" id="z83-Ec-RYE"/>
+                <constraint firstItem="VTb-ud-zi2" firstAttribute="width" secondItem="VTb-ud-zi2" secondAttribute="height" multiplier="1:1" id="zoK-Gu-Box"/>
+            </constraints>
+            <connections>
+                <outlet property="serviceIcon" destination="VTb-ud-zi2" id="w8Y-4X-1R4"/>
+                <outlet property="serviceName" destination="1mX-X9-V6r" id="4g7-Bz-gdN"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="专业查询@3x" width="2000" height="1333"/>
+    </resources>
+</document>
