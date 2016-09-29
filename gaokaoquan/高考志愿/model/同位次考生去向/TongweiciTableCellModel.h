@@ -10,7 +10,6 @@
 
 @interface TongweiciTableCellModel : NSObject
 
-@interface JYSameTableviewCellModel : NSObject
 
 @property (nonatomic,copy) NSString *true_name;
 
@@ -21,3 +20,4 @@
 @property (nonatomic,copy) NSString *ctime;
 
 @end
+ 
