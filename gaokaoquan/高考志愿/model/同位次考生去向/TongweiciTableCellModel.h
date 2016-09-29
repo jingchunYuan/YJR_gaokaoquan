@@ -10,6 +10,8 @@
 
 @interface TongweiciTableCellModel : NSObject
 
+@end
+
 @interface JYSameTableviewCellModel : NSObject
 
 @property (nonatomic,copy) NSString *true_name;
