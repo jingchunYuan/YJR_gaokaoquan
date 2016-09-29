@@ -287,6 +287,12 @@
 		2245C9581D9B715D00433D4C /* jiantou-da@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2245C9541D9B715D00433D4C /* jiantou-da@3x.png */; };
 		2245C9591D9B715D00433D4C /* jiantou-xiao@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2245C9551D9B715D00433D4C /* jiantou-xiao@2x.png */; };
 		2245C95A1D9B715D00433D4C /* jiantou-xiao@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2245C9561D9B715D00433D4C /* jiantou-xiao@3x.png */; };
+		224688531D9CF3260053656E /* TongweiciView.m in Sources */ = {isa = PBXBuildFile; fileRef = 224688521D9CF3260053656E /* TongweiciView.m */; };
+		224688571D9CF3610053656E /* TongweiciTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 224688551D9CF3610053656E /* TongweiciTableViewCell.m */; };
+		224688581D9CF3610053656E /* TongweiciTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224688561D9CF3610053656E /* TongweiciTableViewCell.xib */; };
+		2246885B1D9CF8450053656E /* TongweiciViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2246885A1D9CF8450053656E /* TongweiciViewController.m */; };
+		2246885E1D9CF8890053656E /* TongweiciModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2246885D1D9CF8890053656E /* TongweiciModel.m */; };
+		224688611D9CF8B60053656E /* TongweiciTableCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 224688601D9CF8B60053656E /* TongweiciTableCellModel.m */; };
 		2249D3271D879EA200813C72 /* dongtai@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2249D3211D879EA200813C72 /* dongtai@2x.png */; };
 		2249D3281D879EA200813C72 /* dongtai@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2249D3221D879EA200813C72 /* dongtai@3x.png */; };
 		2249D3291D879EA200813C72 /* jieshao@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2249D3231D879EA200813C72 /* jieshao@2x.png */; };
@@ -1207,6 +1213,17 @@
 		2245C9541D9B715D00433D4C /* jiantou-da@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jiantou-da@3x.png"; sourceTree = "<group>"; };
 		2245C9551D9B715D00433D4C /* jiantou-xiao@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jiantou-xiao@2x.png"; sourceTree = "<group>"; };
 		2245C9561D9B715D00433D4C /* jiantou-xiao@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jiantou-xiao@3x.png"; sourceTree = "<group>"; };
+		224688511D9CF3260053656E /* TongweiciView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TongweiciView.h; sourceTree = "<group>"; };
+		224688521D9CF3260053656E /* TongweiciView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TongweiciView.m; sourceTree = "<group>"; };
+		224688541D9CF3610053656E /* TongweiciTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TongweiciTableViewCell.h; sourceTree = "<group>"; };
+		224688551D9CF3610053656E /* TongweiciTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TongweiciTableViewCell.m; sourceTree = "<group>"; };
+		224688561D9CF3610053656E /* TongweiciTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TongweiciTableViewCell.xib; sourceTree = "<group>"; };
+		224688591D9CF8450053656E /* TongweiciViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TongweiciViewController.h; sourceTree = "<group>"; };
+		2246885A1D9CF8450053656E /* TongweiciViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TongweiciViewController.m; sourceTree = "<group>"; };
+		2246885C1D9CF8890053656E /* TongweiciModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TongweiciModel.h; sourceTree = "<group>"; };
+		2246885D1D9CF8890053656E /* TongweiciModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TongweiciModel.m; sourceTree = "<group>"; };
+		2246885F1D9CF8B60053656E /* TongweiciTableCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TongweiciTableCellModel.h; sourceTree = "<group>"; };
+		224688601D9CF8B60053656E /* TongweiciTableCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TongweiciTableCellModel.m; sourceTree = "<group>"; };
 		2249D3211D879EA200813C72 /* dongtai@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dongtai@2x.png"; sourceTree = "<group>"; };
 		2249D3221D879EA200813C72 /* dongtai@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dongtai@3x.png"; sourceTree = "<group>"; };
 		2249D3231D879EA200813C72 /* jieshao@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jieshao@2x.png"; sourceTree = "<group>"; };
@@ -2923,6 +2940,38 @@
 			path = "专业查询小图标";
 			sourceTree = "<group>";
 		};
+		2246884E1D9CF20C0053656E /* 同位次考生去向 */ = {
+			isa = PBXGroup;
+			children = (
+				224688511D9CF3260053656E /* TongweiciView.h */,
+				224688521D9CF3260053656E /* TongweiciView.m */,
+				224688541D9CF3610053656E /* TongweiciTableViewCell.h */,
+				224688551D9CF3610053656E /* TongweiciTableViewCell.m */,
+				224688561D9CF3610053656E /* TongweiciTableViewCell.xib */,
+			);
+			path = "同位次考生去向";
+			sourceTree = "<group>";
+		};
+		2246884F1D9CF2120053656E /* 同位次考生去向 */ = {
+			isa = PBXGroup;
+			children = (
+				224688591D9CF8450053656E /* TongweiciViewController.h */,
+				2246885A1D9CF8450053656E /* TongweiciViewController.m */,
+			);
+			path = "同位次考生去向";
+			sourceTree = "<group>";
+		};
+		224688501D9CF21C0053656E /* 同位次考生去向 */ = {
+			isa = PBXGroup;
+			children = (
+				2246885C1D9CF8890053656E /* TongweiciModel.h */,
+				2246885D1D9CF8890053656E /* TongweiciModel.m */,
+				2246885F1D9CF8B60053656E /* TongweiciTableCellModel.h */,
+				224688601D9CF8B60053656E /* TongweiciTableCellModel.m */,
+			);
+			path = "同位次考生去向";
+			sourceTree = "<group>";
+		};
 		2249D33D1D87DD4400813C72 /* 高校查询小图标 */ = {
 			isa = PBXGroup;
 			children = (
@@ -3276,6 +3325,7 @@
 		735370771D6EE03200CDD8A5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				224688501D9CF21C0053656E /* 同位次考生去向 */,
 				180E096D1D9A672A00605793 /* 同分考生去向 */,
 				185DF13D1D9936BE0024ED79 /* 复读测试 */,
 				18DB33AB1D99013B0028A035 /* MBTI性格测试 */,
@@ -3335,6 +3385,7 @@
 		7353707B1D6EE06F00CDD8A5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2246884F1D9CF2120053656E /* 同位次考生去向 */,
 				224C77041D9AA73A00AADE8C /* 同分考生去向 */,
 				185DF1391D99354B0024ED79 /* 复读测试 */,
 				18DB33A71D98FFAD0028A035 /* MBTI性格测试 */,
@@ -3418,8 +3469,9 @@
 		735370811D6EE0C200CDD8A5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				22DBFAD51D9BE9BA002085C3 /* 专业查询 */,
+				2246884E1D9CF20C0053656E /* 同位次考生去向 */,
 				2245C94C1D9B5D1900433D4C /* 同分考生去向 */,
+				22DBFAD51D9BE9BA002085C3 /* 专业查询 */,
 				2228B94D1D9377E20078B6DE /* 高校查询 */,
 				18E32E581D99162F00F8EFF5 /* MBTI */,
 				185231D71D94D3EB00C1BBF5 /* 专业职业通 */,
@@ -4294,6 +4346,7 @@
 				TargetAttributes = {
 					73536D2C1D6EBF9300CDD8A5 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = VZ8CKBEE8R;
 					};
 				};
 			};
@@ -4527,6 +4580,7 @@
 				8498D9531D868CDF00169695 /* 邀请注册@3x.png in Resources */,
 				18C265261D92703A00D25C7F /* zongbangdan@2x.png in Resources */,
 				2249D38F1D87E06E00813C72 /* nimingxuanzhong@3x.png in Resources */,
+				224688581D9CF3610053656E /* TongweiciTableViewCell.xib in Resources */,
 				8498D9061D868CDF00169695 /* 高考侠-点赞@2x.png in Resources */,
 				8498D8F61D868CDF00169695 /* lansesekuai@2x.png in Resources */,
 				8498D93F1D868CDF00169695 /* xuanzhong.png in Resources */,
@@ -4730,6 +4784,7 @@
 				223CA5111D92195300E6ECD1 /* WishViewController.m in Sources */,
 				FC0486E11D7C39850052EDB6 /* JieshaoView.m in Sources */,
 				22DBFAC71D9BE5EE002085C3 /* OccupationController.m in Sources */,
+				224688611D9CF8B60053656E /* TongweiciTableCellModel.m in Sources */,
 				18B3E0491D8656EE00929D0C /* JYMyGoldModel.m in Sources */,
 				1861E2581D96591A00174BC9 /* JYGaoXiaoModel.m in Sources */,
 				18B3E0471D8656EE00929D0C /* JYLnviteModel.m in Sources */,
@@ -4789,6 +4844,7 @@
 				84DC7FEF1D702A8E00612E20 /* JSONModel+networking.m in Sources */,
 				FC0486CD1D7AEF020052EDB6 /* NSArray+MASAdditions.m in Sources */,
 				1811651A1D8D5882002EE814 /* STConst.m in Sources */,
+				2246885E1D9CF8890053656E /* TongweiciModel.m in Sources */,
 				223E25731D967AED0095291E /* CollegeModel+Request.m in Sources */,
 				84DC80981D70370900612E20 /* SDWebImageDownloaderOperation.m in Sources */,
 				2228B9841D93D3CF0078B6DE /* JYIndependentableViewCell.m in Sources */,
@@ -4846,6 +4902,7 @@
 				84DC7FF31D702A8E00612E20 /* README.md in Sources */,
 				84DC7FEA1D702A8E00612E20 /* JSONModelClassProperty.m in Sources */,
 				18B3DFCF1D86569D00929D0C /* JYTutorViewController.m in Sources */,
+				2246885B1D9CF8450053656E /* TongweiciViewController.m in Sources */,
 				22DBFA8E1D9BE33D002085C3 /* OccupationCell.m in Sources */,
 				FC0486CA1D7AEF020052EDB6 /* MASLayoutConstraint.m in Sources */,
 				22DBFADE1D9BEA26002085C3 /* MajorViewController.m in Sources */,
@@ -4885,7 +4942,9 @@
 				18B3DFB91D86569D00929D0C /* JYGKBaseViewController.m in Sources */,
 				22DBFAB91D9BE560002085C3 /* RATreeNode.m in Sources */,
 				185DF13C1D99356E0024ED79 /* JYStudyAgainViewController.m in Sources */,
+				224688571D9CF3610053656E /* TongweiciTableViewCell.m in Sources */,
 				84DC80021D702AB800612E20 /* ZJContentView.m in Sources */,
+				224688531D9CF3260053656E /* TongweiciView.m in Sources */,
 				FCAA0E111D70857000A8A99A /* MBProgressHUD.m in Sources */,
 				FC0486D31D7C38E00052EDB6 /* TecherViewController.m in Sources */,
 				226B20E41D98CAE400513711 /* JobModel.m in Sources */,
