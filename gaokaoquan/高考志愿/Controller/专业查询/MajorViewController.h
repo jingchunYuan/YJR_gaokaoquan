@@ -6,8 +6,8 @@
 //  Copyright © 2016年 袁静茹. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface MajorViewController : UIViewController
+@interface MajorViewController : BaseViewController
 
 @end

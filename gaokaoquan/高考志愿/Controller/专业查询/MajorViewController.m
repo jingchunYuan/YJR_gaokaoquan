@@ -12,6 +12,7 @@
 #import "MajorModel.h"
 #import "SubMajorModel.h"
 #import "RATableViewCell.h"
+#import "MajorDetalController.h"
 
 @interface MajorViewController ()<RATreeViewDelegate,RATreeViewDataSource>
 
@@ -25,7 +26,6 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.tabBarController.tabBar.hidden = YES;
 }
 
 - (void)viewDidLoad {
@@ -99,6 +99,17 @@
 
 - (void)treeView:(RATreeView *)treeView didSelectRowForItem:(id)item {
     
+    NSInteger level = [treeView levelForCellForItem:item];
+    if (level == 2) {
+        SubMajorModel *model = item;
+        NSLog(@"Id = %@", model.Id);
+        
+        MajorDetalController *mdC = [[MajorDetalController alloc] init];
+        mdC.Id = model.Id;
+        mdC.name = model.name;
+        [self.navigationController pushViewController:mdC animated:YES];
+    }
+    
 }
 
 - (CGFloat)treeView:(RATreeView *)treeView heightForRowForItem:(id)item {
@@ -127,15 +138,86 @@
     
 }
 
+- (void)loadDataWithLevel:(NSString *)level {
+    NSString * url = [NSString stringWithFormat:@"http://api.dev.gaokaoq.com/major?level=%@", level];
+    __weak typeof(self) weakSelf = self;
+    
+    [JobListModel RequestWithUrl:url andPara:nil andCallBack:^(NSArray *arr, NSError *err) {
+        if(!err){
+            //先清空
+            [weakSelf.dataArr removeAllObjects];
+            //再添加
+            [weakSelf.dataArr addObjectsFromArray:arr];
+            [weakSelf.treeView reloadData];
+        }
+        
+    }];
+}
+
 -(void)createUI {
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    self.edgesForExtendedLayout = UIRectEdgeNone;
     
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem initWithImageName:@"返回" highlightedImage:nil title:nil target:self action:@selector(leftBarButtonItemClick)];
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem initWithImageName:@"搜索" highlightedImage:nil title:nil target:self action:@selector(rightBarButtonItemClick)];
     self.navigationItem.titleView = [self.view titleWithNavigat:@"专业查询"];
     
+    // 专科、本科
+    NSArray *titleArr = @[@"本科",@"专科"];
+    for (int i=0; i<2; i++) {
+        UIButton *b = [UIButton buttonWithType:UIButtonTypeCustom];
+        b.frame = CGRectMake(i*(SCREEN_WIDTH/2), 0, SCREEN_WIDTH/2, 40);
+        [b setTitle:titleArr[i] forState:UIControlStateNormal];
+        if (i==0) {
+            b.backgroundColor = [UIColor redColor];
+        }else {
+            b.backgroundColor = [UIColor lightGrayColor];
+        }
+        b.titleLabel.font = [UIFont systemFontOfSize:15];
+        b.tag = 200 + i;
+        [b addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:b];
+    }
     // 创建三级列表
     [self.view addSubview:self.treeView];
 
+}
+
+- (void)btnClick:(UIButton *)btn {
+    switch (btn.tag) {
+        case 200:
+            //本科
+            [self loadDataWithLevel:@"1"];
+            //改button 的 UI
+            [self changBtnUI:200];
+            break;
+            
+        case 201:
+            //专科
+            [self loadDataWithLevel:@"2"];
+            [self changBtnUI:201];
+            break;
+            
+        default:
+            break;
+    }
+}
+
+- (void)changBtnUI:(int)btnTag {
+    
+    //全部置灰
+    for (id view in [self.view subviews]) {
+        if ([view isKindOfClass:[UIButton class]]) {
+            UIButton *b1 = (UIButton *)view;
+            b1.backgroundColor = [UIColor lightGrayColor];
+        }
+    }
+    
+    //选中的
+    UIButton *b = [self.view viewWithTag:btnTag];
+    b.backgroundColor = [UIColor redColor];
+    
 }
 
 -(void)leftBarButtonItemClick
@@ -156,12 +238,12 @@
 #pragma mark - Getter and Setter
 -(RATreeView *)treeView{
     if (!_treeView) {
-        _treeView =[[RATreeView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-64)];
+        _treeView =[[RATreeView alloc]initWithFrame:CGRectMake(0, 40, SCREEN_WIDTH, SCREEN_HEIGHT-64-49-40)];
         _treeView.delegate =self;
         _treeView.dataSource =self;
         [_treeView registerNib:[UINib nibWithNibName:NSStringFromClass([RATableViewCell class]) bundle:nil] forCellReuseIdentifier:NSStringFromClass([RATableViewCell class])];
         _treeView.separatorStyle = RATreeViewCellSeparatorStyleNone;
-        _treeView.backgroundColor = [UIColor clearColor];
+        _treeView.backgroundColor = [UIColor whiteColor];
     }
     return _treeView;
 }
