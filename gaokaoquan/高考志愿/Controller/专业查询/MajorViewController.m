@@ -23,9 +23,13 @@
 
 @implementation MajorViewController
 
-- (void)viewWillAppear:(BOOL)animated
-{
+- (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    self.view.backgroundColor = [UIColor whiteColor];
+    [super viewDidAppear:animated];
 }
 
 - (void)viewDidLoad {
@@ -156,9 +160,10 @@
 
 -(void)createUI {
     
-    self.automaticallyAdjustsScrollViewInsets = NO;
-    self.edgesForExtendedLayout = UIRectEdgeNone;
-    
+    //加上后，tabbar黑色，所以去掉了
+//    self.automaticallyAdjustsScrollViewInsets = NO;
+//    self.edgesForExtendedLayout = UIRectEdgeNone;
+
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem initWithImageName:@"返回" highlightedImage:nil title:nil target:self action:@selector(leftBarButtonItemClick)];
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem initWithImageName:@"搜索" highlightedImage:nil title:nil target:self action:@selector(rightBarButtonItemClick)];
     self.navigationItem.titleView = [self.view titleWithNavigat:@"专业查询"];

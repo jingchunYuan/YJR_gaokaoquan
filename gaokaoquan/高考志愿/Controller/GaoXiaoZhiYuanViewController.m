@@ -53,13 +53,9 @@
     [self createCollectionView];
 }
 // MARK:-嘉悦
-- (void)viewWillAppear:(BOOL)animated
-{
+- (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
     self.tabBarController.tabBar.hidden = NO;
-    
-    
 }
 
 -(void)loadData{
