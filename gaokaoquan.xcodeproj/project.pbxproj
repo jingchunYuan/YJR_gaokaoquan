@@ -463,6 +463,8 @@
 		8419A9031D7E61FD0024E703 /* DongTaiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8419A9011D7E61FD0024E703 /* DongTaiCell.xib */; };
 		8419A9061D7EAA040024E703 /* AddYinXiangView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8419A9051D7EAA040024E703 /* AddYinXiangView.m */; };
 		8419A9081D7EAA170024E703 /* AddYinXiangView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8419A9071D7EAA170024E703 /* AddYinXiangView.xib */; };
+		847AD5621D9CF7B4006068E1 /* MajorDetalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847AD5601D9CF7B4006068E1 /* MajorDetalController.m */; };
+		847AD5631D9CF7B4006068E1 /* MajorDetalController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847AD5611D9CF7B4006068E1 /* MajorDetalController.xib */; };
 		847F00541D801AD700B25581 /* AddImpressionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F004C1D801AD700B25581 /* AddImpressionController.m */; };
 		847F00551D801AD700B25581 /* AddImpressionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847F004D1D801AD700B25581 /* AddImpressionController.xib */; };
 		847F00561D801AD700B25581 /* MianfeiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F004F1D801AD700B25581 /* MianfeiViewController.m */; };
@@ -1452,6 +1454,9 @@
 		8419A9041D7EAA040024E703 /* AddYinXiangView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddYinXiangView.h; sourceTree = "<group>"; };
 		8419A9051D7EAA040024E703 /* AddYinXiangView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddYinXiangView.m; sourceTree = "<group>"; };
 		8419A9071D7EAA170024E703 /* AddYinXiangView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddYinXiangView.xib; sourceTree = "<group>"; };
+		847AD55F1D9CF7B4006068E1 /* MajorDetalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MajorDetalController.h; sourceTree = "<group>"; };
+		847AD5601D9CF7B4006068E1 /* MajorDetalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MajorDetalController.m; sourceTree = "<group>"; };
+		847AD5611D9CF7B4006068E1 /* MajorDetalController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MajorDetalController.xib; sourceTree = "<group>"; };
 		847F004B1D801AD700B25581 /* AddImpressionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddImpressionController.h; sourceTree = "<group>"; };
 		847F004C1D801AD700B25581 /* AddImpressionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddImpressionController.m; sourceTree = "<group>"; };
 		847F004D1D801AD700B25581 /* AddImpressionController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddImpressionController.xib; sourceTree = "<group>"; };
@@ -2881,6 +2886,9 @@
 				22DBFADB1D9BEA26002085C3 /* MajorViewController.h */,
 				22DBFADC1D9BEA26002085C3 /* MajorViewController.m */,
 				22DBFADD1D9BEA26002085C3 /* MajorViewController.xib */,
+				847AD55F1D9CF7B4006068E1 /* MajorDetalController.h */,
+				847AD5601D9CF7B4006068E1 /* MajorDetalController.m */,
+				847AD5611D9CF7B4006068E1 /* MajorDetalController.xib */,
 			);
 			path = "专业查询";
 			sourceTree = "<group>";
@@ -4341,6 +4349,7 @@
 				2249D38D1D87E06E00813C72 /* niming@3x.png in Resources */,
 				8498D9091D868CDF00169695 /* fen@3x.png in Resources */,
 				8498D93A1D868CDF00169695 /* w-de-sixin.png in Resources */,
+				847AD5631D9CF7B4006068E1 /* MajorDetalController.xib in Resources */,
 				8498D95E1D868CDF00169695 /* 高考侠-@3x.png in Resources */,
 				1894D2401D89517A00522860 /* guanzhu-wenti@2x.png in Resources */,
 				8498D9041D868CDF00169695 /* 笔记@2x.png in Resources */,
@@ -5024,6 +5033,7 @@
 				84DC7FBD1D702A7900612E20 /* MJRefreshAutoGifFooter.m in Sources */,
 				18C265231D926DA100D25C7F /* JYRCCSEDetailViewController.m in Sources */,
 				18B3DF791D8654A200929D0C /* NSObject+MJKeyValue.m in Sources */,
+				847AD5621D9CF7B4006068E1 /* MajorDetalController.m in Sources */,
 				18DB33A31D98D00C0028A035 /* JYSCViewController.m in Sources */,
 				18B3DF7E1D86550B00929D0C /* JYNetWorkTool.m in Sources */,
 				18B3E0501D8656EE00929D0C /* JYTutorAppointModel.m in Sources */,
