@@ -9,5 +9,5 @@
 #import "JobListModel.h"
 
 @interface JobListModel (Request)
-+(void)RequestWithUrl:(NSString *)url andPara:(NSDictionary *)para andCallBack:(void (^)(NSArray *, NSError *))callBack;
++(void)RequestWithUrl:(NSString *)url andPara:(NSDictionary *)para andCallBack:(void (^)(NSArray *arr, NSError *err))callBack;
 @end

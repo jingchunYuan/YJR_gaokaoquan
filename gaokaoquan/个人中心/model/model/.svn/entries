@@ -1,7 +1,7 @@
 10
 
 dir
-74
+79
 svn://jingru@47.90.56.31:3690/dev_ios/trunk/gaokaoquan/gaokaoquan/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83/model/model
 svn://jingru@47.90.56.31:3690/dev_ios
 
@@ -536,40 +536,6 @@ jiayue
 
 204
 
-JYTutorinformModel.m
-file
-
-
-
-
-2016-09-13T01:51:48.000000Z
-a6b607eff4beb3a5c125d22c2d893b8e
-2016-09-12T13:57:11.798883Z
-11
-jiayue
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-335
-
 JYMyExperienceModel.h
 file
 
@@ -604,14 +570,14 @@ jiayue
 
 418
 
-JYTutorMyGoldModel.m
+JYTutorinformModel.m
 file
 
 
 
 
 2016-09-13T01:51:48.000000Z
-dc90846f4c4f98ddda230abb6d1561fd
+a6b607eff4beb3a5c125d22c2d893b8e
 2016-09-12T13:57:11.798883Z
 11
 jiayue
@@ -636,7 +602,7 @@ jiayue
 
 
 
-214
+335
 
 JYAppointmentModel.h
 file
@@ -672,14 +638,14 @@ jiayue
 
 568
 
-JYCellJump.m
+JYTutorMyGoldModel.m
 file
 
 
 
 
 2016-09-13T01:51:48.000000Z
-053d553905283e54bd0af2fedbdb8016
+dc90846f4c4f98ddda230abb6d1561fd
 2016-09-12T13:57:11.798883Z
 11
 jiayue
@@ -704,7 +670,7 @@ jiayue
 
 
 
-447
+214
 
 JYAnswerModel.h
 file
@@ -740,14 +706,14 @@ jiayue
 
 353
 
-JYTutorMyExpModel.h
+JYCellJump.m
 file
 
 
 
 
 2016-09-13T01:51:48.000000Z
-551acfdee6b814c33bf1cc8202311660
+053d553905283e54bd0af2fedbdb8016
 2016-09-12T13:57:11.798883Z
 11
 jiayue
@@ -772,7 +738,41 @@ jiayue
 
 
 
-425
+447
+
+JYMyGoldModel.m
+file
+
+
+
+
+2016-09-13T01:51:48.000000Z
+89da8f0f0a4ce9c7aeba8fa06ead8656
+2016-09-12T13:57:11.798883Z
+11
+jiayue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+198
 
 JYHDModel.m
 file
@@ -808,14 +808,14 @@ jiayue
 
 310
 
-JYMyGoldModel.m
+JYTutorMyExpModel.h
 file
 
 
 
 
 2016-09-13T01:51:48.000000Z
-89da8f0f0a4ce9c7aeba8fa06ead8656
+551acfdee6b814c33bf1cc8202311660
 2016-09-12T13:57:11.798883Z
 11
 jiayue
@@ -840,7 +840,7 @@ jiayue
 
 
 
-198
+425
 
 JYStudentInformModel.h
 file
@@ -910,40 +910,6 @@ jiayue
 
 216
 
-JYLectureModel.h
-file
-
-
-
-
-2016-09-13T01:51:48.000000Z
-3856cd8a42c61c69711220325a27c472
-2016-09-12T13:57:11.798883Z
-11
-jiayue
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-696
-
 JYAppointmentModel.m
 file
 
@@ -978,14 +944,14 @@ jiayue
 
 336
 
-JYAppointmentDetailsModel.h
+JYLectureModel.h
 file
 
 
 
 
 2016-09-13T01:51:48.000000Z
-794414b6e0a42d35cb1473d369631065
+3856cd8a42c61c69711220325a27c472
 2016-09-12T13:57:11.798883Z
 11
 jiayue
@@ -1010,7 +976,7 @@ jiayue
 
 
 
-1460
+696
 
 JYAnswerModel.m
 file
@@ -1045,6 +1011,40 @@ jiayue
 
 
 321
+
+JYAppointmentDetailsModel.h
+file
+
+
+
+
+2016-09-13T01:51:48.000000Z
+794414b6e0a42d35cb1473d369631065
+2016-09-12T13:57:11.798883Z
+11
+jiayue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1460
 
 JYTutorMyExpModel.m
 file

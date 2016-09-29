@@ -1,7 +1,7 @@
 10
 
 dir
-74
+79
 svn://jingru@47.90.56.31:3690/dev_ios/trunk/gaokaoquan/gaokaoquan/Rescourse/%E7%99%BB%E5%BD%95%E7%AA%97%E5%8F%A3%E6%8C%89%E9%92%AE
 svn://jingru@47.90.56.31:3690/dev_ios
 
@@ -60,40 +60,6 @@ has-props
 
 5497
 
-√@2x.png
-file
-
-
-
-
-2016-09-13T01:51:55.000000Z
-c1a8d7b8a66b8833a319f14de09ed3e6
-2016-09-12T13:57:11.798883Z
-11
-jiayue
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1413
-
 忘记密码@2x.png
 file
 
@@ -128,14 +94,14 @@ has-props
 
 1396
 
-√@3x.png
+√@2x.png
 file
 
 
 
 
 2016-09-13T01:51:55.000000Z
-60acf11bdefa77a7ff500caa0b8ea294
+c1a8d7b8a66b8833a319f14de09ed3e6
 2016-09-12T13:57:11.798883Z
 11
 jiayue
@@ -160,7 +126,7 @@ has-props
 
 
 
-1757
+1413
 
 忘记密码@3x.png
 file
@@ -195,6 +161,40 @@ has-props
 
 
 1857
+
+√@3x.png
+file
+
+
+
+
+2016-09-13T01:51:55.000000Z
+60acf11bdefa77a7ff500caa0b8ea294
+2016-09-12T13:57:11.798883Z
+11
+jiayue
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1757
 
 第三方－微信@2x.png
 file
@@ -434,40 +434,6 @@ has-props
 
 1996
 
-返回@2x.png
-file
-
-
-
-
-2016-09-13T01:51:55.000000Z
-565fd4bf9bebca90517c107e6461ec99
-2016-09-12T13:57:11.798883Z
-11
-jiayue
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1258
-
 用户_1@3x.png
 file
 
@@ -501,6 +467,40 @@ has-props
 
 
 2869
+
+返回@2x.png
+file
+
+
+
+
+2016-09-13T01:51:55.000000Z
+565fd4bf9bebca90517c107e6461ec99
+2016-09-12T13:57:11.798883Z
+11
+jiayue
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1258
 
 返回@3x.png
 file

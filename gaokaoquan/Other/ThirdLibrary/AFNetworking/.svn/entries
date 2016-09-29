@@ -1,7 +1,7 @@
 10
 
 dir
-74
+79
 svn://jingru@47.90.56.31:3690/dev_ios/trunk/gaokaoquan/gaokaoquan/Other/ThirdLibrary/AFNetworking
 svn://jingru@47.90.56.31:3690/dev_ios
 
@@ -97,40 +97,6 @@ jiayue
 
 28299
 
-AFNetworking.h
-file
-
-
-
-
-2016-09-13T01:51:47.000000Z
-ecea647de74dd62ff8591ab9af911fa7
-2016-09-12T13:57:11.798883Z
-11
-jiayue
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1921
-
 AFSecurityPolicy.h
 file
 
@@ -164,6 +130,40 @@ jiayue
 
 
 5261
+
+AFNetworking.h
+file
+
+
+
+
+2016-09-13T01:51:47.000000Z
+ecea647de74dd62ff8591ab9af911fa7
+2016-09-12T13:57:11.798883Z
+11
+jiayue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1921
 
 AFSecurityPolicy.m
 file
@@ -403,14 +403,14 @@ jiayue
 
 27595
 
-AFHTTPRequestOperation.h
+AFURLRequestSerialization.h
 file
 
 
 
 
 2016-09-13T01:51:47.000000Z
-a0f88e3db182974efcc13e5ab5cff3cb
+e2b897c535d27963accbce92e14ae745
 2016-09-12T13:57:11.798883Z
 11
 jiayue
@@ -435,7 +435,7 @@ jiayue
 
 
 
-4562
+22746
 
 AFHTTPRequestOperationManager.m
 file
@@ -471,14 +471,14 @@ jiayue
 
 11757
 
-AFURLRequestSerialization.h
+AFHTTPRequestOperation.h
 file
 
 
 
 
 2016-09-13T01:51:47.000000Z
-e2b897c535d27963accbce92e14ae745
+a0f88e3db182974efcc13e5ab5cff3cb
 2016-09-12T13:57:11.798883Z
 11
 jiayue
@@ -503,7 +503,7 @@ jiayue
 
 
 
-22746
+4562
 
 AFNetworkReachabilityManager.m
 file

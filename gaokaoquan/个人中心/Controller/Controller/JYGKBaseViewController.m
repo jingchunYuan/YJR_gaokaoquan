@@ -192,7 +192,6 @@
     }];
     
     
-    // 这是注册界面
     if (thildLine) {
         
         seePassword.hidden = YES;
@@ -202,7 +201,6 @@
         
         [thildLine mas_updateConstraints:^(MASConstraintMaker *make) {
             
-//            make.top.equalTo(self.view).offset(300);
             make.top.equalTo(footline2.bottom).offset(50);
             make.left.equalTo(self.view).offset(40);
             make.right.equalTo(self.view).offset(-40);
@@ -369,7 +367,6 @@
         
         [spView mas_updateConstraints:^(MASConstraintMaker *make) {
             
-//            make.top.equalTo(self.view.bottom).offset(-180);
             make.top.equalTo(userText2.bottom).offset(120);
             make.left.equalTo(self.view);
             make.right.equalTo(self.view).offset(-250);
@@ -383,7 +380,6 @@
         
         [spView2 mas_updateConstraints:^(MASConstraintMaker *make) {
             
-//            make.top.equalTo(self.view.bottom).offset(-180);
             make.top.equalTo(userText2.bottom).offset(120);
             make.right.equalTo(self.view);
             make.left.equalTo(self.view).offset(250);
@@ -418,7 +414,6 @@
         
         [weixin mas_updateConstraints:^(MASConstraintMaker *make) {
             
-//            make.bottom.equalTo(self.view).offset(-100);
             make.top.equalTo(Thild.bottom).offset(50);
             make.left.equalTo(self.view).offset(50);
             
@@ -448,8 +443,8 @@
         
         [QQ mas_updateConstraints:^(MASConstraintMaker *make) {
             
-//            make.bottom.equalTo(self.view).offset(-100);
-                        make.top.equalTo(Thild.bottom).offset(50);
+
+            make.top.equalTo(Thild.bottom).offset(50);
             make.centerX.equalTo(Thild.centerX);
             make.top.equalTo(weibo.top);
             
@@ -550,30 +545,7 @@
         
     }
     
-#warning 学生登录按钮
-//    if (stduentBtn) {
-//        
-//        [stduentBtn setTitle:@"学生登录" forState:UIControlStateNormal];
-//        
-//        stduentBtn.titleLabel.font = [UIFont systemFontOfSize:10];
-//        
-//        stduentBtn.titleLabel.textAlignment = NSTextAlignmentCenter;
-//        
-//        [stduentBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-//        
-//        [stduentBtn addTarget:self action:@selector(stduentLoginClick:) forControlEvents:UIControlEventTouchUpInside];
-//        
-//        [self.view addSubview:stduentBtn];
-//        
-//        [stduentBtn mas_updateConstraints:^(MASConstraintMaker *make) {
-//            
-//            make.top.equalTo(loginbtn.bottom).offset(25);
-//            make.left.equalTo(loginbtn.left).offset(135);
-//            make.right.equalTo(self.view).offset(-160);
-//            
-//        }];
-//
-//    }
+
     
 }
 
@@ -680,45 +652,6 @@
     
 }
 
-// MARK:-弹框
-//-(void)alertViewVC
-//{
-//    // 什么也没有输入,弹框提示
-//    if ([self.UserText.text isEqualToString:@""] && [self.passWord.text isEqualToString:@""]) {
-//        
-//#warning 如有需要适配ios7
-//        
-//        [self AlertViewWith:@"http://ios.gaokaoq.com" message:@"手机号或邮箱不能为空" actionTitle:@"好"];
-//        
-//        return;
-//        
-//    }else if ([self.UserText.text isEqualToString:@""] && self.passWord.text != nil){
-//        
-//        [self AlertViewWith:@"http://ios.gaokaoq.com" message:@"手机号或邮箱不能为空" actionTitle:@"好"];
-//        
-//        return;
-//        
-//    }else if ([self IsPnone:self.UserText.text] == NO && [self IsMail:self.UserText.text] == NO){
-//        
-//        
-//        [self AlertViewWith:@"http://ios.gaokaoq.com" message:@"手机号码或邮箱格式不正确" actionTitle:@"好"];
-//        return;
-//        
-//    }else if (self.UserText.text != nil && [self.passWord.text isEqualToString:@""]){
-//        
-//        [self AlertViewWith:@"http://ios.gaokaoq.com" message:@"密码不能为空" actionTitle:@"好"];
-//        
-//        return;
-//        
-//    }
-//    
-//
-//
-//
-//
-//}
-
-
 -(void)seePasswordClick:(UIButton *)seePassword
 {
 
@@ -778,14 +711,6 @@
     dispatch_resume(_timer);
 }
 
-#warning 学生登录点击
-//-(void)stduentLoginClick:(UIButton *)stduentLogin
-//{
-//
-//
-//
-//
-//}
 
 // MARK:-手机号判断
 -(BOOL)IsPnone:(NSString *)phone
@@ -802,29 +727,6 @@
     NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
     return [emailTest evaluateWithObject:mail];
 }
-
-// MARK:-封装弹框
-//-(void)AlertViewWith:(NSString *)alertTitle message:(NSString *)message actionTitle:(NSString *)actionTitle
-//{
-//    UIAlertController *alert = [UIAlertController alertControllerWithTitle:alertTitle message:message preferredStyle:UIAlertControllerStyleAlert];
-//    
-//    [alert addAction: [UIAlertAction actionWithTitle:actionTitle style:UIAlertActionStyleCancel handler:nil]];
-//    
-//    [self presentViewController:alert animated:YES completion:nil];
-//
-//}
-
-// MARK:-提示账号或密码不正确的弹框封装
-//-(void)IsfalsePasswordWithUser
-//{
-//    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"您输入的账号或密码不正确" preferredStyle:UIAlertControllerStyleAlert];
-//    
-//    [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:nil]];
-//    
-//    [self presentViewController:alert animated:YES completion:nil];
-//  
-//
-//}
 
 -(void)regisiterBtnClick:(UIButton *)regisiterBtn
 {

@@ -18,6 +18,6 @@
 
 - (IBAction)totalBtn:(id)sender;
 
-@property(nonatomic,strong) CollegeYinxiangModel *model;
+@property (nonatomic ,copy) NSDictionary *dictModel;
 
 @end

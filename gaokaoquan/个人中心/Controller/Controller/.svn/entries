@@ -1,14 +1,14 @@
 10
 
 dir
-74
+79
 svn://jingru@47.90.56.31:3690/dev_ios/trunk/gaokaoquan/gaokaoquan/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83/Controller/Controller
 svn://jingru@47.90.56.31:3690/dev_ios
 
 
 
-2016-09-26T05:14:42.561150Z
-65
+2016-09-29T03:31:46.475452Z
+79
 jiayue
 
 
@@ -570,40 +570,6 @@ jiayue
 
 3345
 
-JYMyGoldControllerViewController.m
-file
-
-
-
-
-2016-09-13T01:51:49.000000Z
-b537c0a0308a3cf03c1b3b30ac1bae9b
-2016-09-12T13:57:11.798883Z
-11
-jiayue
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4925
-
 JYTutorLnviteViewController.m
 file
 
@@ -637,6 +603,40 @@ jiayue
 
 
 3830
+
+JYMyGoldControllerViewController.m
+file
+
+
+
+
+2016-09-13T01:51:49.000000Z
+b537c0a0308a3cf03c1b3b30ac1bae9b
+2016-09-12T13:57:11.798883Z
+11
+jiayue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4925
 
 JYTutorMyExpViewController.m
 file
@@ -672,40 +672,6 @@ jiayue
 
 5057
 
-JYLnviteViewController.m
-file
-
-
-
-
-2016-09-17T06:59:57.000000Z
-f72908a7b0570368809ce7b078799139
-2016-09-17T03:32:17.268072Z
-24
-jiayue
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3824
-
 JYTutorAppDetailViewController.m
 file
 
@@ -739,6 +705,40 @@ jiayue
 
 
 4581
+
+JYLnviteViewController.m
+file
+
+
+
+
+2016-09-17T06:59:57.000000Z
+f72908a7b0570368809ce7b078799139
+2016-09-17T03:32:17.268072Z
+24
+jiayue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3824
 
 JYMyMessageTableViewController.m
 file
@@ -1154,10 +1154,10 @@ file
 
 
 
-2016-09-26T05:15:00.000000Z
-dbd8bab0b1b79cb76d134de87fdcef19
-2016-09-26T05:14:42.561150Z
-65
+2016-09-29T03:36:48.000000Z
+ee65e81ed4f1d38b916fd501ee86189b
+2016-09-29T03:31:46.475452Z
+79
 jiayue
 
 
@@ -1180,7 +1180,7 @@ jiayue
 
 
 
-27397
+23872
 
 JYServiceCenterViewController.h
 file
@@ -1290,10 +1290,10 @@ file
 
 
 
-2016-09-23T12:14:47.000000Z
-3d57d82e72ab186f351f8dec22ab5c5b
-2016-09-23T12:14:29.151643Z
-61
+2016-09-29T03:36:48.000000Z
+eb4f2f8e3e5af4bdde9225f99f1e4fbe
+2016-09-29T03:31:46.475452Z
+79
 jiayue
 
 
@@ -1316,7 +1316,7 @@ jiayue
 
 
 
-7901
+5952
 
 JYStudentCenterTableViewController.m
 file

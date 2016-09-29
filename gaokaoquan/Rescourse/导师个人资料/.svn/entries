@@ -1,7 +1,7 @@
 10
 
 dir
-74
+79
 svn://jingru@47.90.56.31:3690/dev_ios/trunk/gaokaoquan/gaokaoquan/Rescourse/%E5%AF%BC%E5%B8%88%E4%B8%AA%E4%BA%BA%E8%B5%84%E6%96%99
 svn://jingru@47.90.56.31:3690/dev_ios
 
@@ -162,40 +162,6 @@ has-props
 
 2633
 
-xiugaimima@2x.png
-file
-
-
-
-
-2016-09-14T01:44:34.000000Z
-c2cebae30725cb6e7392973dad6ad462
-2016-09-13T14:24:23.923002Z
-17
-jiayue
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2083
-
 圆角矩形-3_1@2x.png
 file
 
@@ -230,14 +196,14 @@ has-props
 
 1008
 
-xiugaimima@3x.png
+xiugaimima@2x.png
 file
 
 
 
 
 2016-09-14T01:44:34.000000Z
-5f5d7072f7c5830a6fb25a5c748cc513
+c2cebae30725cb6e7392973dad6ad462
 2016-09-13T14:24:23.923002Z
 17
 jiayue
@@ -262,7 +228,7 @@ has-props
 
 
 
-2793
+2083
 
 圆角矩形-3_1@3x.png
 file
@@ -298,16 +264,16 @@ has-props
 
 1042
 
-fangkuang-xuanzhong_1@2x.png
+xiugaimima@3x.png
 file
 
 
 
 
-2016-09-14T05:29:14.000000Z
-b9bf2b84d4f38e5d9358fa5c3b9608c2
-2016-09-14T04:22:48.211973Z
-20
+2016-09-14T01:44:34.000000Z
+5f5d7072f7c5830a6fb25a5c748cc513
+2016-09-13T14:24:23.923002Z
+17
 jiayue
 has-props
 
@@ -330,7 +296,7 @@ has-props
 
 
 
-1243
+2793
 
 意见反馈_1@2x.png
 file
@@ -366,14 +332,14 @@ has-props
 
 1599
 
-fangkuang-xuanzhong_1@3x.png
+fangkuang-xuanzhong_1@2x.png
 file
 
 
 
 
 2016-09-14T05:29:14.000000Z
-8d9b1fc634d40971252660604a3760f7
+b9bf2b84d4f38e5d9358fa5c3b9608c2
 2016-09-14T04:22:48.211973Z
 20
 jiayue
@@ -398,7 +364,7 @@ has-props
 
 
 
-1398
+1243
 
 意见反馈_1@3x.png
 file
@@ -434,6 +400,40 @@ has-props
 
 1793
 
+fangkuang-xuanzhong_1@3x.png
+file
+
+
+
+
+2016-09-14T05:29:14.000000Z
+8d9b1fc634d40971252660604a3760f7
+2016-09-14T04:22:48.211973Z
+20
+jiayue
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1398
+
 qrcode_app.png
 file
 
@@ -468,40 +468,6 @@ has-props
 
 19761
 
-圆角矩形-3@2x.png
-file
-
-
-
-
-2016-09-14T05:29:14.000000Z
-d7eb09d6cdb210d17c1fd6f0e13e2004
-2016-09-14T04:22:48.211973Z
-20
-jiayue
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1008
-
 xiugaimima_1@2x.png
 file
 
@@ -535,6 +501,40 @@ has-props
 
 
 2083
+
+圆角矩形-3@2x.png
+file
+
+
+
+
+2016-09-14T05:29:14.000000Z
+d7eb09d6cdb210d17c1fd6f0e13e2004
+2016-09-14T04:22:48.211973Z
+20
+jiayue
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1008
 
 圆角矩形-3@3x.png
 file

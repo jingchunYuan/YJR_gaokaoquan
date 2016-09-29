@@ -15,11 +15,15 @@
     [super awakeFromNib];
     // Initialization code
 }
--(void)setModel:(CollegeYinxiangModel *)model
+
+-(void)setDictModel:(NSDictionary *)dictModel
 {
-    self.infoLb.text = model.info;
-    self.ctimeLb.text = model.ctime;
+    self.infoLb.text = dictModel[@"info"];
+    self.ctimeLb.text = dictModel[@"ctime"];
+
 }
+
+
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 

@@ -7,37 +7,35 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="KGk-i7-Jjw" customClass="JYSameNumTableViewCell">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="69" id="KGk-i7-Jjw" customClass="JYSameNumTableViewCell">
             <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <frame key="frameInset" width="320" height="69"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fI0-Dc-rm7">
-                        <frame key="frameInset" minX="48" minY="5" width="264" height="14.5"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-08-16 18:15:46" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J27-eR-V10">
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2016-08-16 18:15:46" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J27-eR-V10">
-                        <frame key="frameInset" minX="112" minY="46" width="120" height="15"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b9S-wS-nfy">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3.png" translatesAutoresizingMaskIntoConstraints="NO" id="b9S-wS-nfy"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="哈几个发故去舒感觉是个借口说过会我挂号狗阿合格;还哦玩;和;好玩;个好玩; " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fI0-Dc-rm7">
                         <constraints>
-                            <constraint firstAttribute="width" constant="40" id="31F-Wb-0c4"/>
+                            <constraint firstAttribute="width" constant="220" id="npt-d0-dWv"/>
                         </constraints>
-                    </imageView>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="b9S-wS-nfy" secondAttribute="bottom" id="6cH-KZ-Hbc"/>
-                    <constraint firstItem="b9S-wS-nfy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="wQV-2x-rrP"/>
-                    <constraint firstItem="b9S-wS-nfy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="z4Z-Ha-htd"/>
+                    <constraint firstItem="fI0-Dc-rm7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="0LM-fi-XBB"/>
+                    <constraint firstAttribute="trailing" secondItem="J27-eR-V10" secondAttribute="trailing" constant="5" id="0yf-x0-QeW"/>
+                    <constraint firstItem="fI0-Dc-rm7" firstAttribute="leading" secondItem="b9S-wS-nfy" secondAttribute="trailing" constant="10" id="503-NE-fop"/>
+                    <constraint firstAttribute="bottom" secondItem="J27-eR-V10" secondAttribute="bottom" constant="5" id="O97-cH-gsd"/>
+                    <constraint firstItem="b9S-wS-nfy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="QhO-gs-cCo"/>
+                    <constraint firstItem="b9S-wS-nfy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="gjO-M4-dJg"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
@@ -45,6 +43,10 @@
                 <outlet property="imageview" destination="b9S-wS-nfy" id="aU0-iB-amc"/>
                 <outlet property="time" destination="J27-eR-V10" id="E6F-du-VQT"/>
             </connections>
+            <point key="canvasLocation" x="34" y="41"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="3.png" width="48" height="48"/>
+    </resources>
 </document>

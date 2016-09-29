@@ -1,7 +1,7 @@
 10
 
 dir
-74
+79
 svn://jingru@47.90.56.31:3690/dev_ios/trunk/gaokaoquan/gaokaoquan/Rescourse/912
 svn://jingru@47.90.56.31:3690/dev_ios
 
@@ -400,40 +400,6 @@ has-props
 
 10793
 
-shuangrenzhiyuan11@3x.png
-file
-
-
-
-
-2016-09-13T01:52:05.000000Z
-8b99822befd92eb057376ebe4fca42fe
-2016-09-20T08:32:51.923202Z
-34
-jingru
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-16083
-
 高校查询@2x.png
 file
 
@@ -468,17 +434,17 @@ has-props
 
 6307
 
-高校查询@3x.png
+shuangrenzhiyuan11@3x.png
 file
 
 
 
 
-2016-09-20T06:13:52.000000Z
-d03e1f73d5c2bc42f86f42ef70f8b90f
-2016-09-12T13:57:11.798883Z
-11
-jiayue
+2016-09-13T01:52:05.000000Z
+8b99822befd92eb057376ebe4fca42fe
+2016-09-20T08:32:51.923202Z
+34
+jingru
 has-props
 
 
@@ -500,7 +466,7 @@ has-props
 
 
 
-9293
+16083
 
 职业信息库@2x.png
 file
@@ -535,6 +501,40 @@ has-props
 
 
 4785
+
+高校查询@3x.png
+file
+
+
+
+
+2016-09-20T06:13:52.000000Z
+d03e1f73d5c2bc42f86f42ef70f8b90f
+2016-09-12T13:57:11.798883Z
+11
+jiayue
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9293
 
 根据分数选大学@2x.png
 file

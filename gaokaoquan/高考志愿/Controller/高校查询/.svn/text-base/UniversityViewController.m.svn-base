@@ -17,6 +17,7 @@
 #import "CollegeMajorFirstCell.h"
 #import "TouchPropagatedScrollView.h"
 #import "CollegeDongtaiCell.h"
+#import "CollegeYinxiangView.h"
 
 #define MENU_HEIGHT 40
 #define MENU_BUTTON_WIDTH  80
@@ -24,7 +25,8 @@
 #define MAX_MENU_FONT  15.f
 
 
-@interface UniversityViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface UniversityViewController ()<UITableViewDelegate,UITableViewDataSource,CollegeDongtaiCellDelegate>
+
 
 //@property (weak, nonatomic) IBOutlet UITableView *table;
 @property (nonatomic,strong) NSMutableArray * dataArr;
@@ -103,8 +105,11 @@
     }else if(indexPath.section == 1){
         
         CollegeDongtaiCell *dongCell = [tableView dequeueReusableCellWithIdentifier:@"CollegeDongtaiCell"];
+        dongCell.delegate = self;
+
         if (!dongCell) {
             dongCell = [[CollegeDongtaiCell alloc]init];
+            dongCell.delegate = self;
         }
         dongCell.selectionStyle = UITableViewCellSelectionStyleNone;
         return dongCell;
@@ -153,83 +158,13 @@
 }
 
 
-
-
-//-(UITableViewCell * )tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-//    if (indexPath.section==0) {
-//        if (indexPath.row) {
-//            
-//        CollegeCell * cell = [tableView dequeueReusableCellWithIdentifier:@"CollgeCell"];
-//        if (!cell) {
-//            cell = [[CollegeCell alloc] init];
-//        }
-//        [cell.HeadImage sd_setImageWithURL:[NSURL URLWithString:_university.logo]];
-//        cell.CollegLb.text = _university.name;
-//        cell.selectionStyle = UITableViewCellSelectionStyleNone;
-//        return cell;
-//        }
-//    }else if(indexPath.section == 1){
-//        
-//        if (indexPath.row) {
-//            CollegeDongtaiCell *dongCell = [tableView dequeueReusableCellWithIdentifier:@"CollegeDongtaiCell"];
-//            if (!dongCell) {
-//                dongCell = [[CollegeDongtaiCell alloc]init];
-//            }
-//            dongCell.selectionStyle = UITableViewCellSelectionStyleNone;
-//            return dongCell;
-//
-//        }
-//        
-//    }else if(indexPath.section == 2){
-//        if (indexPath.row) {
-//            CollegeScoreCell * cell = [tableView dequeueReusableCellWithIdentifier:@"CollegeScoreCell"];
-//            if(!cell){
-//                cell = [[CollegeScoreCell alloc] init];
-//            }
-//            [cell setModel:_dataArr[indexPath.section-1][indexPath.row]];
-//            cell.selectionStyle = UITableViewCellSelectionStyleNone;
-//            return cell;
-//        }else{
-//            
-//            CollegeFirstCell * firstCell = [tableView dequeueReusableCellWithIdentifier:@"CollegeFirstCell"];
-//            if (!firstCell) {
-//                firstCell = [[CollegeFirstCell alloc]init];
-//            }
-//            firstCell.selectionStyle = UITableViewCellSelectionStyleNone;
-//            return firstCell;
-//        }
-//        
-//    }
-//    else if(indexPath.section == 3){
-//        if (indexPath.row) {
-//            CollegeMajorCell * cell = [tableView dequeueReusableCellWithIdentifier:@"CollegeMajorCell"];
-//            if(!cell){
-//                cell = [[CollegeMajorCell alloc] init];
-//            }
-//            [cell setModel:_dataArr[indexPath.section-1][indexPath.row]];
-//            cell.selectionStyle = UITableViewCellSelectionStyleNone;
-//            return cell;
-//        }else{
-//            
-//            CollegeMajorFirstCell * firstCell = [tableView dequeueReusableCellWithIdentifier:@"CollegeMajorFirstCell"];
-//            if (!firstCell) {
-//                firstCell = [[CollegeMajorFirstCell alloc]init];
-//            }
-//            firstCell.selectionStyle = UITableViewCellSelectionStyleNone;
-//            return firstCell;
-//        }
-//        
-//    }
-//    return nil;
-//}
-
-
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if (self.dataArr.count) {
         
         if (section == 0 || section == 1) {
             return 1;
         }else {
+            
             return [self.dataArr[section-2] count];
         }
         
@@ -291,5 +226,34 @@
     return 10.0f;
 }
 
+#pragma mark - 
+#pragma mark - CollegeDongtaiCellDelegate
+- (void)buttonClickAction:(CollegeDongtaiCell *)cell btnTag:(int)tag {
+    NSLog(@"UniversityViewController tag = %d", tag);
+    
+    switch (tag) {
+        case 101:
+            //录取
+            
+            break;
+        case 102:
+            //概括
+            
+            break;
+        case 103:
+            //校友印象
+            
+            break;
+        case 104:
+            //校园风光
+            
+            break;
+            
+        default:
+            break;
+    }
+    
+    
+}
 
 @end

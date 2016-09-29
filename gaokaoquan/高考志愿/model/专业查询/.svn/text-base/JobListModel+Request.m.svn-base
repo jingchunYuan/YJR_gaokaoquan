@@ -9,11 +9,13 @@
 #import "JobListModel+Request.h"
 
 @implementation JobListModel (Request)
-+(void)RequestWithUrl:(NSString *)url andPara:(NSDictionary *)para andCallBack:(void (^)(NSArray *, NSError *))callBack{
++(void)RequestWithUrl:(NSString *)url andPara:(NSDictionary *)para andCallBack:(void (^)(NSArray *arr, NSError *err))callBack{
     [BaseRequest getWithURL:url para:para compeleteHandler:^(NSData *data, NSError *err) {
+        
         if (!err) {
+            
             NSDictionary * dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-            //            JSONModelArray * models = [[JSONModelArray alloc]initWithArray:dict[@"data"][@"list"] modelClass:[JobModel class]];
+            
             NSMutableArray * models = [[NSMutableArray alloc]init];
             for (NSDictionary * dic in dict[@"data"][@"list"]) {
                 JobListModel * model = [[JobListModel alloc]init];
@@ -24,7 +26,9 @@
             dispatch_async(dispatch_get_main_queue(), ^{
                 callBack((NSArray *)models,nil);
             });
+            
         }
+        
     }];
 }
 @end

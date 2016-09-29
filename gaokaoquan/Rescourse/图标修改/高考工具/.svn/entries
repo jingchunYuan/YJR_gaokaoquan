@@ -1,7 +1,7 @@
 10
 
 dir
-74
+79
 svn://jingru@47.90.56.31:3690/dev_ios/trunk/gaokaoquan/gaokaoquan/Rescourse/%E5%9B%BE%E6%A0%87%E4%BF%AE%E6%94%B9/%E9%AB%98%E8%80%83%E5%B7%A5%E5%85%B7
 svn://jingru@47.90.56.31:3690/dev_ios
 
@@ -502,40 +502,6 @@ has-props
 
 5674
 
-专业测评报告@2x.png
-file
-
-
-
-
-2016-09-18T03:57:53.000000Z
-ff89e2eec8fa33a4a019248c579374f0
-2016-09-14T01:45:12.955708Z
-18
-jingru
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-5025
-
 同位次考生去向@2x.png
 file
 
@@ -569,6 +535,40 @@ has-props
 
 
 4440
+
+专业测评报告@2x.png
+file
+
+
+
+
+2016-09-18T03:57:53.000000Z
+ff89e2eec8fa33a4a019248c579374f0
+2016-09-14T01:45:12.955708Z
+18
+jingru
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5025
 
 复读指数测试@2x.png
 file
@@ -706,14 +706,14 @@ has-props
 
 7739
 
-模拟志愿填报@2x.png
+专业查询@3x.png
 file
 
 
 
 
 2016-09-18T03:57:53.000000Z
-5ba07a89031bdf4ad957a99eed1d7bbd
+4570eae5fc1d134cc19144671f980c33
 2016-09-14T01:45:12.955708Z
 18
 jingru
@@ -738,7 +738,7 @@ has-props
 
 
 
-4551
+6952
 
 志愿定制报告@2x.png
 file
@@ -774,14 +774,14 @@ has-props
 
 4408
 
-专业查询@3x.png
+模拟志愿填报@2x.png
 file
 
 
 
 
 2016-09-18T03:57:53.000000Z
-4570eae5fc1d134cc19144671f980c33
+5ba07a89031bdf4ad957a99eed1d7bbd
 2016-09-14T01:45:12.955708Z
 18
 jingru
@@ -806,7 +806,7 @@ has-props
 
 
 
-6952
+4551
 
 MBTI职业测试@3x.png
 file

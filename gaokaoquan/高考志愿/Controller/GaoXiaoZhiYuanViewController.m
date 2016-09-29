@@ -167,6 +167,8 @@
         [self.navigationController pushViewController:fenshu  animated:YES];
 
     
+    
+    
     }else if (!indexPath.section && indexPath.item == 3){
     
         NSLog(@"职业查询");
@@ -195,6 +197,7 @@
         
         [self.navigationController pushViewController:college animated:YES];
         
+    
     }
     
     // 第二组

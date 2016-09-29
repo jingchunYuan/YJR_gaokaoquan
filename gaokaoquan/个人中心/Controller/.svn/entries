@@ -1,14 +1,14 @@
 10
 
 dir
-74
+79
 svn://jingru@47.90.56.31:3690/dev_ios/trunk/gaokaoquan/gaokaoquan/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83/Controller
 svn://jingru@47.90.56.31:3690/dev_ios
 
 
 
-2016-09-27T12:51:09.061539Z
-72
+2016-09-29T03:31:46.475452Z
+79
 jiayue
 
 
@@ -60,40 +60,6 @@ jiayue
 
 343
 
-JYPersonalViewController.m
-file
-
-
-
-
-2016-09-20T01:53:45.000000Z
-171753f74b0bca26cb929974eddd30a6
-2016-09-20T01:53:31.738016Z
-30
-jiayue
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-6271
-
 JYTutorMyMessageViewController.h
 file
 
@@ -128,16 +94,16 @@ jiayue
 
 245
 
-JYTextFiled.h
+JYPersonalViewController.m
 file
 
 
 
 
-2016-09-14T05:29:14.000000Z
-1ac073bde81d8c568452ca14877284a4
-2016-09-14T04:22:48.211973Z
-20
+2016-09-20T01:53:45.000000Z
+171753f74b0bca26cb929974eddd30a6
+2016-09-20T01:53:31.738016Z
+30
 jiayue
 
 
@@ -160,7 +126,41 @@ jiayue
 
 
 
-202
+6271
+
+JYstudentSettingViewController.m
+file
+
+
+
+
+2016-09-17T03:32:40.000000Z
+b778fa5935da6dca2b453a427b145b6a
+2016-09-18T03:59:31.059387Z
+27
+jingru
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6403
 
 JYFeedbackViewController.m
 file
@@ -196,17 +196,17 @@ jiayue
 
 4613
 
-JYstudentSettingViewController.m
+JYTextFiled.h
 file
 
 
 
 
-2016-09-17T03:32:40.000000Z
-b778fa5935da6dca2b453a427b145b6a
-2016-09-18T03:59:31.059387Z
-27
-jingru
+2016-09-14T05:29:14.000000Z
+1ac073bde81d8c568452ca14877284a4
+2016-09-14T04:22:48.211973Z
+20
+jiayue
 
 
 
@@ -228,7 +228,7 @@ jingru
 
 
 
-6403
+202
 
 Controller
 dir
@@ -267,43 +267,6 @@ jiayue
 
 2107
 
-JYTutorAnswerViewController.h
-file
-
-
-
-
-2016-09-14T01:44:29.000000Z
-f8765890732d8ae39ce63d2384129c5f
-2016-09-13T14:24:23.923002Z
-17
-jiayue
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-239
-
-Area(地区)
-dir
-
 JYTutorMyMessageViewController.m
 file
 
@@ -337,6 +300,43 @@ jiayue
 
 
 5546
+
+Area(地区)
+dir
+
+JYTutorAnswerViewController.h
+file
+
+
+
+
+2016-09-14T01:44:29.000000Z
+f8765890732d8ae39ce63d2384129c5f
+2016-09-13T14:24:23.923002Z
+17
+jiayue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+239
 
 JYTextFiled.m
 file
@@ -406,6 +406,9 @@ jiayue
 
 249
 
+Single(单数组)
+dir
+
 JYTutorAnswerViewController.m
 file
 
@@ -439,9 +442,6 @@ jiayue
 
 
 8313
-
-Single(单数组)
-dir
 
 AddressPick
 dir

@@ -1,14 +1,14 @@
 10
 
 dir
-74
+79
 svn://jingru@47.90.56.31:3690/dev_ios/trunk/gaokaoquan/gaokaoquan/%E9%AB%98%E8%80%83%E5%BF%97%E6%84%BF/View
 svn://jingru@47.90.56.31:3690/dev_ios
 
 
 
-2016-09-27T13:11:54.831151Z
-74
+2016-09-28T12:30:41.061442Z
+77
 jingru
 
 
@@ -541,6 +541,12 @@ jingru
 
 
 8540
+
+专业查询
+dir
+
+同分考生去向
+dir
 
 JYSchoolFirendView.xib
 file

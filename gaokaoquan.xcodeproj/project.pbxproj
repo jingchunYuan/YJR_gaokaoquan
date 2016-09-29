@@ -92,6 +92,10 @@
 		1894D24C1D8953B700522860 /* wo-de-guanzhu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1894D24A1D8953B700522860 /* wo-de-guanzhu@2x.png */; };
 		1894D24D1D8953B700522860 /* wo-de-guanzhu@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1894D24B1D8953B700522860 /* wo-de-guanzhu@3x.png */; };
 		1894D2511D895E5A00522860 /* JYstudentSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1894D2501D895E5A00522860 /* JYstudentSettingViewController.m */; };
+		189E17CC1D9BB2F700DB77DC /* tuoyuan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189E17C81D9BB2F700DB77DC /* tuoyuan@2x.png */; };
+		189E17CD1D9BB2F700DB77DC /* tuoyuan@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189E17C91D9BB2F700DB77DC /* tuoyuan@3x.png */; };
+		189E17CE1D9BB2F700DB77DC /* tuoyuanxuanzhong@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189E17CA1D9BB2F700DB77DC /* tuoyuanxuanzhong@2x.png */; };
+		189E17CF1D9BB2F700DB77DC /* tuoyuanxuanzhong@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189E17CB1D9BB2F700DB77DC /* tuoyuanxuanzhong@3x.png */; };
 		18B3DF551D86546F00929D0C /* UIBarButtonItem+GKBarButtonltem.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B3DF521D86546F00929D0C /* UIBarButtonItem+GKBarButtonltem.m */; };
 		18B3DF561D86546F00929D0C /* UIView+GKViewFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B3DF541D86546F00929D0C /* UIView+GKViewFrame.m */; };
 		18B3DF591D86547700929D0C /* CALayer+JYLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B3DF581D86547700929D0C /* CALayer+JYLayer.m */; };
@@ -189,6 +193,8 @@
 		18B3E0FC1D88409A00929D0C /* JYTutorAnswerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B3E0FB1D88409A00929D0C /* JYTutorAnswerViewController.m */; };
 		18B3E0FF1D8840D300929D0C /* JYSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B3E0FE1D8840D300929D0C /* JYSettingViewController.m */; };
 		18B3E1021D88419900929D0C /* JYTutorAnswerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B3E1011D88419900929D0C /* JYTutorAnswerModel.m */; };
+		18BB06C11D9B686700139691 /* JYStudyAgainModel2.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BB06C01D9B686700139691 /* JYStudyAgainModel2.m */; };
+		18BB06C21D9B6ED100139691 /* JYGeneralSchoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185EFF321D937D8800CAE928 /* JYGeneralSchoolViewController.m */; };
 		18C265231D926DA100D25C7F /* JYRCCSEDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C265221D926DA100D25C7F /* JYRCCSEDetailViewController.m */; };
 		18C265261D92703A00D25C7F /* zongbangdan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C265241D92703A00D25C7F /* zongbangdan@2x.png */; };
 		18C265271D92703A00D25C7F /* zongbangdan@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C265251D92703A00D25C7F /* zongbangdan@3x.png */; };
@@ -258,8 +264,6 @@
 		223CA53C1D92974000E6ECD1 /* GaoxiaoCollegeModel+Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 223CA53B1D92974000E6ECD1 /* GaoxiaoCollegeModel+Request.m */; };
 		223E25451D961BC10095291E /* AnswerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 223E25431D961BC10095291E /* AnswerViewController.m */; };
 		223E25461D961BC10095291E /* AnswerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 223E25441D961BC10095291E /* AnswerViewController.xib */; };
-		223E25531D962C760095291E /* MajorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 223E25511D962C760095291E /* MajorViewController.m */; };
-		223E25541D962C760095291E /* MajorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 223E25521D962C760095291E /* MajorViewController.xib */; };
 		223E25631D9679ED0095291E /* CollegeMajorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 223E255B1D9679ED0095291E /* CollegeMajorCell.m */; };
 		223E25641D9679ED0095291E /* CollegeMajorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 223E255C1D9679ED0095291E /* CollegeMajorCell.xib */; };
 		223E25651D9679ED0095291E /* CollegeMajorFirstCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 223E255E1D9679ED0095291E /* CollegeMajorFirstCell.m */; };
@@ -370,12 +374,6 @@
 		224BCEFB1D952C3900CBFBAA /* 问答社区@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 224BCEF91D952C3900CBFBAA /* 问答社区@3x.png */; };
 		224BCF021D95317C00CBFBAA /* 问答社区-@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 224BCF001D95317C00CBFBAA /* 问答社区-@2x.png */; };
 		224BCF031D95317C00CBFBAA /* 问答社区-@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 224BCF011D95317C00CBFBAA /* 问答社区-@3x.png */; };
-		224C76E21D9A0A8D00AADE8C /* UniversityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224C76E01D9A0A8D00AADE8C /* UniversityViewController.m */; };
-		224C76E31D9A0A8D00AADE8C /* UniversityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224C76E11D9A0A8D00AADE8C /* UniversityViewController.xib */; };
-		224C76E71D9A0AD100AADE8C /* OccupationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224C76E51D9A0AD100AADE8C /* OccupationController.m */; };
-		224C76E81D9A0AD100AADE8C /* OccupationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224C76E61D9A0AD100AADE8C /* OccupationController.xib */; };
-		224C76EC1D9A39A600AADE8C /* CollegeDongtaiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 224C76EA1D9A39A600AADE8C /* CollegeDongtaiCell.m */; };
-		224C76ED1D9A39A600AADE8C /* CollegeDongtaiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224C76EB1D9A39A600AADE8C /* CollegeDongtaiCell.xib */; };
 		224C76F11D9A7C5400AADE8C /* CollegeYinxiangCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 224C76EF1D9A7C5400AADE8C /* CollegeYinxiangCell.m */; };
 		224C76F21D9A7C5400AADE8C /* CollegeYinxiangCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224C76F01D9A7C5400AADE8C /* CollegeYinxiangCell.xib */; };
 		224C76F51D9A805E00AADE8C /* CollegeYinxiangModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 224C76F41D9A805E00AADE8C /* CollegeYinxiangModel.m */; };
@@ -397,16 +395,42 @@
 		2268C08E1D82B50A004D8E85 /* FengyunTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2268C08C1D82B50A004D8E85 /* FengyunTableViewCell.xib */; };
 		2268C0911D82BC09004D8E85 /* fengyunModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2268C0901D82BC09004D8E85 /* fengyunModel.m */; };
 		2268C0941D82BD6C004D8E85 /* fengyunModel+Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 2268C0931D82BD6C004D8E85 /* fengyunModel+Request.m */; };
-		226B20DA1D98C9EA00513711 /* OccupationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 226B20D81D98C9EA00513711 /* OccupationCell.m */; };
-		226B20DB1D98C9EA00513711 /* OccupationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 226B20D91D98C9EA00513711 /* OccupationCell.xib */; };
-		226B20E01D98CAA200513711 /* JobListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 226B20DD1D98CAA200513711 /* JobListModel.m */; };
-		226B20E11D98CAA200513711 /* JobListModel+Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 226B20DF1D98CAA200513711 /* JobListModel+Request.m */; };
 		226B20E41D98CAE400513711 /* JobModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 226B20E31D98CAE400513711 /* JobModel.m */; };
 		22A392C91D98FFE9000F683E /* 路径@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A392C51D98FFE9000F683E /* 路径@2x.png */; };
 		22A392CA1D98FFE9000F683E /* 路径@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A392C61D98FFE9000F683E /* 路径@3x.png */; };
 		22A392CB1D98FFE9000F683E /* 下拉@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A392C71D98FFE9000F683E /* 下拉@3x.png */; };
 		22A392CC1D98FFE9000F683E /* 下拉@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A392C81D98FFE9000F683E /* 下拉@2x.png */; };
 		22CC64141D703F1400A3F467 /* ManModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CC64131D703F1400A3F467 /* ManModel.m */; };
+		22DBFA841D9BDFAD002085C3 /* UniversityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DBFA821D9BDFAD002085C3 /* UniversityViewController.m */; };
+		22DBFA851D9BDFAD002085C3 /* UniversityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22DBFA831D9BDFAD002085C3 /* UniversityViewController.xib */; };
+		22DBFA891D9BE21A002085C3 /* CollegeDongtaiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DBFA871D9BE21A002085C3 /* CollegeDongtaiCell.m */; };
+		22DBFA8A1D9BE21A002085C3 /* CollegeDongtaiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22DBFA881D9BE21A002085C3 /* CollegeDongtaiCell.xib */; };
+		22DBFA8E1D9BE33D002085C3 /* OccupationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DBFA8C1D9BE33D002085C3 /* OccupationCell.m */; };
+		22DBFA8F1D9BE33D002085C3 /* OccupationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22DBFA8D1D9BE33D002085C3 /* OccupationCell.xib */; };
+		22DBFAB61D9BE560002085C3 /* RABatchChangeEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DBFA981D9BE560002085C3 /* RABatchChangeEntity.m */; };
+		22DBFAB71D9BE560002085C3 /* RABatchChanges.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DBFA9A1D9BE560002085C3 /* RABatchChanges.m */; };
+		22DBFAB81D9BE560002085C3 /* RATableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DBFA9C1D9BE560002085C3 /* RATableView.m */; };
+		22DBFAB91D9BE560002085C3 /* RATreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DBFA9E1D9BE560002085C3 /* RATreeNode.m */; };
+		22DBFABA1D9BE560002085C3 /* RATreeNodeCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DBFAA11D9BE560002085C3 /* RATreeNodeCollectionController.m */; };
+		22DBFABB1D9BE560002085C3 /* RATreeNodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DBFAA31D9BE560002085C3 /* RATreeNodeController.m */; };
+		22DBFABC1D9BE560002085C3 /* RATreeNodeItem+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DBFAA61D9BE560002085C3 /* RATreeNodeItem+Private.m */; };
+		22DBFABD1D9BE560002085C3 /* RATreeNodeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DBFAA81D9BE560002085C3 /* RATreeNodeItem.m */; };
+		22DBFABE1D9BE560002085C3 /* RATreeView+Enums.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DBFAAA1D9BE560002085C3 /* RATreeView+Enums.m */; };
+		22DBFABF1D9BE560002085C3 /* RATreeView+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DBFAAC1D9BE560002085C3 /* RATreeView+Private.m */; };
+		22DBFAC01D9BE560002085C3 /* RATreeView+RATreeNodeCollectionControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DBFAAE1D9BE560002085C3 /* RATreeView+RATreeNodeCollectionControllerDataSource.m */; };
+		22DBFAC11D9BE560002085C3 /* RATreeView+TableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DBFAB01D9BE560002085C3 /* RATreeView+TableViewDataSource.m */; };
+		22DBFAC21D9BE560002085C3 /* RATreeView+TableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DBFAB21D9BE560002085C3 /* RATreeView+TableViewDelegate.m */; };
+		22DBFAC31D9BE560002085C3 /* RATreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DBFAB51D9BE560002085C3 /* RATreeView.m */; };
+		22DBFAC71D9BE5EE002085C3 /* OccupationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DBFAC51D9BE5EE002085C3 /* OccupationController.m */; };
+		22DBFAC81D9BE5EE002085C3 /* OccupationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22DBFAC61D9BE5EE002085C3 /* OccupationController.xib */; };
+		22DBFAD11D9BE8C8002085C3 /* JobListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DBFACA1D9BE8C8002085C3 /* JobListModel.m */; };
+		22DBFAD21D9BE8C8002085C3 /* JobListModel+Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DBFACC1D9BE8C8002085C3 /* JobListModel+Request.m */; };
+		22DBFAD31D9BE8C8002085C3 /* MajorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DBFACE1D9BE8C8002085C3 /* MajorModel.m */; };
+		22DBFAD41D9BE8C8002085C3 /* SubMajorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DBFAD01D9BE8C8002085C3 /* SubMajorModel.m */; };
+		22DBFAD91D9BE9DB002085C3 /* RATableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DBFAD71D9BE9DB002085C3 /* RATableViewCell.m */; };
+		22DBFADA1D9BE9DB002085C3 /* RATableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22DBFAD81D9BE9DB002085C3 /* RATableViewCell.xib */; };
+		22DBFADE1D9BEA26002085C3 /* MajorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DBFADC1D9BEA26002085C3 /* MajorViewController.m */; };
+		22DBFADF1D9BEA26002085C3 /* MajorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22DBFADD1D9BEA26002085C3 /* MajorViewController.xib */; };
 		58F4DE6B1D81435A00723B4B /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F4DE581D81435A00723B4B /* AFHTTPRequestOperation.m */; };
 		58F4DE6C1D81435A00723B4B /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F4DE5A1D81435A00723B4B /* AFHTTPRequestOperationManager.m */; };
 		58F4DE6D1D81435A00723B4B /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F4DE5C1D81435A00723B4B /* AFHTTPSessionManager.m */; };
@@ -439,24 +463,6 @@
 		8419A9031D7E61FD0024E703 /* DongTaiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8419A9011D7E61FD0024E703 /* DongTaiCell.xib */; };
 		8419A9061D7EAA040024E703 /* AddYinXiangView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8419A9051D7EAA040024E703 /* AddYinXiangView.m */; };
 		8419A9081D7EAA170024E703 /* AddYinXiangView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8419A9071D7EAA170024E703 /* AddYinXiangView.xib */; };
-		847AD53A1D9B9BA6006068E1 /* RABatchChangeEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 847AD51C1D9B9BA6006068E1 /* RABatchChangeEntity.m */; };
-		847AD53B1D9B9BA6006068E1 /* RABatchChanges.m in Sources */ = {isa = PBXBuildFile; fileRef = 847AD51E1D9B9BA6006068E1 /* RABatchChanges.m */; };
-		847AD53C1D9B9BA6006068E1 /* RATableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 847AD5201D9B9BA6006068E1 /* RATableView.m */; };
-		847AD53D1D9B9BA6006068E1 /* RATreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 847AD5221D9B9BA6006068E1 /* RATreeNode.m */; };
-		847AD53E1D9B9BA6006068E1 /* RATreeNodeCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847AD5251D9B9BA6006068E1 /* RATreeNodeCollectionController.m */; };
-		847AD53F1D9B9BA6006068E1 /* RATreeNodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847AD5271D9B9BA6006068E1 /* RATreeNodeController.m */; };
-		847AD5401D9B9BA6006068E1 /* RATreeNodeItem+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 847AD52A1D9B9BA6006068E1 /* RATreeNodeItem+Private.m */; };
-		847AD5411D9B9BA6006068E1 /* RATreeNodeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 847AD52C1D9B9BA6006068E1 /* RATreeNodeItem.m */; };
-		847AD5421D9B9BA6006068E1 /* RATreeView+Enums.m in Sources */ = {isa = PBXBuildFile; fileRef = 847AD52E1D9B9BA6006068E1 /* RATreeView+Enums.m */; };
-		847AD5431D9B9BA6006068E1 /* RATreeView+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 847AD5301D9B9BA6006068E1 /* RATreeView+Private.m */; };
-		847AD5441D9B9BA6006068E1 /* RATreeView+RATreeNodeCollectionControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 847AD5321D9B9BA6006068E1 /* RATreeView+RATreeNodeCollectionControllerDataSource.m */; };
-		847AD5451D9B9BA6006068E1 /* RATreeView+TableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 847AD5341D9B9BA6006068E1 /* RATreeView+TableViewDataSource.m */; };
-		847AD5461D9B9BA6006068E1 /* RATreeView+TableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 847AD5361D9B9BA6006068E1 /* RATreeView+TableViewDelegate.m */; };
-		847AD5471D9B9BA6006068E1 /* RATreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 847AD5391D9B9BA6006068E1 /* RATreeView.m */; };
-		847AD54C1D9B9C50006068E1 /* MajorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 847AD54A1D9B9C50006068E1 /* MajorModel.m */; };
-		847AD54D1D9B9C50006068E1 /* SubMajorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 847AD54B1D9B9C50006068E1 /* SubMajorModel.m */; };
-		847AD5531D9B9F48006068E1 /* RATableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 847AD5511D9B9F48006068E1 /* RATableViewCell.m */; };
-		847AD5541D9B9F48006068E1 /* RATableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847AD5521D9B9F48006068E1 /* RATableViewCell.xib */; };
 		847F00541D801AD700B25581 /* AddImpressionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F004C1D801AD700B25581 /* AddImpressionController.m */; };
 		847F00551D801AD700B25581 /* AddImpressionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847F004D1D801AD700B25581 /* AddImpressionController.xib */; };
 		847F00561D801AD700B25581 /* MianfeiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F004F1D801AD700B25581 /* MianfeiViewController.m */; };
@@ -879,6 +885,10 @@
 		1894D24B1D8953B700522860 /* wo-de-guanzhu@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wo-de-guanzhu@3x.png"; sourceTree = "<group>"; };
 		1894D24F1D895E5A00522860 /* JYstudentSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYstudentSettingViewController.h; sourceTree = "<group>"; };
 		1894D2501D895E5A00522860 /* JYstudentSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYstudentSettingViewController.m; sourceTree = "<group>"; };
+		189E17C81D9BB2F700DB77DC /* tuoyuan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tuoyuan@2x.png"; sourceTree = "<group>"; };
+		189E17C91D9BB2F700DB77DC /* tuoyuan@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tuoyuan@3x.png"; sourceTree = "<group>"; };
+		189E17CA1D9BB2F700DB77DC /* tuoyuanxuanzhong@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tuoyuanxuanzhong@2x.png"; sourceTree = "<group>"; };
+		189E17CB1D9BB2F700DB77DC /* tuoyuanxuanzhong@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tuoyuanxuanzhong@3x.png"; sourceTree = "<group>"; };
 		18B3DF511D86546F00929D0C /* UIBarButtonItem+GKBarButtonltem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+GKBarButtonltem.h"; sourceTree = "<group>"; };
 		18B3DF521D86546F00929D0C /* UIBarButtonItem+GKBarButtonltem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+GKBarButtonltem.m"; sourceTree = "<group>"; };
 		18B3DF531D86546F00929D0C /* UIView+GKViewFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GKViewFrame.h"; sourceTree = "<group>"; };
@@ -1058,6 +1068,8 @@
 		18B3E0FE1D8840D300929D0C /* JYSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYSettingViewController.m; sourceTree = "<group>"; };
 		18B3E1001D88419900929D0C /* JYTutorAnswerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYTutorAnswerModel.h; sourceTree = "<group>"; };
 		18B3E1011D88419900929D0C /* JYTutorAnswerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYTutorAnswerModel.m; sourceTree = "<group>"; };
+		18BB06BF1D9B686700139691 /* JYStudyAgainModel2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYStudyAgainModel2.h; sourceTree = "<group>"; };
+		18BB06C01D9B686700139691 /* JYStudyAgainModel2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYStudyAgainModel2.m; sourceTree = "<group>"; };
 		18C265211D926DA100D25C7F /* JYRCCSEDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYRCCSEDetailViewController.h; sourceTree = "<group>"; };
 		18C265221D926DA100D25C7F /* JYRCCSEDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYRCCSEDetailViewController.m; sourceTree = "<group>"; };
 		18C265241D92703A00D25C7F /* zongbangdan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zongbangdan@2x.png"; sourceTree = "<group>"; };
@@ -1165,9 +1177,6 @@
 		223E25421D961BC10095291E /* AnswerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerViewController.h; sourceTree = "<group>"; };
 		223E25431D961BC10095291E /* AnswerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerViewController.m; sourceTree = "<group>"; };
 		223E25441D961BC10095291E /* AnswerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnswerViewController.xib; sourceTree = "<group>"; };
-		223E25501D962C760095291E /* MajorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MajorViewController.h; sourceTree = "<group>"; };
-		223E25511D962C760095291E /* MajorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MajorViewController.m; sourceTree = "<group>"; };
-		223E25521D962C760095291E /* MajorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MajorViewController.xib; sourceTree = "<group>"; };
 		223E255A1D9679ED0095291E /* CollegeMajorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollegeMajorCell.h; sourceTree = "<group>"; };
 		223E255B1D9679ED0095291E /* CollegeMajorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollegeMajorCell.m; sourceTree = "<group>"; };
 		223E255C1D9679ED0095291E /* CollegeMajorCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollegeMajorCell.xib; sourceTree = "<group>"; };
@@ -1287,15 +1296,6 @@
 		224BCEF91D952C3900CBFBAA /* 问答社区@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "问答社区@3x.png"; sourceTree = "<group>"; };
 		224BCF001D95317C00CBFBAA /* 问答社区-@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "问答社区-@2x.png"; sourceTree = "<group>"; };
 		224BCF011D95317C00CBFBAA /* 问答社区-@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "问答社区-@3x.png"; sourceTree = "<group>"; };
-		224C76DF1D9A0A8D00AADE8C /* UniversityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UniversityViewController.h; sourceTree = "<group>"; };
-		224C76E01D9A0A8D00AADE8C /* UniversityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UniversityViewController.m; sourceTree = "<group>"; };
-		224C76E11D9A0A8D00AADE8C /* UniversityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UniversityViewController.xib; sourceTree = "<group>"; };
-		224C76E41D9A0AD100AADE8C /* OccupationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OccupationController.h; sourceTree = "<group>"; };
-		224C76E51D9A0AD100AADE8C /* OccupationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OccupationController.m; sourceTree = "<group>"; };
-		224C76E61D9A0AD100AADE8C /* OccupationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OccupationController.xib; sourceTree = "<group>"; };
-		224C76E91D9A39A600AADE8C /* CollegeDongtaiCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollegeDongtaiCell.h; sourceTree = "<group>"; };
-		224C76EA1D9A39A600AADE8C /* CollegeDongtaiCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollegeDongtaiCell.m; sourceTree = "<group>"; };
-		224C76EB1D9A39A600AADE8C /* CollegeDongtaiCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollegeDongtaiCell.xib; sourceTree = "<group>"; };
 		224C76EE1D9A7C5400AADE8C /* CollegeYinxiangCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollegeYinxiangCell.h; sourceTree = "<group>"; };
 		224C76EF1D9A7C5400AADE8C /* CollegeYinxiangCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollegeYinxiangCell.m; sourceTree = "<group>"; };
 		224C76F01D9A7C5400AADE8C /* CollegeYinxiangCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollegeYinxiangCell.xib; sourceTree = "<group>"; };
@@ -1330,13 +1330,6 @@
 		2268C0901D82BC09004D8E85 /* fengyunModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fengyunModel.m; sourceTree = "<group>"; };
 		2268C0921D82BD6C004D8E85 /* fengyunModel+Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "fengyunModel+Request.h"; sourceTree = "<group>"; };
 		2268C0931D82BD6C004D8E85 /* fengyunModel+Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "fengyunModel+Request.m"; sourceTree = "<group>"; };
-		226B20D71D98C9EA00513711 /* OccupationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OccupationCell.h; sourceTree = "<group>"; };
-		226B20D81D98C9EA00513711 /* OccupationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OccupationCell.m; sourceTree = "<group>"; };
-		226B20D91D98C9EA00513711 /* OccupationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OccupationCell.xib; sourceTree = "<group>"; };
-		226B20DC1D98CAA200513711 /* JobListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobListModel.h; sourceTree = "<group>"; };
-		226B20DD1D98CAA200513711 /* JobListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobListModel.m; sourceTree = "<group>"; };
-		226B20DE1D98CAA200513711 /* JobListModel+Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JobListModel+Request.h"; sourceTree = "<group>"; };
-		226B20DF1D98CAA200513711 /* JobListModel+Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JobListModel+Request.m"; sourceTree = "<group>"; };
 		226B20E21D98CAE400513711 /* JobModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JobModel.h; path = ../JobModel.h; sourceTree = "<group>"; };
 		226B20E31D98CAE400513711 /* JobModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JobModel.m; path = ../JobModel.m; sourceTree = "<group>"; };
 		22A392C51D98FFE9000F683E /* 路径@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "路径@2x.png"; sourceTree = "<group>"; };
@@ -1345,6 +1338,63 @@
 		22A392C81D98FFE9000F683E /* 下拉@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "下拉@2x.png"; sourceTree = "<group>"; };
 		22CC64121D703F1400A3F467 /* ManModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManModel.h; sourceTree = "<group>"; };
 		22CC64131D703F1400A3F467 /* ManModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManModel.m; sourceTree = "<group>"; };
+		22DBFA811D9BDFAD002085C3 /* UniversityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UniversityViewController.h; sourceTree = "<group>"; };
+		22DBFA821D9BDFAD002085C3 /* UniversityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UniversityViewController.m; sourceTree = "<group>"; };
+		22DBFA831D9BDFAD002085C3 /* UniversityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UniversityViewController.xib; sourceTree = "<group>"; };
+		22DBFA861D9BE21A002085C3 /* CollegeDongtaiCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollegeDongtaiCell.h; sourceTree = "<group>"; };
+		22DBFA871D9BE21A002085C3 /* CollegeDongtaiCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollegeDongtaiCell.m; sourceTree = "<group>"; };
+		22DBFA881D9BE21A002085C3 /* CollegeDongtaiCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollegeDongtaiCell.xib; sourceTree = "<group>"; };
+		22DBFA8B1D9BE33D002085C3 /* OccupationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OccupationCell.h; sourceTree = "<group>"; };
+		22DBFA8C1D9BE33D002085C3 /* OccupationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OccupationCell.m; sourceTree = "<group>"; };
+		22DBFA8D1D9BE33D002085C3 /* OccupationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OccupationCell.xib; sourceTree = "<group>"; };
+		22DBFA971D9BE560002085C3 /* RABatchChangeEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RABatchChangeEntity.h; sourceTree = "<group>"; };
+		22DBFA981D9BE560002085C3 /* RABatchChangeEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RABatchChangeEntity.m; sourceTree = "<group>"; };
+		22DBFA991D9BE560002085C3 /* RABatchChanges.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RABatchChanges.h; sourceTree = "<group>"; };
+		22DBFA9A1D9BE560002085C3 /* RABatchChanges.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RABatchChanges.m; sourceTree = "<group>"; };
+		22DBFA9B1D9BE560002085C3 /* RATableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RATableView.h; sourceTree = "<group>"; };
+		22DBFA9C1D9BE560002085C3 /* RATableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RATableView.m; sourceTree = "<group>"; };
+		22DBFA9D1D9BE560002085C3 /* RATreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RATreeNode.h; sourceTree = "<group>"; };
+		22DBFA9E1D9BE560002085C3 /* RATreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RATreeNode.m; sourceTree = "<group>"; };
+		22DBFA9F1D9BE560002085C3 /* RATreeNode_ClassExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RATreeNode_ClassExtension.h; sourceTree = "<group>"; };
+		22DBFAA01D9BE560002085C3 /* RATreeNodeCollectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RATreeNodeCollectionController.h; sourceTree = "<group>"; };
+		22DBFAA11D9BE560002085C3 /* RATreeNodeCollectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RATreeNodeCollectionController.m; sourceTree = "<group>"; };
+		22DBFAA21D9BE560002085C3 /* RATreeNodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RATreeNodeController.h; sourceTree = "<group>"; };
+		22DBFAA31D9BE560002085C3 /* RATreeNodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RATreeNodeController.m; sourceTree = "<group>"; };
+		22DBFAA41D9BE560002085C3 /* RATreeNodeItem+ClassExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RATreeNodeItem+ClassExtension.h"; sourceTree = "<group>"; };
+		22DBFAA51D9BE560002085C3 /* RATreeNodeItem+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RATreeNodeItem+Private.h"; sourceTree = "<group>"; };
+		22DBFAA61D9BE560002085C3 /* RATreeNodeItem+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RATreeNodeItem+Private.m"; sourceTree = "<group>"; };
+		22DBFAA71D9BE560002085C3 /* RATreeNodeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RATreeNodeItem.h; sourceTree = "<group>"; };
+		22DBFAA81D9BE560002085C3 /* RATreeNodeItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RATreeNodeItem.m; sourceTree = "<group>"; };
+		22DBFAA91D9BE560002085C3 /* RATreeView+Enums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RATreeView+Enums.h"; sourceTree = "<group>"; };
+		22DBFAAA1D9BE560002085C3 /* RATreeView+Enums.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RATreeView+Enums.m"; sourceTree = "<group>"; };
+		22DBFAAB1D9BE560002085C3 /* RATreeView+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RATreeView+Private.h"; sourceTree = "<group>"; };
+		22DBFAAC1D9BE560002085C3 /* RATreeView+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RATreeView+Private.m"; sourceTree = "<group>"; };
+		22DBFAAD1D9BE560002085C3 /* RATreeView+RATreeNodeCollectionControllerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RATreeView+RATreeNodeCollectionControllerDataSource.h"; sourceTree = "<group>"; };
+		22DBFAAE1D9BE560002085C3 /* RATreeView+RATreeNodeCollectionControllerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RATreeView+RATreeNodeCollectionControllerDataSource.m"; sourceTree = "<group>"; };
+		22DBFAAF1D9BE560002085C3 /* RATreeView+TableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RATreeView+TableViewDataSource.h"; sourceTree = "<group>"; };
+		22DBFAB01D9BE560002085C3 /* RATreeView+TableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RATreeView+TableViewDataSource.m"; sourceTree = "<group>"; };
+		22DBFAB11D9BE560002085C3 /* RATreeView+TableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RATreeView+TableViewDelegate.h"; sourceTree = "<group>"; };
+		22DBFAB21D9BE560002085C3 /* RATreeView+TableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RATreeView+TableViewDelegate.m"; sourceTree = "<group>"; };
+		22DBFAB31D9BE560002085C3 /* RATreeView_ClassExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RATreeView_ClassExtension.h; sourceTree = "<group>"; };
+		22DBFAB41D9BE560002085C3 /* RATreeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RATreeView.h; sourceTree = "<group>"; };
+		22DBFAB51D9BE560002085C3 /* RATreeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RATreeView.m; sourceTree = "<group>"; };
+		22DBFAC41D9BE5EE002085C3 /* OccupationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OccupationController.h; sourceTree = "<group>"; };
+		22DBFAC51D9BE5EE002085C3 /* OccupationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OccupationController.m; sourceTree = "<group>"; };
+		22DBFAC61D9BE5EE002085C3 /* OccupationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OccupationController.xib; sourceTree = "<group>"; };
+		22DBFAC91D9BE8C8002085C3 /* JobListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobListModel.h; sourceTree = "<group>"; };
+		22DBFACA1D9BE8C8002085C3 /* JobListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobListModel.m; sourceTree = "<group>"; };
+		22DBFACB1D9BE8C8002085C3 /* JobListModel+Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JobListModel+Request.h"; sourceTree = "<group>"; };
+		22DBFACC1D9BE8C8002085C3 /* JobListModel+Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JobListModel+Request.m"; sourceTree = "<group>"; };
+		22DBFACD1D9BE8C8002085C3 /* MajorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MajorModel.h; sourceTree = "<group>"; };
+		22DBFACE1D9BE8C8002085C3 /* MajorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MajorModel.m; sourceTree = "<group>"; };
+		22DBFACF1D9BE8C8002085C3 /* SubMajorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubMajorModel.h; sourceTree = "<group>"; };
+		22DBFAD01D9BE8C8002085C3 /* SubMajorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubMajorModel.m; sourceTree = "<group>"; };
+		22DBFAD61D9BE9DB002085C3 /* RATableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RATableViewCell.h; sourceTree = "<group>"; };
+		22DBFAD71D9BE9DB002085C3 /* RATableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RATableViewCell.m; sourceTree = "<group>"; };
+		22DBFAD81D9BE9DB002085C3 /* RATableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RATableViewCell.xib; sourceTree = "<group>"; };
+		22DBFADB1D9BEA26002085C3 /* MajorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MajorViewController.h; sourceTree = "<group>"; };
+		22DBFADC1D9BEA26002085C3 /* MajorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MajorViewController.m; sourceTree = "<group>"; };
+		22DBFADD1D9BEA26002085C3 /* MajorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MajorViewController.xib; sourceTree = "<group>"; };
 		58F4DE571D81435A00723B4B /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		58F4DE581D81435A00723B4B /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		58F4DE591D81435A00723B4B /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -1402,44 +1452,6 @@
 		8419A9041D7EAA040024E703 /* AddYinXiangView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddYinXiangView.h; sourceTree = "<group>"; };
 		8419A9051D7EAA040024E703 /* AddYinXiangView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddYinXiangView.m; sourceTree = "<group>"; };
 		8419A9071D7EAA170024E703 /* AddYinXiangView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddYinXiangView.xib; sourceTree = "<group>"; };
-		847AD51B1D9B9BA6006068E1 /* RABatchChangeEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RABatchChangeEntity.h; sourceTree = "<group>"; };
-		847AD51C1D9B9BA6006068E1 /* RABatchChangeEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RABatchChangeEntity.m; sourceTree = "<group>"; };
-		847AD51D1D9B9BA6006068E1 /* RABatchChanges.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RABatchChanges.h; sourceTree = "<group>"; };
-		847AD51E1D9B9BA6006068E1 /* RABatchChanges.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RABatchChanges.m; sourceTree = "<group>"; };
-		847AD51F1D9B9BA6006068E1 /* RATableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RATableView.h; sourceTree = "<group>"; };
-		847AD5201D9B9BA6006068E1 /* RATableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RATableView.m; sourceTree = "<group>"; };
-		847AD5211D9B9BA6006068E1 /* RATreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RATreeNode.h; sourceTree = "<group>"; };
-		847AD5221D9B9BA6006068E1 /* RATreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RATreeNode.m; sourceTree = "<group>"; };
-		847AD5231D9B9BA6006068E1 /* RATreeNode_ClassExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RATreeNode_ClassExtension.h; sourceTree = "<group>"; };
-		847AD5241D9B9BA6006068E1 /* RATreeNodeCollectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RATreeNodeCollectionController.h; sourceTree = "<group>"; };
-		847AD5251D9B9BA6006068E1 /* RATreeNodeCollectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RATreeNodeCollectionController.m; sourceTree = "<group>"; };
-		847AD5261D9B9BA6006068E1 /* RATreeNodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RATreeNodeController.h; sourceTree = "<group>"; };
-		847AD5271D9B9BA6006068E1 /* RATreeNodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RATreeNodeController.m; sourceTree = "<group>"; };
-		847AD5281D9B9BA6006068E1 /* RATreeNodeItem+ClassExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RATreeNodeItem+ClassExtension.h"; sourceTree = "<group>"; };
-		847AD5291D9B9BA6006068E1 /* RATreeNodeItem+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RATreeNodeItem+Private.h"; sourceTree = "<group>"; };
-		847AD52A1D9B9BA6006068E1 /* RATreeNodeItem+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RATreeNodeItem+Private.m"; sourceTree = "<group>"; };
-		847AD52B1D9B9BA6006068E1 /* RATreeNodeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RATreeNodeItem.h; sourceTree = "<group>"; };
-		847AD52C1D9B9BA6006068E1 /* RATreeNodeItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RATreeNodeItem.m; sourceTree = "<group>"; };
-		847AD52D1D9B9BA6006068E1 /* RATreeView+Enums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RATreeView+Enums.h"; sourceTree = "<group>"; };
-		847AD52E1D9B9BA6006068E1 /* RATreeView+Enums.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RATreeView+Enums.m"; sourceTree = "<group>"; };
-		847AD52F1D9B9BA6006068E1 /* RATreeView+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RATreeView+Private.h"; sourceTree = "<group>"; };
-		847AD5301D9B9BA6006068E1 /* RATreeView+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RATreeView+Private.m"; sourceTree = "<group>"; };
-		847AD5311D9B9BA6006068E1 /* RATreeView+RATreeNodeCollectionControllerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RATreeView+RATreeNodeCollectionControllerDataSource.h"; sourceTree = "<group>"; };
-		847AD5321D9B9BA6006068E1 /* RATreeView+RATreeNodeCollectionControllerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RATreeView+RATreeNodeCollectionControllerDataSource.m"; sourceTree = "<group>"; };
-		847AD5331D9B9BA6006068E1 /* RATreeView+TableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RATreeView+TableViewDataSource.h"; sourceTree = "<group>"; };
-		847AD5341D9B9BA6006068E1 /* RATreeView+TableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RATreeView+TableViewDataSource.m"; sourceTree = "<group>"; };
-		847AD5351D9B9BA6006068E1 /* RATreeView+TableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RATreeView+TableViewDelegate.h"; sourceTree = "<group>"; };
-		847AD5361D9B9BA6006068E1 /* RATreeView+TableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RATreeView+TableViewDelegate.m"; sourceTree = "<group>"; };
-		847AD5371D9B9BA6006068E1 /* RATreeView_ClassExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RATreeView_ClassExtension.h; sourceTree = "<group>"; };
-		847AD5381D9B9BA6006068E1 /* RATreeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RATreeView.h; sourceTree = "<group>"; };
-		847AD5391D9B9BA6006068E1 /* RATreeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RATreeView.m; sourceTree = "<group>"; };
-		847AD5481D9B9C43006068E1 /* SubMajorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubMajorModel.h; sourceTree = "<group>"; };
-		847AD5491D9B9C50006068E1 /* MajorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MajorModel.h; sourceTree = "<group>"; };
-		847AD54A1D9B9C50006068E1 /* MajorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MajorModel.m; sourceTree = "<group>"; };
-		847AD54B1D9B9C50006068E1 /* SubMajorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubMajorModel.m; sourceTree = "<group>"; };
-		847AD5501D9B9F48006068E1 /* RATableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RATableViewCell.h; sourceTree = "<group>"; };
-		847AD5511D9B9F48006068E1 /* RATableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RATableViewCell.m; sourceTree = "<group>"; };
-		847AD5521D9B9F48006068E1 /* RATableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RATableViewCell.xib; sourceTree = "<group>"; };
 		847F004B1D801AD700B25581 /* AddImpressionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddImpressionController.h; sourceTree = "<group>"; };
 		847F004C1D801AD700B25581 /* AddImpressionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddImpressionController.m; sourceTree = "<group>"; };
 		847F004D1D801AD700B25581 /* AddImpressionController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddImpressionController.xib; sourceTree = "<group>"; };
@@ -1998,6 +2010,8 @@
 			children = (
 				185DF13E1D9936D30024ED79 /* JYStudyAgainModel.h */,
 				185DF13F1D9936D30024ED79 /* JYStudyAgainModel.m */,
+				18BB06BF1D9B686700139691 /* JYStudyAgainModel2.h */,
+				18BB06C01D9B686700139691 /* JYStudyAgainModel2.m */,
 				184B058E1D9A0CB500537329 /* JYStudyAnswerModel.h */,
 				184B058F1D9A0CB500537329 /* JYStudyAnswerModel.m */,
 			);
@@ -2725,9 +2739,9 @@
 				224BCEDA1D94C80900CBFBAA /* CollegeFirstCell.h */,
 				224BCEDB1D94C80900CBFBAA /* CollegeFirstCell.m */,
 				224BCEDC1D94C80900CBFBAA /* CollegeFirstCell.xib */,
-				224C76E91D9A39A600AADE8C /* CollegeDongtaiCell.h */,
-				224C76EA1D9A39A600AADE8C /* CollegeDongtaiCell.m */,
-				224C76EB1D9A39A600AADE8C /* CollegeDongtaiCell.xib */,
+				22DBFA861D9BE21A002085C3 /* CollegeDongtaiCell.h */,
+				22DBFA871D9BE21A002085C3 /* CollegeDongtaiCell.m */,
+				22DBFA881D9BE21A002085C3 /* CollegeDongtaiCell.xib */,
 				224C76EE1D9A7C5400AADE8C /* CollegeYinxiangCell.h */,
 				224C76EF1D9A7C5400AADE8C /* CollegeYinxiangCell.m */,
 				224C76F01D9A7C5400AADE8C /* CollegeYinxiangCell.xib */,
@@ -2747,9 +2761,9 @@
 				223CA5061D92195300E6ECD1 /* GaoXiaoSearchViewController.h */,
 				223CA5071D92195300E6ECD1 /* GaoXiaoSearchViewController.m */,
 				223CA5081D92195300E6ECD1 /* GaoXiaoSearchViewController.xib */,
-				224C76DF1D9A0A8D00AADE8C /* UniversityViewController.h */,
-				224C76E01D9A0A8D00AADE8C /* UniversityViewController.m */,
-				224C76E11D9A0A8D00AADE8C /* UniversityViewController.xib */,
+				22DBFA811D9BDFAD002085C3 /* UniversityViewController.h */,
+				22DBFA821D9BDFAD002085C3 /* UniversityViewController.m */,
+				22DBFA831D9BDFAD002085C3 /* UniversityViewController.xib */,
 			);
 			path = "高校查询";
 			sourceTree = "<group>";
@@ -2835,9 +2849,9 @@
 		223E25471D961D100095291E /* 职业查询 */ = {
 			isa = PBXGroup;
 			children = (
-				226B20D71D98C9EA00513711 /* OccupationCell.h */,
-				226B20D81D98C9EA00513711 /* OccupationCell.m */,
-				226B20D91D98C9EA00513711 /* OccupationCell.xib */,
+				22DBFA8B1D9BE33D002085C3 /* OccupationCell.h */,
+				22DBFA8C1D9BE33D002085C3 /* OccupationCell.m */,
+				22DBFA8D1D9BE33D002085C3 /* OccupationCell.xib */,
 			);
 			path = "职业查询";
 			sourceTree = "<group>";
@@ -2845,9 +2859,9 @@
 		223E25481D961D160095291E /* 职业查询 */ = {
 			isa = PBXGroup;
 			children = (
-				224C76E41D9A0AD100AADE8C /* OccupationController.h */,
-				224C76E51D9A0AD100AADE8C /* OccupationController.m */,
-				224C76E61D9A0AD100AADE8C /* OccupationController.xib */,
+				22DBFAC41D9BE5EE002085C3 /* OccupationController.h */,
+				22DBFAC51D9BE5EE002085C3 /* OccupationController.m */,
+				22DBFAC61D9BE5EE002085C3 /* OccupationController.xib */,
 			);
 			path = "职业查询";
 			sourceTree = "<group>";
@@ -2864,9 +2878,9 @@
 		223E254B1D961FB40095291E /* 专业查询 */ = {
 			isa = PBXGroup;
 			children = (
-				223E25501D962C760095291E /* MajorViewController.h */,
-				223E25511D962C760095291E /* MajorViewController.m */,
-				223E25521D962C760095291E /* MajorViewController.xib */,
+				22DBFADB1D9BEA26002085C3 /* MajorViewController.h */,
+				22DBFADC1D9BEA26002085C3 /* MajorViewController.m */,
+				22DBFADD1D9BEA26002085C3 /* MajorViewController.xib */,
 			);
 			path = "专业查询";
 			sourceTree = "<group>";
@@ -2874,14 +2888,14 @@
 		223E254C1D961FBB0095291E /* 专业查询 */ = {
 			isa = PBXGroup;
 			children = (
-				847AD5491D9B9C50006068E1 /* MajorModel.h */,
-				847AD54A1D9B9C50006068E1 /* MajorModel.m */,
-				847AD54B1D9B9C50006068E1 /* SubMajorModel.m */,
-				847AD5481D9B9C43006068E1 /* SubMajorModel.h */,
-				226B20DC1D98CAA200513711 /* JobListModel.h */,
-				226B20DD1D98CAA200513711 /* JobListModel.m */,
-				226B20DE1D98CAA200513711 /* JobListModel+Request.h */,
-				226B20DF1D98CAA200513711 /* JobListModel+Request.m */,
+				22DBFACD1D9BE8C8002085C3 /* MajorModel.h */,
+				22DBFACE1D9BE8C8002085C3 /* MajorModel.m */,
+				22DBFACF1D9BE8C8002085C3 /* SubMajorModel.h */,
+				22DBFAD01D9BE8C8002085C3 /* SubMajorModel.m */,
+				22DBFAC91D9BE8C8002085C3 /* JobListModel.h */,
+				22DBFACA1D9BE8C8002085C3 /* JobListModel.m */,
+				22DBFACB1D9BE8C8002085C3 /* JobListModel+Request.h */,
+				22DBFACC1D9BE8C8002085C3 /* JobListModel+Request.m */,
 			);
 			path = "专业查询";
 			sourceTree = "<group>";
@@ -2912,6 +2926,10 @@
 		2249D33D1D87DD4400813C72 /* 高校查询小图标 */ = {
 			isa = PBXGroup;
 			children = (
+				189E17C81D9BB2F700DB77DC /* tuoyuan@2x.png */,
+				189E17C91D9BB2F700DB77DC /* tuoyuan@3x.png */,
+				189E17CA1D9BB2F700DB77DC /* tuoyuanxuanzhong@2x.png */,
+				189E17CB1D9BB2F700DB77DC /* tuoyuanxuanzhong@3x.png */,
 				18C265341D92707600D25C7F /* dulixueyuan@2x.png */,
 				18C265351D92707600D25C7F /* dulixueyuan@3x.png */,
 				18C265301D92707100D25C7F /* yibandaxue@2x.png */,
@@ -3043,6 +3061,62 @@
 				224C76FF1D9AA5DF00AADE8C /* JYSameNumViewController.m */,
 			);
 			name = "同分考生去向";
+			sourceTree = "<group>";
+		};
+		22DBFA951D9BE560002085C3 /* RATreeView */ = {
+			isa = PBXGroup;
+			children = (
+				22DBFA961D9BE560002085C3 /* Private Files */,
+				22DBFAB41D9BE560002085C3 /* RATreeView.h */,
+				22DBFAB51D9BE560002085C3 /* RATreeView.m */,
+			);
+			path = RATreeView;
+			sourceTree = "<group>";
+		};
+		22DBFA961D9BE560002085C3 /* Private Files */ = {
+			isa = PBXGroup;
+			children = (
+				22DBFA971D9BE560002085C3 /* RABatchChangeEntity.h */,
+				22DBFA981D9BE560002085C3 /* RABatchChangeEntity.m */,
+				22DBFA991D9BE560002085C3 /* RABatchChanges.h */,
+				22DBFA9A1D9BE560002085C3 /* RABatchChanges.m */,
+				22DBFA9B1D9BE560002085C3 /* RATableView.h */,
+				22DBFA9C1D9BE560002085C3 /* RATableView.m */,
+				22DBFA9D1D9BE560002085C3 /* RATreeNode.h */,
+				22DBFA9E1D9BE560002085C3 /* RATreeNode.m */,
+				22DBFA9F1D9BE560002085C3 /* RATreeNode_ClassExtension.h */,
+				22DBFAA01D9BE560002085C3 /* RATreeNodeCollectionController.h */,
+				22DBFAA11D9BE560002085C3 /* RATreeNodeCollectionController.m */,
+				22DBFAA21D9BE560002085C3 /* RATreeNodeController.h */,
+				22DBFAA31D9BE560002085C3 /* RATreeNodeController.m */,
+				22DBFAA41D9BE560002085C3 /* RATreeNodeItem+ClassExtension.h */,
+				22DBFAA51D9BE560002085C3 /* RATreeNodeItem+Private.h */,
+				22DBFAA61D9BE560002085C3 /* RATreeNodeItem+Private.m */,
+				22DBFAA71D9BE560002085C3 /* RATreeNodeItem.h */,
+				22DBFAA81D9BE560002085C3 /* RATreeNodeItem.m */,
+				22DBFAA91D9BE560002085C3 /* RATreeView+Enums.h */,
+				22DBFAAA1D9BE560002085C3 /* RATreeView+Enums.m */,
+				22DBFAAB1D9BE560002085C3 /* RATreeView+Private.h */,
+				22DBFAAC1D9BE560002085C3 /* RATreeView+Private.m */,
+				22DBFAAD1D9BE560002085C3 /* RATreeView+RATreeNodeCollectionControllerDataSource.h */,
+				22DBFAAE1D9BE560002085C3 /* RATreeView+RATreeNodeCollectionControllerDataSource.m */,
+				22DBFAAF1D9BE560002085C3 /* RATreeView+TableViewDataSource.h */,
+				22DBFAB01D9BE560002085C3 /* RATreeView+TableViewDataSource.m */,
+				22DBFAB11D9BE560002085C3 /* RATreeView+TableViewDelegate.h */,
+				22DBFAB21D9BE560002085C3 /* RATreeView+TableViewDelegate.m */,
+				22DBFAB31D9BE560002085C3 /* RATreeView_ClassExtension.h */,
+			);
+			path = "Private Files";
+			sourceTree = "<group>";
+		};
+		22DBFAD51D9BE9BA002085C3 /* 专业查询 */ = {
+			isa = PBXGroup;
+			children = (
+				22DBFAD61D9BE9DB002085C3 /* RATableViewCell.h */,
+				22DBFAD71D9BE9DB002085C3 /* RATableViewCell.m */,
+				22DBFAD81D9BE9DB002085C3 /* RATableViewCell.xib */,
+			);
+			path = "专业查询";
 			sourceTree = "<group>";
 		};
 		58F4DE561D81435A00723B4B /* AFNetworking */ = {
@@ -3344,7 +3418,7 @@
 		735370811D6EE0C200CDD8A5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				847AD54F1D9B9F48006068E1 /* 专业查询 */,
+				22DBFAD51D9BE9BA002085C3 /* 专业查询 */,
 				2245C94C1D9B5D1900433D4C /* 同分考生去向 */,
 				2228B94D1D9377E20078B6DE /* 高校查询 */,
 				18E32E581D99162F00F8EFF5 /* MBTI */,
@@ -3413,62 +3487,6 @@
 				840B0F011D71421F007E6B01 /* SGFocusImageFrame.m */,
 			);
 			path = SGFocusImageFrame;
-			sourceTree = "<group>";
-		};
-		847AD5191D9B9BA6006068E1 /* RATreeView */ = {
-			isa = PBXGroup;
-			children = (
-				847AD51A1D9B9BA6006068E1 /* Private Files */,
-				847AD5381D9B9BA6006068E1 /* RATreeView.h */,
-				847AD5391D9B9BA6006068E1 /* RATreeView.m */,
-			);
-			path = RATreeView;
-			sourceTree = "<group>";
-		};
-		847AD51A1D9B9BA6006068E1 /* Private Files */ = {
-			isa = PBXGroup;
-			children = (
-				847AD51B1D9B9BA6006068E1 /* RABatchChangeEntity.h */,
-				847AD51C1D9B9BA6006068E1 /* RABatchChangeEntity.m */,
-				847AD51D1D9B9BA6006068E1 /* RABatchChanges.h */,
-				847AD51E1D9B9BA6006068E1 /* RABatchChanges.m */,
-				847AD51F1D9B9BA6006068E1 /* RATableView.h */,
-				847AD5201D9B9BA6006068E1 /* RATableView.m */,
-				847AD5211D9B9BA6006068E1 /* RATreeNode.h */,
-				847AD5221D9B9BA6006068E1 /* RATreeNode.m */,
-				847AD5231D9B9BA6006068E1 /* RATreeNode_ClassExtension.h */,
-				847AD5241D9B9BA6006068E1 /* RATreeNodeCollectionController.h */,
-				847AD5251D9B9BA6006068E1 /* RATreeNodeCollectionController.m */,
-				847AD5261D9B9BA6006068E1 /* RATreeNodeController.h */,
-				847AD5271D9B9BA6006068E1 /* RATreeNodeController.m */,
-				847AD5281D9B9BA6006068E1 /* RATreeNodeItem+ClassExtension.h */,
-				847AD5291D9B9BA6006068E1 /* RATreeNodeItem+Private.h */,
-				847AD52A1D9B9BA6006068E1 /* RATreeNodeItem+Private.m */,
-				847AD52B1D9B9BA6006068E1 /* RATreeNodeItem.h */,
-				847AD52C1D9B9BA6006068E1 /* RATreeNodeItem.m */,
-				847AD52D1D9B9BA6006068E1 /* RATreeView+Enums.h */,
-				847AD52E1D9B9BA6006068E1 /* RATreeView+Enums.m */,
-				847AD52F1D9B9BA6006068E1 /* RATreeView+Private.h */,
-				847AD5301D9B9BA6006068E1 /* RATreeView+Private.m */,
-				847AD5311D9B9BA6006068E1 /* RATreeView+RATreeNodeCollectionControllerDataSource.h */,
-				847AD5321D9B9BA6006068E1 /* RATreeView+RATreeNodeCollectionControllerDataSource.m */,
-				847AD5331D9B9BA6006068E1 /* RATreeView+TableViewDataSource.h */,
-				847AD5341D9B9BA6006068E1 /* RATreeView+TableViewDataSource.m */,
-				847AD5351D9B9BA6006068E1 /* RATreeView+TableViewDelegate.h */,
-				847AD5361D9B9BA6006068E1 /* RATreeView+TableViewDelegate.m */,
-				847AD5371D9B9BA6006068E1 /* RATreeView_ClassExtension.h */,
-			);
-			path = "Private Files";
-			sourceTree = "<group>";
-		};
-		847AD54F1D9B9F48006068E1 /* 专业查询 */ = {
-			isa = PBXGroup;
-			children = (
-				847AD5501D9B9F48006068E1 /* RATableViewCell.h */,
-				847AD5511D9B9F48006068E1 /* RATableViewCell.m */,
-				847AD5521D9B9F48006068E1 /* RATableViewCell.xib */,
-			);
-			path = "专业查询";
 			sourceTree = "<group>";
 		};
 		8498D8171D868CDF00169695 /* 导师个人中心 */ = {
@@ -4204,7 +4222,7 @@
 		FCABFC391D6F420C005199C7 /* ThirdLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				847AD5191D9B9BA6006068E1 /* RATreeView */,
+				22DBFA951D9BE560002085C3 /* RATreeView */,
 				18B3DF5A1D8654A200929D0C /* MJExtension */,
 				58F4DE561D81435A00723B4B /* AFNetworking */,
 				FC0486DA1D7C39530052EDB6 /* RTLabel */,
@@ -4339,6 +4357,7 @@
 				2249D3681D87DD4400813C72 /* 高校查询-选中状态三角形@2x.png in Resources */,
 				8498D96B1D868CDF00169695 /* 矩形-6@2x.png in Resources */,
 				2249D3F81D880D7E00813C72 /* 复读指数测试@3x.png in Resources */,
+				189E17CF1D9BB2F700DB77DC /* tuoyuanxuanzhong@3x.png in Resources */,
 				2249D4091D880D7E00813C72 /* 模拟志愿填报@2x.png in Resources */,
 				18B3E0571D8663A100929D0C /* personal.plist in Resources */,
 				8498D95D1D868CDF00169695 /* 高考侠-@2x.png in Resources */,
@@ -4399,6 +4418,7 @@
 				8498D8CA1D868CDF00169695 /* qitashezhi@2x.png in Resources */,
 				8498D8D31D868CDF00169695 /* wodeyuyue@3x.png in Resources */,
 				8498D8EF1D868CDF00169695 /* baikuang@3x.png in Resources */,
+				189E17CE1D9BB2F700DB77DC /* tuoyuanxuanzhong@2x.png in Resources */,
 				8498D92E1D868CDF00169695 /* yaoqinghuida@3x.png in Resources */,
 				184B37FB1D88EEA600B094AC /* 意见反馈_1@3x.png in Resources */,
 				8498D9391D868CDF00169695 /* tidaowode.png in Resources */,
@@ -4406,6 +4426,7 @@
 				8498D8E11D868CDF00169695 /* 忘记密码@3x.png in Resources */,
 				224BCEFA1D952C3900CBFBAA /* 问答社区@2x.png in Resources */,
 				8498D92A1D868CDF00169695 /* banner_3@3x.png in Resources */,
+				189E17CD1D9BB2F700DB77DC /* tuoyuan@3x.png in Resources */,
 				8498D8E31D868CDF00169695 /* 框@3x.png in Resources */,
 				2245C95A1D9B715D00433D4C /* jiantou-xiao@3x.png in Resources */,
 				2249D45E1D880D8600813C72 /* 搜索@2x.png in Resources */,
@@ -4414,6 +4435,7 @@
 				223CA50F1D92195300E6ECD1 /* GaoXiaoSearchViewController.xib in Resources */,
 				18C265361D92707600D25C7F /* dulixueyuan@2x.png in Resources */,
 				8498D91F1D868CDF00169695 /* zan@2x.png in Resources */,
+				22DBFA8A1D9BE21A002085C3 /* CollegeDongtaiCell.xib in Resources */,
 				2249D4031D880D7E00813C72 /* 根据专业查对口职业@2x.png in Resources */,
 				8498D90A1D868CDF00169695 /* gerenzhongxin-gerenziliao@2x.png in Resources */,
 				8498D9131D868CDF00169695 /* 风云榜赞@3x(1).png in Resources */,
@@ -4452,8 +4474,8 @@
 				8498D9461D868CDF00169695 /* 我的订单@2x.png in Resources */,
 				18C2652E1D92706A00D25C7F /* zhongdiandaxue@2x.png in Resources */,
 				18C2652A1D92706300D25C7F /* zhuankexuexiao@2x.png in Resources */,
-				223E25541D962C760095291E /* MajorViewController.xib in Resources */,
 				8498D8FA1D868CDF00169695 /* nan@2x.png in Resources */,
+				22DBFADF1D9BEA26002085C3 /* MajorViewController.xib in Resources */,
 				2249D32B1D879EA200813C72 /* yinxiang@2x.png in Resources */,
 				2228B94B1D9376150078B6DE /* JYSchoolFriendTableViewCell.xib in Resources */,
 				2249D33C1D87AB2C00813C72 /* hot@3x.png in Resources */,
@@ -4486,6 +4508,7 @@
 				8498D9371D868CDF00169695 /* wendashequhuida@2x.png in Resources */,
 				223CA5121D92195300E6ECD1 /* WishViewController.xib in Resources */,
 				FC0486EC1D7C39DB0052EDB6 /* YinxiangCell.xib in Resources */,
+				22DBFA8F1D9BE33D002085C3 /* OccupationCell.xib in Resources */,
 				8498D9A41D868F4600169695 /* AskQuestionsController.xib in Resources */,
 				2249D4061D880D7E00813C72 /* 根据分数选大学@3x.png in Resources */,
 				8498D8D51D868CDF00169695 /* wodeziliao@3x.png in Resources */,
@@ -4530,7 +4553,6 @@
 				2245C9581D9B715D00433D4C /* jiantou-da@3x.png in Resources */,
 				2245C9511D9B685000433D4C /* CollegeYinxiangView.xib in Resources */,
 				2249D36F1D87DDE000813C72 /* luqugailvceshi-banner@3x.png in Resources */,
-				224C76E31D9A0A8D00AADE8C /* UniversityViewController.xib in Resources */,
 				1894D2441D89517A00522860 /* guanzhuxuexiao@2x.png in Resources */,
 				1861E27A1D9831D200174BC9 /* JYProvicerScoreTableViewCell.xib in Resources */,
 				1894D2491D89517A00522860 /* w-de-guanzhu@3x.png in Resources */,
@@ -4540,9 +4562,9 @@
 				8498D9201D868CDF00169695 /* zhinengtiaobaoxitong@2x.png in Resources */,
 				8498D92C1D868CDF00169695 /* tianjiadaan@3x.png in Resources */,
 				8498D9081D868CDF00169695 /* fen@2x.png in Resources */,
+				189E17CC1D9BB2F700DB77DC /* tuoyuan@2x.png in Resources */,
 				8498D9441D868CDF00169695 /* 我的私信图标@2x.png in Resources */,
 				1894D24D1D8953B700522860 /* wo-de-guanzhu@3x.png in Resources */,
-				224C76ED1D9A39A600AADE8C /* CollegeDongtaiCell.xib in Resources */,
 				8498D8D71D868CDF00169695 /* yaoqingzhuce@3x.png in Resources */,
 				8498D9121D868CDF00169695 /* 风云榜赞@2x(1).png in Resources */,
 				18E32E5D1D99164900F8EFF5 /* JYMBTIVie.xib in Resources */,
@@ -4563,6 +4585,7 @@
 				8498D8DF1D868CDF00169695 /* 密码锁@3x.png in Resources */,
 				2249D40E1D880D7E00813C72 /* 职业查询@3x.png in Resources */,
 				224BCEFB1D952C3900CBFBAA /* 问答社区@3x.png in Resources */,
+				22DBFAC81D9BE5EE002085C3 /* OccupationController.xib in Resources */,
 				2228B9871D93D3CF0078B6DE /* JYIndependentView.xib in Resources */,
 				2228B9471D9376150078B6DE /* JYRCCSETableViewCell.xib in Resources */,
 				1894D2461D89517A00522860 /* guanzhuzhuanye@2x.png in Resources */,
@@ -4584,7 +4607,6 @@
 				8498D8D41D868CDF00169695 /* wodeziliao@2x.png in Resources */,
 				18C265371D92707600D25C7F /* dulixueyuan@3x.png in Resources */,
 				8498D93B1D868CDF00169695 /* w-de-tongzhi.png in Resources */,
-				224C76E81D9A0AD100AADE8C /* OccupationController.xib in Resources */,
 				8498D8E81D868CDF00169695 /* 第三方－新浪@2x.png in Resources */,
 				2249D3FB1D880D7E00813C72 /* 志愿填报系列课程@2x.png in Resources */,
 				2228B9491D9376150078B6DE /* JYSchoolFirendView.xib in Resources */,
@@ -4630,13 +4652,14 @@
 				8498D9271D868CDF00169695 /* banner_2@2x.png in Resources */,
 				1894D2451D89517A00522860 /* guanzhuxuexiao@3x.png in Resources */,
 				2249D4551D880D8600813C72 /* gaoxiaochaxun-sanjiaoxing-hui@3x.png in Resources */,
-				847AD5541D9B9F48006068E1 /* RATableViewCell.xib in Resources */,
+				22DBFADA1D9BE9DB002085C3 /* RATableViewCell.xib in Resources */,
 				2249D4541D880D8600813C72 /* gaoxiaochaxun-sanjiaoxing-hui@2x.png in Resources */,
 				224101081D86B1FE000053E2 /* shuangrenzhiyuan11@3x.png in Resources */,
 				2268C08E1D82B50A004D8E85 /* FengyunTableViewCell.xib in Resources */,
 				8498D92F1D868CDF00169695 /* dianzan@2x.png in Resources */,
 				8498D9191D868CDF00169695 /* 7@2x.png in Resources */,
 				18B3E0031D8656C600929D0C /* JYMyIndentView.xib in Resources */,
+				22DBFA851D9BDFAD002085C3 /* UniversityViewController.xib in Resources */,
 				18B3DFCA1D86569D00929D0C /* JYTutorCenterTableViewController.storyboard in Resources */,
 				735370611D6ED5A100CDD8A5 /* HomeViewController.xib in Resources */,
 				2249D3F11D880D7E00813C72 /* 分数线查询@2x.png in Resources */,
@@ -4647,7 +4670,6 @@
 				181EA3361D962371009A1CDD /* JYGaoXiaoView.xib in Resources */,
 				2249D32C1D879EA200813C72 /* yinxiang@3x.png in Resources */,
 				18742CA71D954050001E0FCC /* JYView.xib in Resources */,
-				226B20DB1D98C9EA00513711 /* OccupationCell.xib in Resources */,
 				184B37FD1D88EEA600B094AC /* xiugaimima_1@2x.png in Resources */,
 				8498D9381D868CDF00169695 /* wendashequhuida@3x.png in Resources */,
 				184B37FE1D88EEA600B094AC /* xiugaimima_1@3x.png in Resources */,
@@ -4690,6 +4712,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18BB06C21D9B6ED100139691 /* JYGeneralSchoolViewController.m in Sources */,
 				18B3E04D1D8656EE00929D0C /* JYStudentSettingModel.m in Sources */,
 				58F4DE721D81435A00723B4B /* AFURLResponseSerialization.m in Sources */,
 				18C2654A1D928ABC00D25C7F /* JYKongFuModel.m in Sources */,
@@ -4702,28 +4725,28 @@
 				1861E2731D982ACD00174BC9 /* JYProviceScoreView.m in Sources */,
 				8419A8F71D7E60090024E703 /* DongtaiModel+Requesst.m in Sources */,
 				84DC7FBB1D702A7900612E20 /* MJRefreshFooter.m in Sources */,
-				224C76E21D9A0A8D00AADE8C /* UniversityViewController.m in Sources */,
 				84DC7EA91D6EF85900612E20 /* BaseViewController.m in Sources */,
 				FC0486C71D7AEF020052EDB6 /* MASCompositeConstraint.m in Sources */,
 				223CA5111D92195300E6ECD1 /* WishViewController.m in Sources */,
 				FC0486E11D7C39850052EDB6 /* JieshaoView.m in Sources */,
+				22DBFAC71D9BE5EE002085C3 /* OccupationController.m in Sources */,
 				18B3E0491D8656EE00929D0C /* JYMyGoldModel.m in Sources */,
 				1861E2581D96591A00174BC9 /* JYGaoXiaoModel.m in Sources */,
-				226B20E11D98CAA200513711 /* JobListModel+Request.m in Sources */,
 				18B3E0471D8656EE00929D0C /* JYLnviteModel.m in Sources */,
 				FC0486DD1D7C39530052EDB6 /* RTLabel.m in Sources */,
 				84DC7FBE1D702A7900612E20 /* MJRefreshAutoNormalFooter.m in Sources */,
 				58F4DE701D81435A00723B4B /* AFURLConnectionOperation.m in Sources */,
 				FC0486C91D7AEF020052EDB6 /* MASConstraintMaker.m in Sources */,
 				18B3E0511D8656EE00929D0C /* JYTutorCountModel.m in Sources */,
+				22DBFAD11D9BE8C8002085C3 /* JobListModel.m in Sources */,
 				18B3DFBF1D86569D00929D0C /* JYMYCouponViewController.m in Sources */,
-				847AD5471D9B9BA6006068E1 /* RATreeView.m in Sources */,
 				18B3DFB81D86569D00929D0C /* JYForgetPasswordViewController.m in Sources */,
+				22DBFAC31D9BE560002085C3 /* RATreeView.m in Sources */,
 				18B3DF781D8654A200929D0C /* NSObject+MJCoding.m in Sources */,
 				18B3DFC91D86569D00929D0C /* JYTutorCenterTableViewController.m in Sources */,
 				18B3E00E1D8656C600929D0C /* StudentCenterView.m in Sources */,
-				847AD5411D9B9BA6006068E1 /* RATreeNodeItem.m in Sources */,
 				2268C0881D8261B5004D8E85 /* FengyunViewController.m in Sources */,
+				22DBFABD1D9BE560002085C3 /* RATreeNodeItem.m in Sources */,
 				2228B9881D93D3CF0078B6DE /* JYJuniorCollegeTableViewCell.m in Sources */,
 				84DC80951D70370900612E20 /* SDWebImageCompat.m in Sources */,
 				224C77001D9AA5DF00AADE8C /* JYSameNumtableView.m in Sources */,
@@ -4751,15 +4774,15 @@
 				224BCEDF1D94C80900CBFBAA /* CollegeFirstCell.m in Sources */,
 				840B0F121D714B8B007E6B01 /* SGFocusImageItem.m in Sources */,
 				FC0487831D7C592F0052EDB6 /* ImpressionModel.m in Sources */,
-				847AD53B1D9B9BA6006068E1 /* RABatchChanges.m in Sources */,
 				18B3E0431D8656EE00929D0C /* JYCreatTimeModel.m in Sources */,
+				22DBFAB71D9BE560002085C3 /* RABatchChanges.m in Sources */,
 				84DC7FEE1D702A8E00612E20 /* JSONHTTPClient.m in Sources */,
-				847AD5461D9B9BA6006068E1 /* RATreeView+TableViewDelegate.m in Sources */,
 				18B3E04A1D8656EE00929D0C /* JYMYIndentModel.m in Sources */,
+				22DBFAC21D9BE560002085C3 /* RATreeView+TableViewDelegate.m in Sources */,
 				185DF1401D9936D30024ED79 /* JYStudyAgainModel.m in Sources */,
 				84DC80931D70370900612E20 /* NSData+ImageContentType.m in Sources */,
-				847AD5421D9B9BA6006068E1 /* RATreeView+Enums.m in Sources */,
 				847F00561D801AD700B25581 /* MianfeiViewController.m in Sources */,
+				22DBFABE1D9BE560002085C3 /* RATreeView+Enums.m in Sources */,
 				18E32E5B1D99164000F8EFF5 /* JYMBTIVie.m in Sources */,
 				84DC7FCA1D702A7900612E20 /* UIView+MJExtension.m in Sources */,
 				1861E26B1D96A82A00174BC9 /* JYScoreMajorView.m in Sources */,
@@ -4775,11 +4798,11 @@
 				181164FD1D8D2475002EE814 /* JYTutorHDCountModel.m in Sources */,
 				18B3DFBC1D86569D00929D0C /* JYInformationViewController.m in Sources */,
 				84DC7FB91D702A7900612E20 /* MJRefreshBackFooter.m in Sources */,
-				847AD53E1D9B9BA6006068E1 /* RATreeNodeCollectionController.m in Sources */,
 				1861E2791D9831D200174BC9 /* JYProvicerScoreTableViewCell.m in Sources */,
+				22DBFABA1D9BE560002085C3 /* RATreeNodeCollectionController.m in Sources */,
 				1811651C1D8D5882002EE814 /* UIView+ST.m in Sources */,
-				226B20DA1D98C9EA00513711 /* OccupationCell.m in Sources */,
 				223CA5101D92195300E6ECD1 /* GaoXiaoZhiYuanViewController.m in Sources */,
+				22DBFAD21D9BE8C8002085C3 /* JobListModel+Request.m in Sources */,
 				8419A9021D7E61FD0024E703 /* DongTaiCell.m in Sources */,
 				84DC80971D70370900612E20 /* SDWebImageDownloader.m in Sources */,
 				18DB33A61D98ED1C0028A035 /* JYProvicerModel.m in Sources */,
@@ -4817,13 +4840,15 @@
 				224C77031D9AA5DF00AADE8C /* JYSameNumViewController.m in Sources */,
 				84DC7FF11D702A8E00612E20 /* JSONValueTransformer.m in Sources */,
 				84DC80991D70370900612E20 /* SDWebImageManager.m in Sources */,
-				847AD5401D9B9BA6006068E1 /* RATreeNodeItem+Private.m in Sources */,
 				18B3E0521D8656EE00929D0C /* JYTutorinformModel.m in Sources */,
 				FCABFC441D6F420C005199C7 /* Util.m in Sources */,
+				22DBFABC1D9BE560002085C3 /* RATreeNodeItem+Private.m in Sources */,
 				84DC7FF31D702A8E00612E20 /* README.md in Sources */,
 				84DC7FEA1D702A8E00612E20 /* JSONModelClassProperty.m in Sources */,
 				18B3DFCF1D86569D00929D0C /* JYTutorViewController.m in Sources */,
+				22DBFA8E1D9BE33D002085C3 /* OccupationCell.m in Sources */,
 				FC0486CA1D7AEF020052EDB6 /* MASLayoutConstraint.m in Sources */,
+				22DBFADE1D9BEA26002085C3 /* MajorViewController.m in Sources */,
 				184B05901D9A0CB500537329 /* JYStudyAnswerModel.m in Sources */,
 				2268C0941D82BD6C004D8E85 /* fengyunModel+Request.m in Sources */,
 				18B3E0F51D883F6800929D0C /* JYTutorinformHeadView.m in Sources */,
@@ -4853,12 +4878,12 @@
 				1894D2321D894D6100522860 /* JYMYFollowViewController.m in Sources */,
 				84DC80A71D7039AA00612E20 /* KSHttpManager.m in Sources */,
 				8498D9A61D868F4600169695 /* AnswerDetalModel.m in Sources */,
-				847AD53F1D9B9BA6006068E1 /* RATreeNodeController.m in Sources */,
 				73536D491D6EC0F400CDD8A5 /* TabBarController.m in Sources */,
+				22DBFABB1D9BE560002085C3 /* RATreeNodeController.m in Sources */,
 				18B3E0F91D883FF100929D0C /* JYTutorInformTableViewController.m in Sources */,
 				8498D9721D868E3500169695 /* CustomTextField.m in Sources */,
-				847AD53D1D9B9BA6006068E1 /* RATreeNode.m in Sources */,
 				18B3DFB91D86569D00929D0C /* JYGKBaseViewController.m in Sources */,
+				22DBFAB91D9BE560002085C3 /* RATreeNode.m in Sources */,
 				185DF13C1D99356E0024ED79 /* JYStudyAgainViewController.m in Sources */,
 				84DC80021D702AB800612E20 /* ZJContentView.m in Sources */,
 				FCAA0E111D70857000A8A99A /* MBProgressHUD.m in Sources */,
@@ -4872,8 +4897,8 @@
 				18B3DF741D8654A200929D0C /* MJProperty.m in Sources */,
 				223CA5251D9219A000E6ECD1 /* WishBtnModel+Request.m in Sources */,
 				2228B9641D938F9F0078B6DE /* FenshuViewController.m in Sources */,
-				847AD5451D9B9BA6006068E1 /* RATreeView+TableViewDataSource.m in Sources */,
 				223CA5271D9219A000E6ECD1 /* ZhiYuanModel+Request.m in Sources */,
+				22DBFAC11D9BE560002085C3 /* RATreeView+TableViewDataSource.m in Sources */,
 				181164F71D8D1CE2002EE814 /* JYTutorAnswerCountModel.m in Sources */,
 				18B3E0451D8656EE00929D0C /* JYLectureModel.m in Sources */,
 				223E25451D961BC10095291E /* AnswerViewController.m in Sources */,
@@ -4887,15 +4912,14 @@
 				18B3DF561D86546F00929D0C /* UIView+GKViewFrame.m in Sources */,
 				58F4DE6D1D81435A00723B4B /* AFHTTPSessionManager.m in Sources */,
 				18B3E0021D8656C600929D0C /* JYMyIndentView.m in Sources */,
-				847AD53A1D9B9BA6006068E1 /* RABatchChangeEntity.m in Sources */,
 				18B3E0441D8656EE00929D0C /* JYHDModel.m in Sources */,
+				22DBFAB61D9BE560002085C3 /* RABatchChangeEntity.m in Sources */,
 				2228B9461D9376150078B6DE /* JYRCCSETableViewCell.m in Sources */,
 				2228B9401D9376150078B6DE /* JYKongFuTableViewCell.m in Sources */,
 				18B3DF551D86546F00929D0C /* UIBarButtonItem+GKBarButtonltem.m in Sources */,
 				18B3DF761D8654A200929D0C /* MJPropertyType.m in Sources */,
 				84DC7FEB1D702A8E00612E20 /* JSONModelError.m in Sources */,
 				2261CB541D792DB000C0C430 /* TecherModel+Request.m in Sources */,
-				223E25531D962C760095291E /* MajorViewController.m in Sources */,
 				58F4DE731D81435A00723B4B /* AFURLSessionManager.m in Sources */,
 				18B3DFCD1D86569D00929D0C /* JYTutorMyGoldViewController.m in Sources */,
 				1894D2511D895E5A00522860 /* JYstudentSettingViewController.m in Sources */,
@@ -4935,39 +4959,37 @@
 				18B3E0551D8656EE00929D0C /* JYTutorMyGoldModel.m in Sources */,
 				2228B9861D93D3CF0078B6DE /* JYIndependentView.m in Sources */,
 				225F9D561D8E391A00D9729C /* HeaderView.m in Sources */,
-				226B20E01D98CAA200513711 /* JobListModel.m in Sources */,
 				8419A8FA1D7E60AE0024E703 /* DongTaiView.m in Sources */,
 				840B0F021D71421F007E6B01 /* SGFocusImageFrame.m in Sources */,
 				58F4DE711D81435A00723B4B /* AFURLRequestSerialization.m in Sources */,
-				847AD54C1D9B9C50006068E1 /* MajorModel.m in Sources */,
+				22DBFAD31D9BE8C8002085C3 /* MajorModel.m in Sources */,
 				84DC809C1D70370900612E20 /* UIImage+GIF.m in Sources */,
 				18B3E03F1D8656EE00929D0C /* JYAnswerModel.m in Sources */,
 				18B3E04B1D8656EE00929D0C /* JYMyServiceModel.m in Sources */,
 				2228B9421D9376150078B6DE /* JYKongFuView.m in Sources */,
 				8498D9A91D868F4600169695 /* AnswerDetalTopCell.m in Sources */,
 				1861E25B1D96906100174BC9 /* JYScoreViewController.m in Sources */,
-				224C76E71D9A0AD100AADE8C /* OccupationController.m in Sources */,
 				18B3DF7B1D8654A200929D0C /* NSString+MJExtension.m in Sources */,
 				181165171D8D5882002EE814 /* NSCalendar+ST.m in Sources */,
 				1813FE251D8BDED100B937DE /* JYAnswerCountModel.m in Sources */,
 				18DB33B11D9904130028A035 /* JYMBTIModel2.m in Sources */,
 				223CA5041D9218E000E6ECD1 /* WishCell.m in Sources */,
 				8498D9AF1D868F4600169695 /* TouchPropagatedScrollView.m in Sources */,
-				847AD5531D9B9F48006068E1 /* RATableViewCell.m in Sources */,
 				2261C8871D88E9960084E930 /* GaoxiaochaxunCell.m in Sources */,
+				22DBFAD91D9BE9DB002085C3 /* RATableViewCell.m in Sources */,
 				185EFF531D93ACFE00CAE928 /* JYJuniorCollegeModel.m in Sources */,
 				FCABFC431D6F420C005199C7 /* ADView.m in Sources */,
-				847AD54D1D9B9C50006068E1 /* SubMajorModel.m in Sources */,
 				18B3E0481D8656EE00929D0C /* JYMyExperienceModel.m in Sources */,
-				847AD5431D9B9BA6006068E1 /* RATreeView+Private.m in Sources */,
+				22DBFAD41D9BE8C8002085C3 /* SubMajorModel.m in Sources */,
 				18B3DFBA1D86569D00929D0C /* JYIndentDetailsViewController.m in Sources */,
 				18C2653A1D927C7F00D25C7F /* JYKongfuViewController.m in Sources */,
+				22DBFABF1D9BE560002085C3 /* RATreeView+Private.m in Sources */,
 				223CA5221D9219A000E6ECD1 /* GaoxiaochaxunModel+Request.m in Sources */,
-				224C76EC1D9A39A600AADE8C /* CollegeDongtaiCell.m in Sources */,
 				18B3DFB51D86569D00929D0C /* JYAnswerViewController.m in Sources */,
 				181DC58F1D8FD9C900E0A2A7 /* TagsViewCell.m in Sources */,
 				84DC7FC71D702A7900612E20 /* MJRefreshConst.m in Sources */,
 				18B3E0001D8656C600929D0C /* JYMyGoldView.m in Sources */,
+				22DBFA841D9BDFAD002085C3 /* UniversityViewController.m in Sources */,
 				2268C0911D82BC09004D8E85 /* fengyunModel.m in Sources */,
 				2228B94A1D9376150078B6DE /* JYSchoolFriendTableViewCell.m in Sources */,
 				847F00541D801AD700B25581 /* AddImpressionController.m in Sources */,
@@ -4980,9 +5002,10 @@
 				FCAA0E0C1D70850D00A8A99A /* BaseRequest.m in Sources */,
 				84DC7FBA1D702A7900612E20 /* MJRefreshComponent.m in Sources */,
 				84CDBD2B1D767A970037822E /* QHCommonUtil.m in Sources */,
-				847AD53C1D9B9BA6006068E1 /* RATableView.m in Sources */,
+				18BB06C11D9B686700139691 /* JYStudyAgainModel2.m in Sources */,
 				84DC7FED1D702A8E00612E20 /* JSONAPI.m in Sources */,
 				FC0486C81D7AEF020052EDB6 /* MASConstraint.m in Sources */,
+				22DBFAB81D9BE560002085C3 /* RATableView.m in Sources */,
 				181165191D8D5882002EE814 /* STPickerSingle.m in Sources */,
 				223E25671D9679ED0095291E /* CollegeScoreCell.m in Sources */,
 				18B3DF7A1D8654A200929D0C /* NSObject+MJProperty.m in Sources */,
@@ -4991,9 +5014,9 @@
 				FC0486D81D7C391F0052EDB6 /* TecherDetalView.m in Sources */,
 				2245C3041D782B5800DEDDE4 /* TecherModel.m in Sources */,
 				84DC7F511D7029D400612E20 /* Reachability.m in Sources */,
-				847AD5441D9B9BA6006068E1 /* RATreeView+RATreeNodeCollectionControllerDataSource.m in Sources */,
 				84DC80031D702AB800612E20 /* ZJCustomLabel.m in Sources */,
 				18B3DFC81D86569D00929D0C /* JYTutorAppointViewController.m in Sources */,
+				22DBFAC01D9BE560002085C3 /* RATreeView+RATreeNodeCollectionControllerDataSource.m in Sources */,
 				18B3E0461D8656EE00929D0C /* JYLnviteCountModel.m in Sources */,
 				847F00581D801AD700B25581 /* YuyueViewController.m in Sources */,
 				8419A9061D7EAA040024E703 /* AddYinXiangView.m in Sources */,
@@ -5028,6 +5051,7 @@
 				1811651B1D8D5882002EE814 /* STUI.m in Sources */,
 				84DC7FBF1D702A7900612E20 /* MJRefreshAutoStateFooter.m in Sources */,
 				58F4DE6B1D81435A00723B4B /* AFHTTPRequestOperation.m in Sources */,
+				22DBFA891D9BE21A002085C3 /* CollegeDongtaiCell.m in Sources */,
 				58F4DE6F1D81435A00723B4B /* AFSecurityPolicy.m in Sources */,
 				223CA5261D9219A000E6ECD1 /* ZhiYuanModel.m in Sources */,
 				FC0487771D7C50740052EDB6 /* ImpressionCell.m in Sources */,
@@ -5152,7 +5176,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 2RG96DPB3Y;
+				DEVELOPMENT_TEAM = VZ8CKBEE8R;
 				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/gaokaoquan/PrefixHeader.pch";
@@ -5172,7 +5196,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 2RG96DPB3Y;
+				DEVELOPMENT_TEAM = VZ8CKBEE8R;
 				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/gaokaoquan/PrefixHeader.pch";

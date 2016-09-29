@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "JobListModel.h"
+
 @interface OccupationCell : UITableViewCell
+
 @property (weak, nonatomic) IBOutlet UIView *bgView;
 @property (weak, nonatomic) IBOutlet UILabel *textLB;
-@property (nonatomic,strong)JobListModel * model;
+@property (weak, nonatomic) IBOutlet UIImageView *btnImageView;
+
+- (void)setupWithTitle:(NSString *)title detailText:(NSString *)detailText level:(NSInteger)level additionButtonHidden:(BOOL)additionButtonHidden;
+
 @end

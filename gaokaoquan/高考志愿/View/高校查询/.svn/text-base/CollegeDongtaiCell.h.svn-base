@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@class CollegeDongtaiCell;
+@protocol CollegeDongtaiCellDelegate <NSObject>
+
+@required
+- (void)buttonClickAction:(CollegeDongtaiCell *)cell btnTag:(int)tag;
+
+@end
+
 @interface CollegeDongtaiCell : UITableViewCell
+
+@property(nonatomic, weak) id<CollegeDongtaiCellDelegate>delegate;
 
 @end

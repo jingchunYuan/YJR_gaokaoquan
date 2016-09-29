@@ -1,14 +1,14 @@
 10
 
 dir
-74
+79
 svn://jingru@47.90.56.31:3690/dev_ios/trunk/gaokaoquan/gaokaoquan/%E9%AB%98%E8%80%83%E5%BF%97%E6%84%BF/Controller
 svn://jingru@47.90.56.31:3690/dev_ios
 
 
 
-2016-09-27T13:11:54.831151Z
-74
+2016-09-28T12:30:41.061442Z
+77
 jingru
 
 
@@ -474,40 +474,6 @@ jingru
 高校查询
 dir
 
-JTSchoolFirendViewController.m
-file
-
-
-
-
-2016-09-22T08:49:47.000000Z
-dda6ddc7ca94267a4cd4077d657ff048
-2016-09-22T08:48:35.968640Z
-51
-jiayue
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4116
-
 GaoXiaoSearchViewController.m
 file
 
@@ -541,6 +507,40 @@ jingru
 
 
 3219
+
+JTSchoolFirendViewController.m
+file
+
+
+
+
+2016-09-22T08:49:47.000000Z
+dda6ddc7ca94267a4cd4077d657ff048
+2016-09-22T08:48:35.968640Z
+51
+jiayue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4116
 
 JYRCCSEDetailViewController.h
 file
@@ -616,10 +616,10 @@ file
 
 
 
-2016-09-23T12:14:47.000000Z
-56fbf67e3130ecb1e46b1a42be05e21b
-2016-09-23T12:14:29.151643Z
-61
+2016-09-28T12:29:35.000000Z
+37891c1003457f07ee560491ff4599b1
+2016-09-28T12:29:14.796808Z
+76
 jiayue
 
 
@@ -642,7 +642,10 @@ jiayue
 
 
 
-4225
+4399
+
+分数线查询
+dir
 
 JYStudyAnswerViewController.h
 file
@@ -678,9 +681,6 @@ jiayue
 
 239
 
-分数线查询
-dir
-
 JYKongfuViewController.h
 file
 
@@ -715,40 +715,6 @@ jiayue
 
 229
 
-JYMBTIViewController.h
-file
-
-
-
-
-2016-09-27T02:40:18.000000Z
-a83793f1386d1e569602b27b7c2ac9a6
-2016-09-27T02:39:50.524571Z
-71
-jiayue
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-225
-
 GaoxiaochaxunViewController.h
 file
 
@@ -782,6 +748,40 @@ jingru
 
 
 339
+
+JYMBTIViewController.h
+file
+
+
+
+
+2016-09-27T02:40:18.000000Z
+a83793f1386d1e569602b27b7c2ac9a6
+2016-09-27T02:39:50.524571Z
+71
+jiayue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+225
 
 GaoXiaoZhiYuanViewController.h
 file
@@ -823,10 +823,10 @@ file
 
 
 
-2016-09-27T12:51:35.000000Z
-0289cfe6e23738f5627081bf73ca52ba
-2016-09-27T12:51:09.061539Z
-72
+2016-09-28T12:29:35.000000Z
+8a39df12e2e0d9ff7af68435e825f00c
+2016-09-28T12:29:14.796808Z
+76
 jiayue
 
 
@@ -849,7 +849,7 @@ jiayue
 
 
 
-1138
+7161
 
 JYKongfuViewController.m
 file
@@ -885,9 +885,6 @@ jiayue
 
 4027
 
-专业查询
-dir
-
 JYRCCSEViewController.h
 file
 
@@ -922,16 +919,19 @@ jiayue
 
 227
 
+专业查询
+dir
+
 JYMBTIViewController.m
 file
 
 
 
 
-2016-09-27T02:40:18.000000Z
-0088f2a83fb167cc3153e37b73d276e0
-2016-09-27T02:39:50.524571Z
-71
+2016-09-28T12:29:35.000000Z
+55443a14460e8ccd8795409941e98ce6
+2016-09-28T12:29:14.796808Z
+76
 jiayue
 
 
@@ -954,7 +954,7 @@ jiayue
 
 
 
-4192
+4208
 
 GaoxiaochaxunViewController.m
 file
@@ -1024,6 +1024,40 @@ jiayue
 
 11496
 
+OccupationController.xib
+file
+
+
+
+
+2016-09-28T08:36:54.000000Z
+105d6b3beb1f5123fca1155b561b9538
+2016-09-28T12:30:41.061442Z
+77
+jingru
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1273
+
 JYRCCSEViewController.m
 file
 
@@ -1064,10 +1098,10 @@ file
 
 
 
-2016-09-27T12:51:35.000000Z
-013d40cf5d067f6de31b38777f15b11d
-2016-09-27T12:51:09.061539Z
-72
+2016-09-28T12:29:35.000000Z
+185ddc2ffe7c095d542f9cbe6e823592
+2016-09-28T12:29:14.796808Z
+76
 jiayue
 
 
@@ -1090,7 +1124,7 @@ jiayue
 
 
 
-4356
+4615
 
 GaoXiaoCollgeViewController.xib
 file
@@ -1125,6 +1159,40 @@ jingru
 
 
 1347
+
+OccupationController.h
+file
+
+
+
+
+2016-09-25T13:27:46.000000Z
+710d0ab0acda86639658019f66802b40
+2016-09-28T12:30:41.061442Z
+77
+jingru
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+224
 
 JYCollegeRankingsViewController.h
 file
@@ -1364,6 +1432,40 @@ jingru
 
 251
 
+OccupationController.m
+file
+
+
+
+
+2016-09-28T09:12:58.000000Z
+8f30c305ce06a727d5423a164ebd849b
+2016-09-28T12:30:41.061442Z
+77
+jingru
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5079
+
 JYCollegeRankingsViewController.m
 file
 
@@ -1398,16 +1500,16 @@ jiayue
 
 3224
 
-JYStudyAgainViewController.m
+JYStudyAgainTableViewCell.h
 file
 
 
 
 
-2016-09-27T12:51:35.000000Z
-dabc0af5c8def35f36d0b361765726d4
-2016-09-27T12:51:09.061539Z
-72
+2016-09-28T12:29:35.000000Z
+9ac6606d9b5fe0ca351bfa1ff5ef5491
+2016-09-28T12:29:14.796808Z
+76
 jiayue
 
 
@@ -1430,7 +1532,41 @@ jiayue
 
 
 
-3435
+234
+
+JYStudyAgainViewController.m
+file
+
+
+
+
+2016-09-28T12:29:35.000000Z
+cc88b31c0ce9283538cef143f2995fde
+2016-09-28T12:29:14.796808Z
+76
+jiayue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3561
 
 UniversityViewController.h
 file
@@ -1601,6 +1737,40 @@ jiayue
 
 
 6605
+
+JYStudyAgainTableViewCell.m
+file
+
+
+
+
+2016-09-28T12:29:35.000000Z
+0fdb10dca6d1a041b963746db28519d1
+2016-09-28T12:29:14.796808Z
+76
+jiayue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+845
 
 UniversityViewController.m
 file

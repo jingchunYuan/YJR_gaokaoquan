@@ -22,6 +22,7 @@
 #import "MJExtension.h"
 #import "MJRefresh.h"
 #import "GXQNavigationController.h"
+#import "RATreeView.h"
 #define MAN_GETALLLIST @"http://192.168.1.10/advisor/lists?p=3&pageSize=20&city=1&q=%E5%8C%97%E4%BA%AC"
 #define ENTER_COUNT @"enter_count"
 

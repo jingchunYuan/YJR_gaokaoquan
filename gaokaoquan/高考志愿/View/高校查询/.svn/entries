@@ -1,14 +1,14 @@
 10
 
 dir
-74
+79
 svn://jingru@47.90.56.31:3690/dev_ios/trunk/gaokaoquan/gaokaoquan/%E9%AB%98%E8%80%83%E5%BF%97%E6%84%BF/View/%E9%AB%98%E6%A0%A1%E6%9F%A5%E8%AF%A2
 svn://jingru@47.90.56.31:3690/dev_ios
 
 
 
-2016-09-27T13:11:54.831151Z
-74
+2016-09-28T12:30:41.061442Z
+77
 jingru
 
 
@@ -162,6 +162,40 @@ jingru
 
 23896
 
+CollegeMajorFirstCell.xib
+file
+
+
+
+
+2016-09-24T08:35:22.000000Z
+712de016c7c9c15d8c45bc639578c0b3
+2016-09-24T11:35:31.552151Z
+62
+jingru
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10033
+
 CollegeScoreCell.h
 file
 
@@ -196,16 +230,16 @@ jingru
 
 289
 
-CollegeMajorFirstCell.xib
+CollegeYinxiangView.xib
 file
 
 
 
 
-2016-09-24T08:35:22.000000Z
-712de016c7c9c15d8c45bc639578c0b3
-2016-09-24T11:35:31.552151Z
-62
+2016-09-28T03:32:46.000000Z
+78525c9cc9dacf29521a20ae71ae7d9c
+2016-09-28T12:30:41.061442Z
+77
 jingru
 
 
@@ -228,7 +262,7 @@ jingru
 
 
 
-10033
+1211
 
 CollegeMajorCell.m
 file
@@ -298,16 +332,16 @@ jingru
 
 795
 
-CollegeDongtaiCell.xib
+CollegeMajorFirstCell.h
 file
 
 
 
 
-2016-09-27T07:57:18.000000Z
-7bf43ddbeda6597b45be8192ed8b6830
-2016-09-27T13:11:54.831151Z
-74
+2016-09-24T04:38:03.000000Z
+b1f9b2821aed1a20ce18baf80e234613
+2016-09-24T11:35:31.552151Z
+62
 jingru
 
 
@@ -330,7 +364,7 @@ jingru
 
 
 
-4475
+225
 
 CollegeScoreCell.m
 file
@@ -366,16 +400,16 @@ jingru
 
 1010
 
-CollegeMajorFirstCell.h
+CollegeDongtaiCell.xib
 file
 
 
 
 
-2016-09-24T04:38:03.000000Z
-b1f9b2821aed1a20ce18baf80e234613
-2016-09-24T11:35:31.552151Z
-62
+2016-09-28T07:16:11.000000Z
+f08f00dfc4b52eb88bd906fe7ec57fea
+2016-09-28T12:30:41.061442Z
+77
 jingru
 
 
@@ -398,7 +432,41 @@ jingru
 
 
 
-225
+4917
+
+CollegeYinxiangView.h
+file
+
+
+
+
+2016-09-28T05:34:19.000000Z
+9af12373d6d6aa5a8c4d7c7bbb6b0da5
+2016-09-28T12:30:41.061442Z
+77
+jingru
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+561
 
 CollegeYinxiangCell.xib
 file
@@ -542,10 +610,10 @@ file
 
 
 
-2016-09-27T05:22:46.000000Z
-b33c37ec64d780565fdd184c2e8e3603
-2016-09-27T13:11:54.831151Z
-74
+2016-09-28T07:16:11.000000Z
+93f36ef6eb6ec78e232329e8d04b1144
+2016-09-28T12:30:41.061442Z
+77
 jingru
 
 
@@ -568,7 +636,7 @@ jingru
 
 
 
-223
+454
 
 CollegeYinxiangCell.h
 file
@@ -576,10 +644,10 @@ file
 
 
 
-2016-09-27T11:43:14.000000Z
-d1473120b043d1c7b626c4decf89c8c5
-2016-09-27T13:11:54.831151Z
-74
+2016-09-28T02:48:09.000000Z
+c250856c995b22687e340c253078c829
+2016-09-28T12:30:41.061442Z
+77
 jingru
 
 
@@ -602,7 +670,41 @@ jingru
 
 
 
-522
+518
+
+CollegeYinxiangView.m
+file
+
+
+
+
+2016-09-28T05:35:27.000000Z
+f0a99c726417cc0e599a5c7907315986
+2016-09-28T12:30:41.061442Z
+77
+jingru
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2483
 
 CollegeFirstCell.h
 file
@@ -644,10 +746,10 @@ file
 
 
 
-2016-09-27T05:22:48.000000Z
-18af096267f11c23bb8d3188e6c288e6
-2016-09-27T13:11:54.831151Z
-74
+2016-09-28T07:16:11.000000Z
+33430c025bf37249993ea367aedba13a
+2016-09-28T12:30:41.061442Z
+77
 jingru
 
 
@@ -670,7 +772,7 @@ jingru
 
 
 
-463
+765
 
 CollegeYinxiangCell.m
 file
@@ -678,10 +780,10 @@ file
 
 
 
-2016-09-27T11:43:14.000000Z
-f422593be192f4e2560ca6eda10d34e5
-2016-09-27T13:11:54.831151Z
-74
+2016-09-28T02:48:09.000000Z
+43db2d19e86bf7af3b843925008e7483
+2016-09-28T12:30:41.061442Z
+77
 jingru
 
 
@@ -704,7 +806,7 @@ jingru
 
 
 
-623
+643
 
 CollegeFirstCell.m
 file

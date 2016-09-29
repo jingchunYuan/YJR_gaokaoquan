@@ -88,7 +88,7 @@
     button2.frame = CGRectMake(CGRectGetMaxX(button.frame), CGRectGetMaxY(label5.frame) + 10, KWIDTH * 0.5, 30);
     
     
-    UIImageView *imageView2 = [[UIImageView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(button.frame), KWIDTH, 400)];
+    UIImageView *imageView2 = [[UIImageView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(button.frame), KWIDTH, 450)];
     [scrollview addSubview:imageView2];
     self.imageview = imageView2;
     

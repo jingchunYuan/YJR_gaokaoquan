@@ -26,7 +26,7 @@ static NSString *inder = @"cell";
         self.dataSource = self;
         self.delegate = self;
         [self loadData];
-         self.rowHeight = UITableViewAutomaticDimension;
+         self.rowHeight = 70;
         
     }
     return self;

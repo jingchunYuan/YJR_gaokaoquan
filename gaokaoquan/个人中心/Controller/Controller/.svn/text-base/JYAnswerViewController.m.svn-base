@@ -128,59 +128,6 @@
 
     
     
-    // 执行回调
-    __weak typeof(self)weakself = self;
-    
-      [answer MyTWCilick:^{
-          
-        weakself.navigationItem.titleView = [self.view titleWithNavigat:@"我的提问"];
-          
-         answer.TWbtn.backgroundColor = [UIColor redColor];
-          
-          answer.HDbtn.backgroundColor = [UIColor lightGrayColor];
-          
-          answer.TDWbtn.backgroundColor = [UIColor lightGrayColor];
-          
-          
-          
-      }];
-    
-    
-    [answer MyHDClick:^{
-        
-        
-        
-        weakself.navigationItem.titleView = [self.view titleWithNavigat:@"我的回答"];
-        
-//        self.HDButton.backgroundColor = [UIColor redColor];
-
-
-        answer.HDbtn.backgroundColor = [UIColor redColor];
-
-        answer.TWbtn.backgroundColor = [UIColor lightGrayColor];
-
-        answer.TDWbtn.backgroundColor = [UIColor lightGrayColor];
-
-        
-//        answer.HDbtn = self.HDButton;
-        
-        weakself.HDButton.selected = YES;
-
-        [tableview reloadData];
-        
-    }];
-    
-    
-    [answer MyClick:^{
-        weakself.navigationItem.titleView = [weakself.view titleWithNavigat:@"提到我的"];
-        
-        answer.TDWbtn.backgroundColor = [UIColor redColor];
-       
-        answer.HDbtn.backgroundColor = [UIColor lightGrayColor];
-        
-        answer.TWbtn.backgroundColor = [UIColor lightGrayColor];
-        
-    }];
     
     
     
@@ -230,27 +177,6 @@
     UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
     
     
-    if (self.HDButton.selected) {
-        
-        
-        JYHDModel *model = self.HDArray[indexPath.row];
-        
-        cell.textLabel.text = model.info;
-        
-        cell.textLabel.font = [UIFont systemFontOfSize:13];
-        
-        UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 50, 20)];
-        
-        label.text = [NSString stringWithFormat:@"%@条回复", model.comment_total];
-        
-        label.font = [UIFont systemFontOfSize:10];
-        
-        cell.accessoryView = label;
-
-        
-        
-    }else{
-    
     JYAnswerModel *model = self.Array[indexPath.row];
         
     cell.textLabel.text = model.title;
@@ -265,7 +191,7 @@
     
     cell.accessoryView = label;
         
-     }
+    
     return cell;
 }
 

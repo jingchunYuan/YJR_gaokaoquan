@@ -22,4 +22,15 @@
     // Configure the view for the selected state
 }
 
+- (IBAction)btnClick:(id)sender {
+    NSLog(@"tag = %ld", (long)[((UIButton *)sender) tag]);
+    
+    int tag = (int)[((UIButton *)sender) tag];
+    if ([self.delegate respondsToSelector:@selector(buttonClickAction:btnTag:)]) {
+        [self.delegate buttonClickAction:self btnTag:tag];
+    }
+    
+}
+
+
 @end

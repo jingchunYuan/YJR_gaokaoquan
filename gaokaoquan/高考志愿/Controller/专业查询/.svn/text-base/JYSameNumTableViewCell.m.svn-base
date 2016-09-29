@@ -25,7 +25,7 @@
 {
     _model = model;
     [self.imageView sd_setImageWithURL:[NSURL URLWithString:model.avatar] placeholderImage:nil];
-    self.imageView.layer.cornerRadius = 20;
+    self.imageView.layer.cornerRadius = 30;
     self.imageView.layer.masksToBounds = YES;
     self.detailLabel.text = model.content;
     self.time.text = model.ctime;

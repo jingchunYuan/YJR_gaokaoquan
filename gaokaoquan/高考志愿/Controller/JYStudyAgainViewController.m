@@ -1,7 +1,6 @@
 //
 //  JYStudyAgainViewController.m
 //  gaokaoquan
-//
 //  Created by 家跃 on 16/9/26.
 //  Copyright © 2016年 袁静茹. All rights reserved.
 //
@@ -9,6 +8,7 @@
 #import "JYStudyAgainViewController.h"
 #import "JYStudyAgainModel.h"
 #import "JYStudyAnswerViewController.h"
+#import "JYStudyAgainModel2.h"
 #define MAS_SHORTHAND
 #import "Masonry.h"
 @interface JYStudyAgainViewController ()
@@ -43,8 +43,8 @@
     [[JYNetWorkTool sharedTools]request:JYRequestMethodGET urlString:@"http://api.dev.gaokaoq.com/test/view?key=fudu" parameters:nil callback:^(id responseObject, NSError *error) {
         
         JYStudyAgainModel *model = [JYStudyAgainModel mj_objectWithKeyValues:responseObject[@"data"][@"test"]];
-        
-        self.string = model.test_num;
+        JYStudyAgainModel2 *model2 = [JYStudyAgainModel2 mj_objectWithKeyValues:responseObject[@"data"]];
+        self.string = model2.test_num;
         self.string2 = model.content;
         NSAttributedString * attrStr = [[NSAttributedString alloc] initWithData:[self.string2 dataUsingEncoding:NSUnicodeStringEncoding] options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType } documentAttributes:nil error:nil];
         self.attar = attrStr;

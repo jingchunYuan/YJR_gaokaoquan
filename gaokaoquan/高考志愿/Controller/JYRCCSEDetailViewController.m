@@ -19,7 +19,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     [self setUI];
 }
 
@@ -97,6 +96,9 @@
         [self.navigationController pushViewController:rccse animated:YES];
         
     }else if (indexPath.section == 2 && indexPath.row == 0){
+        
+        JYGeneralSchoolViewController *general = [[JYGeneralSchoolViewController alloc]init];
+        [self.navigationController pushViewController:general animated:YES];
 
     }else if (indexPath.section == 3 && indexPath.row == 0){
         
@@ -111,7 +113,6 @@
     }
 
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {

@@ -1,7 +1,7 @@
 10
 
 dir
-74
+79
 svn://jingru@47.90.56.31:3690/dev_ios/trunk/gaokaoquan/gaokaoquan/%E9%AB%98%E8%80%83%E5%BF%97%E6%84%BF/View/%E5%88%86%E6%95%B0%E7%BA%BF%E6%9F%A5%E8%AF%A2
 svn://jingru@47.90.56.31:3690/dev_ios
 
@@ -128,40 +128,6 @@ jiayue
 
 31389
 
-JYScoreMajorView.xib
-file
-
-
-
-
-2016-09-26T05:15:00.000000Z
-425bea134e1e2eed442e39d0d5de1a0c
-2016-09-26T05:14:42.561150Z
-65
-jiayue
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-27885
-
 JYGaoXiaoTableViewCell.h
 file
 
@@ -195,6 +161,40 @@ jiayue
 
 
 304
+
+JYScoreMajorView.xib
+file
+
+
+
+
+2016-09-26T05:15:00.000000Z
+425bea134e1e2eed442e39d0d5de1a0c
+2016-09-26T05:14:42.561150Z
+65
+jiayue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+27885
 
 JYProvicerScoreTableViewCell.m
 file
@@ -264,40 +264,6 @@ jiayue
 
 565
 
-JYScoreMajorView.h
-file
-
-
-
-
-2016-09-26T05:15:00.000000Z
-c696d9509c6996b51412e93a498a1241
-2016-09-26T05:14:42.561150Z
-65
-jiayue
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-604
-
 JYGaoXiaoTableViewCell.m
 file
 
@@ -331,6 +297,40 @@ jiayue
 
 
 950
+
+JYScoreMajorView.h
+file
+
+
+
+
+2016-09-26T05:15:00.000000Z
+c696d9509c6996b51412e93a498a1241
+2016-09-26T05:14:42.561150Z
+65
+jiayue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+604
 
 JYScoreView.xib
 file

@@ -45,7 +45,7 @@
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem initWithImageName:@"返回" highlightedImage:nil title:nil target:self action:@selector(leftBarButtonItemClick)];
     self.navigationItem.titleView = [self.view titleWithNavigat:@"MBTI性格测试"];
     
-    [[JYNetWorkTool sharedTools]request:JYRequestMethodGET urlString:@"http://api.dev.gaokaoq.com/Mbti" parameters:nil callback:^(id responseObject, NSError *error) {
+    [[JYNetWorkTool sharedTools]request:JYRequestMethodGET urlString:@"http://api.dev.gaokaoq.com/test/view?key=mbti" parameters:nil callback:^(id responseObject, NSError *error) {
        
         JYMBTIModel *model = [JYMBTIModel mj_objectWithKeyValues:responseObject[@"data"]];
         self.Title = model.test_num;
@@ -80,7 +80,7 @@
     NSAttributedString * attrStr = [[NSAttributedString alloc] initWithData:[self.label2 dataUsingEncoding:NSUnicodeStringEncoding] options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType } documentAttributes:nil error:nil];
     NSAttributedString * attrStr2 = [[NSAttributedString alloc] initWithData:[self.label3 dataUsingEncoding:NSUnicodeStringEncoding] options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType } documentAttributes:nil error:nil];
 
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
         self.navigationItem.rightBarButtonItem = [UIBarButtonItem initWithImageName:nil highlightedImage:nil title:[NSString stringWithFormat:@"已有%@人测试",self.Title] target:nil action:nil];
         label1.text = self.label;

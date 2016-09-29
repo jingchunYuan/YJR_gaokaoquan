@@ -264,7 +264,7 @@ static CGFloat const PickerViewLabelWeight = 32;
 {
     if (!_arrayRoot) {
         
-        NSString *path = [[NSBundle mainBundle]pathForResource:@"areas.plist" ofType:nil];
+        NSString *path = [[NSBundle mainBundle]pathForResource:@"areas.pilst" ofType:nil];
         
         _arrayRoot = [NSArray arrayWithContentsOfFile:path];
     }

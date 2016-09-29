@@ -12,18 +12,35 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    _bgView.layer.borderColor = [UIColor grayColor].CGColor;
-    _bgView.layer.borderWidth = 1;
 }
--(void)setModel:(JobListModel *)model{
-    _textLB.text = model.job.name;
-}
+
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
 }
-- (IBAction)showOrHIde:(UIButton *)sender {
+
+- (void)setupWithTitle:(NSString *)title detailText:(NSString *)detailText level:(NSInteger)level additionButtonHidden:(BOOL)additionButtonHidden {
+    
+    //赋值
+    self.textLB.text = title;
+    
+    //隐藏图片
+    if (level == 1) {
+        self.btnImageView.hidden = YES;
+    }else {
+        self.btnImageView.hidden = NO;
+    }
+    
+    //顶头设置
+    CGFloat left = 20 + 10 * level;
+    if (level >= 1) {
+        left = 30 + 10 * level;
+    }
+    CGRect titleFrame = self.textLB.frame;
+    titleFrame.origin.x = left;
+    self.textLB.frame = titleFrame;
+    
 }
 
 @end

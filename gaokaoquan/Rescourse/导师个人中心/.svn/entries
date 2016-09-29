@@ -1,7 +1,7 @@
 10
 
 dir
-74
+79
 svn://jingru@47.90.56.31:3690/dev_ios/trunk/gaokaoquan/gaokaoquan/Rescourse/%E5%AF%BC%E5%B8%88%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83
 svn://jingru@47.90.56.31:3690/dev_ios
 
@@ -25,40 +25,6 @@ jiayue
 
 
 fb2bb458-5cc4-4480-b9f9-fa103fa640be
-
-qrcode_app_1.png
-file
-
-
-
-
-2016-09-14T05:29:14.000000Z
-f428a8625ddc6fd1886e9e638278878b
-2016-09-14T04:22:48.211973Z
-20
-jiayue
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-19761
 
 图层-10@2x.png
 file
@@ -94,14 +60,14 @@ has-props
 
 6323
 
-图层-10@3x.png
+qrcode_app_1.png
 file
 
 
 
 
 2016-09-14T05:29:14.000000Z
-95d6fd75068f163dbc9d86bc07b0b40c
+f428a8625ddc6fd1886e9e638278878b
 2016-09-14T04:22:48.211973Z
 20
 jiayue
@@ -126,7 +92,7 @@ has-props
 
 
 
-9676
+19761
 
 w-de-sixin@2x.png
 file
@@ -161,6 +127,40 @@ has-props
 
 
 1670
+
+图层-10@3x.png
+file
+
+
+
+
+2016-09-14T05:29:14.000000Z
+95d6fd75068f163dbc9d86bc07b0b40c
+2016-09-14T04:22:48.211973Z
+20
+jiayue
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9676
 
 w-de-sixin@3x.png
 file
@@ -264,16 +264,16 @@ has-props
 
 1853
 
-fangkuang-xuanzhong_1@2x.png
+wodeyuyue@3x.png
 file
 
 
 
 
-2016-09-14T05:29:14.000000Z
-b9bf2b84d4f38e5d9358fa5c3b9608c2
-2016-09-14T04:22:48.211973Z
-20
+2016-09-13T01:51:51.000000Z
+85f5183cb89b8823eb7c6901913010ca
+2016-09-12T13:57:11.798883Z
+11
 jiayue
 has-props
 
@@ -296,41 +296,7 @@ has-props
 
 
 
-1243
-
-意见反馈_1@2x.png
-file
-
-
-
-
-2016-09-14T05:29:14.000000Z
-6472158f841d10ea36b96b066eb1633e
-2016-09-14T04:22:48.211973Z
-20
-jiayue
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1599
+2466
 
 wodeguanzhu@2x.png
 file
@@ -366,48 +332,14 @@ has-props
 
 1845
 
-wodeyuyue@3x.png
-file
-
-
-
-
-2016-09-13T01:51:51.000000Z
-85f5183cb89b8823eb7c6901913010ca
-2016-09-12T13:57:11.798883Z
-11
-jiayue
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2466
-
-fangkuang-xuanzhong_1@3x.png
+意见反馈_1@2x.png
 file
 
 
 
 
 2016-09-14T05:29:14.000000Z
-8d9b1fc634d40971252660604a3760f7
+6472158f841d10ea36b96b066eb1633e
 2016-09-14T04:22:48.211973Z
 20
 jiayue
@@ -432,7 +364,75 @@ has-props
 
 
 
-1398
+1599
+
+fangkuang-xuanzhong_1@2x.png
+file
+
+
+
+
+2016-09-14T05:29:14.000000Z
+b9bf2b84d4f38e5d9358fa5c3b9608c2
+2016-09-14T04:22:48.211973Z
+20
+jiayue
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1243
+
+wodeguanzhu@3x.png
+file
+
+
+
+
+2016-09-13T01:51:51.000000Z
+5f50ae40149b488f7cdd237a417689bd
+2016-09-12T13:57:11.798883Z
+11
+jiayue
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2391
 
 意见反馈_1@3x.png
 file
@@ -468,16 +468,16 @@ has-props
 
 1793
 
-wodeguanzhu@3x.png
+fangkuang-xuanzhong_1@3x.png
 file
 
 
 
 
-2016-09-13T01:51:51.000000Z
-5f50ae40149b488f7cdd237a417689bd
-2016-09-12T13:57:11.798883Z
-11
+2016-09-14T05:29:14.000000Z
+8d9b1fc634d40971252660604a3760f7
+2016-09-14T04:22:48.211973Z
+20
 jiayue
 has-props
 
@@ -500,7 +500,7 @@ has-props
 
 
 
-2391
+1398
 
 yaoqingzhuce@2x.png
 file

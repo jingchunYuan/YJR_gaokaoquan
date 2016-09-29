@@ -1,14 +1,14 @@
 10
 
 dir
-74
+79
 svn://jingru@47.90.56.31:3690/dev_ios/trunk/gaokaoquan/gaokaoquan/%E9%AB%98%E8%80%83%E5%BF%97%E6%84%BF/model
 svn://jingru@47.90.56.31:3690/dev_ios
 
 
 
-2016-09-27T13:11:54.831151Z
-74
+2016-09-28T12:30:41.061442Z
+77
 jingru
 
 
@@ -168,10 +168,10 @@ file
 
 
 
-2016-09-27T02:40:18.000000Z
-ab0f090b7a10440394eab205ebf82c11
-2016-09-27T02:39:50.524571Z
-71
+2016-09-28T12:29:35.000000Z
+35aa72ad4a1ec2673b40bdc4ac291f20
+2016-09-28T12:29:14.796808Z
+76
 jiayue
 
 
@@ -194,7 +194,7 @@ jiayue
 
 
 
-481
+387
 
 JYIndependentSchoolModel.m
 file
@@ -641,16 +641,16 @@ jingru
 
 929
 
-JYMBTIModel.h
+JYStudyAgainModel2.h
 file
 
 
 
 
-2016-09-27T02:40:18.000000Z
-0e28dabd1dc50b020f5a5203e4d25d31
-2016-09-27T02:39:50.524571Z
-71
+2016-09-28T12:29:35.000000Z
+3700f61fa855fdc678f6c10036ff72f3
+2016-09-28T12:29:14.796808Z
+76
 jiayue
 
 
@@ -673,7 +673,10 @@ jiayue
 
 
 
-1941
+380
+
+高校查询
+dir
 
 GaoxiaochaxunModel.h
 file
@@ -709,8 +712,39 @@ jingru
 
 730
 
-高校查询
-dir
+JYMBTIModel.h
+file
+
+
+
+
+2016-09-27T02:40:18.000000Z
+0e28dabd1dc50b020f5a5203e4d25d31
+2016-09-27T02:39:50.524571Z
+71
+jiayue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1941
 
 JYSameTableviewCellModel.m
 file
@@ -746,17 +780,17 @@ jiayue
 
 229
 
-WishBtnModel+Request.h
+JYStudyAgainModel2.m
 file
 
 
 
 
-2016-09-17T08:52:21.000000Z
-1df01887ab4bffe1bcc9e821789eea69
-2016-09-18T03:59:31.059387Z
-27
-jingru
+2016-09-28T12:29:35.000000Z
+698ec8078505370f8a4060a831374cec
+2016-09-28T12:29:14.796808Z
+76
+jiayue
 
 
 
@@ -778,7 +812,7 @@ jingru
 
 
 
-356
+214
 
 JYRCCSEModel.h
 file
@@ -814,17 +848,17 @@ jiayue
 
 726
 
-JYMBTIModel.m
+WishBtnModel+Request.h
 file
 
 
 
 
-2016-09-27T02:40:18.000000Z
-beb14d09bd920343a31b06c1bd44171f
-2016-09-27T02:39:50.524571Z
-71
-jiayue
+2016-09-17T08:52:21.000000Z
+1df01887ab4bffe1bcc9e821789eea69
+2016-09-18T03:59:31.059387Z
+27
+jingru
 
 
 
@@ -846,7 +880,7 @@ jiayue
 
 
 
-315
+356
 
 GaoxiaochaxunModel.m
 file
@@ -881,6 +915,40 @@ jingru
 
 
 389
+
+JYMBTIModel.m
+file
+
+
+
+
+2016-09-27T02:40:18.000000Z
+beb14d09bd920343a31b06c1bd44171f
+2016-09-27T02:39:50.524571Z
+71
+jiayue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+315
 
 JYJuniorCollegeModel.h
 file

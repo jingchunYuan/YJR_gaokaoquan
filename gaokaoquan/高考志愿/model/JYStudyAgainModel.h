@@ -17,11 +17,8 @@
 
 @interface JYStudyAgainModel : NSObject
 
-@property (nonatomic,copy) NSString *ID;
-
-@property (nonatomic,copy) NSString *test_name;
+//@property (nonatomic,copy) NSString *ID;
 
 @property (nonatomic,copy) NSString *content;
 
-@property (nonatomic,copy) NSString *test_num;
 @end

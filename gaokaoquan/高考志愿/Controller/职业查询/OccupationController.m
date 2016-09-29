@@ -43,10 +43,10 @@
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem initWithImageName:@"搜索" highlightedImage:nil title:nil target:self action:@selector(rightBarButtonItemClick)];
     self.navigationItem.titleView = [self.view titleWithNavigat:@"职业查询"];
     
-//    UIImageView * imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 150)];
-//    imageView.image = [UIImage imageNamed:@"banner01"];
-//    [table addSubview:imageView];
     
+    UIImageView * imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 150)];
+    imageView.image = [UIImage imageNamed:@"banner01"];
+    [_treeView addSubview:imageView];
     // 添加表格
     [self.view addSubview:self.treeView];
     
@@ -152,6 +152,7 @@
 #pragma mark - Getter and Setter
 -(RATreeView *)treeView{
     if (!_treeView) {
+        
         _treeView =[[RATreeView alloc]initWithFrame:CGRectMake(10, 100, SCREEN_WIDTH-20, SCREEN_HEIGHT-164)];
         _treeView.delegate =self;
         _treeView.dataSource =self;
@@ -159,6 +160,7 @@
         _treeView.separatorStyle = RATreeViewCellSeparatorStyleNone;
         _treeView.layer.borderColor = [UIColor grayColor].CGColor;
         _treeView.layer.borderWidth = 1;
+        
     }
     return _treeView;
 }
