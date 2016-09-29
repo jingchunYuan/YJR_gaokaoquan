@@ -1,26 +1,25 @@
-
 //
-//  TongweiciView.m
+//  TestView.m
 //  gaokaoquan
 //
 //  Created by 高考圈 on 16/9/29.
 //  Copyright © 2016年 袁静茹. All rights reserved.
 //
 
-#import "TongweiciView.h"
-#import "TongweiciTableViewCell.h"
-#import "TongweiciTableCellModel.h"
+#import "TestView.h"
+#import "TestTableViewCell.h"
+#import "TestTableCellModel.h"
 
-@interface TongweiciView ()<UITableViewDelegate,UITableViewDataSource>
+@interface TestView ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong) NSMutableArray *DataArray;
+
 
 @end
 
 static NSString *inder = @"cell";
 
-
-@implementation TongweiciView
+@implementation TestView
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -37,9 +36,9 @@ static NSString *inder = @"cell";
 
 - (void)loadData
 {
-    [[JYNetWorkTool sharedTools]request:JYRequestMethodGET urlString:@"http://api.dev.gaokaoq.com/service/comment?sid=3" parameters:nil callback:^(id responseObject, NSError *error) {
+    [[JYNetWorkTool sharedTools]request:JYRequestMethodGET urlString:@"http://api.dev.gaokaoq.com/service/comment?sid=5" parameters:nil callback:^(id responseObject, NSError *error) {
         
-        NSArray *model = [TongweiciTableCellModel mj_objectArrayWithKeyValuesArray:responseObject[@"data"][@"list"]];
+        NSArray *model = [TestTableCellModel mj_objectArrayWithKeyValuesArray:responseObject[@"data"][@"list"]];
         
         [self.DataArray addObjectsFromArray:model];
         [self reloadData];
@@ -55,13 +54,13 @@ static NSString *inder = @"cell";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    TongweiciTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:inder];
+    TestTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:inder];
     if (cell == nil) {
         
         cell = [[[NSBundle mainBundle]loadNibNamed:@"TongweiciTableViewCell" owner:nil options:nil]lastObject];
     }
     
-    TongweiciTableCellModel *model = self.DataArray[indexPath.row];
+    TestTableCellModel *model = self.DataArray[indexPath.row];
     cell.model = model;
     
     return cell;
@@ -75,7 +74,6 @@ static NSString *inder = @"cell";
     }
     return _DataArray;
 }
-
 
 
 @end

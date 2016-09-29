@@ -7,8 +7,30 @@
 //
 
 #import "TongweiciTableViewCell.h"
+#import "UIImageView+WebCache.h"
+#import "TongweiciTableCellModel.h"
+
+@interface TongweiciTableViewCell ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageview;
+@property (weak, nonatomic) IBOutlet UILabel *detailLb;
+@property (weak, nonatomic) IBOutlet UILabel *time;
+
+
+@end
 
 @implementation TongweiciTableViewCell
+
+-(void)setModel:(TongweiciTableCellModel *)model{
+    
+    _model = model;
+    [self.imageView sd_setImageWithURL:[NSURL URLWithString:model.avatar] placeholderImage:nil];
+    self.imageView.layer.cornerRadius = 30;
+    self.imageView.layer.masksToBounds = YES;
+    self.detailLb.text = model.content;
+    self.time.text = model.ctime;
+}
+
 
 - (void)awakeFromNib {
     [super awakeFromNib];

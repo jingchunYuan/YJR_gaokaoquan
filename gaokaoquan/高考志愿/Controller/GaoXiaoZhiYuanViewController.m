@@ -22,6 +22,7 @@
 #import "JYMBTIViewController.h"
 #import "JYStudyAgainViewController.h"
 #import "JYSameNumViewController.h"
+#import "TongweiciViewController.h"
 //#import "OccupationViewController.h"
 @interface GaoXiaoZhiYuanViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 @property (nonatomic,strong)UICollectionView * clcView;
@@ -179,7 +180,8 @@
         
     }else if (!indexPath.section && indexPath.item == 5){
     
-    
+        TongweiciViewController *tongwei = [[TongweiciViewController alloc]init];
+        [self.navigationController pushViewController:tongwei animated:YES];
     
     
     }else if (!indexPath.section && indexPath.item == 6){

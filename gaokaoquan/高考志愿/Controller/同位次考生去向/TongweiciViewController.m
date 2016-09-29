@@ -88,7 +88,7 @@
     [scrollview addSubview:imageView2];
     self.imageview = imageView2;
     
-    [[JYNetWorkTool sharedTools]request:JYRequestMethodGET urlString:@"http://api.dev.gaokaoq.com/service/view?id=4" parameters:nil callback:^(id responseObject, NSError *error) {
+    [[JYNetWorkTool sharedTools]request:JYRequestMethodGET urlString:@"http://api.dev.gaokaoq.com/service/view?id=3" parameters:nil callback:^(id responseObject, NSError *error) {
         
         TongweiciModel *same = [TongweiciModel mj_objectWithKeyValues:responseObject[@"data"]];
         
