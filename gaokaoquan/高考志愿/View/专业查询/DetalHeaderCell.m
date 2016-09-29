@@ -13,6 +13,9 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    self.guanzhuBtn.layer.masksToBounds = YES;
+    self.guanzhuBtn.layer.cornerRadius = 5.0;
+    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

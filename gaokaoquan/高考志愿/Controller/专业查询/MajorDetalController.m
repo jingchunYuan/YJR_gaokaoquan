@@ -32,13 +32,14 @@
 #pragma mark - 
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     static NSString *cellId = @"DetalHeaderCell";
     DetalHeaderCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    cell.backgroundColor = VIEWCONTROLLERBGCOLOR;
     if (!cell) {
         cell = [[DetalHeaderCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
     }
@@ -48,7 +49,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 100;
+    return 240;
 }
 
 
@@ -78,6 +79,8 @@
         _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        _tableView.backgroundColor = VIEWCONTROLLERBGCOLOR;
         [_tableView registerNib:[UINib nibWithNibName:NSStringFromClass([DetalHeaderCell class]) bundle:nil] forCellReuseIdentifier:NSStringFromClass([DetalHeaderCell class])];
     }
     return _tableView;
