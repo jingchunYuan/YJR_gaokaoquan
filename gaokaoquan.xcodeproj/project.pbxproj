@@ -4414,7 +4414,7 @@
 				TargetAttributes = {
 					73536D2C1D6EBF9300CDD8A5 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = VZ8CKBEE8R;
+						DevelopmentTeam = 2RG96DPB3Y;
 					};
 				};
 			};
@@ -5313,7 +5313,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = VZ8CKBEE8R;
+				DEVELOPMENT_TEAM = 2RG96DPB3Y;
 				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/gaokaoquan/PrefixHeader.pch";
@@ -5333,7 +5333,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = VZ8CKBEE8R;
+				DEVELOPMENT_TEAM = 2RG96DPB3Y;
 				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/gaokaoquan/PrefixHeader.pch";

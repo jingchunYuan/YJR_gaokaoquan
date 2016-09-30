@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @class TestTableCellModel;
+
 @interface TestTableViewCell : UITableViewCell
 
 @property (nonatomic,strong) TestTableCellModel *model;

@@ -23,6 +23,7 @@
 #import "JYStudyAgainViewController.h"
 #import "JYSameNumViewController.h"
 #import "TongweiciViewController.h"
+#import "TestViewController.h"
 //#import "OccupationViewController.h"
 @interface GaoXiaoZhiYuanViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 @property (nonatomic,strong)UICollectionView * clcView;
@@ -208,7 +209,9 @@
         [self.navigationController pushViewController:MBTI animated:YES];
      
     }else if (indexPath.section == 1 && indexPath.row == 2){
-    
+      
+        TestViewController *test = [[TestViewController alloc]init];
+        [self.navigationController pushViewController:test animated:YES];
     
     }else if (indexPath.section == 1 && indexPath.row == 3){
     
