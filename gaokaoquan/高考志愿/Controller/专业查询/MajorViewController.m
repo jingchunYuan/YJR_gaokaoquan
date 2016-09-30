@@ -175,9 +175,10 @@
         b.frame = CGRectMake(i*(SCREEN_WIDTH/2), 0, SCREEN_WIDTH/2, 40);
         [b setTitle:titleArr[i] forState:UIControlStateNormal];
         if (i==0) {
-            b.backgroundColor = [UIColor redColor];
+            b.backgroundColor = [UIColor colorWithRed:29/255.0 green:182/255.0 blue:250/255.0 alpha:1];
         }else {
             b.backgroundColor = [UIColor lightGrayColor];
+            [b setTintColor:[UIColor colorWithRed:29/255.0 green:182/255.0 blue:250/255.0 alpha:1]];
         }
         b.titleLabel.font = [UIFont systemFontOfSize:15];
         b.tag = 200 + i;
@@ -216,12 +217,13 @@
         if ([view isKindOfClass:[UIButton class]]) {
             UIButton *b1 = (UIButton *)view;
             b1.backgroundColor = [UIColor lightGrayColor];
+            
         }
     }
     
     //选中的
     UIButton *b = [self.view viewWithTag:btnTag];
-    b.backgroundColor = [UIColor redColor];
+    b.backgroundColor = [UIColor colorWithRed:29/255.0 green:182/255.0 blue:250/255.0 alpha:1];
     
 }
 

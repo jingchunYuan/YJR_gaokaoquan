@@ -57,7 +57,7 @@ static NSString *inder = @"cell";
     TestTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:inder];
     if (cell == nil) {
         
-        cell = [[[NSBundle mainBundle]loadNibNamed:@"TongweiciTableViewCell" owner:nil options:nil]lastObject];
+        cell = [[[NSBundle mainBundle]loadNibNamed:@"TestTableViewCell" owner:nil options:nil]lastObject];
     }
     
     TestTableCellModel *model = self.DataArray[indexPath.row];

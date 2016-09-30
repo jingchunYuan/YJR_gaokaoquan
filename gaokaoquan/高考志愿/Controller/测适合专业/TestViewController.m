@@ -119,7 +119,6 @@
     [Buy setTitle:@"立即购买" forState:UIControlStateNormal];
     [Buy setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.view addSubview:Buy];
-   
     
     [Buy mas_makeConstraints:^(MASConstraintMaker *make) {
         
@@ -158,7 +157,6 @@
     [self.btn setTitleColor:[UIColor colorWithRed:85/255.0 green:193/255.0 blue:231/255.0 alpha:1] forState:UIControlStateNormal];
     
 }
-
 
 
 - (void)leftBarButtonItemClick

@@ -408,6 +408,8 @@
 		2268C0911D82BC09004D8E85 /* fengyunModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2268C0901D82BC09004D8E85 /* fengyunModel.m */; };
 		2268C0941D82BD6C004D8E85 /* fengyunModel+Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 2268C0931D82BD6C004D8E85 /* fengyunModel+Request.m */; };
 		226B20E41D98CAE400513711 /* JobModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 226B20E31D98CAE400513711 /* JobModel.m */; };
+		22750EFF1D9E5ADB005B3653 /* LuquView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22750EFE1D9E5ADB005B3653 /* LuquView.m */; };
+		22750F011D9E5AED005B3653 /* LuquView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22750F001D9E5AED005B3653 /* LuquView.xib */; };
 		22A392C91D98FFE9000F683E /* 路径@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A392C51D98FFE9000F683E /* 路径@2x.png */; };
 		22A392CA1D98FFE9000F683E /* 路径@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A392C61D98FFE9000F683E /* 路径@3x.png */; };
 		22A392CB1D98FFE9000F683E /* 下拉@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A392C71D98FFE9000F683E /* 下拉@3x.png */; };
@@ -1370,6 +1372,9 @@
 		2268C0931D82BD6C004D8E85 /* fengyunModel+Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "fengyunModel+Request.m"; sourceTree = "<group>"; };
 		226B20E21D98CAE400513711 /* JobModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JobModel.h; path = ../JobModel.h; sourceTree = "<group>"; };
 		226B20E31D98CAE400513711 /* JobModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JobModel.m; path = ../JobModel.m; sourceTree = "<group>"; };
+		22750EFD1D9E5ADB005B3653 /* LuquView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuquView.h; sourceTree = "<group>"; };
+		22750EFE1D9E5ADB005B3653 /* LuquView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LuquView.m; sourceTree = "<group>"; };
+		22750F001D9E5AED005B3653 /* LuquView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LuquView.xib; sourceTree = "<group>"; };
 		22A392C51D98FFE9000F683E /* 路径@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "路径@2x.png"; sourceTree = "<group>"; };
 		22A392C61D98FFE9000F683E /* 路径@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "路径@3x.png"; sourceTree = "<group>"; };
 		22A392C71D98FFE9000F683E /* 下拉@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "下拉@3x.png"; sourceTree = "<group>"; };
@@ -3174,6 +3179,30 @@
 			name = "同分考生去向";
 			sourceTree = "<group>";
 		};
+		22750EFA1D9E4713005B3653 /* 录取概率测试 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "录取概率测试";
+			sourceTree = "<group>";
+		};
+		22750EFB1D9E471A005B3653 /* 录取概率测试 */ = {
+			isa = PBXGroup;
+			children = (
+				22750EFD1D9E5ADB005B3653 /* LuquView.h */,
+				22750EFE1D9E5ADB005B3653 /* LuquView.m */,
+				22750F001D9E5AED005B3653 /* LuquView.xib */,
+			);
+			path = "录取概率测试";
+			sourceTree = "<group>";
+		};
+		22750EFC1D9E4721005B3653 /* 录取概率测试 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "录取概率测试";
+			sourceTree = "<group>";
+		};
 		22DBFA951D9BE560002085C3 /* RATreeView */ = {
 			isa = PBXGroup;
 			children = (
@@ -3390,6 +3419,7 @@
 		735370771D6EE03200CDD8A5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				22750EFC1D9E4721005B3653 /* 录取概率测试 */,
 				224688B01D9D3FDD0053656E /* 测适合专业 */,
 				224688501D9CF21C0053656E /* 同位次考生去向 */,
 				180E096D1D9A672A00605793 /* 同分考生去向 */,
@@ -3451,6 +3481,7 @@
 		7353707B1D6EE06F00CDD8A5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				22750EFA1D9E4713005B3653 /* 录取概率测试 */,
 				224688AE1D9D3FCA0053656E /* 测适合专业 */,
 				2246884F1D9CF2120053656E /* 同位次考生去向 */,
 				224C77041D9AA73A00AADE8C /* 同分考生去向 */,
@@ -3536,6 +3567,7 @@
 		735370811D6EE0C200CDD8A5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				22750EFB1D9E471A005B3653 /* 录取概率测试 */,
 				224688AF1D9D3FD60053656E /* 测适合专业 */,
 				2246884E1D9CF20C0053656E /* 同位次考生去向 */,
 				2245C94C1D9B5D1900433D4C /* 同分考生去向 */,
@@ -4562,6 +4594,7 @@
 				2249D4031D880D7E00813C72 /* 根据专业查对口职业@2x.png in Resources */,
 				8498D90A1D868CDF00169695 /* gerenzhongxin-gerenziliao@2x.png in Resources */,
 				8498D9131D868CDF00169695 /* 风云榜赞@3x(1).png in Resources */,
+				22750F011D9E5AED005B3653 /* LuquView.xib in Resources */,
 				2249D3F91D880D7E00813C72 /* 大学排名@2x.png in Resources */,
 				2249D3691D87DD4400813C72 /* 高校查询-选中状态三角形@3x.png in Resources */,
 				2241011A1D86B1FE000053E2 /* 高考攻略@3x.png in Resources */,
@@ -5104,6 +5137,7 @@
 				2228B9421D9376150078B6DE /* JYKongFuView.m in Sources */,
 				8498D9A91D868F4600169695 /* AnswerDetalTopCell.m in Sources */,
 				1861E25B1D96906100174BC9 /* JYScoreViewController.m in Sources */,
+				22750EFF1D9E5ADB005B3653 /* LuquView.m in Sources */,
 				18B3DF7B1D8654A200929D0C /* NSString+MJExtension.m in Sources */,
 				181165171D8D5882002EE814 /* NSCalendar+ST.m in Sources */,
 				1813FE251D8BDED100B937DE /* JYAnswerCountModel.m in Sources */,
