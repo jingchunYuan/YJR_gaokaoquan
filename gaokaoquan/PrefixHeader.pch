@@ -94,6 +94,34 @@
  http://api.dev.gaokaoq.com/job/major2job?q=%E5%93%B2%E5%AD%A6&p=1&pageSize=20 专业职业通 - 专业查职业
  */
 
+/*同位次考生
+ http://api.dev.gaokaoq.com/service/view?id=3 同位次考生去向 首页
+ http://api.dev.gaokaoq.com/service/comment?sid=3 同位次考生去向 评论
+ http://api.dev.gaokaoq.com/ServiceTwcqx/info 同位次考生去向 - 填写信息 POST 参数city_id = 城市id type = 科类（1。文，2。理）score = 分数
+ http://api.dev.gaokaoq.com/ServiceTwcqx/result?id=6109&year=2015 同位次考生去向 - 结果页
+ 
+ */
+
+/*同分考生去向
+ http://api.dev.gaokaoq.com/service/view?id=4 同分考生去向 首页
+ http://api.dev.gaokaoq.com/service/comment?sid=4 同分考生去向 评论
+ http://api.dev.gaokaoq.com/ServiceTfqx/info  同分考生去向 - 填写信息 POST 参数city_id = 城市id type = 科类（1。文，2。理）score = 分数
+ http://api.dev.gaokaoq.com/ServiceTfqx/result?id=4683&year=2015   同分考生去向 - 查询结果页
+ */
+
+
+/*测适合专业
+ http://api.dev.gaokaoq.com/service/view?id=5 测适合专业 - 产品介绍
+ http://api.dev.gaokaoq.com/service/comment?sid=5  测适合专业 - 使用评价
+ http://api.dev.gaokaoq.com/test/view?key=service_major 测适合专业 - 首页
+ http://api.dev.gaokaoq.com/ServiceMajor/info 测适合专业 - 输入基本信息 POST 参数	 type= 科目 name = 姓名
+ http://api.dev.gaokaoq.com/test/question.html?key=holland 霍兰德职业兴趣测试页面
+ http://api.dev.gaokaoq.com/ServiceMajor/holland测适合专业 - 接收霍兰德职业兴趣测试页 POST
+ http://api.dev.gaokaoq.com/test/question.html?key=mbti  MBTI职业性格测试页面
+ http://api.dev.gaokaoq.com/ServiceMajor/mbti 测适合专业 - 接收MBTI职业性格测试93题版页 POST 返回 id
+ http://api.dev.gaokaoq.com/ServiceMajor/result?id=1566 测适合专业 -
+ */
+
 
 
 //第三个界面http://api.dev.gaokaoq.com//advisor/lists?p=2&pageSize=20&city=1&q=%E5%8C%97%E4%BA%AC

@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class TongweiciTableCellModel;
+
 @interface TongweiciTableViewCell : UITableViewCell
+
+@property (nonatomic,strong) TongweiciTableCellModel *model;
 
 @end
