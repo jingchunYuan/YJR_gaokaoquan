@@ -7,10 +7,27 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MajorDetalJieshaoModel.h"
+
+@class DetalHeaderCell;
+@protocol DetalHeaderCellDelegate <NSObject>
+
+@required
+- (void)btnClickAction:(DetalHeaderCell *)detalHeaderCell withBtnTag:(int)tag;
+
+@end
 
 @interface DetalHeaderCell : UITableViewCell
+
+@property (weak, nonatomic) id<DetalHeaderCellDelegate>delegate;
 @property (weak, nonatomic) IBOutlet UIView *bgView1;
 @property (weak, nonatomic) IBOutlet UIView *bgView2;
 @property (weak, nonatomic) IBOutlet UIButton *guanzhuBtn;
+@property (nonatomic, strong) MajorDetalJieshaoModel *model;
+@property (weak, nonatomic) IBOutlet UILabel *zhuanyedaimaLabel;
+@property (weak, nonatomic) IBOutlet UILabel *xiuxuenianxianLabel;
+@property (weak, nonatomic) IBOutlet UILabel *shouyuxueweiLabel;
+@property (weak, nonatomic) IBOutlet UILabel *xiangjinxueweiLabel;
+@property (weak, nonatomic) IBOutlet UILabel *duikouhzhiyeLabel;
 
 @end
