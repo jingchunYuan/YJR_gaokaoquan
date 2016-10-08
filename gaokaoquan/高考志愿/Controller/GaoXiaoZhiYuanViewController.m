@@ -24,6 +24,8 @@
 #import "JYSameNumViewController.h"
 #import "TongweiciViewController.h"
 #import "TestViewController.h"
+#import "AcceptanceProbabilityViewController.h"
+#import "AchievementTrackingViewController.h"
 //#import "OccupationViewController.h"
 @interface GaoXiaoZhiYuanViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 @property (nonatomic,strong)UICollectionView * clcView;
@@ -202,6 +204,8 @@
     // 第二组
     if (indexPath.section == 1 && indexPath.row == 0) {
         
+        AcceptanceProbabilityViewController *acceptance = [[AcceptanceProbabilityViewController alloc]init];
+        [self.navigationController pushViewController:acceptance animated:YES];
         
     }else if (indexPath.section == 1 && indexPath.row == 1){
     
@@ -219,7 +223,11 @@
         [self.navigationController pushViewController:again animated:YES];
        
     }
-  
+    //第三组
+    else if(indexPath.row==0){
+        AchievementTrackingViewController * achieveController = [[AchievementTrackingViewController alloc]init];
+        [self.navigationController pushViewController:achieveController animated:YES];
+    }
     
 }
 
