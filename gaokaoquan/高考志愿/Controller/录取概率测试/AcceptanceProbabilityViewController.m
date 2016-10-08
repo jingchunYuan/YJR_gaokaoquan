@@ -40,6 +40,7 @@
 //
     
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem initWithImageName:@"返回" highlightedImage:nil title:nil target:self action:@selector(leftBarButtonItemClick)];
+    
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem initWithImageName:@"返回" highlightedImage:nil title:nil target:self action:@selector(leftBarButtonItemClick)];
     self.navigationItem.titleView = [self.view titleWithNavigat:@"录取概率测试"];
     scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
@@ -61,11 +62,6 @@
     _subjectBtn.contentEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0);
     _subjectBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
     
-//    [scrollView addSubview:_collegeTxt];
-//    [scrollView addSubview:_scoreTxt];
-//    [scrollView addSubview:_adrBtn];
-//    [scrollView addSubview:_batchBtn];
-//    [scrollView addSubview:_subjectBtn];
     
     
 }

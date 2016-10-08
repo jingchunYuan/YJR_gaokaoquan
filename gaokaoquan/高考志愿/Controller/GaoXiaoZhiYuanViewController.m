@@ -26,6 +26,9 @@
 #import "TestViewController.h"
 #import "AcceptanceProbabilityViewController.h"
 #import "AchievementTrackingViewController.h"
+#import "ZhiyuanViewController.h"
+#import "GenjufenshuViewController.h"
+
 //#import "OccupationViewController.h"
 @interface GaoXiaoZhiYuanViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 @property (nonatomic,strong)UICollectionView * clcView;
@@ -227,6 +230,23 @@
     else if(indexPath.row==0){
         AchievementTrackingViewController * achieveController = [[AchievementTrackingViewController alloc]init];
         [self.navigationController pushViewController:achieveController animated:YES];
+    }else if (indexPath.row == 1){
+        ZhiyuanViewController *zhiyuan = [[ZhiyuanViewController alloc]init];
+        [self.navigationController pushViewController:zhiyuan animated:YES];
+        
+    }else if (indexPath.row == 2){
+        
+        
+    }else if (indexPath.row == 3){
+        
+        
+    }else if (indexPath.row == 4){
+        
+        
+    }else if (indexPath.row == 5){
+        
+        GenjufenshuViewController *genju = [[GenjufenshuViewController alloc]init];
+        [self.navigationController pushViewController:genju animated:YES];
     }
     
 }

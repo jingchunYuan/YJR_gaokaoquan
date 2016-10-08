@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,7 +13,7 @@
             <rect key="frame" x="0.0" y="0.0" width="332" height="84"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="332" height="84"/>
+                <frame key="frameInset" width="332" height="83"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-08-16 18:15:46" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J27-eR-V10">
@@ -19,34 +21,32 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3.png" translatesAutoresizingMaskIntoConstraints="NO" id="b9S-wS-nfy"/>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="哈几个发故去舒感觉是个借口说过会我挂号狗阿合格;还哦玩;和;好玩;个好玩; " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fI0-Dc-rm7">
-                        <constraints>
-                            <constraint firstAttribute="width" constant="220" id="npt-d0-dWv"/>
-                        </constraints>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="哈几个发故去舒感觉是个借口说过会我挂号狗阿合格;还哦玩;和;好玩;个好玩; " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fI0-Dc-rm7">
+                        <frame key="frameInset" minX="68" minY="10" width="220" height="29"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ih8-9m-X2q">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="ENd-sc-VZh"/>
+                            <constraint firstAttribute="height" constant="45" id="cmA-8Q-X7S"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="fI0-Dc-rm7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="0LM-fi-XBB"/>
                     <constraint firstAttribute="trailing" secondItem="J27-eR-V10" secondAttribute="trailing" constant="5" id="0yf-x0-QeW"/>
-                    <constraint firstItem="fI0-Dc-rm7" firstAttribute="leading" secondItem="b9S-wS-nfy" secondAttribute="trailing" constant="10" id="503-NE-fop"/>
+                    <constraint firstItem="Ih8-9m-X2q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="Bf6-J8-5Ku"/>
+                    <constraint firstItem="Ih8-9m-X2q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="Fon-gi-cyZ"/>
                     <constraint firstAttribute="bottom" secondItem="J27-eR-V10" secondAttribute="bottom" constant="5" id="O97-cH-gsd"/>
-                    <constraint firstItem="b9S-wS-nfy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="QhO-gs-cCo"/>
-                    <constraint firstItem="b9S-wS-nfy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="gjO-M4-dJg"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="detailLabel" destination="fI0-Dc-rm7" id="VzD-8e-FJA"/>
-                <outlet property="imageview" destination="b9S-wS-nfy" id="aU0-iB-amc"/>
                 <outlet property="time" destination="J27-eR-V10" id="E6F-du-VQT"/>
             </connections>
             <point key="canvasLocation" x="40" y="48"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="3.png" width="48" height="48"/>
-    </resources>
 </document>
