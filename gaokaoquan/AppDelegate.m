@@ -84,10 +84,9 @@
         
         UIViewController *vc = [[[vcArray objectAtIndex:i] alloc] init];
         GXQNavigationController *nav = [[GXQNavigationController alloc] initWithRootViewController:vc];
-         nav.navigationBar.titleTextAttributes = @{UITextAttributeTextColor: [UIColor whiteColor]};
+         nav.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
 
         [vc.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"nav_bg@2x"] forBarMetrics:UIBarMetricsDefault];
-//        vc.navigationController.navigationBarHidden = YES;
         UIView *statusBarView = [[UIView alloc] initWithFrame:CGRectMake(0, -20, SCREEN_WIDTH, 20)];
         statusBarView.backgroundColor = [UIColor whiteColor];
         [vc.navigationController.navigationBar addSubview:statusBarView];
@@ -95,26 +94,19 @@
         nav.tabBarItem = [[UITabBarItem alloc] initWithTitle:[titleArr objectAtIndex:i]
                                                        image:myImage
                                                selectedImage:myselImage];
-                //未选中时
+        //未选中时
         NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
-        attrs[NSFontAttributeName] = [UIFont systemFontOfSize:12];
-        attrs[NSForegroundColorAttributeName] = [UIColor grayColor];
+        attrs[NSFontAttributeName] = [UIFont systemFontOfSize:11];
+        attrs[NSForegroundColorAttributeName] = UIColorRGBA(79, 193, 233, 1);
         //选中时
         NSMutableDictionary *selectedAttrs = [NSMutableDictionary dictionary];
-        selectedAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:12];
-        selectedAttrs[NSForegroundColorAttributeName] = [UIColor darkGrayColor];
+        selectedAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:11];
+        selectedAttrs[NSForegroundColorAttributeName] = [UIColor whiteColor];
         
         //设置
-        [nav.tabBarItem setTitleTextAttributes:attrs
-                                      forState:UIControlStateNormal];
-        [nav.tabBarItem setTitleTextAttributes:selectedAttrs
-                                      forState:UIControlStateSelected];
-        [nav.tabBarItem setTitleTextAttributes:[NSDictionary
-                                      dictionaryWithObjectsAndKeys: UIColorRGBA(79, 193, 233, 1),
-                                      UITextAttributeTextColor, nil] forState:UIControlStateNormal];
-        [nav.tabBarItem setTitleTextAttributes:[NSDictionary
-                                                dictionaryWithObjectsAndKeys: [UIColor whiteColor],
-                                                UITextAttributeTextColor, nil] forState:UIControlEventTouchUpInside];
+        [nav.tabBarItem setTitleTextAttributes:attrs forState:UIControlStateNormal];
+        [nav.tabBarItem setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
+        
         [controllers addObject:nav];
         
     }

@@ -159,14 +159,14 @@
     for (int i=0; i<2; i++) {
         
         for (int j=0; j<4; j++) {
-            //(width+20)+i*(width+39)
+
             UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
             UILabel *label = [[UILabel alloc] init];
             
             float width = (SCREEN_WIDTH-30-3*30)/4;
-            float height = (view2.frame.size.height-width*2-60);
+            float height = (view2.frame.size.height-(width+10+20)*2);
             
-            btn.frame = CGRectMake(8+j*(width*1.5), 10+i*(width+height), width, width);
+            btn.frame = CGRectMake(15+j*(width+30), 15+i*(width+10+height), width, width);
             label.frame = CGRectMake(btn.frame.origin.x-30, btn.frame.origin.y+btn.frame.size.height+1, width+60, 10);
             
             [btn setImage:[UIImage imageNamed:imageArray[i][j]] forState:UIControlStateNormal];
@@ -182,7 +182,6 @@
                 [view2 addSubview:img];
             }
             
-            
             label.text = titleArray[i][j];
             label.font = [UIFont systemFontOfSize:11];
             label.textAlignment = NSTextAlignmentCenter;
@@ -192,12 +191,7 @@
             [view2 addSubview:label];
             
             index ++;
-            
-//            [label mas_makeConstraints:^(MASConstraintMaker *make) {
-//                make.centerX.equalTo(btn);
-//                make.top.equalTo(btn).offset(btn.height);
-//            }];
-            
+
         }
         
     }
