@@ -9,9 +9,7 @@
 #import "AcceptanceProbabilityViewController.h"
 
 @interface AcceptanceProbabilityViewController ()
-{
-    UIScrollView *scrollView;
-}
+
 //目标大学
 @property (weak, nonatomic) IBOutlet UITextField *collegeTxt;
 //北京 (地址)
@@ -43,8 +41,8 @@
     
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem initWithImageName:@"返回" highlightedImage:nil title:nil target:self action:@selector(leftBarButtonItemClick)];
     self.navigationItem.titleView = [self.view titleWithNavigat:@"录取概率测试"];
-    scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
-    scrollView.scrollEnabled = YES;
+//    scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+//    scrollView.scrollEnabled = YES;
 
     _collegeTxt.borderStyle = UITextBorderStyleLine;
     _collegeTxt.layer.masksToBounds = YES;
