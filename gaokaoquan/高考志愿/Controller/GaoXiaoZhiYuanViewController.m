@@ -150,104 +150,83 @@
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
+    //第一组（查询服务）
     if (!indexPath.section&&!indexPath.item) {
-       
+        //高校查询
         GaoXiaoSearchViewController * gxVc = [[GaoXiaoSearchViewController alloc]init];
         ServiceModel * service = _dataArr[indexPath.section];
         WishBtnModel * model = service.list[indexPath.item];
         gxVc.url = model.url;
         [self.navigationController pushViewController:gxVc animated:YES];
-
     }else if (!indexPath.section && indexPath.item == 1 ){
-    
         NSLog(@"专业查询");
         MajorViewController *major = [[MajorViewController alloc]init];
         [self.navigationController pushViewController:major animated:YES];
-    
     }else if (!indexPath.section && indexPath.item == 2){
-    
+        //分数线查询
         FenshuViewController *fenshu = [[FenshuViewController alloc]init];
-        
         [self.navigationController pushViewController:fenshu  animated:YES];
-
-    
-    
-    
     }else if (!indexPath.section && indexPath.item == 3){
-    
         NSLog(@"职业查询");
         OccupationController *occ = [[OccupationController alloc]init];
         [self.navigationController pushViewController:occ animated:YES];
-    
-    
     }else if (!indexPath.section && indexPath.item == 4){
-    
+        //专业职业通
         JYJobViewController *job = [[JYJobViewController alloc]init];
         [self.navigationController pushViewController:job animated:YES];
-        
     }else if (!indexPath.section && indexPath.item == 5){
-    
+        //同位次考生去向
         TongweiciViewController *tongwei = [[TongweiciViewController alloc]init];
         [self.navigationController pushViewController:tongwei animated:YES];
-    
-    
     }else if (!indexPath.section && indexPath.item == 6){
-    
+        //同分考生去向
         JYSameNumViewController *same = [[JYSameNumViewController alloc]init];
         [self.navigationController pushViewController:same animated:YES];
-    
     }else if (!indexPath.section && indexPath.item == 7){
-    
+        //大学排名
         JYCollegeRankingsViewController *college = [[JYCollegeRankingsViewController alloc]init];
-        
         [self.navigationController pushViewController:college animated:YES];
-        
-    
     }
     
-    // 第二组
+    // 第二组（测试体系）
     if (indexPath.section == 1 && indexPath.row == 0) {
-        
+        //录取概率测试
         AcceptanceProbabilityViewController *acceptance = [[AcceptanceProbabilityViewController alloc]init];
         [self.navigationController pushViewController:acceptance animated:YES];
-        
     }else if (indexPath.section == 1 && indexPath.row == 1){
-    
+        //MBTI职业测试
         JYMBTIViewController *MBTI = [[JYMBTIViewController alloc]init];
         [self.navigationController pushViewController:MBTI animated:YES];
-     
     }else if (indexPath.section == 1 && indexPath.row == 2){
         //测适合专业
         TestViewController *test = [[TestViewController alloc]init];
         [self.navigationController pushViewController:test animated:YES];
-    
     }else if (indexPath.section == 1 && indexPath.row == 3){
-    
+        //复读指数测试
         JYStudyAgainViewController *again = [[JYStudyAgainViewController alloc]init];
         [self.navigationController pushViewController:again animated:YES];
-       
     }
-    //第三组
-    else if(indexPath.row==0){
-        
-        //成绩跟踪系统 
+    
+    //第三组（智能填报）
+    else if(indexPath.section == 2 && indexPath.row==0){
+        //成绩跟踪系统
         AchievementTrackingViewController * achieveController = [[AchievementTrackingViewController alloc]init];
         [self.navigationController pushViewController:achieveController animated:YES];
-    }else if (indexPath.row == 1){
+    }else if (indexPath.section == 2 && indexPath.row == 1){
+        //志愿定制报告
         ZhiyuanViewController *zhiyuan = [[ZhiyuanViewController alloc]init];
         [self.navigationController pushViewController:zhiyuan animated:YES];
+    }else if (indexPath.section == 2 && indexPath.row == 2){
+        //vip系统
         
-    }else if (indexPath.row == 2){
+    }else if (indexPath.section == 2 && indexPath.row == 3){
+        //双人志愿系统
         
+    }else if (indexPath.section == 2 && indexPath.row == 4){
+        //模拟志愿填报
         
-    }else if (indexPath.row == 3){
-        
-        
-    }else if (indexPath.row == 4){
-        
-        
-    }else if (indexPath.row == 5){
-        
+    }else if (indexPath.section == 2 && indexPath.row == 5){
+        //根据分数选大学
         GenjufenshuViewController *genju = [[GenjufenshuViewController alloc]init];
         [self.navigationController pushViewController:genju animated:YES];
     }
