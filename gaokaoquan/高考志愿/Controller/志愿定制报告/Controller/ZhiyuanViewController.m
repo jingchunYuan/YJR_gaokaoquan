@@ -37,7 +37,12 @@
     [self setUI];
 
 }
-
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.tabBarController.tabBar.hidden = YES;
+    
+}
 
 - (void)setUI
 {
@@ -112,7 +117,7 @@
                 NSLog(@"%@",subStrArray[0]);
                 imageURL = subStrArray[0];
                 imageURL = [imageURL substringFromIndex:1];
-                imageURL = [imageURL substringToIndex:[imageURL length]-2];
+                imageURL = [imageURL substringToIndex:[imageURL length]-1];
             }
         }
         
