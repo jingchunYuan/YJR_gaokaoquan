@@ -149,6 +149,7 @@
 //}
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
     if (!indexPath.section&&!indexPath.item) {
        
         GaoXiaoSearchViewController * gxVc = [[GaoXiaoSearchViewController alloc]init];
@@ -228,6 +229,8 @@
     }
     //第三组
     else if(indexPath.row==0){
+        
+        //成绩跟踪系统 
         AchievementTrackingViewController * achieveController = [[AchievementTrackingViewController alloc]init];
         [self.navigationController pushViewController:achieveController animated:YES];
     }else if (indexPath.row == 1){

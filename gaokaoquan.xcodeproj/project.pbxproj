@@ -303,20 +303,8 @@
 		224688C91D9D41C60053656E /* TongweiciView.m in Sources */ = {isa = PBXBuildFile; fileRef = 224688C61D9D41C60053656E /* TongweiciView.m */; };
 		224782011DA88B830090ED4E /* AcceptanceProbabilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224781FF1DA88B830090ED4E /* AcceptanceProbabilityViewController.m */; };
 		224782021DA88B830090ED4E /* AcceptanceProbabilityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224782001DA88B830090ED4E /* AcceptanceProbabilityViewController.xib */; };
-		2247820A1DA8A7630090ED4E /* AchievementTrackingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224782091DA8A7630090ED4E /* AchievementTrackingViewController.m */; };
-		2247820F1DA8A7810090ED4E /* ScoreModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2247820C1DA8A7810090ED4E /* ScoreModel.m */; };
-		224782101DA8A7810090ED4E /* ScoreModel+Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 2247820E1DA8A7810090ED4E /* ScoreModel+Request.m */; };
-		224782181DA8A7B30090ED4E /* BLBrokenLineRunChartTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 224782131DA8A7B30090ED4E /* BLBrokenLineRunChartTool.m */; };
-		224782191DA8A7B30090ED4E /* BLChatLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 224782151DA8A7B30090ED4E /* BLChatLineView.m */; };
-		2247821A1DA8A7B30090ED4E /* BLPointBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 224782171DA8A7B30090ED4E /* BLPointBtn.m */; };
 		2247821D1DA8C9BE0090ED4E /* 查看详情@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2247821B1DA8C9BE0090ED4E /* 查看详情@2x.png */; };
 		2247821E1DA8C9BE0090ED4E /* 查看详情@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2247821C1DA8C9BE0090ED4E /* 查看详情@3x.png */; };
-		224782251DA8E2AA0090ED4E /* ZhiyuanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224782241DA8E2AA0090ED4E /* ZhiyuanViewController.m */; };
-		224782281DA8F8F50090ED4E /* ZhiyuanTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 224782271DA8F8F50090ED4E /* ZhiyuanTableView.m */; };
-		2247822C1DA8F9100090ED4E /* ZhiyuanTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2247822A1DA8F9100090ED4E /* ZhiyuanTableViewCell.m */; };
-		2247822D1DA8F9100090ED4E /* ZhiyuanTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2247822B1DA8F9100090ED4E /* ZhiyuanTableViewCell.xib */; };
-		224782301DA8FA100090ED4E /* ZhiyuanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2247822F1DA8FA100090ED4E /* ZhiyuanModel.m */; };
-		224782361DA8FAFA0090ED4E /* ZhiyuanTableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 224782351DA8FAFA0090ED4E /* ZhiyuanTableViewCellModel.m */; };
 		2249D3271D879EA200813C72 /* dongtai@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2249D3211D879EA200813C72 /* dongtai@2x.png */; };
 		2249D3281D879EA200813C72 /* dongtai@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2249D3221D879EA200813C72 /* dongtai@3x.png */; };
 		2249D3291D879EA200813C72 /* jieshao@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2249D3231D879EA200813C72 /* jieshao@2x.png */; };
@@ -750,6 +738,15 @@
 		84DC80A11D70370900612E20 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DC80911D70370900612E20 /* UIView+WebCacheOperation.m */; };
 		84DC80A31D70371E00612E20 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 84DC80A21D70371E00612E20 /* libsqlite3.tbd */; };
 		84DC80A71D7039AA00612E20 /* KSHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DC80A61D7039AA00612E20 /* KSHttpManager.m */; };
+		84F596841DAA38D400963298 /* AchievementTrackingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F596761DAA38D400963298 /* AchievementTrackingViewController.m */; };
+		84F596851DAA38D400963298 /* ScoreModel+Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F596791DAA38D400963298 /* ScoreModel+Request.m */; };
+		84F596861DAA38D400963298 /* ScoreModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F5967B1DAA38D400963298 /* ScoreModel.m */; };
+		84F596871DAA38D400963298 /* BLBrokenLineRunChartTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F5967F1DAA38D400963298 /* BLBrokenLineRunChartTool.m */; };
+		84F596881DAA38D400963298 /* BLChatLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F596811DAA38D400963298 /* BLChatLineView.m */; };
+		84F596891DAA38D400963298 /* BLPointBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F596831DAA38D400963298 /* BLPointBtn.m */; };
+		84F596931DAA38E400963298 /* ZhiyuanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F5968D1DAA38E400963298 /* ZhiyuanViewController.m */; };
+		84F596941DAA38E400963298 /* ZhiyuanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F596901DAA38E400963298 /* ZhiyuanModel.m */; };
+		84F596951DAA38E400963298 /* ZhiyuanTableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F596921DAA38E400963298 /* ZhiyuanTableViewCellModel.m */; };
 		FC0486C71D7AEF020052EDB6 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0486B11D7AEF020052EDB6 /* MASCompositeConstraint.m */; };
 		FC0486C81D7AEF020052EDB6 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0486B41D7AEF020052EDB6 /* MASConstraint.m */; };
 		FC0486C91D7AEF020052EDB6 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0486B61D7AEF020052EDB6 /* MASConstraintMaker.m */; };
@@ -1277,32 +1274,8 @@
 		224781FE1DA88B830090ED4E /* AcceptanceProbabilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcceptanceProbabilityViewController.h; sourceTree = "<group>"; };
 		224781FF1DA88B830090ED4E /* AcceptanceProbabilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcceptanceProbabilityViewController.m; sourceTree = "<group>"; };
 		224782001DA88B830090ED4E /* AcceptanceProbabilityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AcceptanceProbabilityViewController.xib; sourceTree = "<group>"; };
-		224782081DA8A7630090ED4E /* AchievementTrackingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AchievementTrackingViewController.h; sourceTree = "<group>"; };
-		224782091DA8A7630090ED4E /* AchievementTrackingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AchievementTrackingViewController.m; sourceTree = "<group>"; };
-		2247820B1DA8A7810090ED4E /* ScoreModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreModel.h; sourceTree = "<group>"; };
-		2247820C1DA8A7810090ED4E /* ScoreModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreModel.m; sourceTree = "<group>"; };
-		2247820D1DA8A7810090ED4E /* ScoreModel+Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ScoreModel+Request.h"; sourceTree = "<group>"; };
-		2247820E1DA8A7810090ED4E /* ScoreModel+Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ScoreModel+Request.m"; sourceTree = "<group>"; };
-		224782111DA8A7B30090ED4E /* BLBrokenLineRunChartGuide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLBrokenLineRunChartGuide.h; sourceTree = "<group>"; };
-		224782121DA8A7B30090ED4E /* BLBrokenLineRunChartTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLBrokenLineRunChartTool.h; sourceTree = "<group>"; };
-		224782131DA8A7B30090ED4E /* BLBrokenLineRunChartTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLBrokenLineRunChartTool.m; sourceTree = "<group>"; };
-		224782141DA8A7B30090ED4E /* BLChatLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLChatLineView.h; sourceTree = "<group>"; };
-		224782151DA8A7B30090ED4E /* BLChatLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLChatLineView.m; sourceTree = "<group>"; };
-		224782161DA8A7B30090ED4E /* BLPointBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLPointBtn.h; sourceTree = "<group>"; };
-		224782171DA8A7B30090ED4E /* BLPointBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLPointBtn.m; sourceTree = "<group>"; };
 		2247821B1DA8C9BE0090ED4E /* 查看详情@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "查看详情@2x.png"; sourceTree = "<group>"; };
 		2247821C1DA8C9BE0090ED4E /* 查看详情@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "查看详情@3x.png"; sourceTree = "<group>"; };
-		224782231DA8E2AA0090ED4E /* ZhiyuanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhiyuanViewController.h; sourceTree = "<group>"; };
-		224782241DA8E2AA0090ED4E /* ZhiyuanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhiyuanViewController.m; sourceTree = "<group>"; };
-		224782261DA8F8F50090ED4E /* ZhiyuanTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhiyuanTableView.h; sourceTree = "<group>"; };
-		224782271DA8F8F50090ED4E /* ZhiyuanTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhiyuanTableView.m; sourceTree = "<group>"; };
-		224782291DA8F9100090ED4E /* ZhiyuanTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhiyuanTableViewCell.h; sourceTree = "<group>"; };
-		2247822A1DA8F9100090ED4E /* ZhiyuanTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhiyuanTableViewCell.m; sourceTree = "<group>"; };
-		2247822B1DA8F9100090ED4E /* ZhiyuanTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZhiyuanTableViewCell.xib; sourceTree = "<group>"; };
-		2247822E1DA8FA100090ED4E /* ZhiyuanModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhiyuanModel.h; sourceTree = "<group>"; };
-		2247822F1DA8FA100090ED4E /* ZhiyuanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhiyuanModel.m; sourceTree = "<group>"; };
-		224782341DA8FAFA0090ED4E /* ZhiyuanTableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhiyuanTableViewCellModel.h; sourceTree = "<group>"; };
-		224782351DA8FAFA0090ED4E /* ZhiyuanTableViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhiyuanTableViewCellModel.m; sourceTree = "<group>"; };
 		2249D3211D879EA200813C72 /* dongtai@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dongtai@2x.png"; sourceTree = "<group>"; };
 		2249D3221D879EA200813C72 /* dongtai@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dongtai@3x.png"; sourceTree = "<group>"; };
 		2249D3231D879EA200813C72 /* jieshao@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jieshao@2x.png"; sourceTree = "<group>"; };
@@ -1898,6 +1871,25 @@
 		84DC80A51D7039AA00612E20 /* KSHttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSHttpManager.h; sourceTree = "<group>"; };
 		84DC80A61D7039AA00612E20 /* KSHttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSHttpManager.m; sourceTree = "<group>"; };
 		84DC80A81D703AE400612E20 /* GXBInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXBInterface.h; sourceTree = "<group>"; };
+		84F596751DAA38D400963298 /* AchievementTrackingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AchievementTrackingViewController.h; sourceTree = "<group>"; };
+		84F596761DAA38D400963298 /* AchievementTrackingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AchievementTrackingViewController.m; sourceTree = "<group>"; };
+		84F596781DAA38D400963298 /* ScoreModel+Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ScoreModel+Request.h"; sourceTree = "<group>"; };
+		84F596791DAA38D400963298 /* ScoreModel+Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ScoreModel+Request.m"; sourceTree = "<group>"; };
+		84F5967A1DAA38D400963298 /* ScoreModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreModel.h; sourceTree = "<group>"; };
+		84F5967B1DAA38D400963298 /* ScoreModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreModel.m; sourceTree = "<group>"; };
+		84F5967D1DAA38D400963298 /* BLBrokenLineRunChartGuide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLBrokenLineRunChartGuide.h; sourceTree = "<group>"; };
+		84F5967E1DAA38D400963298 /* BLBrokenLineRunChartTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLBrokenLineRunChartTool.h; sourceTree = "<group>"; };
+		84F5967F1DAA38D400963298 /* BLBrokenLineRunChartTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLBrokenLineRunChartTool.m; sourceTree = "<group>"; };
+		84F596801DAA38D400963298 /* BLChatLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLChatLineView.h; sourceTree = "<group>"; };
+		84F596811DAA38D400963298 /* BLChatLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLChatLineView.m; sourceTree = "<group>"; };
+		84F596821DAA38D400963298 /* BLPointBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLPointBtn.h; sourceTree = "<group>"; };
+		84F596831DAA38D400963298 /* BLPointBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLPointBtn.m; sourceTree = "<group>"; };
+		84F5968C1DAA38E400963298 /* ZhiyuanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhiyuanViewController.h; sourceTree = "<group>"; };
+		84F5968D1DAA38E400963298 /* ZhiyuanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhiyuanViewController.m; sourceTree = "<group>"; };
+		84F5968F1DAA38E400963298 /* ZhiyuanModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhiyuanModel.h; sourceTree = "<group>"; };
+		84F596901DAA38E400963298 /* ZhiyuanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhiyuanModel.m; sourceTree = "<group>"; };
+		84F596911DAA38E400963298 /* ZhiyuanTableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhiyuanTableViewCellModel.h; sourceTree = "<group>"; };
+		84F596921DAA38E400963298 /* ZhiyuanTableViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhiyuanTableViewCellModel.m; sourceTree = "<group>"; };
 		FC0486B01D7AEF020052EDB6 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		FC0486B11D7AEF020052EDB6 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
 		FC0486B21D7AEF020052EDB6 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -3151,99 +3143,10 @@
 		224782031DA8A6EC0090ED4E /* 智能填报 */ = {
 			isa = PBXGroup;
 			children = (
-				224782041DA8A70A0090ED4E /* 成绩跟踪系统 */,
-				2247821F1DA8D9920090ED4E /* 志愿定制报告 */,
+				84F5968A1DAA38E400963298 /* 志愿定制报告 */,
+				84F596731DAA38D400963298 /* 成绩跟踪系统 */,
 			);
 			path = "智能填报";
-			sourceTree = "<group>";
-		};
-		224782041DA8A70A0090ED4E /* 成绩跟踪系统 */ = {
-			isa = PBXGroup;
-			children = (
-				224782071DA8A7430090ED4E /* Controller */,
-				224782061DA8A72F0090ED4E /* Model */,
-				224782051DA8A7200090ED4E /* View */,
-			);
-			name = "成绩跟踪系统";
-			path = "../成绩跟踪系统";
-			sourceTree = "<group>";
-		};
-		224782051DA8A7200090ED4E /* View */ = {
-			isa = PBXGroup;
-			children = (
-				224782111DA8A7B30090ED4E /* BLBrokenLineRunChartGuide.h */,
-				224782121DA8A7B30090ED4E /* BLBrokenLineRunChartTool.h */,
-				224782131DA8A7B30090ED4E /* BLBrokenLineRunChartTool.m */,
-				224782141DA8A7B30090ED4E /* BLChatLineView.h */,
-				224782151DA8A7B30090ED4E /* BLChatLineView.m */,
-				224782161DA8A7B30090ED4E /* BLPointBtn.h */,
-				224782171DA8A7B30090ED4E /* BLPointBtn.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		224782061DA8A72F0090ED4E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				2247820B1DA8A7810090ED4E /* ScoreModel.h */,
-				2247820C1DA8A7810090ED4E /* ScoreModel.m */,
-				2247820D1DA8A7810090ED4E /* ScoreModel+Request.h */,
-				2247820E1DA8A7810090ED4E /* ScoreModel+Request.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		224782071DA8A7430090ED4E /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				224782081DA8A7630090ED4E /* AchievementTrackingViewController.h */,
-				224782091DA8A7630090ED4E /* AchievementTrackingViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		2247821F1DA8D9920090ED4E /* 志愿定制报告 */ = {
-			isa = PBXGroup;
-			children = (
-				224782201DA8D9AD0090ED4E /* Controller */,
-				224782211DA8D9B90090ED4E /* View */,
-				224782221DA8D9DF0090ED4E /* Model */,
-			);
-			name = "志愿定制报告";
-			path = "../志愿定制报告";
-			sourceTree = "<group>";
-		};
-		224782201DA8D9AD0090ED4E /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				224782231DA8E2AA0090ED4E /* ZhiyuanViewController.h */,
-				224782241DA8E2AA0090ED4E /* ZhiyuanViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		224782211DA8D9B90090ED4E /* View */ = {
-			isa = PBXGroup;
-			children = (
-				224782261DA8F8F50090ED4E /* ZhiyuanTableView.h */,
-				224782271DA8F8F50090ED4E /* ZhiyuanTableView.m */,
-				224782291DA8F9100090ED4E /* ZhiyuanTableViewCell.h */,
-				2247822A1DA8F9100090ED4E /* ZhiyuanTableViewCell.m */,
-				2247822B1DA8F9100090ED4E /* ZhiyuanTableViewCell.xib */,
-			);
-			name = View;
-			path = ../View;
-			sourceTree = "<group>";
-		};
-		224782221DA8D9DF0090ED4E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				2247822E1DA8FA100090ED4E /* ZhiyuanModel.h */,
-				2247822F1DA8FA100090ED4E /* ZhiyuanModel.m */,
-				224782341DA8FAFA0090ED4E /* ZhiyuanTableViewCellModel.h */,
-				224782351DA8FAFA0090ED4E /* ZhiyuanTableViewCellModel.m */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		2249D33D1D87DD4400813C72 /* 高校查询小图标 */ = {
@@ -4488,6 +4391,81 @@
 			path = NetworkTool;
 			sourceTree = "<group>";
 		};
+		84F596731DAA38D400963298 /* 成绩跟踪系统 */ = {
+			isa = PBXGroup;
+			children = (
+				84F596741DAA38D400963298 /* Controller */,
+				84F596771DAA38D400963298 /* Model */,
+				84F5967C1DAA38D400963298 /* View */,
+			);
+			name = "成绩跟踪系统";
+			path = "gaokaoquan/高考志愿/Controller/成绩跟踪系统";
+			sourceTree = SOURCE_ROOT;
+		};
+		84F596741DAA38D400963298 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84F596751DAA38D400963298 /* AchievementTrackingViewController.h */,
+				84F596761DAA38D400963298 /* AchievementTrackingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84F596771DAA38D400963298 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84F596781DAA38D400963298 /* ScoreModel+Request.h */,
+				84F596791DAA38D400963298 /* ScoreModel+Request.m */,
+				84F5967A1DAA38D400963298 /* ScoreModel.h */,
+				84F5967B1DAA38D400963298 /* ScoreModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84F5967C1DAA38D400963298 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84F5967D1DAA38D400963298 /* BLBrokenLineRunChartGuide.h */,
+				84F5967E1DAA38D400963298 /* BLBrokenLineRunChartTool.h */,
+				84F5967F1DAA38D400963298 /* BLBrokenLineRunChartTool.m */,
+				84F596801DAA38D400963298 /* BLChatLineView.h */,
+				84F596811DAA38D400963298 /* BLChatLineView.m */,
+				84F596821DAA38D400963298 /* BLPointBtn.h */,
+				84F596831DAA38D400963298 /* BLPointBtn.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84F5968A1DAA38E400963298 /* 志愿定制报告 */ = {
+			isa = PBXGroup;
+			children = (
+				84F5968B1DAA38E400963298 /* Controller */,
+				84F5968E1DAA38E400963298 /* Model */,
+			);
+			name = "志愿定制报告";
+			path = "gaokaoquan/高考志愿/Controller/志愿定制报告";
+			sourceTree = SOURCE_ROOT;
+		};
+		84F5968B1DAA38E400963298 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84F5968C1DAA38E400963298 /* ZhiyuanViewController.h */,
+				84F5968D1DAA38E400963298 /* ZhiyuanViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84F5968E1DAA38E400963298 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84F5968F1DAA38E400963298 /* ZhiyuanModel.h */,
+				84F596901DAA38E400963298 /* ZhiyuanModel.m */,
+				84F596911DAA38E400963298 /* ZhiyuanTableViewCellModel.h */,
+				84F596921DAA38E400963298 /* ZhiyuanTableViewCellModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FC0486AF1D7AEF020052EDB6 /* Masonry */ = {
 			isa = PBXGroup;
 			children = (
@@ -4894,7 +4872,6 @@
 				8498D91B1D868CDF00169695 /* jr2@2x.png in Resources */,
 				2249D40B1D880D7E00813C72 /* 测录取概率@2x.png in Resources */,
 				2228B9991D93F32E0078B6DE /* 形状-1-拷贝-2@2x.png in Resources */,
-				2247822D1DA8F9100090ED4E /* ZhiyuanTableViewCell.xib in Resources */,
 				8498D9481D868CDF00169695 /* 我的资料@2x.png in Resources */,
 				8498D9181D868CDF00169695 /* 6@2x.png in Resources */,
 				2249D4051D880D7E00813C72 /* 根据分数选大学@2x.png in Resources */,
@@ -5106,6 +5083,7 @@
 				1861E2731D982ACD00174BC9 /* JYProviceScoreView.m in Sources */,
 				8419A8F71D7E60090024E703 /* DongtaiModel+Requesst.m in Sources */,
 				84DC7FBB1D702A7900612E20 /* MJRefreshFooter.m in Sources */,
+				84F596841DAA38D400963298 /* AchievementTrackingViewController.m in Sources */,
 				84DC7EA91D6EF85900612E20 /* BaseViewController.m in Sources */,
 				FC0486C71D7AEF020052EDB6 /* MASCompositeConstraint.m in Sources */,
 				224782011DA88B830090ED4E /* AcceptanceProbabilityViewController.m in Sources */,
@@ -5120,6 +5098,8 @@
 				FC0486DD1D7C39530052EDB6 /* RTLabel.m in Sources */,
 				84DC7FBE1D702A7900612E20 /* MJRefreshAutoNormalFooter.m in Sources */,
 				58F4DE701D81435A00723B4B /* AFURLConnectionOperation.m in Sources */,
+				84F596881DAA38D400963298 /* BLChatLineView.m in Sources */,
+				84F596931DAA38E400963298 /* ZhiyuanViewController.m in Sources */,
 				FC0486C91D7AEF020052EDB6 /* MASConstraintMaker.m in Sources */,
 				18B3E0511D8656EE00929D0C /* JYTutorCountModel.m in Sources */,
 				22DBFAD11D9BE8C8002085C3 /* JobListModel.m in Sources */,
@@ -5138,8 +5118,8 @@
 				18B3DFCE1D86569D00929D0C /* JYTutorRegisterViewController.m in Sources */,
 				58F4DE6C1D81435A00723B4B /* AFHTTPRequestOperationManager.m in Sources */,
 				84DC7FE81D702A8E00612E20 /* JSONModel.m in Sources */,
+				84F596851DAA38D400963298 /* ScoreModel+Request.m in Sources */,
 				847F006B1D81545B00B25581 /* UIColor+KKBAdd.m in Sources */,
-				224782101DA8A7810090ED4E /* ScoreModel+Request.m in Sources */,
 				84DC7FB81D702A7900612E20 /* MJRefreshAutoFooter.m in Sources */,
 				FC0486CB1D7AEF020052EDB6 /* MASViewAttribute.m in Sources */,
 				1813FE221D8BC85000B937DE /* JYHDCountModel.m in Sources */,
@@ -5147,7 +5127,6 @@
 				224688C01D9D40FA0053656E /* TestTableViewCell.m in Sources */,
 				18B3E0081D8656C600929D0C /* JYMYServiceTableViewCell.m in Sources */,
 				18B3DFB71D86569D00929D0C /* JYAppointmentViewController.m in Sources */,
-				224782191DA8A7B30090ED4E /* BLChatLineView.m in Sources */,
 				18B3DFBB1D86569D00929D0C /* JYIndentViewController.m in Sources */,
 				84DC7FEC1D702A8E00612E20 /* NSArray+JSONModel.m in Sources */,
 				181165151D8D5882002EE814 /* STPickerArea.m in Sources */,
@@ -5204,11 +5183,9 @@
 				18B3E0411D8656EE00929D0C /* JYAppointmentModel.m in Sources */,
 				224BCEDD1D94C80900CBFBAA /* CollegeCell.m in Sources */,
 				847AD5741D9E145F006068E1 /* MajorDetalJieshaoModel+Request.m in Sources */,
-				224782281DA8F8F50090ED4E /* ZhiyuanTableView.m in Sources */,
 				84DC7F4A1D7029BC00612E20 /* FMDatabaseQueue.m in Sources */,
 				223E25651D9679ED0095291E /* CollegeMajorFirstCell.m in Sources */,
 				18B3DFFE1D8656C600929D0C /* JYMyExperienceView.m in Sources */,
-				224782301DA8FA100090ED4E /* ZhiyuanModel.m in Sources */,
 				18C2655A1D92989000D25C7F /* JYSchoolFriendModel.m in Sources */,
 				223CA5211D9219A000E6ECD1 /* GaoxiaochaxunModel.m in Sources */,
 				FC0486EB1D7C39DB0052EDB6 /* YinxiangCell.m in Sources */,
@@ -5243,7 +5220,6 @@
 				84DC7FF31D702A8E00612E20 /* README.md in Sources */,
 				84DC7FEA1D702A8E00612E20 /* JSONModelClassProperty.m in Sources */,
 				18B3DFCF1D86569D00929D0C /* JYTutorViewController.m in Sources */,
-				2247821A1DA8A7B30090ED4E /* BLPointBtn.m in Sources */,
 				2246885B1D9CF8450053656E /* TongweiciViewController.m in Sources */,
 				22DBFA8E1D9BE33D002085C3 /* OccupationCell.m in Sources */,
 				FC0486CA1D7AEF020052EDB6 /* MASLayoutConstraint.m in Sources */,
@@ -5255,7 +5231,6 @@
 				58F4DE6E1D81435A00723B4B /* AFNetworkReachabilityManager.m in Sources */,
 				FC0486CE1D7AEF020052EDB6 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				224C76F51D9A805E00AADE8C /* CollegeYinxiangModel.m in Sources */,
-				2247820F1DA8A7810090ED4E /* ScoreModel.m in Sources */,
 				84DC7F381D7029AF00612E20 /* AFDownloadRequestOperation.m in Sources */,
 				FC25B5CB1D82C95500E2850A /* FengYunHotCell.m in Sources */,
 				8498D9A31D868F4600169695 /* AskQuestionsController.m in Sources */,
@@ -5278,7 +5253,6 @@
 				223CA5391D92970100E6ECD1 /* GaoxiaoCollegeModel.m in Sources */,
 				1894D2321D894D6100522860 /* JYMYFollowViewController.m in Sources */,
 				84DC80A71D7039AA00612E20 /* KSHttpManager.m in Sources */,
-				2247822C1DA8F9100090ED4E /* ZhiyuanTableViewCell.m in Sources */,
 				8498D9A61D868F4600169695 /* AnswerDetalModel.m in Sources */,
 				73536D491D6EC0F400CDD8A5 /* TabBarController.m in Sources */,
 				22DBFABB1D9BE560002085C3 /* RATreeNodeController.m in Sources */,
@@ -5295,6 +5269,8 @@
 				8498D9A71D868F4600169695 /* PersonModel+Request.m in Sources */,
 				18742CA51D954045001E0FCC /* JYView.m in Sources */,
 				84DC7F891D702A1200612E20 /* CycleImageCell.m in Sources */,
+				84F596891DAA38D400963298 /* BLPointBtn.m in Sources */,
+				84F596941DAA38E400963298 /* ZhiyuanModel.m in Sources */,
 				8498D9AB1D868F4600169695 /* AnswerDetalUnderCell.m in Sources */,
 				2245C94F1D9B66E700433D4C /* CollegeYinxiangView.m in Sources */,
 				18B3DF741D8654A200929D0C /* MJProperty.m in Sources */,
@@ -5369,8 +5345,6 @@
 				22DBFAD31D9BE8C8002085C3 /* MajorModel.m in Sources */,
 				84DC809C1D70370900612E20 /* UIImage+GIF.m in Sources */,
 				18B3E03F1D8656EE00929D0C /* JYAnswerModel.m in Sources */,
-				2247820A1DA8A7630090ED4E /* AchievementTrackingViewController.m in Sources */,
-				224782361DA8FAFA0090ED4E /* ZhiyuanTableViewCellModel.m in Sources */,
 				18B3E04B1D8656EE00929D0C /* JYMyServiceModel.m in Sources */,
 				2228B9421D9376150078B6DE /* JYKongFuView.m in Sources */,
 				8498D9A91D868F4600169695 /* AnswerDetalTopCell.m in Sources */,
@@ -5412,6 +5386,7 @@
 				84CDBD2B1D767A970037822E /* QHCommonUtil.m in Sources */,
 				18BB06C11D9B686700139691 /* JYStudyAgainModel2.m in Sources */,
 				84DC7FED1D702A8E00612E20 /* JSONAPI.m in Sources */,
+				84F596871DAA38D400963298 /* BLBrokenLineRunChartTool.m in Sources */,
 				FC0486C81D7AEF020052EDB6 /* MASConstraint.m in Sources */,
 				22DBFAB81D9BE560002085C3 /* RATableView.m in Sources */,
 				181165191D8D5882002EE814 /* STPickerSingle.m in Sources */,
@@ -5422,6 +5397,7 @@
 				FC0486D81D7C391F0052EDB6 /* TecherDetalView.m in Sources */,
 				2245C3041D782B5800DEDDE4 /* TecherModel.m in Sources */,
 				84DC7F511D7029D400612E20 /* Reachability.m in Sources */,
+				84F596861DAA38D400963298 /* ScoreModel.m in Sources */,
 				84DC80031D702AB800612E20 /* ZJCustomLabel.m in Sources */,
 				18B3DFC81D86569D00929D0C /* JYTutorAppointViewController.m in Sources */,
 				22DBFAC01D9BE560002085C3 /* RATreeView+RATreeNodeCollectionControllerDataSource.m in Sources */,
@@ -5435,7 +5411,6 @@
 				847AD5621D9CF7B4006068E1 /* MajorDetalController.m in Sources */,
 				18DB33A31D98D00C0028A035 /* JYSCViewController.m in Sources */,
 				18B3DF7E1D86550B00929D0C /* JYNetWorkTool.m in Sources */,
-				224782251DA8E2AA0090ED4E /* ZhiyuanViewController.m in Sources */,
 				18B3E0501D8656EE00929D0C /* JYTutorAppointModel.m in Sources */,
 				181165161D8D5882002EE814 /* STToolbar.m in Sources */,
 				18B3DFBE1D86569D00929D0C /* JYLnviteViewController.m in Sources */,
@@ -5444,7 +5419,6 @@
 				1806385D1D9232C800B7D424 /* JYCollegeRankingsViewController.m in Sources */,
 				84DC80051D702AB800612E20 /* ZJScrollSegmentView.m in Sources */,
 				223CA53C1D92974000E6ECD1 /* GaoxiaoCollegeModel+Request.m in Sources */,
-				224782181DA8A7B30090ED4E /* BLBrokenLineRunChartTool.m in Sources */,
 				1861E2541D9654A400174BC9 /* JYGaoXiaoTableViewCell.m in Sources */,
 				18B3E0531D8656EE00929D0C /* JYTutorLnviteModel.m in Sources */,
 				18B3DFC31D86569D00929D0C /* JYMyPersonalViewController.m in Sources */,
@@ -5454,6 +5428,7 @@
 				18B3E1021D88419900929D0C /* JYTutorAnswerModel.m in Sources */,
 				18B3E04C1D8656EE00929D0C /* JYStudentInformModel.m in Sources */,
 				73536D321D6EBF9300CDD8A5 /* main.m in Sources */,
+				84F596951DAA38E400963298 /* ZhiyuanTableViewCellModel.m in Sources */,
 				18B3E0FF1D8840D300929D0C /* JYSettingViewController.m in Sources */,
 				181EA3341D962364009A1CDD /* JYGaoXiaoView.m in Sources */,
 				18B3E0061D8656C600929D0C /* JYMyServiceFootView.m in Sources */,
