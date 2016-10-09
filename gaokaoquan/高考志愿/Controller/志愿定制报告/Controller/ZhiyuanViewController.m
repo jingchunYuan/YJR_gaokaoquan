@@ -103,10 +103,21 @@
         label3.attributedText = attrStr;
         
         NSString *str = same.content_wap;
-        str = [str substringFromIndex:13];
-        str = [str substringToIndex:48];
-        [imageView2 sd_setImageWithURL:[NSURL URLWithString:str] placeholderImage:nil];
+        NSArray *strArray = [str componentsSeparatedByString:@"src="];
+        NSString *imageURL;
+        if ([strArray count]) {
+            NSString *str1 = strArray[1];
+            NSArray *subStrArray = [str1 componentsSeparatedByString:@"/>"];
+            if ([subStrArray count]) {
+                NSLog(@"%@",subStrArray[0]);
+                imageURL = subStrArray[0];
+                imageURL = [imageURL substringFromIndex:1];
+                imageURL = [imageURL substringToIndex:[imageURL length]-2];
+            }
+        }
         
+        NSLog(@"imageURL = %@",imageURL);
+        [imageView2 sd_setImageWithURL:[NSURL URLWithString:imageURL] placeholderImage:nil];
     }];
     
     scrollview.contentSize = CGSizeMake(0, CGRectGetMaxY(imageView2.frame) + 50);
