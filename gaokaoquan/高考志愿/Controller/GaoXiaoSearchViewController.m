@@ -32,8 +32,7 @@
     _table.delegate = self;
     _table.dataSource = self;
     [self.table registerNib:[UINib nibWithNibName:@"UniversitySearchCell" bundle:nil] forCellReuseIdentifier:@"UniversitySearchCell"];
-    NSLog(@"%@",_url);
-    //_table.separatorStyle = UITableViewCellSeparatorStyleNone;
+    NSLog(@"高校查询url = %@",_url);
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

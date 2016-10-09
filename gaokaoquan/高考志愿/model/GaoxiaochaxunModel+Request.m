@@ -13,7 +13,7 @@
 +(void)RequestWithUrl:(NSString *)url
               andPara:(NSDictionary *)para
           andCallBack:(void (^)(NSArray *arr, NSError *))callBack {
-    NSLog(@"%@",url);
+
     [BaseRequest getWithURL:@"http://api.dev.gaokaoq.com/college/lists/college/lists.html" para:para compeleteHandler:^(NSData *data, NSError *err) {
         if (!err) {
             [BaseRequest getWithURL:url

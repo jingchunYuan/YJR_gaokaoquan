@@ -11,11 +11,16 @@
 #import "ZhuanYeJieshaoCell.h"
 #import "MajorDetalJieshaoModel.h"
 #import "MajorDetalJieshaoModel+Request.h"
+#import "MajorDetalKaisheGaoXiaoModel+Request.h"
+#import "KaiSheGaoXiaoCell.h"
 
 @interface MajorDetalController ()<UITableViewDataSource,UITableViewDelegate,DetalHeaderCellDelegate>
-
+{
+    int _isFlagTag;
+}
 @property (nonatomic, strong)  UITableView *tableView;
 @property (strong, nonatomic)  NSMutableArray *dataArr;
+@property (strong, nonatomic)  NSMutableArray *dataArr2;
 
 @end
 
@@ -25,6 +30,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.navigationItem.title = self.name;
+    //初始化数据
+    _isFlagTag = 101;
     //加载数据
     [self loadData];
     //创建UI
@@ -37,6 +44,12 @@
 #pragma mark - 
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    if (_isFlagTag==101) {
+        return 2;
+    }
+    if (_isFlagTag==102) {
+        return [_dataArr2 count]+1;
+    }
     return 2;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -59,18 +72,51 @@
         return cell;
     }
     else {
-        static NSString *cellId = @"ZhuanYeJieshaoCell";
-        ZhuanYeJieshaoCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
-        cell.backgroundColor = [UIColor whiteColor];
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        if (!cell) {
-            cell = [[ZhuanYeJieshaoCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+        
+        //专业介绍
+        if (_isFlagTag==101) {
+            static NSString *cellId = @"ZhuanYeJieshaoCell";
+            ZhuanYeJieshaoCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+            cell.backgroundColor = [UIColor whiteColor];
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
+            if (!cell) {
+                cell = [[ZhuanYeJieshaoCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+            }
+            if ([self.dataArr count]) {
+                MajorDetalJieshaoModel *model = [self.dataArr firstObject];
+                cell.model = model;
+            }
+            return cell;
         }
-        if ([self.dataArr count]) {
-            MajorDetalJieshaoModel *model = [self.dataArr firstObject];
-            cell.model = model;
+        
+        //开设高校
+        if (_isFlagTag==102) {
+            static NSString *cellId = @"KaiSheGaoXiaoCell";
+            KaiSheGaoXiaoCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+            cell.backgroundColor = [UIColor whiteColor];
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
+            if (!cell) {
+                cell = [[KaiSheGaoXiaoCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+            }
+            if ([self.dataArr2 count]) {
+                MajorDetalKaisheGaoXiaoModel *model = self.dataArr2[indexPath.row-1];
+                cell.model = model;
+            }
+            return cell;
         }
-        return cell;
+        
+        //学友评论
+        if (_isFlagTag==103) {
+            
+        }
+        
+        //就业情况
+        if (_isFlagTag==104) {
+            
+        }
+        
+        return nil;
+        
     }
     
     
@@ -80,17 +126,22 @@
         return 235;
     }
     else {
+        if (_isFlagTag==101) {
+            MajorDetalJieshaoModel *model = [self.dataArr firstObject];
+            NSString *htmlString = model.content;
+            //高度
+            NSDictionary *attrs = @{NSFontAttributeName:[UIFont systemFontOfSize:13.0]};
+            CGRect rect = [htmlString boundingRectWithSize:CGSizeMake(SCREEN_WIDTH-20, MAXFLOAT)
+                                                   options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
+                                                attributes:attrs
+                                                   context:nil];
+            return rect.size.height + 20;
+        }
+        if (_isFlagTag==102) {
+            return 100;
+        }
         
-        MajorDetalJieshaoModel *model = [self.dataArr firstObject];
-        NSString *htmlString = model.content;
-        //高度
-        NSDictionary *attrs = @{NSFontAttributeName:[UIFont systemFontOfSize:13.0]};
-        CGRect rect = [htmlString boundingRectWithSize:CGSizeMake(SCREEN_WIDTH-20, MAXFLOAT)
-                                               options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
-                                            attributes:attrs
-                                               context:nil];
-        return rect.size.height + 20;
-        
+        return 100;
     }
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -111,7 +162,9 @@
     //就业情况
     NSString *url3 = [NSString stringWithFormat:@"http://api.dev.gaokaoq.com/major/across?id=%@",@"2"];
 
+    _isFlagTag = tag;
     switch (tag) {
+            
         case 101:
             //专业介绍
             [self loadData];
@@ -162,7 +215,16 @@
     
     //开设高校
     if (tag == 102) {
-        
+
+        __weak typeof(self) weakSelf = self;
+        [MajorDetalKaisheGaoXiaoModel RequestWithUrl:url andPara:nil andCallBack:^(NSArray *arr, NSError *err) {
+            if (!err) {
+                NSLog(@"开设高校 arr = %@",arr);
+                [weakSelf.dataArr2 removeAllObjects];
+                [weakSelf.dataArr2 addObjectsFromArray:arr];
+                [weakSelf.tableView reloadData];
+            }
+        }];
     }
     
     //学友评论
@@ -205,7 +267,7 @@
         _tableView.backgroundColor = VIEWCONTROLLERBGCOLOR;
         [_tableView registerNib:[UINib nibWithNibName:NSStringFromClass([DetalHeaderCell class]) bundle:nil] forCellReuseIdentifier:NSStringFromClass([DetalHeaderCell class])];
         [_tableView registerNib:[UINib nibWithNibName:NSStringFromClass([ZhuanYeJieshaoCell class]) bundle:nil] forCellReuseIdentifier:NSStringFromClass([ZhuanYeJieshaoCell class])];
-
+        [_tableView registerNib:[UINib nibWithNibName:NSStringFromClass([KaiSheGaoXiaoCell class]) bundle:nil] forCellReuseIdentifier:NSStringFromClass([KaiSheGaoXiaoCell class])];
     }
     return _tableView;
 }
@@ -215,6 +277,13 @@
         _dataArr = [[NSMutableArray alloc]init];
     }
     return _dataArr;
+}
+
+-(NSMutableArray *)dataArr2{
+    if (!_dataArr2) {
+        _dataArr2 = [[NSMutableArray alloc]init];
+    }
+    return _dataArr2;
 }
 
 @end

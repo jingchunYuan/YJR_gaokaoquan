@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MajorDetalKaisheGaoXiaoModel.h"
 
 @interface KaiSheGaoXiaoCell : UITableViewCell
 
@@ -14,5 +15,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *headImageView;
 @property (weak, nonatomic) IBOutlet UILabel *schoolName;
 @property (weak, nonatomic) IBOutlet UILabel *schoolAddress;
+@property (nonatomic,strong) MajorDetalKaisheGaoXiaoModel *model;
 
 @end

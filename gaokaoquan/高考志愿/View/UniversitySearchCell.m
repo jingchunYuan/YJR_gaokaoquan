@@ -58,11 +58,7 @@
     }
 //    self.textLb.text = course;
     
-    
-    
-    
 }
-
 
 //整形判断
 - (BOOL)isPureInt:(NSString *)string{
