@@ -1,28 +1,31 @@
+
+
 //
-//  ZhiyuanTableViewCell.m
+//  ShuangrenTableViewCell.m
 //  gaokaoquan
 //
 //  Created by 高考圈 on 16/10/9.
 //  Copyright © 2016年 袁静茹. All rights reserved.
 //
 
-#import "ZhiyuanTableViewCell.h"
+#import "ShuangrenTableViewCell.h"
 #import "UIImageView+WebCache.h"
-#import "ZhiyuanTableViewCellModel.h"
+#import "ShuangrenTableViewCellModel.h"
 
-@interface ZhiyuanTableViewCell ()
+@interface ShuangrenTableViewCell ()
 
-@property (weak, nonatomic) IBOutlet UIImageView *imageview;
+@property (weak, nonatomic) IBOutlet UIImageView *iamgeView;
+
 
 @property (weak, nonatomic) IBOutlet UILabel *detailLabel;
-
 @property (weak, nonatomic) IBOutlet UILabel *time;
 
-
 @end
-@implementation ZhiyuanTableViewCell
 
--(void)setModel:(ZhiyuanTableViewCellModel *)model{
+@implementation ShuangrenTableViewCell
+
+
+-(void)setModel:(ShuangrenTableViewCellModel *)model{
     
     _model = model;
     [self.imageView sd_setImageWithURL:[NSURL URLWithString:model.avatar] placeholderImage:nil];

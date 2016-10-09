@@ -3,51 +3,52 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ZhiyuanTableViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="350" height="70"/>
+            <rect key="frame" x="0.0" y="0.0" width="350" height="65"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="350" height="69"/>
+                <frame key="frameInset" width="350" height="64"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b3R-iH-BhH">
-                        <constraints>
-                            <constraint firstAttribute="height" constant="45" id="SCG-gu-QnN"/>
-                            <constraint firstAttribute="width" constant="45" id="dTr-Lg-l9V"/>
-                        </constraints>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我们都是社会上有用的人，热爱祖国，" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCL-kn-K4Y">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我们都是好孩子，心心相印的的好孩子" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ac-al-HKh">
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-08-16 18:15:46" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hc-vc-fRn">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wN0-Jg-MFM">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="5Rl-8A-yVD"/>
+                            <constraint firstAttribute="height" constant="45" id="zu8-dD-RbX"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-08-16 18:15:46" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3EO-QL-BVk">
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="6hc-vc-fRn" secondAttribute="trailing" constant="15" id="2az-vX-aZR"/>
-                    <constraint firstItem="ZCL-kn-K4Y" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="8Tm-Vd-Ldc"/>
-                    <constraint firstItem="ZCL-kn-K4Y" firstAttribute="leading" secondItem="b3R-iH-BhH" secondAttribute="trailing" constant="10" id="95t-qE-AFS"/>
-                    <constraint firstItem="b3R-iH-BhH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="BM2-lO-0fN"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="ZCL-kn-K4Y" secondAttribute="trailing" constant="40" id="Ixc-Lc-OqZ"/>
-                    <constraint firstItem="b3R-iH-BhH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="duw-nK-O5Z"/>
-                    <constraint firstAttribute="bottom" secondItem="6hc-vc-fRn" secondAttribute="bottom" constant="8" id="pFg-fC-bp3"/>
+                    <constraint firstAttribute="trailing" secondItem="3EO-QL-BVk" secondAttribute="trailing" constant="15" id="BDb-O3-OD7"/>
+                    <constraint firstAttribute="trailing" secondItem="6ac-al-HKh" secondAttribute="trailing" constant="20" id="PNA-e6-cGl"/>
+                    <constraint firstItem="6ac-al-HKh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="S5Z-pq-jsv"/>
+                    <constraint firstItem="6ac-al-HKh" firstAttribute="leading" secondItem="wN0-Jg-MFM" secondAttribute="trailing" constant="15" id="XSy-1N-2ck"/>
+                    <constraint firstAttribute="bottom" secondItem="3EO-QL-BVk" secondAttribute="bottom" constant="8" id="aca-qb-ttF"/>
+                    <constraint firstItem="wN0-Jg-MFM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="epf-aB-r3n"/>
+                    <constraint firstItem="wN0-Jg-MFM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="fvv-HA-Xwa"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="detailLabel" destination="ZCL-kn-K4Y" id="aA6-0s-EQN"/>
-                <outlet property="imageView" destination="b3R-iH-BhH" id="j9x-Ax-q16"/>
-                <outlet property="time" destination="6hc-vc-fRn" id="bTF-kF-xOt"/>
+                <outlet property="detailLabel" destination="6ac-al-HKh" id="EX9-Zi-Dqi"/>
+                <outlet property="imageView" destination="wN0-Jg-MFM" id="7tA-Ee-RCQ"/>
+                <outlet property="imageview" destination="wN0-Jg-MFM" id="sVE-pu-bGw"/>
+                <outlet property="time" destination="3EO-QL-BVk" id="ih3-gA-AeI"/>
             </connections>
+            <point key="canvasLocation" x="34" y="53.5"/>
         </tableViewCell>
     </objects>
 </document>
