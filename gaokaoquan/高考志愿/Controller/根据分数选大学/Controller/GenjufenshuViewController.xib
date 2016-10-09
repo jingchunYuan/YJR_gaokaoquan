@@ -69,38 +69,72 @@
                         <action selector="shiyongBtn:" destination="-1" eventType="touchUpInside" id="196-i0-yyv"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WSs-9b-uYn">
-                    <frame key="frameInset" minX="299" minY="35" width="24" height="25"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="高校查询-默认状态三角形.png" translatesAutoresizingMaskIntoConstraints="NO" id="WSs-9b-uYn">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="90K-9Z-v0Z"/>
+                        <constraint firstAttribute="height" constant="15" id="S2r-Ty-7oJ"/>
+                    </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4NI-gr-zHO">
-                    <frame key="frameInset" minX="298" minY="100" width="26" height="24"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qmg-4L-2Ho">
-                    <frame key="frameInset" minX="300" minY="165" width="24" height="25"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="高校查询-默认状态三角形.png" translatesAutoresizingMaskIntoConstraints="NO" id="4NI-gr-zHO"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="高校查询-默认状态三角形.png" translatesAutoresizingMaskIntoConstraints="NO" id="qmg-4L-2Ho"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用建议：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOp-pA-UhQ">
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="系统推荐的学校依据往年数据计算所得，仅供参考，最终消" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pl-eu-KSI">
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="息请以各高校正式公布的数据为准。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfK-gi-87R">
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="phl-K1-TZX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="27" id="0fE-zU-v10"/>
+                <constraint firstItem="qmg-4L-2Ho" firstAttribute="top" secondItem="m5u-F3-syI" secondAttribute="bottom" constant="40" id="1ar-Zi-cte"/>
+                <constraint firstItem="qmg-4L-2Ho" firstAttribute="height" secondItem="4NI-gr-zHO" secondAttribute="height" id="2Zl-l4-4Cx"/>
                 <constraint firstItem="mrY-oU-MZw" firstAttribute="top" secondItem="Jmq-CY-B7Q" secondAttribute="bottom" constant="30" id="3Dk-Wn-TAO"/>
                 <constraint firstItem="Jmq-CY-B7Q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="3hw-Tj-rFu"/>
+                <constraint firstItem="4NI-gr-zHO" firstAttribute="height" secondItem="WSs-9b-uYn" secondAttribute="height" id="AIK-nq-aej"/>
                 <constraint firstItem="Jmq-CY-B7Q" firstAttribute="top" secondItem="AdA-8O-fDn" secondAttribute="bottom" constant="35" id="CBo-TG-pRS"/>
+                <constraint firstAttribute="trailing" secondItem="WSs-9b-uYn" secondAttribute="trailing" constant="52" id="Ejc-oX-ddz"/>
+                <constraint firstAttribute="trailing" secondItem="qmg-4L-2Ho" secondAttribute="trailing" constant="52" id="KBc-k0-KhV"/>
                 <constraint firstAttribute="trailing" secondItem="phl-K1-TZX" secondAttribute="trailing" constant="40" id="LwS-Ik-6CX"/>
+                <constraint firstAttribute="trailing" secondItem="4NI-gr-zHO" secondAttribute="trailing" constant="52" id="N40-Lt-Cer"/>
+                <constraint firstItem="NOp-pA-UhQ" firstAttribute="top" secondItem="mrY-oU-MZw" secondAttribute="bottom" constant="16" id="NTP-Xo-NDz"/>
+                <constraint firstItem="gfK-gi-87R" firstAttribute="top" secondItem="3pl-eu-KSI" secondAttribute="bottom" constant="15" id="OOj-Hs-urd"/>
+                <constraint firstItem="4NI-gr-zHO" firstAttribute="top" secondItem="phl-K1-TZX" secondAttribute="bottom" constant="40" id="Q5P-N7-I7Q"/>
                 <constraint firstItem="m5u-F3-syI" firstAttribute="top" secondItem="phl-K1-TZX" secondAttribute="bottom" constant="25" id="Swr-8k-PhW"/>
                 <constraint firstAttribute="trailing" secondItem="m5u-F3-syI" secondAttribute="trailing" constant="40" id="T0q-O8-AbL"/>
+                <constraint firstItem="4NI-gr-zHO" firstAttribute="width" secondItem="WSs-9b-uYn" secondAttribute="width" id="XuU-SV-BzJ"/>
                 <constraint firstItem="mrY-oU-MZw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="aj0-v1-FvK"/>
                 <constraint firstAttribute="trailing" secondItem="Jmq-CY-B7Q" secondAttribute="trailing" constant="40" id="cDX-2R-4Tp"/>
+                <constraint firstItem="WSs-9b-uYn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="ckk-hv-Vou"/>
+                <constraint firstItem="qmg-4L-2Ho" firstAttribute="trailing" secondItem="4NI-gr-zHO" secondAttribute="trailing" id="e1q-0h-hT1"/>
+                <constraint firstItem="3pl-eu-KSI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="efd-vx-aGt"/>
+                <constraint firstItem="qmg-4L-2Ho" firstAttribute="width" secondItem="4NI-gr-zHO" secondAttribute="width" id="hGx-fN-gIg"/>
+                <constraint firstItem="3pl-eu-KSI" firstAttribute="top" secondItem="NOp-pA-UhQ" secondAttribute="bottom" constant="15" id="hwq-gB-AqX"/>
                 <constraint firstItem="AdA-8O-fDn" firstAttribute="top" secondItem="m5u-F3-syI" secondAttribute="bottom" constant="25" id="j1N-qd-gXx"/>
+                <constraint firstItem="4NI-gr-zHO" firstAttribute="trailing" secondItem="WSs-9b-uYn" secondAttribute="trailing" id="kVz-fH-sIg"/>
                 <constraint firstItem="phl-K1-TZX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="kmM-EJ-p5M"/>
                 <constraint firstAttribute="trailing" secondItem="AdA-8O-fDn" secondAttribute="trailing" constant="40" id="kp8-d2-kvr"/>
+                <constraint firstAttribute="trailing" secondItem="3pl-eu-KSI" secondAttribute="trailing" constant="40" id="qRf-Zd-8tC"/>
+                <constraint firstItem="NOp-pA-UhQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="rDJ-SU-dRN"/>
                 <constraint firstAttribute="trailing" secondItem="mrY-oU-MZw" secondAttribute="trailing" constant="40" id="tQ6-Oa-zsq"/>
+                <constraint firstItem="gfK-gi-87R" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="wcp-Gk-Bug"/>
                 <constraint firstItem="m5u-F3-syI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="yC8-nk-Wt5"/>
                 <constraint firstItem="AdA-8O-fDn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="yec-17-yUS"/>
+                <constraint firstAttribute="trailing" secondItem="gfK-gi-87R" secondAttribute="trailing" constant="40" id="z3w-bm-uTC"/>
             </constraints>
             <point key="canvasLocation" x="33.5" y="54.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="高校查询-默认状态三角形.png" width="10" height="10"/>
+    </resources>
 </document>

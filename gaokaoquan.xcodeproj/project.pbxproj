@@ -2798,7 +2798,8 @@
 				22097F021DA91C330032A655 /* View */,
 				22097F031DA91C410032A655 /* Model */,
 			);
-			path = "根据分数选大学";
+			name = "根据分数选大学";
+			path = "../根据分数选大学";
 			sourceTree = "<group>";
 		};
 		22097F011DA91C230032A655 /* Controller */ = {
@@ -3153,6 +3154,8 @@
 			children = (
 				224782041DA8A70A0090ED4E /* 成绩跟踪系统 */,
 				2247821F1DA8D9920090ED4E /* 志愿定制报告 */,
+				22097F001DA91C040032A655 /* 根据分数选大学 */,
+				22724DBF1DAA24C400495995 /* 双人志愿系统 */,
 			);
 			path = "智能填报";
 			sourceTree = "<group>";
@@ -3384,6 +3387,38 @@
 				224C76FF1D9AA5DF00AADE8C /* JYSameNumViewController.m */,
 			);
 			name = "同分考生去向";
+			sourceTree = "<group>";
+		};
+		22724DBF1DAA24C400495995 /* 双人志愿系统 */ = {
+			isa = PBXGroup;
+			children = (
+				22724DC01DAA24DF00495995 /* Controller */,
+				22724DC11DAA24F200495995 /* Model */,
+				22724DC21DAA250300495995 /* View */,
+			);
+			name = "双人志愿系统";
+			path = "../双人志愿系统";
+			sourceTree = "<group>";
+		};
+		22724DC01DAA24DF00495995 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		22724DC11DAA24F200495995 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		22724DC21DAA250300495995 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		22750EFA1D9E4713005B3653 /* 录取概率测试 */ = {
@@ -3695,7 +3730,6 @@
 			isa = PBXGroup;
 			children = (
 				224782031DA8A6EC0090ED4E /* 智能填报 */,
-				22097F001DA91C040032A655 /* 根据分数选大学 */,
 				22750EFA1D9E4713005B3653 /* 录取概率测试 */,
 				224688AE1D9D3FCA0053656E /* 测适合专业 */,
 				2246884F1D9CF2120053656E /* 同位次考生去向 */,
