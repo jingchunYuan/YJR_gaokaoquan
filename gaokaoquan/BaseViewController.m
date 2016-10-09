@@ -53,5 +53,4 @@
     [HDManager stopLoading];
 }
 
-
 @end
