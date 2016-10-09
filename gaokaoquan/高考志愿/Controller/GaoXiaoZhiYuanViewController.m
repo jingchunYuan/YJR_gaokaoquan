@@ -216,7 +216,7 @@
         [self.navigationController pushViewController:MBTI animated:YES];
      
     }else if (indexPath.section == 1 && indexPath.row == 2){
-      
+        //测适合专业
         TestViewController *test = [[TestViewController alloc]init];
         [self.navigationController pushViewController:test animated:YES];
     
