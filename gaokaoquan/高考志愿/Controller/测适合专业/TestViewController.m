@@ -13,19 +13,13 @@
 #import "Masonry.h"
 #import "TestView.h"
 
-
 @interface TestViewController ()
 
 @property (nonatomic,strong) UIButton *btn;
-
 @property (nonatomic,strong) UIButton *btn2;
-
 @property (nonatomic,strong) TestView *tableview;
-
 @property (nonatomic,assign) BOOL ISShow;
-
 @property (nonatomic,strong) UIImageView *imageview;
-
 
 @end
 
@@ -93,6 +87,7 @@
     [scrollview addSubview:imageView2];
     self.imageview = imageView2;
     
+    //网络数据请求
     [[JYNetWorkTool sharedTools]request:JYRequestMethodGET urlString:@"http://api.dev.gaokaoq.com/service/view?id=5" parameters:nil callback:^(id responseObject, NSError *error) {
         
         TestModel *same = [TestModel mj_objectWithKeyValues:responseObject[@"data"]];
@@ -106,12 +101,23 @@
         label3.attributedText = attrStr;
         
         NSString *str = same.content_wap;
-        str = [str substringFromIndex:13];
-        str = [str substringToIndex:48];
-        [imageView2 sd_setImageWithURL:[NSURL URLWithString:str] placeholderImage:nil];
+        NSArray *strArray = [str componentsSeparatedByString:@"src="];
+        NSString *imageURL;
+        if ([strArray count]) {
+            NSString *str1 = strArray[1];
+            NSArray *subStrArray = [str1 componentsSeparatedByString:@"/>"];
+            if ([subStrArray count]) {
+                NSLog(@"%@",subStrArray[0]);
+                imageURL = subStrArray[0];
+                imageURL = [imageURL substringFromIndex:1];
+                imageURL = [imageURL substringToIndex:[imageURL length]-2];
+            }
+        }
         
+        NSLog(@"imageURL = %@",imageURL);
+        [imageView2 sd_setImageWithURL:[NSURL URLWithString:imageURL] placeholderImage:nil];
     }];
-    
+    //设置滚动试图的contentSize
     scrollview.contentSize = CGSizeMake(0, CGRectGetMaxY(imageView2.frame) + 50);
     
     UIButton *Buy = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -144,7 +150,6 @@
     [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     self.btn2.backgroundColor = [UIColor colorWithRed:235/255.0 green:235/255.0 blue:235/255.0 alpha:1];
     [self.btn2 setTitleColor:[UIColor colorWithRed:85/255.0 green:193/255.0 blue:231/255.0 alpha:1] forState:UIControlStateNormal];
-    
 }
 
 - (void)button2Click:(UIButton *)btn
@@ -155,22 +160,16 @@
     [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     self.btn.backgroundColor = [UIColor colorWithRed:235/255.0 green:235/255.0 blue:235/255.0 alpha:1];
     [self.btn setTitleColor:[UIColor colorWithRed:85/255.0 green:193/255.0 blue:231/255.0 alpha:1] forState:UIControlStateNormal];
-    
 }
-
 
 - (void)leftBarButtonItemClick
 {
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
 
 @end
