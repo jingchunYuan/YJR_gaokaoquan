@@ -12,7 +12,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="235"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="320" height="235"/>
+                <frame key="frameInset" width="320" height="234"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" id="cN3-Dx-3Vx">
@@ -109,38 +109,70 @@
                                 <frame key="frameInset" minX="10" minY="5" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <state key="normal" title="专业介绍"/>
+                                <state key="normal" title="专业介绍">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="btnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Nh5-wh-H9n"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="102" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="P89-y3-ddE">
+                            <view contentMode="scaleToFill" misplaced="YES" id="q1J-rB-ta5">
+                                <frame key="frameInset" minX="10" minY="36" width="60" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.41511336854975722" green="0.68623280390875951" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="insetFor6xAndEarlier" minX="-10" minY="-5" maxX="70" maxY="35"/>
+                            </view>
+                            <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="P89-y3-ddE">
                                 <frame key="frameInset" minX="34.62%" minY="5" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <state key="normal" title="开设高校"/>
+                                <state key="normal" title="开设高校">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="btnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="G5J-Dq-23d"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="103" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nYU-we-WYF">
+                            <view contentMode="scaleToFill" misplaced="YES" id="IT4-c6-M0h">
+                                <frame key="frameInset" minX="90" minY="36" width="60" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.41511336850000002" green="0.68623280389999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="insetFor6xAndEarlier" minX="-10" minY="-5" maxX="70" maxY="35"/>
+                            </view>
+                            <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nYU-we-WYF">
                                 <frame key="frameInset" minX="66.15%" minY="5" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <state key="normal" title="学有评论"/>
+                                <state key="normal" title="学有评论">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="btnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="y3R-fZ-a57"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="104" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="41v-Im-AsE">
+                            <view contentMode="scaleToFill" misplaced="YES" id="4at-95-ICa">
+                                <frame key="frameInset" minX="172" minY="36" width="60" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.41511336850000002" green="0.68623280389999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="insetFor6xAndEarlier" minX="-10" minY="-5" maxX="70" maxY="35"/>
+                            </view>
+                            <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="41v-Im-AsE">
                                 <frame key="frameInset" minY="5" width="60" height="30" maxX="10"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <state key="normal" title="就业情况"/>
+                                <state key="normal" title="就业情况">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="btnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="O98-xS-ecb"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" misplaced="YES" id="hIo-ha-hvw">
+                                <frame key="frameInset" minX="250" minY="36" width="60" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.41511336850000002" green="0.68623280389999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="insetFor6xAndEarlier" minX="-10" minY="-5" maxX="70" maxY="35"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -152,12 +184,16 @@
                 <outlet property="bgView2" destination="6Tn-PZ-vOz" id="14Q-TV-5Zg"/>
                 <outlet property="duikouhzhiyeLabel" destination="iHk-eV-KCa" id="POh-xO-rhR"/>
                 <outlet property="guanzhuBtn" destination="INs-SL-gcQ" id="uK7-6T-0fj"/>
+                <outlet property="lineView1" destination="q1J-rB-ta5" id="W7l-zG-dPD"/>
+                <outlet property="lineView2" destination="IT4-c6-M0h" id="xVZ-QY-Yoy"/>
+                <outlet property="lineView3" destination="4at-95-ICa" id="Qjp-LA-530"/>
+                <outlet property="lineView4" destination="hIo-ha-hvw" id="jHm-P4-ZRI"/>
                 <outlet property="shouyuxueweiLabel" destination="SCS-fN-icq" id="Rk7-db-U1U"/>
                 <outlet property="xiangjinxueweiLabel" destination="ufd-pe-1gD" id="uU8-ay-JCl"/>
                 <outlet property="xiuxuenianxianLabel" destination="lOK-rc-1bH" id="Pew-Ao-qfd"/>
                 <outlet property="zhuanyedaimaLabel" destination="UoJ-5V-YSX" id="fiT-DA-5Ta"/>
             </connections>
-            <point key="canvasLocation" x="461" y="571"/>
+            <point key="canvasLocation" x="426" y="652"/>
         </tableViewCell>
     </objects>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

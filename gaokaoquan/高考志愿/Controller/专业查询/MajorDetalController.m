@@ -13,6 +13,12 @@
 #import "MajorDetalJieshaoModel+Request.h"
 #import "MajorDetalKaisheGaoXiaoModel+Request.h"
 #import "KaiSheGaoXiaoCell.h"
+#import "MajorDetalXueYouPingLunModel.h"
+#import "MajorDetalXueYouPingLunModel+Request.h"
+#import "XueYouPingJiaCell.h"
+#import "MajorDetalJiuYeQingKuangModel.h"
+#import "MajorDetalJiuYeQingKuangModel+Request.h"
+#import "JiuYeQingKuangCell.h"
 
 @interface MajorDetalController ()<UITableViewDataSource,UITableViewDelegate,DetalHeaderCellDelegate>
 {
@@ -21,10 +27,17 @@
 @property (nonatomic, strong)  UITableView *tableView;
 @property (strong, nonatomic)  NSMutableArray *dataArr;
 @property (strong, nonatomic)  NSMutableArray *dataArr2;
+@property (strong, nonatomic)  NSMutableArray *dataArr3;
+@property (strong, nonatomic)  NSMutableArray *dataArr4;
 
 @end
 
 @implementation MajorDetalController
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.tabBarController.tabBar.hidden = NO;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -37,7 +50,6 @@
     //创建UI
     [self createUI];
     
-    
 }
 
 
@@ -49,6 +61,12 @@
     }
     if (_isFlagTag==102) {
         return [_dataArr2 count]+1;
+    }
+    if (_isFlagTag==103) {
+        return [_dataArr3 count]+1;
+    }
+    if (_isFlagTag==104) {
+        return [_dataArr4 count]+1;
     }
     return 2;
 }
@@ -95,6 +113,7 @@
             KaiSheGaoXiaoCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
             cell.backgroundColor = [UIColor whiteColor];
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
+            self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
             if (!cell) {
                 cell = [[KaiSheGaoXiaoCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
             }
@@ -107,12 +126,36 @@
         
         //学友评论
         if (_isFlagTag==103) {
-            
+            static NSString *cellId = @"XueYouPingJiaCell";
+            XueYouPingJiaCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+            cell.backgroundColor = [UIColor whiteColor];
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
+            self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+            if (!cell) {
+                cell = [[XueYouPingJiaCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+            }
+            if ([self.dataArr3 count]) {
+                MajorDetalXueYouPingLunModel *model = self.dataArr3[indexPath.row-1];
+                cell.model = model;
+            }
+            return cell;
         }
         
         //就业情况
         if (_isFlagTag==104) {
-            
+            static NSString *cellId = @"JiuYeQingKuangCell";
+            JiuYeQingKuangCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+            cell.backgroundColor = [UIColor whiteColor];
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
+            self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+            if (!cell) {
+                cell = [[JiuYeQingKuangCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+            }
+            if ([self.dataArr4 count]) {
+                MajorDetalJiuYeQingKuangModel *model = [self.dataArr4 firstObject];
+                cell.model = model;
+            }
+            return cell;
         }
         
         return nil;
@@ -139,6 +182,20 @@
         }
         if (_isFlagTag==102) {
             return 100;
+        }
+        if (_isFlagTag==103) {
+            return 100;
+        }
+        if (_isFlagTag==104) {
+            MajorDetalJiuYeQingKuangModel *model = [self.dataArr4 firstObject];
+            NSString *htmlString = model.comment;
+            //高度
+            NSDictionary *attrs = @{NSFontAttributeName:[UIFont systemFontOfSize:13.0]};
+            CGRect rect = [htmlString boundingRectWithSize:CGSizeMake(SCREEN_WIDTH-20, MAXFLOAT)
+                                                   options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
+                                                attributes:attrs
+                                                   context:nil];
+            return rect.size.height + 20;
         }
         
         return 100;
@@ -230,18 +287,40 @@
     //学友评论
     if (tag == 103) {
         
+        __weak typeof(self) weakSelf = self;
+        [MajorDetalXueYouPingLunModel RequestWithUrl:url andPara:nil andCallBack:^(NSArray *arr, NSError *err) {
+            if (!err) {
+                NSLog(@"学友评论 arr = %@",arr);
+                [weakSelf.dataArr3 removeAllObjects];
+                [weakSelf.dataArr3 addObjectsFromArray:arr];
+                [weakSelf.tableView reloadData];
+            }
+        }];
+        
     }
     
     //就业情况
     if (tag == 104) {
+        
+        __weak typeof(self) weakSelf = self;
+        [MajorDetalJiuYeQingKuangModel RequestWithUrl:url andPara:nil andCallBack:^(id dict, NSError *err) {
+            if (!err) {
+                NSLog(@"就业情况 dict = %@", dict);
+                MajorDetalJiuYeQingKuangModel *model = dict;
+                //先清除，再添加数据
+                [weakSelf.dataArr4 removeAllObjects];
+                [weakSelf.dataArr4 addObject:model];
+                [weakSelf.tableView reloadData];
+            }
+        }];
         
     }
     
 }
 
 - (void)createUI {
-    self.automaticallyAdjustsScrollViewInsets = NO;
-    self.edgesForExtendedLayout = UIRectEdgeNone;
+//    self.automaticallyAdjustsScrollViewInsets = NO;
+//    self.edgesForExtendedLayout = UIRectEdgeNone;
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem initWithImageName:@"返回" highlightedImage:nil title:nil target:self action:@selector(leftBarButtonItemClick)];
     [self.view addSubview:self.tableView];
 
@@ -260,14 +339,19 @@
 #pragma mark - Getter and Setter
 - (UITableView *)tableView {
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-64-49) style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-64) style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.backgroundColor = VIEWCONTROLLERBGCOLOR;
+        
+        //注册
         [_tableView registerNib:[UINib nibWithNibName:NSStringFromClass([DetalHeaderCell class]) bundle:nil] forCellReuseIdentifier:NSStringFromClass([DetalHeaderCell class])];
         [_tableView registerNib:[UINib nibWithNibName:NSStringFromClass([ZhuanYeJieshaoCell class]) bundle:nil] forCellReuseIdentifier:NSStringFromClass([ZhuanYeJieshaoCell class])];
         [_tableView registerNib:[UINib nibWithNibName:NSStringFromClass([KaiSheGaoXiaoCell class]) bundle:nil] forCellReuseIdentifier:NSStringFromClass([KaiSheGaoXiaoCell class])];
+        [_tableView registerNib:[UINib nibWithNibName:NSStringFromClass([XueYouPingJiaCell class]) bundle:nil] forCellReuseIdentifier:NSStringFromClass([XueYouPingJiaCell class])];
+        [_tableView registerNib:[UINib nibWithNibName:NSStringFromClass([JiuYeQingKuangCell class]) bundle:nil] forCellReuseIdentifier:NSStringFromClass([JiuYeQingKuangCell class])];
+        
     }
     return _tableView;
 }
@@ -284,6 +368,20 @@
         _dataArr2 = [[NSMutableArray alloc]init];
     }
     return _dataArr2;
+}
+
+-(NSMutableArray *)dataArr3{
+    if (!_dataArr3) {
+        _dataArr3 = [[NSMutableArray alloc]init];
+    }
+    return _dataArr3;
+}
+
+-(NSMutableArray *)dataArr4{
+    if (!_dataArr4) {
+        _dataArr4 = [[NSMutableArray alloc]init];
+    }
+    return _dataArr4;
 }
 
 @end
