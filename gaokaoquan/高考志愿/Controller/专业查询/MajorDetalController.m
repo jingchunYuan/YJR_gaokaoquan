@@ -20,7 +20,7 @@
 #import "MajorDetalJiuYeQingKuangModel+Request.h"
 #import "JiuYeQingKuangCell.h"
 
-@interface MajorDetalController ()<UITableViewDataSource,UITableViewDelegate,DetalHeaderCellDelegate>
+@interface MajorDetalController ()<UITableViewDataSource,UITableViewDelegate,DetalHeaderCellDelegate,KaiSheGaoXiaoCellDelegate>
 {
     int _isFlagTag;
 }
@@ -114,6 +114,10 @@
             cell.backgroundColor = [UIColor whiteColor];
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
             self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+            cell.delegate = self;
+            NSLog(@"开设高校 cell.tag = %ld", indexPath.row-1);
+            cell.tag = 200 + (indexPath.row-1);
+            
             if (!cell) {
                 cell = [[KaiSheGaoXiaoCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
             }
@@ -203,7 +207,14 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    
+    //开设高校
+    if (_isFlagTag==102) {
+        NSLog(@"Select row = %ld",indexPath.row);
+        //点击学校进入学校详情页
+        MajorDetalKaisheGaoXiaoModel *model = self.dataArr2[indexPath.row-1];
+        
+        
+    }
     
 }
 
@@ -225,21 +236,41 @@
         case 101:
             //专业介绍
             [self loadData];
+            //更改UI
+            detalHeaderCell.lineView1.alpha = 1.0;
+            detalHeaderCell.lineView2.alpha = 0.0;
+            detalHeaderCell.lineView3.alpha = 0.0;
+            detalHeaderCell.lineView4.alpha = 0.0;
             break;
             
         case 102:
             //开设高校
             [self loadData:url1 withTag:tag];
+            //更改UI
+            detalHeaderCell.lineView1.alpha = 0.0;
+            detalHeaderCell.lineView2.alpha = 1.0;
+            detalHeaderCell.lineView3.alpha = 0.0;
+            detalHeaderCell.lineView4.alpha = 0.0;
             break;
             
         case 103:
             //学友评论
             [self loadData:url2 withTag:tag];
+            //更改UI
+            detalHeaderCell.lineView1.alpha = 0.0;
+            detalHeaderCell.lineView2.alpha = 0.0;
+            detalHeaderCell.lineView3.alpha = 1.0;
+            detalHeaderCell.lineView4.alpha = 0.0;
             break;
             
         case 104:
             //就业情况
             [self loadData:url3 withTag:tag];
+            //更改UI
+            detalHeaderCell.lineView1.alpha = 0.0;
+            detalHeaderCell.lineView2.alpha = 0.0;
+            detalHeaderCell.lineView3.alpha = 0.0;
+            detalHeaderCell.lineView4.alpha = 1.0;
             break;
             
         default:
@@ -333,6 +364,14 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - 
+#pragma mark - KaiSheGaoXiaoCellDelegate
+- (void)guanzhuBtnClick:(KaiSheGaoXiaoCell *)kaiSheGaoXiaoCell {
+    NSLog(@"开设高校的关注按钮  tag = %ld",kaiSheGaoXiaoCell.tag);
+    
+    
 }
 
 #pragma mark - 

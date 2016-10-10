@@ -2910,6 +2910,8 @@
 				223CA52D1D9268FF00E6ECD1 /* GaoXiaoCollgeViewController.h */,
 				223CA52E1D9268FF00E6ECD1 /* GaoXiaoCollgeViewController.m */,
 				223CA52F1D9268FF00E6ECD1 /* GaoXiaoCollgeViewController.xib */,
+				84F597141DABA7AA00963298 /* Models */,
+				84F597151DABA7AA00963298 /* Views */,
 				223CA5061D92195300E6ECD1 /* GaoXiaoSearchViewController.h */,
 				223CA5071D92195300E6ECD1 /* GaoXiaoSearchViewController.m */,
 				223CA5081D92195300E6ECD1 /* GaoXiaoSearchViewController.xib */,
@@ -4554,6 +4556,20 @@
 				84F596D51DAB3B5A00963298 /* ShuangrenTableViewCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		84F597141DABA7AA00963298 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84F597151DABA7AA00963298 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		FC0486AF1D7AEF020052EDB6 /* Masonry */ = {

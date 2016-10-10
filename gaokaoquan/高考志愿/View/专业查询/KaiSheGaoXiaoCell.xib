@@ -44,6 +44,9 @@
                                 <state key="normal" title="关注">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="guanzhuBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="pPp-D3-kh7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -10,4 +10,6 @@
 
 @interface GaoXiaoCollgeViewController : BaseViewController
 
+@property (nonatomic,copy) NSString * url;
+
 @end

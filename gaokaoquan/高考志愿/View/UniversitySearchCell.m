@@ -14,12 +14,13 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    _headImage.layer.cornerRadius = _headImage.zj_height/2;
+    _headImage.layer.masksToBounds = YES;
 }
 
 -(void)setModel:(GaoxiaochaxunModel *)model{
     
-    //    self.headImage.image = [UIImage imageNamed:@"高考侠2戴眼镜默认头像.jpg"];
-        [self.headImage sd_setImageWithURL:[NSURL URLWithString:model.logo]];
+    [self.headImage sd_setImageWithURL:[NSURL URLWithString:model.logo]];
     NSLog(@"%@",model.logo);
     
     self.collegeLb.text = model.name;
@@ -56,7 +57,6 @@
         }];
         
     }
-//    self.textLb.text = course;
     
 }
 
@@ -66,10 +66,9 @@
     int val;
     return [scan scanInt:&val] && [scan isAtEnd];
 }
+
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
 }
 
 @end

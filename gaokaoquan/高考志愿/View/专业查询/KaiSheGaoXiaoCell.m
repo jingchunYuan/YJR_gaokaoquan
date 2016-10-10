@@ -77,4 +77,12 @@
     return [scan scanInt:&val] && [scan isAtEnd];
 }
 
+- (IBAction)guanzhuBtn:(id)sender {
+    
+    if ([self.delegate respondsToSelector:@selector(guanzhuBtnClick:)]) {
+        [self.delegate guanzhuBtnClick:self];
+    }
+    
+}
+
 @end
