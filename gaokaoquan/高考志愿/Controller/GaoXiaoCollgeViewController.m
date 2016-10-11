@@ -20,6 +20,7 @@
 @interface GaoXiaoCollgeViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
     NSMutableArray *_dataArray;
+    NSInteger _btnTag;
 }
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -144,6 +145,12 @@
         
         //隐藏选择的表格试图
         self.tableView1.hidden = YES;
+        UIButton *b = (UIButton *)[self.view viewWithTag:_btnTag];
+        NSString *title = _dataArray[indexPath.row];
+        [b setTitle:title forState:UIControlStateNormal];
+        
+        //未进行真正的结果筛选
+        
         
     }else {
         UniversityViewController * uniVC = [[UniversityViewController alloc]init];
@@ -169,6 +176,9 @@
 #pragma mark - 
 #pragma mark - 选择按钮的点击事件
 - (void)btnClick:(UIButton *)btn {
+    
+    //赋值
+    _btnTag = btn.tag;
     
     //先清除数据
     [_dataArray removeAllObjects];
