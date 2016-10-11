@@ -10,8 +10,8 @@
 #import "GaoxiaochaxunModel.h"
 
 @interface UniversitySearchCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UIImageView *headImage;
 
+@property (weak, nonatomic) IBOutlet UIImageView *headImage;
 @property (weak, nonatomic) IBOutlet UILabel *collegeLb;
 @property (weak, nonatomic) IBOutlet UIImageView *beijingImage;
 @property (weak, nonatomic) IBOutlet UILabel *cityLb;
@@ -19,4 +19,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *tagLb;
 @property (weak, nonatomic) IBOutlet UILabel *textLb;
 @property (nonatomic,strong) GaoxiaochaxunModel *model;
+@property (weak, nonatomic) IBOutlet UIView *bgView;
+
 @end

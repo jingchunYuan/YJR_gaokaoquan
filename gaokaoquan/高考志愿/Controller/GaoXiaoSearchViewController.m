@@ -79,17 +79,12 @@
     
 }
 
-- (void)leftBarButtonItemClick
-{
+- (void)leftBarButtonItemClick {
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-
-- (void)rightBarButtonItemClick
-{
+- (void)rightBarButtonItemClick {
     [self.navigationController popViewControllerAnimated:YES];
 }
-
-
 
 @end

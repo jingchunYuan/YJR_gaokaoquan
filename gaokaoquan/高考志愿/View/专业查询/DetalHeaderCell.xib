@@ -134,8 +134,8 @@
                                 </connections>
                             </button>
                             <view alpha="0.0" contentMode="scaleToFill" misplaced="YES" id="IT4-c6-M0h">
-                                <frame key="frameInset" minX="90" minY="39" width="60" height="1"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <frame key="frameInset" minX="34.62%" minY="39" width="60" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.41511336850000002" green="0.68623280389999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="insetFor6xAndEarlier" minX="-10" minY="-5" maxX="70" maxY="35"/>
                             </view>
@@ -151,8 +151,8 @@
                                 </connections>
                             </button>
                             <view alpha="0.0" contentMode="scaleToFill" misplaced="YES" id="4at-95-ICa">
-                                <frame key="frameInset" minX="172" minY="39" width="60" height="1"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <frame key="frameInset" minX="66.15%" minY="39" width="60" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.41511336850000002" green="0.68623280389999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="insetFor6xAndEarlier" minX="-10" minY="-5" maxX="70" maxY="35"/>
                             </view>
@@ -168,8 +168,8 @@
                                 </connections>
                             </button>
                             <view alpha="0.0" contentMode="scaleToFill" misplaced="YES" id="hIo-ha-hvw">
-                                <frame key="frameInset" minX="250" minY="39" width="60" height="1"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <frame key="frameInset" minY="39" width="60" height="1" maxX="10"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.41511336850000002" green="0.68623280389999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="insetFor6xAndEarlier" minX="-10" minY="-5" maxX="70" maxY="35"/>
                             </view>
@@ -193,7 +193,7 @@
                 <outlet property="xiuxuenianxianLabel" destination="lOK-rc-1bH" id="Pew-Ao-qfd"/>
                 <outlet property="zhuanyedaimaLabel" destination="UoJ-5V-YSX" id="fiT-DA-5Ta"/>
             </connections>
-            <point key="canvasLocation" x="426" y="652"/>
+            <point key="canvasLocation" x="388" y="668"/>
         </tableViewCell>
     </objects>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
