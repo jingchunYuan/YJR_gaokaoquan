@@ -29,5 +29,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *shouyuxueweiLabel;
 @property (weak, nonatomic) IBOutlet UILabel *xiangjinxueweiLabel;
 @property (weak, nonatomic) IBOutlet UILabel *duikouhzhiyeLabel;
+@property (weak, nonatomic) IBOutlet UIView *lineView1;
+@property (weak, nonatomic) IBOutlet UIView *lineView2;
+@property (weak, nonatomic) IBOutlet UIView *lineView3;
+@property (weak, nonatomic) IBOutlet UIView *lineView4;
 
 @end

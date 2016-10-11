@@ -25,7 +25,7 @@
         _Id = value;
     }
     
-    if ([key isEqualToString:@"tagArray"]) {
+    if ([key isEqualToString:@"tag"]) {
         _tagArray = [[NSMutableArray alloc] init];
         for (NSString *s in value) {
             [_tagArray addObject:s];

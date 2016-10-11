@@ -412,11 +412,6 @@
 		2268C0911D82BC09004D8E85 /* fengyunModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2268C0901D82BC09004D8E85 /* fengyunModel.m */; };
 		2268C0941D82BD6C004D8E85 /* fengyunModel+Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 2268C0931D82BD6C004D8E85 /* fengyunModel+Request.m */; };
 		226B20E41D98CAE400513711 /* JobModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 226B20E31D98CAE400513711 /* JobModel.m */; };
-		22724DC51DAA41F500495995 /* ShuangrenModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 22724DC41DAA41F500495995 /* ShuangrenModel.m */; };
-		22724DC81DAA422800495995 /* ShuangrenTableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 22724DC71DAA422800495995 /* ShuangrenTableViewCellModel.m */; };
-		22724DCB1DAA42C100495995 /* ShuangrenTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22724DCA1DAA42C100495995 /* ShuangrenTableView.m */; };
-		22724DCF1DAA431600495995 /* ShuangrenTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22724DCD1DAA431600495995 /* ShuangrenTableViewCell.m */; };
-		22724DD01DAA431600495995 /* ShuangrenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22724DCE1DAA431600495995 /* ShuangrenTableViewCell.xib */; };
 		22724DD41DAA475F00495995 /* ZhiyuanTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22724DD21DAA475F00495995 /* ZhiyuanTableViewCell.m */; };
 		22724DD51DAA475F00495995 /* ZhiyuanTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22724DD31DAA475F00495995 /* ZhiyuanTableViewCell.xib */; };
 		22A392C91D98FFE9000F683E /* 路径@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A392C51D98FFE9000F683E /* 路径@2x.png */; };
@@ -755,6 +750,19 @@
 		84F596BF1DAA3B0C00963298 /* ZhiyuanTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F596B81DAA3B0C00963298 /* ZhiyuanTableView.m */; };
 		84F596C71DAA3B2B00963298 /* GenjufenshuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F596C51DAA3B2B00963298 /* GenjufenshuViewController.m */; };
 		84F596C81DAA3B2B00963298 /* GenjufenshuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84F596C61DAA3B2B00963298 /* GenjufenshuViewController.xib */; };
+		84F596D61DAB3B5A00963298 /* ShuangrenModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F596CD1DAB3B5A00963298 /* ShuangrenModel.m */; };
+		84F596D71DAB3B5A00963298 /* ShuangrenTableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F596CF1DAB3B5A00963298 /* ShuangrenTableViewCellModel.m */; };
+		84F596D81DAB3B5A00963298 /* ShuangrenTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F596D21DAB3B5A00963298 /* ShuangrenTableView.m */; };
+		84F596D91DAB3B5A00963298 /* ShuangrenTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F596D41DAB3B5A00963298 /* ShuangrenTableViewCell.m */; };
+		84F596DA1DAB3B5A00963298 /* ShuangrenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84F596D51DAB3B5A00963298 /* ShuangrenTableViewCell.xib */; };
+		84F596E01DAB486200963298 /* XueYouPingJiaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F596DE1DAB486200963298 /* XueYouPingJiaCell.m */; };
+		84F596E11DAB486200963298 /* XueYouPingJiaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84F596DF1DAB486200963298 /* XueYouPingJiaCell.xib */; };
+		84F596E41DAB4B4D00963298 /* MajorDetalXueYouPingLunModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F596E31DAB4B4D00963298 /* MajorDetalXueYouPingLunModel.m */; };
+		84F596E71DAB4BAD00963298 /* MajorDetalXueYouPingLunModel+Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F596E61DAB4BAD00963298 /* MajorDetalXueYouPingLunModel+Request.m */; };
+		84F596EA1DAB67EC00963298 /* MajorDetalJiuYeQingKuangModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F596E91DAB67EC00963298 /* MajorDetalJiuYeQingKuangModel.m */; };
+		84F596ED1DAB680300963298 /* MajorDetalJiuYeQingKuangModel+Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F596EC1DAB680300963298 /* MajorDetalJiuYeQingKuangModel+Request.m */; };
+		84F596F11DAB6A9F00963298 /* JiuYeQingKuangCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F596EF1DAB6A9F00963298 /* JiuYeQingKuangCell.m */; };
+		84F596F21DAB6A9F00963298 /* JiuYeQingKuangCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84F596F01DAB6A9F00963298 /* JiuYeQingKuangCell.xib */; };
 		FC0486C71D7AEF020052EDB6 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0486B11D7AEF020052EDB6 /* MASCompositeConstraint.m */; };
 		FC0486C81D7AEF020052EDB6 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0486B41D7AEF020052EDB6 /* MASConstraint.m */; };
 		FC0486C91D7AEF020052EDB6 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0486B61D7AEF020052EDB6 /* MASConstraintMaker.m */; };
@@ -1406,15 +1414,6 @@
 		2268C0931D82BD6C004D8E85 /* fengyunModel+Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "fengyunModel+Request.m"; sourceTree = "<group>"; };
 		226B20E21D98CAE400513711 /* JobModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JobModel.h; path = ../JobModel.h; sourceTree = "<group>"; };
 		226B20E31D98CAE400513711 /* JobModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JobModel.m; path = ../JobModel.m; sourceTree = "<group>"; };
-		22724DC31DAA41F500495995 /* ShuangrenModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShuangrenModel.h; sourceTree = "<group>"; };
-		22724DC41DAA41F500495995 /* ShuangrenModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShuangrenModel.m; sourceTree = "<group>"; };
-		22724DC61DAA422800495995 /* ShuangrenTableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShuangrenTableViewCellModel.h; sourceTree = "<group>"; };
-		22724DC71DAA422800495995 /* ShuangrenTableViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShuangrenTableViewCellModel.m; sourceTree = "<group>"; };
-		22724DC91DAA42C100495995 /* ShuangrenTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShuangrenTableView.h; sourceTree = "<group>"; };
-		22724DCA1DAA42C100495995 /* ShuangrenTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShuangrenTableView.m; sourceTree = "<group>"; };
-		22724DCC1DAA431600495995 /* ShuangrenTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShuangrenTableViewCell.h; sourceTree = "<group>"; };
-		22724DCD1DAA431600495995 /* ShuangrenTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShuangrenTableViewCell.m; sourceTree = "<group>"; };
-		22724DCE1DAA431600495995 /* ShuangrenTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShuangrenTableViewCell.xib; sourceTree = "<group>"; };
 		22724DD11DAA475F00495995 /* ZhiyuanTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhiyuanTableViewCell.h; sourceTree = "<group>"; };
 		22724DD21DAA475F00495995 /* ZhiyuanTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhiyuanTableViewCell.m; sourceTree = "<group>"; };
 		22724DD31DAA475F00495995 /* ZhiyuanTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZhiyuanTableViewCell.xib; sourceTree = "<group>"; };
@@ -1912,6 +1911,29 @@
 		84F596C41DAA3B2B00963298 /* GenjufenshuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenjufenshuViewController.h; sourceTree = "<group>"; };
 		84F596C51DAA3B2B00963298 /* GenjufenshuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenjufenshuViewController.m; sourceTree = "<group>"; };
 		84F596C61DAA3B2B00963298 /* GenjufenshuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GenjufenshuViewController.xib; sourceTree = "<group>"; };
+		84F596CC1DAB3B5A00963298 /* ShuangrenModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShuangrenModel.h; sourceTree = "<group>"; };
+		84F596CD1DAB3B5A00963298 /* ShuangrenModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShuangrenModel.m; sourceTree = "<group>"; };
+		84F596CE1DAB3B5A00963298 /* ShuangrenTableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShuangrenTableViewCellModel.h; sourceTree = "<group>"; };
+		84F596CF1DAB3B5A00963298 /* ShuangrenTableViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShuangrenTableViewCellModel.m; sourceTree = "<group>"; };
+		84F596D11DAB3B5A00963298 /* ShuangrenTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShuangrenTableView.h; sourceTree = "<group>"; };
+		84F596D21DAB3B5A00963298 /* ShuangrenTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShuangrenTableView.m; sourceTree = "<group>"; };
+		84F596D31DAB3B5A00963298 /* ShuangrenTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShuangrenTableViewCell.h; sourceTree = "<group>"; };
+		84F596D41DAB3B5A00963298 /* ShuangrenTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShuangrenTableViewCell.m; sourceTree = "<group>"; };
+		84F596D51DAB3B5A00963298 /* ShuangrenTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShuangrenTableViewCell.xib; sourceTree = "<group>"; };
+		84F596DD1DAB486200963298 /* XueYouPingJiaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XueYouPingJiaCell.h; sourceTree = "<group>"; };
+		84F596DE1DAB486200963298 /* XueYouPingJiaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XueYouPingJiaCell.m; sourceTree = "<group>"; };
+		84F596DF1DAB486200963298 /* XueYouPingJiaCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XueYouPingJiaCell.xib; sourceTree = "<group>"; };
+		84F596E21DAB4B4D00963298 /* MajorDetalXueYouPingLunModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MajorDetalXueYouPingLunModel.h; sourceTree = "<group>"; };
+		84F596E31DAB4B4D00963298 /* MajorDetalXueYouPingLunModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MajorDetalXueYouPingLunModel.m; sourceTree = "<group>"; };
+		84F596E51DAB4BAD00963298 /* MajorDetalXueYouPingLunModel+Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MajorDetalXueYouPingLunModel+Request.h"; sourceTree = "<group>"; };
+		84F596E61DAB4BAD00963298 /* MajorDetalXueYouPingLunModel+Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MajorDetalXueYouPingLunModel+Request.m"; sourceTree = "<group>"; };
+		84F596E81DAB67EC00963298 /* MajorDetalJiuYeQingKuangModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MajorDetalJiuYeQingKuangModel.h; sourceTree = "<group>"; };
+		84F596E91DAB67EC00963298 /* MajorDetalJiuYeQingKuangModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MajorDetalJiuYeQingKuangModel.m; sourceTree = "<group>"; };
+		84F596EB1DAB680300963298 /* MajorDetalJiuYeQingKuangModel+Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MajorDetalJiuYeQingKuangModel+Request.h"; sourceTree = "<group>"; };
+		84F596EC1DAB680300963298 /* MajorDetalJiuYeQingKuangModel+Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MajorDetalJiuYeQingKuangModel+Request.m"; sourceTree = "<group>"; };
+		84F596EE1DAB6A9F00963298 /* JiuYeQingKuangCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiuYeQingKuangCell.h; sourceTree = "<group>"; };
+		84F596EF1DAB6A9F00963298 /* JiuYeQingKuangCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiuYeQingKuangCell.m; sourceTree = "<group>"; };
+		84F596F01DAB6A9F00963298 /* JiuYeQingKuangCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JiuYeQingKuangCell.xib; sourceTree = "<group>"; };
 		FC0486B01D7AEF020052EDB6 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		FC0486B11D7AEF020052EDB6 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
 		FC0486B21D7AEF020052EDB6 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -2888,6 +2910,8 @@
 				223CA52D1D9268FF00E6ECD1 /* GaoXiaoCollgeViewController.h */,
 				223CA52E1D9268FF00E6ECD1 /* GaoXiaoCollgeViewController.m */,
 				223CA52F1D9268FF00E6ECD1 /* GaoXiaoCollgeViewController.xib */,
+				84F597141DABA7AA00963298 /* Models */,
+				84F597151DABA7AA00963298 /* Views */,
 				223CA5061D92195300E6ECD1 /* GaoXiaoSearchViewController.h */,
 				223CA5071D92195300E6ECD1 /* GaoXiaoSearchViewController.m */,
 				223CA5081D92195300E6ECD1 /* GaoXiaoSearchViewController.xib */,
@@ -3021,6 +3045,14 @@
 		223E254C1D961FBB0095291E /* 专业查询 */ = {
 			isa = PBXGroup;
 			children = (
+				84F596E81DAB67EC00963298 /* MajorDetalJiuYeQingKuangModel.h */,
+				84F596E91DAB67EC00963298 /* MajorDetalJiuYeQingKuangModel.m */,
+				84F596EB1DAB680300963298 /* MajorDetalJiuYeQingKuangModel+Request.h */,
+				84F596EC1DAB680300963298 /* MajorDetalJiuYeQingKuangModel+Request.m */,
+				84F596E21DAB4B4D00963298 /* MajorDetalXueYouPingLunModel.h */,
+				84F596E31DAB4B4D00963298 /* MajorDetalXueYouPingLunModel.m */,
+				84F596E51DAB4BAD00963298 /* MajorDetalXueYouPingLunModel+Request.h */,
+				84F596E61DAB4BAD00963298 /* MajorDetalXueYouPingLunModel+Request.m */,
 				22DBFACD1D9BE8C8002085C3 /* MajorModel.h */,
 				22DBFACE1D9BE8C8002085C3 /* MajorModel.m */,
 				22DBFACF1D9BE8C8002085C3 /* SubMajorModel.h */,
@@ -3131,10 +3163,10 @@
 		224782031DA8A6EC0090ED4E /* 智能填报 */ = {
 			isa = PBXGroup;
 			children = (
+				84F596CA1DAB3B5A00963298 /* 双人志愿系统 */,
 				84F596C21DAA3B2B00963298 /* 根据分数选大学 */,
 				84F596AD1DAA3B0C00963298 /* 志愿定制报告 */,
 				84F596961DAA3AFC00963298 /* 成绩跟踪系统 */,
-				22724DBF1DAA24C400495995 /* 双人志愿系统 */,
 			);
 			path = "智能填报";
 			sourceTree = "<group>";
@@ -3279,47 +3311,6 @@
 			name = "同分考生去向";
 			sourceTree = "<group>";
 		};
-		22724DBF1DAA24C400495995 /* 双人志愿系统 */ = {
-			isa = PBXGroup;
-			children = (
-				22724DC01DAA24DF00495995 /* Controller */,
-				22724DC11DAA24F200495995 /* Model */,
-				22724DC21DAA250300495995 /* View */,
-			);
-			name = "双人志愿系统";
-			path = "../双人志愿系统";
-			sourceTree = "<group>";
-		};
-		22724DC01DAA24DF00495995 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		22724DC11DAA24F200495995 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				22724DC31DAA41F500495995 /* ShuangrenModel.h */,
-				22724DC41DAA41F500495995 /* ShuangrenModel.m */,
-				22724DC61DAA422800495995 /* ShuangrenTableViewCellModel.h */,
-				22724DC71DAA422800495995 /* ShuangrenTableViewCellModel.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		22724DC21DAA250300495995 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				22724DC91DAA42C100495995 /* ShuangrenTableView.h */,
-				22724DCA1DAA42C100495995 /* ShuangrenTableView.m */,
-				22724DCC1DAA431600495995 /* ShuangrenTableViewCell.h */,
-				22724DCD1DAA431600495995 /* ShuangrenTableViewCell.m */,
-				22724DCE1DAA431600495995 /* ShuangrenTableViewCell.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		22750EFA1D9E4713005B3653 /* 录取概率测试 */ = {
 			isa = PBXGroup;
 			children = (
@@ -3405,6 +3396,12 @@
 				847AD5781D9E370B006068E1 /* KaiSheGaoXiaoCell.h */,
 				847AD5791D9E370B006068E1 /* KaiSheGaoXiaoCell.m */,
 				847AD57A1D9E370B006068E1 /* KaiSheGaoXiaoCell.xib */,
+				84F596DD1DAB486200963298 /* XueYouPingJiaCell.h */,
+				84F596DE1DAB486200963298 /* XueYouPingJiaCell.m */,
+				84F596DF1DAB486200963298 /* XueYouPingJiaCell.xib */,
+				84F596EE1DAB6A9F00963298 /* JiuYeQingKuangCell.h */,
+				84F596EF1DAB6A9F00963298 /* JiuYeQingKuangCell.m */,
+				84F596F01DAB6A9F00963298 /* JiuYeQingKuangCell.xib */,
 			);
 			path = "专业查询";
 			sourceTree = "<group>";
@@ -4528,6 +4525,53 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		84F596CA1DAB3B5A00963298 /* 双人志愿系统 */ = {
+			isa = PBXGroup;
+			children = (
+				84F596CB1DAB3B5A00963298 /* Model */,
+				84F596D01DAB3B5A00963298 /* View */,
+			);
+			name = "双人志愿系统";
+			path = "gaokaoquan/高考志愿/Controller/双人志愿系统";
+			sourceTree = SOURCE_ROOT;
+		};
+		84F596CB1DAB3B5A00963298 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84F596CC1DAB3B5A00963298 /* ShuangrenModel.h */,
+				84F596CD1DAB3B5A00963298 /* ShuangrenModel.m */,
+				84F596CE1DAB3B5A00963298 /* ShuangrenTableViewCellModel.h */,
+				84F596CF1DAB3B5A00963298 /* ShuangrenTableViewCellModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84F596D01DAB3B5A00963298 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84F596D11DAB3B5A00963298 /* ShuangrenTableView.h */,
+				84F596D21DAB3B5A00963298 /* ShuangrenTableView.m */,
+				84F596D31DAB3B5A00963298 /* ShuangrenTableViewCell.h */,
+				84F596D41DAB3B5A00963298 /* ShuangrenTableViewCell.m */,
+				84F596D51DAB3B5A00963298 /* ShuangrenTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84F597141DABA7AA00963298 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84F597151DABA7AA00963298 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		FC0486AF1D7AEF020052EDB6 /* Masonry */ = {
 			isa = PBXGroup;
 			children = (
@@ -4802,6 +4846,7 @@
 				224101191D86B1FE000053E2 /* 高考攻略@2x.png in Resources */,
 				8498D9311D868CDF00169695 /* guanzhu@2x.png in Resources */,
 				8498D8E41D868CDF00169695 /* 用户_1@2x.png in Resources */,
+				84F596E11DAB486200963298 /* XueYouPingJiaCell.xib in Resources */,
 				8498D92B1D868CDF00169695 /* tianjiadaan@2x.png in Resources */,
 				2249D4101D880D7E00813C72 /* 问答社区@3x.png in Resources */,
 				184B37E31D88ED1700B094AC /* 圆角矩形-3@2x.png in Resources */,
@@ -4814,8 +4859,8 @@
 				8498D93E1D868CDF00169695 /* weixuanzhong.png in Resources */,
 				2249D3EB1D880D7E00813C72 /* MBTI职业测试1@2x.png in Resources */,
 				8498D8E21D868CDF00169695 /* 框@2x.png in Resources */,
-				22724DD01DAA431600495995 /* ShuangrenTableViewCell.xib in Resources */,
 				8498D9411D868CDF00169695 /* 个人中心-右上角设置@3x.png in Resources */,
+				84F596DA1DAB3B5A00963298 /* ShuangrenTableViewCell.xib in Resources */,
 				2249D3271D879EA200813C72 /* dongtai@2x.png in Resources */,
 				8498D94B1D868CDF00169695 /* 我的问答@3x.png in Resources */,
 				8498D8D81D868CDF00169695 /* 高考侠2戴眼镜默认头像.jpg in Resources */,
@@ -4987,6 +5032,7 @@
 				8498D9121D868CDF00169695 /* 风云榜赞@2x(1).png in Resources */,
 				18E32E5D1D99164900F8EFF5 /* JYMBTIVie.xib in Resources */,
 				8498D9151D868CDF00169695 /* 3@2x.png in Resources */,
+				84F596F21DAB6A9F00963298 /* JiuYeQingKuangCell.xib in Resources */,
 				2249D3901D87E06E00813C72 /* xiaolianbiaoqing@2x.png in Resources */,
 				8498D9101D868CDF00169695 /* wo-de-fuwu-zhongxin-yuandian@2x.png in Resources */,
 				2249D4571D880D8600813C72 /* gaoxiaochaxun-sanjiaoxing@3x.png in Resources */,
@@ -5221,7 +5267,7 @@
 				84DC7FCA1D702A7900612E20 /* UIView+MJExtension.m in Sources */,
 				1861E26B1D96A82A00174BC9 /* JYScoreMajorView.m in Sources */,
 				84DC7FEF1D702A8E00612E20 /* JSONModel+networking.m in Sources */,
-				22724DC81DAA422800495995 /* ShuangrenTableViewCellModel.m in Sources */,
+				84F596D71DAB3B5A00963298 /* ShuangrenTableViewCellModel.m in Sources */,
 				FC0486CD1D7AEF020052EDB6 /* NSArray+MASAdditions.m in Sources */,
 				1811651A1D8D5882002EE814 /* STConst.m in Sources */,
 				2246885E1D9CF8890053656E /* TongweiciModel.m in Sources */,
@@ -5263,7 +5309,10 @@
 				184B380C1D8904FF00B094AC /* JYTextFiled.m in Sources */,
 				185EFF3A1D93863200CAE928 /* JYIndependentSchoolViewController.m in Sources */,
 				18B3DFC51D86569D00929D0C /* JYServiceCenterViewController.m in Sources */,
+				84F596E01DAB486200963298 /* XueYouPingJiaCell.m in Sources */,
+				84F596F11DAB6A9F00963298 /* JiuYeQingKuangCell.m in Sources */,
 				18B3E0FC1D88409A00929D0C /* JYTutorAnswerViewController.m in Sources */,
+				84F596EA1DAB67EC00963298 /* MajorDetalJiuYeQingKuangModel.m in Sources */,
 				18742C9F1D952244001E0FCC /* JYMajorModel.m in Sources */,
 				84DC809A1D70370900612E20 /* SDWebImagePrefetcher.m in Sources */,
 				224C76F11D9A7C5400AADE8C /* CollegeYinxiangCell.m in Sources */,
@@ -5294,6 +5343,7 @@
 				18B3E0F51D883F6800929D0C /* JYTutorinformHeadView.m in Sources */,
 				185EFF4B1D93AADB00CAE928 /* JYJunjorCollegeViewController.m in Sources */,
 				58F4DE6E1D81435A00723B4B /* AFNetworkReachabilityManager.m in Sources */,
+				84F596E41DAB4B4D00963298 /* MajorDetalXueYouPingLunModel.m in Sources */,
 				FC0486CE1D7AEF020052EDB6 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				224C76F51D9A805E00AADE8C /* CollegeYinxiangModel.m in Sources */,
 				84DC7F381D7029AF00612E20 /* AFDownloadRequestOperation.m in Sources */,
@@ -5337,6 +5387,7 @@
 				84F596AC1DAA3AFC00963298 /* BLPointBtn.m in Sources */,
 				84F596BD1DAA3B0C00963298 /* ZhiyuanModel.m in Sources */,
 				8498D9AB1D868F4600169695 /* AnswerDetalUnderCell.m in Sources */,
+				84F596ED1DAB680300963298 /* MajorDetalJiuYeQingKuangModel+Request.m in Sources */,
 				2245C94F1D9B66E700433D4C /* CollegeYinxiangView.m in Sources */,
 				18B3DF741D8654A200929D0C /* MJProperty.m in Sources */,
 				223CA5251D9219A000E6ECD1 /* WishBtnModel+Request.m in Sources */,
@@ -5393,6 +5444,7 @@
 				84DC7FC41D702A7900612E20 /* MJRefreshNormalHeader.m in Sources */,
 				FCABFC361D6F3D92005199C7 /* manTableViewCell.m in Sources */,
 				8498D9A81D868F4600169695 /* PersonModel.m in Sources */,
+				84F596E71DAB4BAD00963298 /* MajorDetalXueYouPingLunModel+Request.m in Sources */,
 				84DC7FC51D702A7900612E20 /* MJRefreshStateHeader.m in Sources */,
 				84DC80011D702AB800612E20 /* UIView+ZJFrame.m in Sources */,
 				8498D96F1D868D9800169695 /* UIViewController+CustomNavigationButton.m in Sources */,
@@ -5400,13 +5452,13 @@
 				8498D9A51D868F4600169695 /* AnswerDetalModel+Request.m in Sources */,
 				18B3DFCC1D86569D00929D0C /* JYTutorMyExpViewController.m in Sources */,
 				22CC64141D703F1400A3F467 /* ManModel.m in Sources */,
-				22724DCF1DAA431600495995 /* ShuangrenTableViewCell.m in Sources */,
 				73536D351D6EBF9300CDD8A5 /* AppDelegate.m in Sources */,
+				84F596D91DAB3B5A00963298 /* ShuangrenTableViewCell.m in Sources */,
 				180638601D9237A600B7D424 /* JYRCCSEViewController.m in Sources */,
 				18B3E0551D8656EE00929D0C /* JYTutorMyGoldModel.m in Sources */,
 				2228B9861D93D3CF0078B6DE /* JYIndependentView.m in Sources */,
-				22724DCB1DAA42C100495995 /* ShuangrenTableView.m in Sources */,
 				225F9D561D8E391A00D9729C /* HeaderView.m in Sources */,
+				84F596D81DAB3B5A00963298 /* ShuangrenTableView.m in Sources */,
 				8419A8FA1D7E60AE0024E703 /* DongTaiView.m in Sources */,
 				840B0F021D71421F007E6B01 /* SGFocusImageFrame.m in Sources */,
 				58F4DE711D81435A00723B4B /* AFURLRequestSerialization.m in Sources */,
@@ -5487,7 +5539,7 @@
 				18B3DFB61D86569D00929D0C /* JYAppointDetailsViewController.m in Sources */,
 				1806385D1D9232C800B7D424 /* JYCollegeRankingsViewController.m in Sources */,
 				84DC80051D702AB800612E20 /* ZJScrollSegmentView.m in Sources */,
-				22724DC51DAA41F500495995 /* ShuangrenModel.m in Sources */,
+				84F596D61DAB3B5A00963298 /* ShuangrenModel.m in Sources */,
 				223CA53C1D92974000E6ECD1 /* GaoxiaoCollegeModel+Request.m in Sources */,
 				1861E2541D9654A400174BC9 /* JYGaoXiaoTableViewCell.m in Sources */,
 				18B3E0531D8656EE00929D0C /* JYTutorLnviteModel.m in Sources */,
