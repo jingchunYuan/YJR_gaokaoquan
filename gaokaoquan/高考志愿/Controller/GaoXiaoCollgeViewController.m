@@ -153,9 +153,12 @@
         
         
     }else {
+        
+        //大学详情页
         UniversityViewController * uniVC = [[UniversityViewController alloc]init];
         uniVC.university = _dataArr[indexPath.row];
         [self.navigationController pushViewController:uniVC animated:YES];
+        
     }
     
 }

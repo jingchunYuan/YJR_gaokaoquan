@@ -27,56 +27,43 @@
 
 @interface UniversityViewController ()<UITableViewDelegate,UITableViewDataSource,CollegeDongtaiCellDelegate>
 
+@property (nonatomic, strong) NSMutableArray *dataArr;
+@property (nonatomic, strong) UITableView *table;
 
-//@property (weak, nonatomic) IBOutlet UITableView *table;
-@property (nonatomic,strong) NSMutableArray * dataArr;
-@property (strong, nonatomic)  UITableView *table;
 @end
 
 @implementation UniversityViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //初始化数据
+    
+    //创建UI
     [self layoutUI];
+    //加载数据
     [self loadData];
     
 }
 
-
-
 -(void)layoutUI{
+    
+    self.navigationItem.leftBarButtonItem= [UIBarButtonItem initWithImageName:@"返回" highlightedImage:nil title:nil target:self action:@selector(leftBarButtonItemClick)];
+    //加载表格试图
     [self.view addSubview:self.table];
     
 }
--(UITableView *)table{
-    if (!_table) {
-        _table =[[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-64) style:UITableViewStylePlain];
-        _table.delegate =self;
-        _table.dataSource =self;
-        _table.separatorStyle = UITableViewCellSeparatorStyleNone;
-        [_table registerNib:[UINib nibWithNibName:@"CollegeCell" bundle:nil] forCellReuseIdentifier:@"CollgeCell"];
-        [_table registerNib:[UINib nibWithNibName:@"CollegeDongtaiCell" bundle:nil] forCellReuseIdentifier:@"CollegeDongtaiCell"];
-        [_table registerNib:[UINib nibWithNibName:@"CollegeMajorCell" bundle:nil] forCellReuseIdentifier:@"CollegeMajorCell"];
-        [_table registerNib:[UINib nibWithNibName:@"CollegeScoreCell" bundle:nil] forCellReuseIdentifier:@"CollegeScoreCell"];
-        [_table registerNib:[UINib nibWithNibName:@"CollegeFirstCell" bundle:nil] forCellReuseIdentifier:@"CollegeFirstCell"];
-        [_table registerNib:[UINib nibWithNibName:@"CollegeMajorFirstCell" bundle:nil] forCellReuseIdentifier:@"CollegeMajorFirstCell"];
-    
-    }
-    return _table;
-}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
--(NSMutableArray *)dataArr{
-    if (!_dataArr) {
-        _dataArr = [[NSMutableArray alloc]init];
-    }
-    return _dataArr;
-}
+
 -(void)loadData{
+    
     NSString * url1 = [NSString stringWithFormat:@"http://api.dev.gaokaoq.com/college/score?id=%@&city_id=1&type=1",_university.Id];
     NSString * url2 = [NSString stringWithFormat:@"http://api.dev.gaokaoq.com/college/majorScore?id=%@&city=1&type=1&year=2015&p=1&pageSize=20",_university.Id];
+    NSLog(@"高校查询-高校详情 url1=%@, url2=%@", url1, url2);
     
     __weak typeof(self) weakSelf = self;
     [CollegeModel RequestWithUrl:@[url1,url2] andPara:nil andCallBack:^(NSMutableArray *arr, NSError *err) {
@@ -87,7 +74,9 @@
     }];
     
 }
-#pragma mark - table delegate
+
+#pragma makr -
+#pragma mark - UITableViewDelegate,UITableViewDataSource
 -(UITableViewCell * )tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"section :%ld, row : %ld", (long)indexPath.section, (long)indexPath.row);
     
@@ -181,41 +170,6 @@
     }
     return 50;
 }
-//-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-//    UIView * containerView = [[UIView alloc] init];
-//    if (section == 1) {
-//        containerView.frame = CGRectMake(0, 0, SCREEN_WIDTH, 300);
-//        containerView.backgroundColor = [UIColor grayColor];
-//        NSArray * btnTitles = @[@"录取",@"概况",@"校园印象",@"校园风光"];
-//        float width = SCREEN_WIDTH/4;
-//        UILabel * line = [[UILabel alloc]initWithFrame:CGRectMake(0, 40, width, 1)];
-//        line.backgroundColor = [UIColor blueColor];
-//        for (int i = 0; i<4; i++) {
-//            UIButton * btn = [UIButton buttonWithType:UIButtonTypeCustom];
-//
-//            btn.frame = CGRectMake(width*i, 10, width, 30);
-//            [btn setTitle:btnTitles[i] forState:UIControlStateNormal];
-//            [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-//            btn.backgroundColor = [UIColor whiteColor];
-//            [containerView addSubview:btn];
-//        }
-//        UIView * tagView = [[UIView alloc]initWithFrame:CGRectMake(0, 45, SCREEN_WIDTH, 70)];
-//        UILabel * lb = [[UILabel alloc]initWithFrame:CGRectMake(10, 5, 63, 15)];
-//        lb.text = @"院校分数线";
-//        [tagView addSubview:lb];
-//        NSArray * titles = @[@"理科  ▽",@"北京  ▽"];
-//        for (int i=0; i<2; i++) {
-//            UIButton * btn = [UIButton buttonWithType:UIButtonTypeCustom];
-//            btn.frame = CGRectMake(SCREEN_WIDTH-150, 5, 60, 30);
-//            [btn setTitle:titles[i] forState:UIControlStateNormal];
-//            [containerView addSubview:btn];
-//        }
-//
-//        [containerView addSubview:line];
-//
-//    }
-//    return containerView;
-//}
 
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     UIView * view = [[UIView alloc]initWithFrame:CGRectZero];
@@ -253,17 +207,36 @@
             break;
     }
     
-    
 }
 
+- (void)leftBarButtonItemClick {
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
+#pragma mark - 
+#pragma mark -  Getter and Setter
+-(UITableView *)table{
+    if (!_table) {
+        _table =[[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-64) style:UITableViewStylePlain];
+        _table.delegate =self;
+        _table.dataSource =self;
+        _table.separatorStyle = UITableViewCellSeparatorStyleNone;
+        [_table registerNib:[UINib nibWithNibName:@"CollegeCell" bundle:nil] forCellReuseIdentifier:@"CollgeCell"];
+        [_table registerNib:[UINib nibWithNibName:@"CollegeDongtaiCell" bundle:nil] forCellReuseIdentifier:@"CollegeDongtaiCell"];
+        [_table registerNib:[UINib nibWithNibName:@"CollegeMajorCell" bundle:nil] forCellReuseIdentifier:@"CollegeMajorCell"];
+        [_table registerNib:[UINib nibWithNibName:@"CollegeScoreCell" bundle:nil] forCellReuseIdentifier:@"CollegeScoreCell"];
+        [_table registerNib:[UINib nibWithNibName:@"CollegeFirstCell" bundle:nil] forCellReuseIdentifier:@"CollegeFirstCell"];
+        [_table registerNib:[UINib nibWithNibName:@"CollegeMajorFirstCell" bundle:nil] forCellReuseIdentifier:@"CollegeMajorFirstCell"];
+        
+    }
+    return _table;
+}
 
-
-
-
-
-
-
-
+-(NSMutableArray *)dataArr{
+    if (!_dataArr) {
+        _dataArr = [[NSMutableArray alloc]init];
+    }
+    return _dataArr;
+}
 
 @end

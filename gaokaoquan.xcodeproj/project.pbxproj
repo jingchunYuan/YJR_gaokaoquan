@@ -244,8 +244,6 @@
 		2228B9991D93F32E0078B6DE /* 形状-1-拷贝-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2228B9971D93F32E0078B6DE /* 形状-1-拷贝-2@2x.png */; };
 		223CA5041D9218E000E6ECD1 /* WishCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 223CA5021D9218E000E6ECD1 /* WishCell.m */; };
 		223CA5051D9218E000E6ECD1 /* WishCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 223CA5031D9218E000E6ECD1 /* WishCell.xib */; };
-		223CA50E1D92195300E6ECD1 /* GaoXiaoSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 223CA5071D92195300E6ECD1 /* GaoXiaoSearchViewController.m */; };
-		223CA50F1D92195300E6ECD1 /* GaoXiaoSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 223CA5081D92195300E6ECD1 /* GaoXiaoSearchViewController.xib */; };
 		223CA5101D92195300E6ECD1 /* GaoXiaoZhiYuanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 223CA50A1D92195300E6ECD1 /* GaoXiaoZhiYuanViewController.m */; };
 		223CA5111D92195300E6ECD1 /* WishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 223CA50C1D92195300E6ECD1 /* WishViewController.m */; };
 		223CA5121D92195300E6ECD1 /* WishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 223CA50D1D92195300E6ECD1 /* WishViewController.xib */; };
@@ -1195,9 +1193,6 @@
 		223CA5011D9218E000E6ECD1 /* WishCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WishCell.h; path = ../WishCell.h; sourceTree = "<group>"; };
 		223CA5021D9218E000E6ECD1 /* WishCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WishCell.m; path = ../WishCell.m; sourceTree = "<group>"; };
 		223CA5031D9218E000E6ECD1 /* WishCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WishCell.xib; path = ../WishCell.xib; sourceTree = "<group>"; };
-		223CA5061D92195300E6ECD1 /* GaoXiaoSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GaoXiaoSearchViewController.h; path = ../GaoXiaoSearchViewController.h; sourceTree = "<group>"; };
-		223CA5071D92195300E6ECD1 /* GaoXiaoSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GaoXiaoSearchViewController.m; path = ../GaoXiaoSearchViewController.m; sourceTree = "<group>"; };
-		223CA5081D92195300E6ECD1 /* GaoXiaoSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GaoXiaoSearchViewController.xib; path = ../GaoXiaoSearchViewController.xib; sourceTree = "<group>"; };
 		223CA5091D92195300E6ECD1 /* GaoXiaoZhiYuanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaoXiaoZhiYuanViewController.h; sourceTree = "<group>"; };
 		223CA50A1D92195300E6ECD1 /* GaoXiaoZhiYuanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GaoXiaoZhiYuanViewController.m; sourceTree = "<group>"; };
 		223CA50B1D92195300E6ECD1 /* WishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WishViewController.h; sourceTree = "<group>"; };
@@ -2904,9 +2899,6 @@
 				223CA52F1D9268FF00E6ECD1 /* GaoXiaoCollgeViewController.xib */,
 				84F597141DABA7AA00963298 /* Models */,
 				84F597151DABA7AA00963298 /* Views */,
-				223CA5061D92195300E6ECD1 /* GaoXiaoSearchViewController.h */,
-				223CA5071D92195300E6ECD1 /* GaoXiaoSearchViewController.m */,
-				223CA5081D92195300E6ECD1 /* GaoXiaoSearchViewController.xib */,
 				22DBFA811D9BDFAD002085C3 /* UniversityViewController.h */,
 				22DBFA821D9BDFAD002085C3 /* UniversityViewController.m */,
 				22DBFA831D9BDFAD002085C3 /* UniversityViewController.xib */,
@@ -4884,7 +4876,6 @@
 				2249D45E1D880D8600813C72 /* 搜索@2x.png in Resources */,
 				8498D9251D868CDF00169695 /* banner_1@2x.png in Resources */,
 				2249D3F21D880D7E00813C72 /* 分数线查询@3x.png in Resources */,
-				223CA50F1D92195300E6ECD1 /* GaoXiaoSearchViewController.xib in Resources */,
 				18C265361D92707600D25C7F /* dulixueyuan@2x.png in Resources */,
 				8498D91F1D868CDF00169695 /* zan@2x.png in Resources */,
 				847AD57C1D9E370B006068E1 /* KaiSheGaoXiaoCell.xib in Resources */,
@@ -5418,7 +5409,6 @@
 				84DC7F8A1D702A1200612E20 /* XTADScrollView.m in Sources */,
 				FCAA0E141D70865C00A8A99A /* ManModel+Request.m in Sources */,
 				8498D9AD1D868F4600169695 /* PersonTableViewCell.m in Sources */,
-				223CA50E1D92195300E6ECD1 /* GaoXiaoSearchViewController.m in Sources */,
 				84DC80041D702AB800612E20 /* ZJScrollPageView.m in Sources */,
 				18B3DFC21D86569D00929D0C /* JYMyMessageTableViewController.m in Sources */,
 				84DC7F471D7029BC00612E20 /* FMDatabase.m in Sources */,
