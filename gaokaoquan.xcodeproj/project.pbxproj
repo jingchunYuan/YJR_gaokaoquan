@@ -396,6 +396,10 @@
 		224C77011D9AA5DF00AADE8C /* JYSameNumTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 224C76FC1D9AA5DF00AADE8C /* JYSameNumTableViewCell.m */; };
 		224C77021D9AA5DF00AADE8C /* JYSameNumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224C76FD1D9AA5DF00AADE8C /* JYSameNumTableViewCell.xib */; };
 		224C77031D9AA5DF00AADE8C /* JYSameNumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224C76FF1D9AA5DF00AADE8C /* JYSameNumViewController.m */; };
+		2252FB171DAC8BF30010C83B /* ShuangrenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2252FB161DAC8BF30010C83B /* ShuangrenViewController.m */; };
+		2252FB1E1DACBD240010C83B /* LuquTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2252FB1C1DACBD240010C83B /* LuquTableViewCell.m */; };
+		2252FB1F1DACBD240010C83B /* LuquTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2252FB1D1DACBD240010C83B /* LuquTableViewCell.xib */; };
+		2252FB221DACBD5D0010C83B /* LuquShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2252FB211DACBD5D0010C83B /* LuquShowView.m */; };
 		225F9D561D8E391A00D9729C /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 225F9D541D8E391A00D9729C /* HeaderView.m */; };
 		225F9D571D8E391A00D9729C /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 225F9D551D8E391A00D9729C /* HeaderView.xib */; };
 		2261C88B1D8924B50084E930 /* 形状-26-副本-3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2261C8891D8924B50084E930 /* 形状-26-副本-3@3x.png */; };
@@ -1385,6 +1389,13 @@
 		224C76FD1D9AA5DF00AADE8C /* JYSameNumTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JYSameNumTableViewCell.xib; path = "../../Controller/专业查询/JYSameNumTableViewCell.xib"; sourceTree = "<group>"; };
 		224C76FE1D9AA5DF00AADE8C /* JYSameNumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JYSameNumViewController.h; path = "专业查询/JYSameNumViewController.h"; sourceTree = "<group>"; };
 		224C76FF1D9AA5DF00AADE8C /* JYSameNumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JYSameNumViewController.m; path = "专业查询/JYSameNumViewController.m"; sourceTree = "<group>"; };
+		2252FB151DAC8BF30010C83B /* ShuangrenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShuangrenViewController.h; sourceTree = "<group>"; };
+		2252FB161DAC8BF30010C83B /* ShuangrenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShuangrenViewController.m; sourceTree = "<group>"; };
+		2252FB1B1DACBD240010C83B /* LuquTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LuquTableViewCell.h; path = "gaokaoquan/高考志愿/Controller/双人志愿系统/Controller/LuquTableViewCell.h"; sourceTree = SOURCE_ROOT; };
+		2252FB1C1DACBD240010C83B /* LuquTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LuquTableViewCell.m; path = "gaokaoquan/高考志愿/Controller/双人志愿系统/Controller/LuquTableViewCell.m"; sourceTree = SOURCE_ROOT; };
+		2252FB1D1DACBD240010C83B /* LuquTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LuquTableViewCell.xib; path = "gaokaoquan/高考志愿/Controller/双人志愿系统/Controller/LuquTableViewCell.xib"; sourceTree = SOURCE_ROOT; };
+		2252FB201DACBD5D0010C83B /* LuquShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LuquShowView.h; path = "gaokaoquan/高考志愿/Controller/双人志愿系统/Controller/LuquShowView.h"; sourceTree = SOURCE_ROOT; };
+		2252FB211DACBD5D0010C83B /* LuquShowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LuquShowView.m; path = "gaokaoquan/高考志愿/Controller/双人志愿系统/Controller/LuquShowView.m"; sourceTree = SOURCE_ROOT; };
 		225F9D531D8E391A00D9729C /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
 		225F9D541D8E391A00D9729C /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
 		225F9D551D8E391A00D9729C /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
@@ -3295,6 +3306,15 @@
 			name = "同分考生去向";
 			sourceTree = "<group>";
 		};
+		2252FB141DAC8BD00010C83B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2252FB151DAC8BF30010C83B /* ShuangrenViewController.h */,
+				2252FB161DAC8BF30010C83B /* ShuangrenViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		22750EFA1D9E4713005B3653 /* 录取概率测试 */ = {
 			isa = PBXGroup;
 			children = (
@@ -3308,6 +3328,11 @@
 		22750EFB1D9E471A005B3653 /* 录取概率测试 */ = {
 			isa = PBXGroup;
 			children = (
+				2252FB1B1DACBD240010C83B /* LuquTableViewCell.h */,
+				2252FB1C1DACBD240010C83B /* LuquTableViewCell.m */,
+				2252FB1D1DACBD240010C83B /* LuquTableViewCell.xib */,
+				2252FB201DACBD5D0010C83B /* LuquShowView.h */,
+				2252FB211DACBD5D0010C83B /* LuquShowView.m */,
 			);
 			path = "录取概率测试";
 			sourceTree = "<group>";
@@ -4512,6 +4537,7 @@
 		84F596CA1DAB3B5A00963298 /* 双人志愿系统 */ = {
 			isa = PBXGroup;
 			children = (
+				2252FB141DAC8BD00010C83B /* Controller */,
 				84F596CB1DAB3B5A00963298 /* Model */,
 				84F596D01DAB3B5A00963298 /* View */,
 			);
@@ -5127,6 +5153,7 @@
 				8498D8D21D868CDF00169695 /* wodeyuyue@2x.png in Resources */,
 				224BCEEC1D94DA3700CBFBAA /* youshangjiao@3x.png in Resources */,
 				2249D4011D880D7E00813C72 /* 成绩跟踪系统@2x.png in Resources */,
+				2252FB1F1DACBD240010C83B /* LuquTableViewCell.xib in Resources */,
 				181DC5961D8FE6AE00E0A2A7 /* JYTutorInformFootView.xib in Resources */,
 				847F00551D801AD700B25581 /* AddImpressionController.xib in Resources */,
 				2249D3EC1D880D7E00813C72 /* MBTI职业测试1@3x.png in Resources */,
@@ -5256,6 +5283,7 @@
 				223E25731D967AED0095291E /* CollegeModel+Request.m in Sources */,
 				84DC80981D70370900612E20 /* SDWebImageDownloaderOperation.m in Sources */,
 				2228B9841D93D3CF0078B6DE /* JYIndependentableViewCell.m in Sources */,
+				2252FB171DAC8BF30010C83B /* ShuangrenViewController.m in Sources */,
 				84DC7FC21D702A7900612E20 /* MJRefreshBackStateFooter.m in Sources */,
 				FC0505691D7AA6610075D06C /* UIView+Frame.m in Sources */,
 				FCAA0E0D1D70850D00A8A99A /* HDManager.m in Sources */,
@@ -5395,6 +5423,7 @@
 				2228B9461D9376150078B6DE /* JYRCCSETableViewCell.m in Sources */,
 				2228B9401D9376150078B6DE /* JYKongFuTableViewCell.m in Sources */,
 				18B3DF551D86546F00929D0C /* UIBarButtonItem+GKBarButtonltem.m in Sources */,
+				2252FB221DACBD5D0010C83B /* LuquShowView.m in Sources */,
 				18B3DF761D8654A200929D0C /* MJPropertyType.m in Sources */,
 				84DC7FEB1D702A8E00612E20 /* JSONModelError.m in Sources */,
 				2261CB541D792DB000C0C430 /* TecherModel+Request.m in Sources */,
@@ -5477,6 +5506,7 @@
 				2228B94A1D9376150078B6DE /* JYSchoolFriendTableViewCell.m in Sources */,
 				847F00541D801AD700B25581 /* AddImpressionController.m in Sources */,
 				223CA52B1D921ADF00E6ECD1 /* UniversitySearchCell.m in Sources */,
+				2252FB1E1DACBD240010C83B /* LuquTableViewCell.m in Sources */,
 				180E097B1D9A8FBC00605793 /* JYSameTableviewCellModel.m in Sources */,
 				18B3E0401D8656EE00929D0C /* JYAppointmentDetailsModel.m in Sources */,
 				84DC80A11D70370900612E20 /* UIView+WebCacheOperation.m in Sources */,

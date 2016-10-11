@@ -27,6 +27,12 @@
 -(void)layoutUI{
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.navigationItem.title = @"成绩跟踪系统";
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem initWithImageName:@"返回" highlightedImage:nil title:nil target:self action:@selector(leftBarButtonItemClick)];
+    
+    
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem initWithImageName:nil highlightedImage:nil title:[NSString stringWithFormat:@"录入成绩"] target:nil action:@selector(rightBarButtonItemClick)];
+
+    
     self.view.backgroundColor = UIColorRGBA(245, 245, 245, 1);
     UIButton * provinceBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     provinceBtn.frame = CGRectMake(0, 0, SCREEN_WIDTH/2, 40);
@@ -50,6 +56,7 @@
     adrBtn.backgroundColor = [UIColor whiteColor];
     
     [adrBtn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+    
     [self.view addSubview:adrBtn];
     
     UIButton * subjectBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -99,15 +106,12 @@
 -(NSArray *)brokenLineRunChartYearArr{
     return nil;
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)leftBarButtonItemClick
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
-*/
 
+-(void)rightBarButtonItemClick{
+    
+}
 @end

@@ -4,7 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AcceptanceProbabilityViewController">
@@ -101,6 +101,11 @@
                         <constraint firstAttribute="width" constant="15" id="58c-zZ-brn"/>
                     </constraints>
                 </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wJo-Lj-fzx">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="148" id="z6X-EA-4BG"/>
+                    </constraints>
+                </scrollView>
             </subviews>
             <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -121,7 +126,9 @@
                 <constraint firstItem="M8f-Ip-bKx" firstAttribute="height" secondItem="nQ1-2P-hBh" secondAttribute="height" id="TCj-zL-vNg"/>
                 <constraint firstItem="CeA-Ew-BwR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="US6-Vq-qCi"/>
                 <constraint firstItem="8uj-Uj-ee5" firstAttribute="width" secondItem="vKg-XC-EtK" secondAttribute="width" id="WB2-yj-tGX"/>
+                <constraint firstAttribute="trailing" secondItem="wJo-Lj-fzx" secondAttribute="trailing" id="WMB-yd-PC4"/>
                 <constraint firstItem="E7g-Sm-5JH" firstAttribute="top" secondItem="poJ-yv-bcL" secondAttribute="bottom" constant="30" id="WaC-JJ-lgn"/>
+                <constraint firstItem="wJo-Lj-fzx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XZH-pr-aCJ"/>
                 <constraint firstItem="h0J-uN-3XT" firstAttribute="top" secondItem="8uj-Uj-ee5" secondAttribute="bottom" constant="30" id="Xw9-nF-44P"/>
                 <constraint firstItem="PHA-0M-PjG" firstAttribute="height" secondItem="E7g-Sm-5JH" secondAttribute="height" id="Y5j-L5-Nno"/>
                 <constraint firstItem="h0J-uN-3XT" firstAttribute="leading" secondItem="8uj-Uj-ee5" secondAttribute="leading" id="Y6P-b0-jfb"/>
@@ -132,6 +139,7 @@
                 <constraint firstItem="nQ1-2P-hBh" firstAttribute="leading" secondItem="poJ-yv-bcL" secondAttribute="leading" id="cLG-sn-Hva"/>
                 <constraint firstItem="vKg-XC-EtK" firstAttribute="top" secondItem="M8f-Ip-bKx" secondAttribute="bottom" constant="20" id="dco-1c-5ue"/>
                 <constraint firstItem="1As-pS-a6w" firstAttribute="top" secondItem="h0J-uN-3XT" secondAttribute="bottom" constant="21" id="dkS-U9-80w"/>
+                <constraint firstAttribute="bottom" secondItem="wJo-Lj-fzx" secondAttribute="bottom" id="eMT-eR-H1A"/>
                 <constraint firstItem="8uj-Uj-ee5" firstAttribute="leading" secondItem="vKg-XC-EtK" secondAttribute="leading" id="eNe-m6-u43"/>
                 <constraint firstItem="nQ1-2P-hBh" firstAttribute="width" secondItem="poJ-yv-bcL" secondAttribute="width" id="fYG-uM-Yoi"/>
                 <constraint firstItem="M8f-Ip-bKx" firstAttribute="top" secondItem="nQ1-2P-hBh" secondAttribute="bottom" constant="20" id="fsC-pp-sLM"/>
