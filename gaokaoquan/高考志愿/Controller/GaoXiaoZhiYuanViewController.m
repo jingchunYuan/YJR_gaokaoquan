@@ -28,6 +28,7 @@
 #import "AchievementTrackingViewController.h"
 #import "ZhiyuanViewController.h"
 #import "GenjufenshuViewController.h"
+#import "ShuangrenViewController.h"
 
 #import "GaoXiaoCollgeViewController.h"
 
@@ -220,7 +221,8 @@
         
     }else if (indexPath.section == 2 && indexPath.row == 3){
         //双人志愿系统
-        
+        ShuangrenViewController *shuagnren = [[ShuangrenViewController alloc]init];
+        [self.navigationController pushViewController:shuagnren animated:YES];
     }else if (indexPath.section == 2 && indexPath.row == 4){
         //模拟志愿填报
         

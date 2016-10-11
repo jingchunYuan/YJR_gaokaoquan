@@ -32,6 +32,9 @@
 -(void)layoutUI{
     
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem initWithImageName:@"返回" highlightedImage:nil title:nil target:self action:@selector(leftBarButtonItemClick)];
+    
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem initWithImageName:nil highlightedImage:nil title:[NSString stringWithFormat:@"功能介绍"] target:nil action:@selector(rightBarButtonItemClick)];
+    
      self.navigationItem.titleView = [self.view titleWithNavigat:@"估分选大学"];
     
 //    _collegeTxt.borderStyle = UITextBorderStyleLine;
@@ -59,6 +62,10 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+-(void)rightBarButtonItemClick
+{
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

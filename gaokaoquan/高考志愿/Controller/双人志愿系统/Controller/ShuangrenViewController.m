@@ -1,25 +1,25 @@
-
 //
-//  TongweiciViewController.m
+//  ShuangrenViewController.m
 //  gaokaoquan
 //
-//  Created by 高考圈 on 16/9/29.
+//  Created by 高考圈 on 16/10/9.
 //  Copyright © 2016年 袁静茹. All rights reserved.
 //
 
-#import "TongweiciViewController.h"
-#import "TongweiciModel.h"
+#import "ShuangrenViewController.h"
+#import "ShuangrenModel.h"
 #import "UIImageView+WebCache.h"
 #define MAS_SHORTHAND
 #import "Masonry.h"
-#import "TongweiciView.h"
-@interface TongweiciViewController ()
+#import "ShuangrenTableView.h"
+
+@interface ShuangrenViewController ()
 
 @property (nonatomic,strong) UIButton *btn;
 
 @property (nonatomic,strong) UIButton *btn2;
 
-@property (nonatomic,strong) TongweiciView *tableview;
+@property (nonatomic,strong) ShuangrenTableView  *tableview;
 
 @property (nonatomic,assign) BOOL ISShow;
 
@@ -27,23 +27,26 @@
 
 @end
 
-@implementation TongweiciViewController
+@implementation ShuangrenViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     [self setUI];
-
-    
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.tabBarController.tabBar.hidden = YES;
+    
+}
 - (void)setUI
 {
     self.view.backgroundColor = [UIColor whiteColor];
     UIScrollView *scrollview = [[UIScrollView alloc]initWithFrame:self.view.bounds];
     [self.view addSubview:scrollview];
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem initWithImageName:@"返回" highlightedImage:nil title:nil target:self action:@selector(leftBarButtonItemClick)];
-    self.navigationItem.titleView = [self.view titleWithNavigat:@"同位次考生去向"];
+    self.navigationItem.titleView = [self.view titleWithNavigat:@"双人志愿系统"];
     
     UIImageView *imageview = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, KWIDTH, KWIDTH * 0.6)];
     [scrollview addSubview:imageview];
@@ -88,9 +91,9 @@
     [scrollview addSubview:imageView2];
     self.imageview = imageView2;
     
-    [[JYNetWorkTool sharedTools]request:JYRequestMethodGET urlString:@"http://api.dev.gaokaoq.com/service/view?id=3" parameters:nil callback:^(id responseObject, NSError *error) {
+    [[JYNetWorkTool sharedTools]request:JYRequestMethodGET urlString:@"http://api.dev.gaokaoq.com/service/view?id=2" parameters:nil callback:^(id responseObject, NSError *error) {
         
-        TongweiciModel *same = [TongweiciModel mj_objectWithKeyValues:responseObject[@"data"]];
+        ShuangrenModel *same = [ShuangrenModel mj_objectWithKeyValues:responseObject[@"data"]];
         
         NSURL *url = [NSURL URLWithString:same.thumb];
         [imageview sd_setImageWithURL:url placeholderImage:nil];
@@ -111,7 +114,7 @@
     
     UIButton *Buy = [UIButton buttonWithType:UIButtonTypeCustom];
     Buy.backgroundColor = [UIColor orangeColor];
-    [Buy setTitle:@"立即购买(32.00元/30次)" forState:UIControlStateNormal];
+    [Buy setTitle:@"立即购买" forState:UIControlStateNormal];
     [Buy setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.view addSubview:Buy];
     
@@ -124,7 +127,7 @@
         
     }];
     
-    TongweiciView *tableview = [[TongweiciView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(button2.frame), KWIDTH, 400)];
+    ShuangrenTableView *tableview = [[ShuangrenTableView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(button2.frame), KWIDTH, 400)];
     [scrollview addSubview:tableview];
     self.tableview = tableview;
     tableview.hidden = YES;
@@ -153,15 +156,6 @@
     [self.btn setTitleColor:[UIColor colorWithRed:85/255.0 green:193/255.0 blue:231/255.0 alpha:1] forState:UIControlStateNormal];
     
 }
-
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    self.tabBarController.tabBar.hidden = YES;
-    
-}
-
 - (void)leftBarButtonItemClick
 {
     [self.navigationController popViewControllerAnimated:YES];
@@ -170,7 +164,7 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    
+    // Dispose of any resources that can be recreated.
 }
 
 
