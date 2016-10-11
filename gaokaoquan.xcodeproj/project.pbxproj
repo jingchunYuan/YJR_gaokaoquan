@@ -400,8 +400,6 @@
 		224C77031D9AA5DF00AADE8C /* JYSameNumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224C76FF1D9AA5DF00AADE8C /* JYSameNumViewController.m */; };
 		225F9D561D8E391A00D9729C /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 225F9D541D8E391A00D9729C /* HeaderView.m */; };
 		225F9D571D8E391A00D9729C /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 225F9D551D8E391A00D9729C /* HeaderView.xib */; };
-		2261C8871D88E9960084E930 /* GaoxiaochaxunCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2261C8851D88E9960084E930 /* GaoxiaochaxunCell.m */; };
-		2261C8881D88E9960084E930 /* GaoxiaochaxunCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2261C8861D88E9960084E930 /* GaoxiaochaxunCell.xib */; };
 		2261C88B1D8924B50084E930 /* 形状-26-副本-3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2261C8891D8924B50084E930 /* 形状-26-副本-3@3x.png */; };
 		2261C88C1D8924B50084E930 /* 形状-26-副本-3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2261C88A1D8924B50084E930 /* 形状-26-副本-3@2x.png */; };
 		2261CB541D792DB000C0C430 /* TecherModel+Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 2261CB531D792DB000C0C430 /* TecherModel+Request.m */; };
@@ -1395,9 +1393,6 @@
 		225F9D531D8E391A00D9729C /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
 		225F9D541D8E391A00D9729C /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
 		225F9D551D8E391A00D9729C /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
-		2261C8841D88E9960084E930 /* GaoxiaochaxunCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GaoxiaochaxunCell.h; path = ../GaoxiaochaxunCell.h; sourceTree = "<group>"; };
-		2261C8851D88E9960084E930 /* GaoxiaochaxunCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GaoxiaochaxunCell.m; path = ../GaoxiaochaxunCell.m; sourceTree = "<group>"; };
-		2261C8861D88E9960084E930 /* GaoxiaochaxunCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GaoxiaochaxunCell.xib; path = ../GaoxiaochaxunCell.xib; sourceTree = "<group>"; };
 		2261C8891D8924B50084E930 /* 形状-26-副本-3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "形状-26-副本-3@3x.png"; sourceTree = "<group>"; };
 		2261C88A1D8924B50084E930 /* 形状-26-副本-3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "形状-26-副本-3@2x.png"; sourceTree = "<group>"; };
 		2261CB521D792DB000C0C430 /* TecherModel+Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TecherModel+Request.h"; sourceTree = "<group>"; };
@@ -2870,9 +2865,6 @@
 				223CA5011D9218E000E6ECD1 /* WishCell.h */,
 				223CA5021D9218E000E6ECD1 /* WishCell.m */,
 				223CA5031D9218E000E6ECD1 /* WishCell.xib */,
-				2261C8841D88E9960084E930 /* GaoxiaochaxunCell.h */,
-				2261C8851D88E9960084E930 /* GaoxiaochaxunCell.m */,
-				2261C8861D88E9960084E930 /* GaoxiaochaxunCell.xib */,
 				223CA5281D921ADF00E6ECD1 /* UniversitySearchCell.h */,
 				223CA5291D921ADF00E6ECD1 /* UniversitySearchCell.m */,
 				223CA52A1D921ADF00E6ECD1 /* UniversitySearchCell.xib */,
@@ -4958,7 +4950,6 @@
 				8498D8EE1D868CDF00169695 /* baikuang@2x.png in Resources */,
 				225F9D571D8E391A00D9729C /* HeaderView.xib in Resources */,
 				18B3DFFD1D8656C600929D0C /* JYMyAnswerView.xib in Resources */,
-				2261C8881D88E9960084E930 /* GaoxiaochaxunCell.xib in Resources */,
 				22A392CC1D98FFE9000F683E /* 下拉@2x.png in Resources */,
 				18B3E00D1D8656C600929D0C /* JYTutorCenterView.xib in Resources */,
 				8498D8EB1D868CDF00169695 /* 第三方－ＱＱ@3x.png in Resources */,
@@ -5476,7 +5467,6 @@
 				18DB33B11D9904130028A035 /* JYMBTIModel2.m in Sources */,
 				223CA5041D9218E000E6ECD1 /* WishCell.m in Sources */,
 				8498D9AF1D868F4600169695 /* TouchPropagatedScrollView.m in Sources */,
-				2261C8871D88E9960084E930 /* GaoxiaochaxunCell.m in Sources */,
 				22DBFAD91D9BE9DB002085C3 /* RATableViewCell.m in Sources */,
 				185EFF531D93ACFE00CAE928 /* JYJuniorCollegeModel.m in Sources */,
 				FCABFC431D6F420C005199C7 /* ADView.m in Sources */,
