@@ -54,7 +54,7 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"功能介绍"
                                                                              style:UIBarButtonItemStylePlain
                                                                             target:self
-                                                                            action:@selector(show)];
+                                                                            action:@selector(rightBarButtonItemClick)];
     
     
     __weak typeof(self) weakSelf = self;
@@ -104,6 +104,25 @@
     
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    _isShow = NO;
+    [self.showView dismissView];
+}
+
+- (LuquShowView *)showView{
+    
+    if (_showView) {
+        return _showView;
+    }
+    
+    _showView = [[LuquShowView alloc]initWithFrame:(CGRect){CGRectGetWidth(self.view.frame)-100-10,64+5,200,0}
+                                               items:@[@"item1",@"item2",@"item3",@"item4",@"item5"]
+                                           showPoint:(CGPoint){CGRectGetWidth(self.view.frame)-25,10}];
+    _showView.backGroundColor = [UIColor whiteColor];
+    [self.view addSubview:_showView];
+    return _showView;
+}
+
 
 - (void)leftBarButtonItemClick
 {
@@ -112,7 +131,14 @@
 
 -(void)rightBarButtonItemClick
 {
+    _isShow = !_isShow;
     
+    if (_isShow) {
+        [self.showView showView];
+        
+    }else{
+        [self.showView dismissView];
+    }
 }
 
 
