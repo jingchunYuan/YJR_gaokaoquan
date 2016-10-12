@@ -472,6 +472,10 @@
 		735370611D6ED5A100CDD8A5 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7353705F1D6ED5A100CDD8A5 /* HomeViewController.xib */; };
 		7353706A1D6ED5F700CDD8A5 /* ManViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 735370681D6ED5F700CDD8A5 /* ManViewController.m */; };
 		7353706B1D6ED5F700CDD8A5 /* ManViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 735370691D6ED5F700CDD8A5 /* ManViewController.xib */; };
+		8405541D1DAE32FB0099DF4F /* CollegeAdmissionPlanFirstCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8405541B1DAE32FB0099DF4F /* CollegeAdmissionPlanFirstCell.m */; };
+		8405541E1DAE32FB0099DF4F /* CollegeAdmissionPlanFirstCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8405541C1DAE32FB0099DF4F /* CollegeAdmissionPlanFirstCell.xib */; };
+		840554221DAE33170099DF4F /* CollegeAdmissionPlanCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 840554201DAE33170099DF4F /* CollegeAdmissionPlanCell.m */; };
+		840554231DAE33170099DF4F /* CollegeAdmissionPlanCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840554211DAE33170099DF4F /* CollegeAdmissionPlanCell.xib */; };
 		840B0F021D71421F007E6B01 /* SGFocusImageFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B0F011D71421F007E6B01 /* SGFocusImageFrame.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		840B0F121D714B8B007E6B01 /* SGFocusImageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B0F111D714B8B007E6B01 /* SGFocusImageItem.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		840B0F151D717DCC007E6B01 /* HotTeacherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B0F141D717DCC007E6B01 /* HotTeacherView.m */; };
@@ -1526,6 +1530,12 @@
 		735370671D6ED5F700CDD8A5 /* ManViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ManViewController.h; path = ../ManViewController.h; sourceTree = "<group>"; };
 		735370681D6ED5F700CDD8A5 /* ManViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ManViewController.m; path = ../ManViewController.m; sourceTree = "<group>"; };
 		735370691D6ED5F700CDD8A5 /* ManViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ManViewController.xib; path = ../ManViewController.xib; sourceTree = "<group>"; };
+		8405541A1DAE32FB0099DF4F /* CollegeAdmissionPlanFirstCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollegeAdmissionPlanFirstCell.h; sourceTree = "<group>"; };
+		8405541B1DAE32FB0099DF4F /* CollegeAdmissionPlanFirstCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollegeAdmissionPlanFirstCell.m; sourceTree = "<group>"; };
+		8405541C1DAE32FB0099DF4F /* CollegeAdmissionPlanFirstCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollegeAdmissionPlanFirstCell.xib; sourceTree = "<group>"; };
+		8405541F1DAE33170099DF4F /* CollegeAdmissionPlanCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollegeAdmissionPlanCell.h; sourceTree = "<group>"; };
+		840554201DAE33170099DF4F /* CollegeAdmissionPlanCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollegeAdmissionPlanCell.m; sourceTree = "<group>"; };
+		840554211DAE33170099DF4F /* CollegeAdmissionPlanCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollegeAdmissionPlanCell.xib; sourceTree = "<group>"; };
 		840B0F001D71421F007E6B01 /* SGFocusImageFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGFocusImageFrame.h; sourceTree = "<group>"; };
 		840B0F011D71421F007E6B01 /* SGFocusImageFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGFocusImageFrame.m; sourceTree = "<group>"; };
 		840B0F101D714B8B007E6B01 /* SGFocusImageItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGFocusImageItem.h; sourceTree = "<group>"; };
@@ -4627,6 +4637,12 @@
 		84F597151DABA7AA00963298 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8405541A1DAE32FB0099DF4F /* CollegeAdmissionPlanFirstCell.h */,
+				8405541B1DAE32FB0099DF4F /* CollegeAdmissionPlanFirstCell.m */,
+				8405541C1DAE32FB0099DF4F /* CollegeAdmissionPlanFirstCell.xib */,
+				8405541F1DAE33170099DF4F /* CollegeAdmissionPlanCell.h */,
+				840554201DAE33170099DF4F /* CollegeAdmissionPlanCell.m */,
+				840554211DAE33170099DF4F /* CollegeAdmissionPlanCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -5005,6 +5021,7 @@
 				847F00571D801AD700B25581 /* MianfeiViewController.xib in Resources */,
 				2249D3341D879F2400813C72 /* mianfeitiwen@3x.png in Resources */,
 				2249D3FC1D880D7E00813C72 /* 志愿填报系列课程@3x.png in Resources */,
+				840554231DAE33170099DF4F /* CollegeAdmissionPlanCell.xib in Resources */,
 				223CA5051D9218E000E6ECD1 /* WishCell.xib in Resources */,
 				8498D9321D868CDF00169695 /* guanzhu@3x.png in Resources */,
 				840B0F1C1D71909E007E6B01 /* HotTeacherView.xib in Resources */,
@@ -5171,6 +5188,7 @@
 				8498D9171D868CDF00169695 /* 5@2x.png in Resources */,
 				224BCEE81D94DA2D00CBFBAA /* gaoxiaochaxun-sanjiaoxing-hui@3x.png in Resources */,
 				8498D9031D868CDF00169695 /* 用户@3x.png in Resources */,
+				8405541E1DAE32FB0099DF4F /* CollegeAdmissionPlanFirstCell.xib in Resources */,
 				8498D90F1D868CDF00169695 /* jingyanshuoming@3x.png in Resources */,
 				8498D9271D868CDF00169695 /* banner_2@2x.png in Resources */,
 				84F596C81DAA3B2B00963298 /* GenjufenshuViewController.xib in Resources */,
@@ -5330,6 +5348,7 @@
 				FC0486CD1D7AEF020052EDB6 /* NSArray+MASAdditions.m in Sources */,
 				1811651A1D8D5882002EE814 /* STConst.m in Sources */,
 				2246885E1D9CF8890053656E /* TongweiciModel.m in Sources */,
+				840554221DAE33170099DF4F /* CollegeAdmissionPlanCell.m in Sources */,
 				223E25731D967AED0095291E /* CollegeModel+Request.m in Sources */,
 				84DC80981D70370900612E20 /* SDWebImageDownloaderOperation.m in Sources */,
 				2228B9841D93D3CF0078B6DE /* JYIndependentableViewCell.m in Sources */,
@@ -5574,6 +5593,7 @@
 				22DBFAB81D9BE560002085C3 /* RATableView.m in Sources */,
 				181165191D8D5882002EE814 /* STPickerSingle.m in Sources */,
 				223E25671D9679ED0095291E /* CollegeScoreCell.m in Sources */,
+				8405541D1DAE32FB0099DF4F /* CollegeAdmissionPlanFirstCell.m in Sources */,
 				18B3DF7A1D8654A200929D0C /* NSObject+MJProperty.m in Sources */,
 				84DC7F4D1D7029BC00612E20 /* README.markdown in Sources */,
 				18B3E00A1D8656C600929D0C /* JYServiceView.m in Sources */,

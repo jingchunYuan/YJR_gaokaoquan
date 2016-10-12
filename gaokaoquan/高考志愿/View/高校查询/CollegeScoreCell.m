@@ -22,6 +22,7 @@
     [super awakeFromNib];
     // Initialization code
 }
+
 -(void)setModel:(CollegeModel *)model{
     _yearLb.text = model.year;
     _max_scoreLb.text = model.max_score;
@@ -29,9 +30,9 @@
     _batchLb.text = model.batch;
     _control_lineLb.text = model.control_line;
 }
+
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
     // Configure the view for the selected state
 }
 

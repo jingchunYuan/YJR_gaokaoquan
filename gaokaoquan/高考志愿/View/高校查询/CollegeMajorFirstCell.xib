@@ -1,85 +1,115 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CollegeMajorFirstCell">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+        <tableViewCell contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CollegeMajorFirstCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="375" height="43"/>
+                <frame key="frameInset" width="375" height="99"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="年份" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hz5-OO-2Ch">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="专业分数线" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P7Q-BN-Toz">
+                        <frame key="frameInset" minX="10" minY="14" width="72" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="年份" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hz5-OO-2Ch">
+                        <frame key="frameInset" minX="10" minY="56" width="42" height="43.5"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.25882352939999997" green="0.69803921570000005" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最低分" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fae-Xx-KRe">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="最低分" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fae-Xx-KRe">
+                        <frame key="frameInset" minX="281.5" minY="56" width="41.5" height="43.5"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.25882352939999997" green="0.69803921570000005" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最高分" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbM-Qg-dZV">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="最高分" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bbM-Qg-dZV">
+                        <frame key="frameInset" minX="239.5" minY="56" width="42" height="43.5"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.25882352939999997" green="0.69803921570000005" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="招生批次" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oro-IV-uVu">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="招生批次" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Oro-IV-uVu">
+                        <frame key="frameInset" minX="156" minY="56" width="83.5" height="43.5"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.25882352939999997" green="0.69803921570000005" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="录取数" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3V0-LN-ioW">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="录取数" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3V0-LN-ioW">
+                        <frame key="frameInset" minX="323" minY="56" width="42" height="43.5"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.25882352939999997" green="0.69803921570000005" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="专业名称" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TA7-Gv-t2p">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="专业名称" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TA7-Gv-t2p">
+                        <frame key="frameInset" minX="52" minY="56" width="104" height="43.5"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.25882352939999997" green="0.69803921570000005" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gPh-7l-18A">
+                        <frame key="frameInset" minX="26.40%" minY="13" width="22.67%" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="北京" image="高校查询-默认状态三角形.png">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="M2k-hd-YeV">
+                        <frame key="frameInset" minX="76.00%" minY="13" width="22.67%" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="2015" image="高校查询-默认状态三角形.png">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TpZ-OY-Cxu">
+                        <frame key="frameInset" minX="51.20%" minY="13" width="22.67%" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="理科" image="高校查询-默认状态三角形.png">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
                 </subviews>
-                <constraints>
-                    <constraint firstAttribute="trailing" secondItem="3V0-LN-ioW" secondAttribute="trailing" constant="10" id="5YQ-0n-553"/>
-                    <constraint firstItem="3V0-LN-ioW" firstAttribute="width" secondItem="fae-Xx-KRe" secondAttribute="width" id="CRL-49-ktc"/>
-                    <constraint firstItem="Hz5-OO-2Ch" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Dbh-QP-6qo"/>
-                    <constraint firstItem="Oro-IV-uVu" firstAttribute="leading" secondItem="TA7-Gv-t2p" secondAttribute="trailing" id="DyL-9a-vHV"/>
-                    <constraint firstItem="Hz5-OO-2Ch" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="FmU-Dv-2hu"/>
-                    <constraint firstAttribute="bottom" secondItem="bbM-Qg-dZV" secondAttribute="bottom" id="GEH-oX-Hhp"/>
-                    <constraint firstItem="Oro-IV-uVu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="SdD-DH-Ucq"/>
-                    <constraint firstItem="bbM-Qg-dZV" firstAttribute="width" secondItem="Hz5-OO-2Ch" secondAttribute="width" id="VUg-zp-ErP"/>
-                    <constraint firstItem="TA7-Gv-t2p" firstAttribute="leading" secondItem="Hz5-OO-2Ch" secondAttribute="trailing" id="Vcf-nk-pgl"/>
-                    <constraint firstItem="fae-Xx-KRe" firstAttribute="leading" secondItem="bbM-Qg-dZV" secondAttribute="trailing" id="XlX-Tr-FOa"/>
-                    <constraint firstAttribute="bottom" secondItem="3V0-LN-ioW" secondAttribute="bottom" id="ZxH-Hq-SSM"/>
-                    <constraint firstItem="TA7-Gv-t2p" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="alf-rv-Qnq"/>
-                    <constraint firstItem="bbM-Qg-dZV" firstAttribute="leading" secondItem="Oro-IV-uVu" secondAttribute="trailing" id="b9x-8L-5jV"/>
-                    <constraint firstItem="fae-Xx-KRe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="dKw-Ne-rBm"/>
-                    <constraint firstAttribute="bottom" secondItem="Hz5-OO-2Ch" secondAttribute="bottom" id="gXC-vW-Lpm"/>
-                    <constraint firstAttribute="bottom" secondItem="fae-Xx-KRe" secondAttribute="bottom" id="h2z-yV-Xka"/>
-                    <constraint firstItem="Oro-IV-uVu" firstAttribute="width" secondItem="Hz5-OO-2Ch" secondAttribute="width" multiplier="2" id="idm-B6-jKs"/>
-                    <constraint firstItem="3V0-LN-ioW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="nWe-gb-1bf"/>
-                    <constraint firstAttribute="bottom" secondItem="TA7-Gv-t2p" secondAttribute="bottom" id="pY9-KS-Tmu"/>
-                    <constraint firstItem="3V0-LN-ioW" firstAttribute="leading" secondItem="fae-Xx-KRe" secondAttribute="trailing" id="qt7-AI-Fxg"/>
-                    <constraint firstItem="bbM-Qg-dZV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="sDa-nq-n8v"/>
-                    <constraint firstItem="Hz5-OO-2Ch" firstAttribute="width" secondItem="TA7-Gv-t2p" secondAttribute="width" multiplier="0.4" id="sV9-oD-91w"/>
-                    <constraint firstAttribute="bottom" secondItem="Oro-IV-uVu" secondAttribute="bottom" id="vml-KK-diq"/>
-                    <constraint firstItem="fae-Xx-KRe" firstAttribute="width" secondItem="bbM-Qg-dZV" secondAttribute="width" id="wJy-5E-e6f"/>
-                </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="33.5" y="79"/>
+            <connections>
+                <outlet property="beiJingBtn" destination="gPh-7l-18A" id="6pP-rB-ERZ"/>
+                <outlet property="liKeBtn" destination="TpZ-OY-Cxu" id="ihk-tm-6iR"/>
+                <outlet property="yearBtn" destination="M2k-hd-YeV" id="xHE-bc-qgg"/>
+            </connections>
+            <point key="canvasLocation" x="17" y="142"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="高校查询-默认状态三角形.png" width="10" height="10"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_0.fullscreen"/>
+    </simulatedMetricsContainer>
 </document>
