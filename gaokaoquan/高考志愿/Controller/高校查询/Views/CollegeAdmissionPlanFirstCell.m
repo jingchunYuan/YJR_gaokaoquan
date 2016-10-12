@@ -1,14 +1,14 @@
 //
-//  CollegeMajorFirstCell.m
+//  CollegeAdmissionPlanFirstCell.m
 //  gaokaoquan
 //
-//  Created by Nevis on 16/9/24.
+//  Created by admin on 2016/10/12.
 //  Copyright © 2016年 袁静茹. All rights reserved.
 //
 
-#import "CollegeMajorFirstCell.h"
+#import "CollegeAdmissionPlanFirstCell.h"
 
-@interface CollegeMajorFirstCell ()
+@interface CollegeAdmissionPlanFirstCell ()
 
 @property (weak, nonatomic) IBOutlet UIButton *beiJingBtn;
 @property (weak, nonatomic) IBOutlet UIButton *liKeBtn;
@@ -16,7 +16,7 @@
 
 @end
 
-@implementation CollegeMajorFirstCell
+@implementation CollegeAdmissionPlanFirstCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -37,13 +37,13 @@
     
     [self.liKeBtn setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, 0, self.liKeBtn.zj_width/2 - 10)];
     [self.liKeBtn setImageEdgeInsets:UIEdgeInsetsMake(0, self.liKeBtn.zj_width/2 + 10, 0, 0)];
-
+    
     [self.beiJingBtn setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, 0, self.beiJingBtn.zj_width/2 - 10)];
     [self.beiJingBtn setImageEdgeInsets:UIEdgeInsetsMake(0, self.beiJingBtn.zj_width/2 + 10, 0, 0)];
     
     [self.yearBtn setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, 0, self.yearBtn.zj_width/2 - 10)];
     [self.yearBtn setImageEdgeInsets:UIEdgeInsetsMake(0, self.yearBtn.zj_width/2 + 10, 0, 0)];
-
+    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

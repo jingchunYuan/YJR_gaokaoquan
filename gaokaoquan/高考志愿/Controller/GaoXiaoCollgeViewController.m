@@ -108,7 +108,7 @@
         static NSString *cellId = @"cellId";
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        cell.backgroundColor = VIEWCONTROLLERBGCOLOR;
+        cell.backgroundColor = [UIColor whiteColor];
         if (!cell) {
             cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
         }
@@ -251,6 +251,7 @@
         _tableView1 = [[UITableView alloc] initWithFrame:CGRectMake(0, BTN_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT-64-BTN_HEIGHT-49) style:UITableViewStylePlain];
         _tableView1.delegate = self;
         _tableView1.dataSource = self;
+        _tableView.backgroundColor = [UIColor whiteColor];
         [_tableView1 setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
 
     }

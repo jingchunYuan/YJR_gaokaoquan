@@ -9,10 +9,13 @@
 #import "CollegeModel.h"
 
 @implementation CollegeModel
+
 +(JSONKeyMapper *)keyMapper{
     return [[JSONKeyMapper alloc]initWithDictionary:@{@"id":@"Id"}];
 }
+
 +(BOOL)propertyIsOptional:(NSString *)propertyName{
     return YES;
 }
+
 @end
