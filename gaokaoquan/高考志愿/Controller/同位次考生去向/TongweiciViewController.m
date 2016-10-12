@@ -13,7 +13,13 @@
 #define MAS_SHORTHAND
 #import "Masonry.h"
 #import "TongweiciView.h"
-@interface TongweiciViewController ()
+#import "TiaozhuanView.h"
+
+#define selfWith self.view.bounds.size.width
+#define selfHeight self.view.bounds.size.height
+#define selfBacground [UIColor colorWithRed:240/255.0 green:240/255.0 blue:240/255.0 alpha:1.0]
+
+@interface TongweiciViewController ()<TiaozhuanViewDelegate>
 
 @property (nonatomic,strong) UIButton *btn;
 
@@ -113,6 +119,7 @@
     Buy.backgroundColor = [UIColor orangeColor];
     [Buy setTitle:@"立即购买(32.00元/30次)" forState:UIControlStateNormal];
     [Buy setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [Buy addTarget:self action:@selector(BuyClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:Buy];
     
     [Buy mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -154,6 +161,23 @@
     
 }
 
+-(void)BuyClick:(UIButton *) btn{
+    TiaozhuanView * alert=[[TiaozhuanView alloc]init];
+    
+    alert.frame=CGRectMake(0, 0, selfWith, selfHeight);
+    
+    alert.backgroundColor=selfBacground;
+    
+    [alert TiaozhuanViewTitle:@"温馨提示" message:@"购买VIP套餐性价比更高哦~" delegate:self canButton:@"什么是VIP套餐" otherButton:@"暂不考虑"];
+    
+    [alert showAlert];
+}
+
+-(void)Time:(TiaozhuanView *)view{
+    
+    [view removeFromSuperview];
+    
+}
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -166,6 +190,12 @@
 {
     [self.navigationController popViewControllerAnimated:YES];
 }
+//- (void)BuyClick:(UIButton *)btn
+//{
+////    JYStudyAnswerViewController *answer = [[JYStudyAnswerViewController alloc]init];
+////    [self.navigationController pushViewController:answer animated:YES];
+//    
+//}
 
 
 - (void)didReceiveMemoryWarning {
