@@ -35,14 +35,12 @@
     self.yearBtn.layer.cornerRadius = 5;
     self.yearBtn.layer.masksToBounds = YES;
     
-    [self.liKeBtn setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, 0, self.liKeBtn.zj_width/2 - 10)];
-    [self.liKeBtn setImageEdgeInsets:UIEdgeInsetsMake(0, self.liKeBtn.zj_width/2 + 10, 0, 0)];
-    
     [self.beiJingBtn setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, 0, self.beiJingBtn.zj_width/2 - 10)];
-    [self.beiJingBtn setImageEdgeInsets:UIEdgeInsetsMake(0, self.beiJingBtn.zj_width/2 + 10, 0, 0)];
-    
+    [self.beiJingBtn setImageEdgeInsets:UIEdgeInsetsMake(0, self.beiJingBtn.zj_width/2 + 20, 0, 0)];
+    [self.liKeBtn setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, 0, self.liKeBtn.zj_width/2 - 10)];
+    [self.liKeBtn setImageEdgeInsets:UIEdgeInsetsMake(0, self.liKeBtn.zj_width/2 + 20, 0, 0)];
     [self.yearBtn setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, 0, self.yearBtn.zj_width/2 - 10)];
-    [self.yearBtn setImageEdgeInsets:UIEdgeInsetsMake(0, self.yearBtn.zj_width/2 + 10, 0, 0)];
+    [self.yearBtn setImageEdgeInsets:UIEdgeInsetsMake(0, self.yearBtn.zj_width/2 + 20, 0, 0)];
     
 }
 

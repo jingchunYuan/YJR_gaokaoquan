@@ -71,7 +71,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gPh-7l-18A">
-                        <frame key="frameInset" minX="26.40%" minY="13" width="22.67%" height="22"/>
+                        <frame key="frameInset" minX="26.40%" minY="10" width="22.67%" height="30"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <state key="normal" title="北京" image="高校查询-默认状态三角形.png">
@@ -79,7 +79,7 @@
                         </state>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="M2k-hd-YeV">
-                        <frame key="frameInset" minX="76.00%" minY="13" width="22.67%" height="22"/>
+                        <frame key="frameInset" minX="76.00%" minY="10" width="22.67%" height="30"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <state key="normal" title="2015" image="高校查询-默认状态三角形.png">
@@ -87,7 +87,7 @@
                         </state>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TpZ-OY-Cxu">
-                        <frame key="frameInset" minX="51.20%" minY="13" width="22.67%" height="22"/>
+                        <frame key="frameInset" minX="51.20%" minY="10" width="22.67%" height="30"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <state key="normal" title="理科" image="高校查询-默认状态三角形.png">

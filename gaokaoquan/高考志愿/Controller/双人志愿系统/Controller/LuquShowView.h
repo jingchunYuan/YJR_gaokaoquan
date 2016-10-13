@@ -14,11 +14,8 @@
 
 //选中后的颜色
 @property (nonatomic,strong) UIColor *selectColor;
-
 @property (nonatomic,strong) UIColor *backGroundColor;
-
 @property (nonatomic,copy) void(^selectBlock) (LuquShowView *view,NSInteger index);
-
 @property (nonatomic,copy) UIColor *itemTextColor;
 
 -(void)setSelectBlock:(void (^)(LuquShowView * view, NSInteger index))block;

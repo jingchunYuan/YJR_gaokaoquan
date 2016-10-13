@@ -19,5 +19,9 @@
 @interface CollegeDongtaiCell : UITableViewCell
 
 @property(nonatomic, weak) id<CollegeDongtaiCellDelegate>delegate;
+@property (weak, nonatomic) IBOutlet UIView *luQulineView;
+@property (weak, nonatomic) IBOutlet UIView *gaiKuolineView;
+@property (weak, nonatomic) IBOutlet UIView *xiaoYoulineView;
+@property (weak, nonatomic) IBOutlet UIView *xiaoYuanlineView;
 
 @end

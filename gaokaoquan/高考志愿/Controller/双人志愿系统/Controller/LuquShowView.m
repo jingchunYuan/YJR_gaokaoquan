@@ -144,7 +144,6 @@
 
 #pragma - method
 
-
 - (void)showView{
     
     self.alpha = 0;
