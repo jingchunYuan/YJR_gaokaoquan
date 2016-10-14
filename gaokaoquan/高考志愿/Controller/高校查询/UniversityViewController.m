@@ -24,6 +24,10 @@
 #import "GeneralModel+Request.h"
 #import "SchoolGaiKuangCell.h"
 #import "AdmissionsArticlesCell.h"
+#import "XiaoYouImpressionModel.h"
+#import "XiaoYouImpressionModel+Request.h"
+#import "XiaoYouImpressionCell.h"
+
 
 #define MENU_HEIGHT 40
 #define MENU_BUTTON_WIDTH  80
@@ -124,6 +128,26 @@
     }];
     
 }
+    
+- (void)loadDataImpression {
+    
+    //校友印象
+    NSString *url = [NSString stringWithFormat:@"http://api.dev.gaokaoq.com/college/comment?id=%@&p=1&pageSize=20",_university.Id];
+    
+    __weak typeof(self) weakSelf = self;
+    [XiaoYouImpressionModel RequestWithUrl:url andPara:nil andCallBack:^(NSArray *arr, NSError *err) {
+        if(!err){
+            [super stopLoadData];
+            
+            NSLog(@"loadDataImpression = %@, count=%ld", arr, [arr count]);
+            [weakSelf.dataArr removeAllObjects];
+            [weakSelf.dataArr addObjectsFromArray:arr];
+            [weakSelf.table reloadData];
+        }
+    }];
+    
+    
+}
 
 #pragma makr -
 #pragma mark - UITableViewDelegate,UITableViewDataSource
@@ -155,29 +179,10 @@
         
     }else if(indexPath.section == 2){
         
-        if (_isFlagBtn==102) {
-            //概况
-            SchoolGaiKuangCell * cell = [tableView dequeueReusableCellWithIdentifier:@"SchoolGaiKuangCell"];
-            cell.delegate = self;
-            if(!cell){
-                cell = [[SchoolGaiKuangCell alloc] init];
-            }
-            cell.isFlagShoolShow = _isFlagShoolShow;
-            [cell setModel:_dataArr[indexPath.row]];
-            cell.selectionStyle = UITableViewCellSelectionStyleNone;
-            
-            //设置
-            if (_isFlagShoolShow==0) {
-                cell.showMoreBtn.frame = CGRectMake((SCREEN_WIDTH-90)/2, 160, 90, 30);
-            }else {
-                cell.showMoreBtn.frame = CGRectMake((SCREEN_WIDTH-90)/2, cell.contentLabel.zj_height+40, 90, 30);
-            }
-            
-            return cell;
-        }
-        
         if (_isFlagBtn==101) {
             //录取-院校分数线
+            _table.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+
             if (indexPath.row) {
                 
                 CollegeScoreCell * cell = [tableView dequeueReusableCellWithIdentifier:@"CollegeScoreCell"];
@@ -197,6 +202,45 @@
                 firstCell.selectionStyle = UITableViewCellSelectionStyleNone;
                 return firstCell;
             }
+        }
+        
+        
+        if (_isFlagBtn==102) {
+            //概况
+            _table.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+
+            SchoolGaiKuangCell * cell = [tableView dequeueReusableCellWithIdentifier:@"SchoolGaiKuangCell"];
+            cell.delegate = self;
+            if(!cell){
+                cell = [[SchoolGaiKuangCell alloc] init];
+            }
+            cell.isFlagShoolShow = _isFlagShoolShow;
+            [cell setModel:_dataArr[indexPath.row]];
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
+            
+            //设置
+            if (_isFlagShoolShow==0) {
+                cell.showMoreBtn.frame = CGRectMake((SCREEN_WIDTH-90)/2, 160, 90, 30);
+            }else {
+                cell.showMoreBtn.frame = CGRectMake((SCREEN_WIDTH-90)/2, cell.contentLabel.zj_height+40, 90, 30);
+            }
+            
+            return cell;
+        }
+        
+        if (_isFlagBtn==103) {
+            
+            //印象
+            _table.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+            
+            XiaoYouImpressionCell * cell = [tableView dequeueReusableCellWithIdentifier:@"XiaoYouImpressionCell"];
+            if(!cell){
+                cell = [[XiaoYouImpressionCell alloc] init];
+            }
+            [cell setModel:_dataArr[indexPath.row]];
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
+            return cell;
+            
         }
         
     }
@@ -285,6 +329,9 @@
             if (_isFlagBtn==101) {
                 return [self.dataArr[section-2] count] + 1;
             }
+            if (_isFlagBtn==103) {
+                return [self.dataArr count];
+            }
         }
         
     }
@@ -295,6 +342,10 @@
     if (_isFlagBtn==102) {
         //概况
         return 4;
+    }
+    if (_isFlagBtn==103) {
+        //印象
+        return 3;
     }
     
     return 5;
@@ -333,6 +384,10 @@
                 return 80 + (rect.size.height);
             }
             
+        }
+        if (_isFlagBtn==103) {
+            //印象
+            return 100;
         }
     }
     if (indexPath.section==3) {
@@ -429,7 +484,7 @@
         _isFlagBtn = 103;
         
         //刷新数据
-        
+        [self loadDataImpression];
         
     }
     if (tag==104) {
@@ -496,6 +551,7 @@
         [_table registerNib:[UINib nibWithNibName:@"CollegeAdmissionPlanFirstCell" bundle:nil] forCellReuseIdentifier:@"CollegeAdmissionPlanFirstCell"];
         [_table registerNib:[UINib nibWithNibName:@"SchoolGaiKuangCell" bundle:nil] forCellReuseIdentifier:@"SchoolGaiKuangCell"];
         [_table registerNib:[UINib nibWithNibName:@"AdmissionsArticlesCell" bundle:nil] forCellReuseIdentifier:@"AdmissionsArticlesCell"];
+        [_table registerNib:[UINib nibWithNibName:@"XiaoYouImpressionCell" bundle:nil] forCellReuseIdentifier:@"XiaoYouImpressionCell"];
     }
     return _table;
 }

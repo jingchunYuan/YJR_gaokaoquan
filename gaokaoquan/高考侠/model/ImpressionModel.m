@@ -9,7 +9,9 @@
 #import "ImpressionModel.h"
 
 @implementation ImpressionModel
+    
 +(BOOL)propertyIsOptional:(NSString *)propertyName{
     return YES;
 }
+    
 @end
