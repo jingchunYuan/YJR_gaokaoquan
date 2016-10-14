@@ -1518,7 +1518,7 @@
 		58F4DE671D81435A00723B4B /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		58F4DE681D81435A00723B4B /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		58F4DE691D81435A00723B4B /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
-		73536D2D1D6EBF9300CDD8A5 /* gaokaoquan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gaokaoquan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		73536D2D1D6EBF9300CDD8A5 /* 高考圈.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "高考圈.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73536D311D6EBF9300CDD8A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		73536D331D6EBF9300CDD8A5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		73536D341D6EBF9300CDD8A5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -3535,7 +3535,7 @@
 		73536D2E1D6EBF9300CDD8A5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				73536D2D1D6EBF9300CDD8A5 /* gaokaoquan.app */,
+				73536D2D1D6EBF9300CDD8A5 /* 高考圈.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -4834,7 +4834,7 @@
 			);
 			name = gaokaoquan;
 			productName = gaokaoquan;
-			productReference = 73536D2D1D6EBF9300CDD8A5 /* gaokaoquan.app */;
+			productReference = 73536D2D1D6EBF9300CDD8A5 /* 高考圈.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -5807,7 +5807,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jr-gaokaoq.com.10";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "高考圈";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -5827,7 +5827,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jr-gaokaoq.com.10";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "高考圈";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
