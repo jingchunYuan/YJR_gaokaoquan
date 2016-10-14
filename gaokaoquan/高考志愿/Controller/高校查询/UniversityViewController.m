@@ -80,6 +80,8 @@
 
 -(void)loadData{
     
+    [super loadData];
+    
     //院校分数线
     NSString * url1 = [NSString stringWithFormat:@"http://api.dev.gaokaoq.com/college/score?id=%@&city_id=1&type=1",_university.Id];
     //专业分数线
@@ -91,7 +93,7 @@
     __weak typeof(self) weakSelf = self;
     [CollegeModel RequestWithUrl:@[url1,url2,url3] andPara:nil andCallBack:^(NSMutableArray *arr, NSError *err) {
         if(!err){
-            
+            [super stopLoadData];
             NSLog(@"loadData = %@, count=%ld", arr, [arr count]);
             [weakSelf.dataArr removeAllObjects];
             [weakSelf.dataArr addObjectsFromArray:arr];
@@ -102,6 +104,7 @@
 }
 
 - (void)loadDataGaikuo {
+    [super loadData];
     
     //学校概括
     NSString * url1 = [NSString stringWithFormat:@"http://api.dev.gaokaoq.com/college/about?id=%@",_university.Id];
@@ -111,6 +114,8 @@
     __weak typeof(self) weakSelf = self;
     [GeneralModel RequestWithUrl:@[url1,url2] andPara:nil andCallBack:^(NSMutableArray *arr, NSError *err) {
         if(!err){
+            [super stopLoadData];
+            
             NSLog(@"loadDataGaikuo = %@, count=%ld", arr, [arr count]);
             [weakSelf.dataArr removeAllObjects];
             [weakSelf.dataArr addObjectsFromArray:arr];
