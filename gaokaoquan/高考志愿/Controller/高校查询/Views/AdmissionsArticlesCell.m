@@ -18,6 +18,8 @@
     [super awakeFromNib];
     // Initialization code
     self.zhaoShengLabel.numberOfLines = 0;
+    self.showMoreBtn.centerX = (SCREEN_WIDTH-self.showMoreBtn.zj_width)/2;
+    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

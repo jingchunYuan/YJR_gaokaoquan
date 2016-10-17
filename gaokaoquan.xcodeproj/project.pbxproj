@@ -498,6 +498,8 @@
 		840554311DAF79010099DF4F /* SchoolGaiKuangCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8405542F1DAF79010099DF4F /* SchoolGaiKuangCell.xib */; };
 		840554351DAF83830099DF4F /* AdmissionsArticlesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 840554331DAF83830099DF4F /* AdmissionsArticlesCell.m */; };
 		840554361DAF83830099DF4F /* AdmissionsArticlesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840554341DAF83830099DF4F /* AdmissionsArticlesCell.xib */; };
+		8405B49C1DB0DAEC00F8B0B1 /* XiaoYouImpressionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8405B49B1DB0DAEC00F8B0B1 /* XiaoYouImpressionModel.m */; };
+		8405B49F1DB0DB0200F8B0B1 /* XiaoYouImpressionModel+Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 8405B49E1DB0DB0200F8B0B1 /* XiaoYouImpressionModel+Request.m */; };
 		840B0F021D71421F007E6B01 /* SGFocusImageFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B0F011D71421F007E6B01 /* SGFocusImageFrame.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		840B0F121D714B8B007E6B01 /* SGFocusImageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B0F111D714B8B007E6B01 /* SGFocusImageItem.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		840B0F151D717DCC007E6B01 /* HotTeacherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B0F141D717DCC007E6B01 /* HotTeacherView.m */; };
@@ -510,6 +512,8 @@
 		8419A9031D7E61FD0024E703 /* DongTaiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8419A9011D7E61FD0024E703 /* DongTaiCell.xib */; };
 		8419A9061D7EAA040024E703 /* AddYinXiangView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8419A9051D7EAA040024E703 /* AddYinXiangView.m */; };
 		8419A9081D7EAA170024E703 /* AddYinXiangView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8419A9071D7EAA170024E703 /* AddYinXiangView.xib */; };
+		8464980B1DB0E87600A2B5C5 /* XiaoYouImpressionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 846498091DB0E87600A2B5C5 /* XiaoYouImpressionCell.m */; };
+		8464980C1DB0E87600A2B5C5 /* XiaoYouImpressionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8464980A1DB0E87600A2B5C5 /* XiaoYouImpressionCell.xib */; };
 		847AD5621D9CF7B4006068E1 /* MajorDetalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847AD5601D9CF7B4006068E1 /* MajorDetalController.m */; };
 		847AD5631D9CF7B4006068E1 /* MajorDetalController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847AD5611D9CF7B4006068E1 /* MajorDetalController.xib */; };
 		847AD5671D9D129E006068E1 /* DetalHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 847AD5651D9D129E006068E1 /* DetalHeaderCell.m */; };
@@ -1560,7 +1564,7 @@
 		58F4DE671D81435A00723B4B /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		58F4DE681D81435A00723B4B /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		58F4DE691D81435A00723B4B /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
-		73536D2D1D6EBF9300CDD8A5 /* gaokaoquan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gaokaoquan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		73536D2D1D6EBF9300CDD8A5 /* 高考圈.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "高考圈.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73536D311D6EBF9300CDD8A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		73536D331D6EBF9300CDD8A5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		73536D341D6EBF9300CDD8A5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1594,6 +1598,10 @@
 		840554321DAF83830099DF4F /* AdmissionsArticlesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdmissionsArticlesCell.h; sourceTree = "<group>"; };
 		840554331DAF83830099DF4F /* AdmissionsArticlesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdmissionsArticlesCell.m; sourceTree = "<group>"; };
 		840554341DAF83830099DF4F /* AdmissionsArticlesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdmissionsArticlesCell.xib; sourceTree = "<group>"; };
+		8405B49A1DB0DAEC00F8B0B1 /* XiaoYouImpressionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XiaoYouImpressionModel.h; sourceTree = "<group>"; };
+		8405B49B1DB0DAEC00F8B0B1 /* XiaoYouImpressionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XiaoYouImpressionModel.m; sourceTree = "<group>"; };
+		8405B49D1DB0DB0200F8B0B1 /* XiaoYouImpressionModel+Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XiaoYouImpressionModel+Request.h"; sourceTree = "<group>"; };
+		8405B49E1DB0DB0200F8B0B1 /* XiaoYouImpressionModel+Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XiaoYouImpressionModel+Request.m"; sourceTree = "<group>"; };
 		840B0F001D71421F007E6B01 /* SGFocusImageFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGFocusImageFrame.h; sourceTree = "<group>"; };
 		840B0F011D71421F007E6B01 /* SGFocusImageFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGFocusImageFrame.m; sourceTree = "<group>"; };
 		840B0F101D714B8B007E6B01 /* SGFocusImageItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGFocusImageItem.h; sourceTree = "<group>"; };
@@ -1614,6 +1622,9 @@
 		8419A9041D7EAA040024E703 /* AddYinXiangView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddYinXiangView.h; sourceTree = "<group>"; };
 		8419A9051D7EAA040024E703 /* AddYinXiangView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddYinXiangView.m; sourceTree = "<group>"; };
 		8419A9071D7EAA170024E703 /* AddYinXiangView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddYinXiangView.xib; sourceTree = "<group>"; };
+		846498081DB0E87600A2B5C5 /* XiaoYouImpressionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XiaoYouImpressionCell.h; sourceTree = "<group>"; };
+		846498091DB0E87600A2B5C5 /* XiaoYouImpressionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XiaoYouImpressionCell.m; sourceTree = "<group>"; };
+		8464980A1DB0E87600A2B5C5 /* XiaoYouImpressionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XiaoYouImpressionCell.xib; sourceTree = "<group>"; };
 		847AD55F1D9CF7B4006068E1 /* MajorDetalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MajorDetalController.h; sourceTree = "<group>"; };
 		847AD5601D9CF7B4006068E1 /* MajorDetalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MajorDetalController.m; sourceTree = "<group>"; };
 		847AD5611D9CF7B4006068E1 /* MajorDetalController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MajorDetalController.xib; sourceTree = "<group>"; };
@@ -3611,7 +3622,7 @@
 		73536D2E1D6EBF9300CDD8A5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				73536D2D1D6EBF9300CDD8A5 /* gaokaoquan.app */,
+				73536D2D1D6EBF9300CDD8A5 /* 高考圈.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -4726,6 +4737,10 @@
 				840554281DAF72330099DF4F /* GeneralModel.m */,
 				8405542A1DAF72BB0099DF4F /* GeneralModel+Request.h */,
 				8405542B1DAF72BB0099DF4F /* GeneralModel+Request.m */,
+				8405B49A1DB0DAEC00F8B0B1 /* XiaoYouImpressionModel.h */,
+				8405B49B1DB0DAEC00F8B0B1 /* XiaoYouImpressionModel.m */,
+				8405B49D1DB0DB0200F8B0B1 /* XiaoYouImpressionModel+Request.h */,
+				8405B49E1DB0DB0200F8B0B1 /* XiaoYouImpressionModel+Request.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -4745,6 +4760,9 @@
 				840554321DAF83830099DF4F /* AdmissionsArticlesCell.h */,
 				840554331DAF83830099DF4F /* AdmissionsArticlesCell.m */,
 				840554341DAF83830099DF4F /* AdmissionsArticlesCell.xib */,
+				846498081DB0E87600A2B5C5 /* XiaoYouImpressionCell.h */,
+				846498091DB0E87600A2B5C5 /* XiaoYouImpressionCell.m */,
+				8464980A1DB0E87600A2B5C5 /* XiaoYouImpressionCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -4910,7 +4928,7 @@
 			);
 			name = gaokaoquan;
 			productName = gaokaoquan;
-			productReference = 73536D2D1D6EBF9300CDD8A5 /* gaokaoquan.app */;
+			productReference = 73536D2D1D6EBF9300CDD8A5 /* 高考圈.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -5226,6 +5244,7 @@
 				18C2652F1D92706A00D25C7F /* zhongdiandaxue@3x.png in Resources */,
 				8498D8C91D868CDF00169695 /* 63D1C32889672031033CB630952BC2BB.jpg in Resources */,
 				2249D33B1D87AB2C00813C72 /* hot@2x.png in Resources */,
+				8464980C1DB0E87600A2B5C5 /* XiaoYouImpressionCell.xib in Resources */,
 				18B3DFFB1D8656C600929D0C /* JYLnviteview.xib in Resources */,
 				8498D9071D868CDF00169695 /* 高考侠-点赞@3x.png in Resources */,
 				18742C9B1D951C0A001E0FCC /* JYMajorTableViewCell.xib in Resources */,
@@ -5399,6 +5418,7 @@
 				84DC7FBE1D702A7900612E20 /* MJRefreshAutoNormalFooter.m in Sources */,
 				58F4DE701D81435A00723B4B /* AFURLConnectionOperation.m in Sources */,
 				84F596AB1DAA3AFC00963298 /* BLChatLineView.m in Sources */,
+				8405B49F1DB0DB0200F8B0B1 /* XiaoYouImpressionModel+Request.m in Sources */,
 				84F596BC1DAA3B0C00963298 /* ZhiyuanViewController.m in Sources */,
 				FC0486C91D7AEF020052EDB6 /* MASConstraintMaker.m in Sources */,
 				18B3E0511D8656EE00929D0C /* JYTutorCountModel.m in Sources */,
@@ -5712,6 +5732,7 @@
 				18BB06C11D9B686700139691 /* JYStudyAgainModel2.m in Sources */,
 				84DC7FED1D702A8E00612E20 /* JSONAPI.m in Sources */,
 				84F596AA1DAA3AFC00963298 /* BLBrokenLineRunChartTool.m in Sources */,
+				8464980B1DB0E87600A2B5C5 /* XiaoYouImpressionCell.m in Sources */,
 				FC0486C81D7AEF020052EDB6 /* MASConstraint.m in Sources */,
 				22DBFAB81D9BE560002085C3 /* RATableView.m in Sources */,
 				181165191D8D5882002EE814 /* STPickerSingle.m in Sources */,
@@ -5722,6 +5743,7 @@
 				18B3E00A1D8656C600929D0C /* JYServiceView.m in Sources */,
 				FC0486D81D7C391F0052EDB6 /* TecherDetalView.m in Sources */,
 				2245C3041D782B5800DEDDE4 /* TecherModel.m in Sources */,
+				8405B49C1DB0DAEC00F8B0B1 /* XiaoYouImpressionModel.m in Sources */,
 				84DC7F511D7029D400612E20 /* Reachability.m in Sources */,
 				84F596A91DAA3AFC00963298 /* ScoreModel.m in Sources */,
 				84DC80031D702AB800612E20 /* ZJCustomLabel.m in Sources */,
@@ -5899,7 +5921,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jr-gaokaoq.com.10";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "高考圈";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -5919,7 +5941,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jr-gaokaoq.com.10";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "高考圈";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

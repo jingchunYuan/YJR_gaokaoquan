@@ -18,9 +18,6 @@
 @end
 @implementation ImpressionCell
 
-- (void)awakeFromNib {
-
-}
 -(void)setModel:(ImpressionModel *)model{
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateStyle:NSDateFormatterMediumStyle];
