@@ -26,49 +26,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "gaokaoquan/&#x9ad8;&#x8003;&#x5fd7;&#x613f;/Controller/&#x540c;&#x4f4d;&#x6b21;&#x8003;&#x751f;&#x53bb;&#x5411;/TongweiciViewController.m"
-            timestampString = "498226510.124888"
+            filePath = "gaokaoquan/&#x9ad8;&#x8003;&#x5fd7;&#x613f;/View/&#x540c;&#x5206;&#x8003;&#x751f;&#x53bb;&#x5411;/TongfenAlertView.m"
+            timestampString = "498397675.339551"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "198"
-            endingLineNumber = "198"
-            landmarkName = "-willPresentAlertView:"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "-operateClicked:"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[TongweiciViewController willPresentAlertView:]"
-                  moduleName = "gaokaoquan"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gaokaoquan/Desktop/YJR_gaokaoquan/gaokaoquan/%E9%AB%98%E8%80%83%E5%BF%97%E6%84%BF/Controller/%E5%90%8C%E4%BD%8D%E6%AC%A1%E8%80%83%E7%94%9F%E5%8E%BB%E5%90%91/TongweiciViewController.m"
-                  timestampString = "498193645.832135"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "196"
-                  endingLineNumber = "196"
-                  offsetFromSymbolStart = "86">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[TongweiciViewController willPresentAlertView:]"
-                  moduleName = "gaokaoquan"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gaokaoquan/Desktop/YJR_gaokaoquan/gaokaoquan/%E9%AB%98%E8%80%83%E5%BF%97%E6%84%BF/Controller/%E5%90%8C%E4%BD%8D%E6%AC%A1%E8%80%83%E7%94%9F%E5%8E%BB%E5%90%91/TongweiciViewController.m"
-                  timestampString = "498193645.834154"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "196"
-                  endingLineNumber = "196"
-                  offsetFromSymbolStart = "94">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

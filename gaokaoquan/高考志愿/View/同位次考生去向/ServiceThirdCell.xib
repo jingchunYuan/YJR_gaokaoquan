@@ -21,7 +21,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="首页-职业信息库-下拉箭头@3x" translatesAutoresizingMaskIntoConstraints="NO" id="uQy-sq-roB">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="huijiantou" translatesAutoresizingMaskIntoConstraints="NO" id="uQy-sq-roB">
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="c8E-xD-s8f"/>
                             <constraint firstAttribute="width" constant="20" id="uZw-9b-NgS"/>
@@ -61,6 +61,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="首页-职业信息库-下拉箭头@3x" width="16" height="16"/>
+        <image name="huijiantou" width="16" height="16"/>
     </resources>
 </document>

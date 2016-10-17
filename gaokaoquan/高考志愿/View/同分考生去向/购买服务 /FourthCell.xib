@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FourthCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="huijiantou.png" translatesAutoresizingMaskIntoConstraints="NO" id="HC0-RB-T9S">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="E7F-ur-dIx"/>
+                            <constraint firstAttribute="height" constant="20" id="qtS-p3-cY2"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="优惠券" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Qu-Vq-xsb">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="d1s-eL-edY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(0张可用)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JTc-E9-lml">
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="65" id="1xe-HO-k4h"/>
+                            <constraint firstAttribute="height" constant="21" id="zYX-Cc-OjE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未使用优惠券0元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8KW-TP-ynP">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="jnJ-EB-Eca"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HC0-RB-T9S" firstAttribute="leading" secondItem="8KW-TP-ynP" secondAttribute="trailing" constant="5" id="9gq-yQ-0TV"/>
+                    <constraint firstAttribute="trailing" secondItem="HC0-RB-T9S" secondAttribute="trailing" constant="20" id="Dt2-Qv-6mp"/>
+                    <constraint firstItem="JTc-E9-lml" firstAttribute="leading" secondItem="6Qu-Vq-xsb" secondAttribute="trailing" constant="5" id="NHj-vu-87m"/>
+                    <constraint firstItem="6Qu-Vq-xsb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="Q2q-0P-8aa"/>
+                    <constraint firstItem="HC0-RB-T9S" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="ZYX-Ge-ftJ"/>
+                    <constraint firstItem="6Qu-Vq-xsb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="eAe-Mc-TbD"/>
+                    <constraint firstItem="8KW-TP-ynP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="pw0-TK-jHM"/>
+                    <constraint firstItem="JTc-E9-lml" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="xks-Jk-ldk"/>
+                </constraints>
+            </tableViewCellContentView>
+        </tableViewCell>
+        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CKz-rg-XuZ">
+            <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+            <nil key="textColor"/>
+            <nil key="highlightedColor"/>
+            <point key="canvasLocation" x="149" y="227"/>
+        </label>
+    </objects>
+    <resources>
+        <image name="huijiantou.png" width="20" height="20"/>
+    </resources>
+</document>

@@ -37,7 +37,7 @@
 
 -(UITableView *)table{
     if (!_table) {
-        _table = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64) style:UITableViewStylePlain];
+        _table = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-64) style:UITableViewStylePlain];
         _table.delegate =self;
         _table.dataSource = self;
         [_table registerNib:[UINib nibWithNibName:@"ServiceFirstCell" bundle:nil] forCellReuseIdentifier:@"ServiceFirstCell"];
@@ -111,7 +111,7 @@
             height = 60.0f;
             break;
         case 4:
-            height = 100.0f;
+            height = 130.0f;
             break;
         case 5:
             height = 250.0f;

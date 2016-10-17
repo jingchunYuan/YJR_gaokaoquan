@@ -26,7 +26,7 @@
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qJ5-Ii-5dt">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="huijiantou" translatesAutoresizingMaskIntoConstraints="NO" id="qJ5-Ii-5dt">
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="GNh-so-KMv"/>
                             <constraint firstAttribute="width" constant="20" id="GnL-8F-7OH"/>
@@ -51,4 +51,7 @@
             </tableViewCellContentView>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="huijiantou" width="16" height="16"/>
+    </resources>
 </document>

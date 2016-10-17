@@ -11,7 +11,16 @@
 #define MAS_SHORTHAND
 #import "Masonry.h"
 #import "JYSameNumtableView.h"
-@interface JYSameNumViewController ()
+#import "TiaoView.h"
+#import "TongfenAlertView.h"
+#import "ShopViewController.h"
+
+
+#define selfWith self.view.bounds.size.width
+#define selfHeight self.view.bounds.size.height
+#define selfBacground [UIColor colorWithRed:240/255.0 green:240/255.0 blue:240/255.0 alpha:1.0]
+
+@interface JYSameNumViewController ()<TiaoViewDelegate,TongfenAlertDelegate>
 
 @property (nonatomic,strong) UIButton *btn;
 
@@ -26,6 +35,9 @@
 @end
 
 @implementation JYSameNumViewController
+{
+     TongfenAlertView * alertView;
+}
 
 - (void)viewDidLoad
 {
@@ -34,12 +46,12 @@
     
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    self.tabBarController.tabBar.hidden = YES;
-
-}
+//- (void)viewWillAppear:(BOOL)animated
+//{
+//    [super viewWillAppear:animated];
+//    self.tabBarController.tabBar.hidden = YES;
+//
+//}
 
 - (void)setUI
 {
@@ -121,7 +133,9 @@
     Buy.backgroundColor = [UIColor orangeColor];
     [Buy setTitle:@"立即购买(32.00元/30次)" forState:UIControlStateNormal];
     [Buy setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [Buy addTarget:self action:@selector(BuyClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:Buy];
+   
     
     [Buy mas_makeConstraints:^(MASConstraintMaker *make) {
        
@@ -136,7 +150,14 @@
     [scrollview addSubview:tableview];
     self.tableview = tableview;
     tableview.hidden = YES;
-   
+    alertView = [[TongfenAlertView alloc]initWithFrame:CGRectMake(20, 0.2*SCREEN_HEIGHT, SCREEN_WIDTH-40, 0.3*SCREEN_HEIGHT)];
+    alertView.hidden = YES;
+    alertView.title = @"温馨提示";
+    alertView.message = @"购买VIP套餐性价比更高哦~";
+    alertView.nextTitle = @"什么是VIP套餐";
+    alertView.cancelTitle = @"暂时不考虑";
+    alertView.delegate = self;
+    [self.view addSubview:alertView];
 
 }
 
@@ -161,8 +182,68 @@
     [self.btn setTitleColor:[UIColor colorWithRed:85/255.0 green:193/255.0 blue:231/255.0 alpha:1] forState:UIControlStateNormal];
 
 }
+
+-(void)BuyClick:(UIButton *) btn{
+    alertView.hidden = !alertView.hidden;
+}
+-(void)createAlert{
+    UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"购买VIP套餐性价比更高哦~" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"购买VIP套餐性价比更高哦~" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"暂时不考虑" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    // 添加操作
+    [alert addAction:cancelAction];
+    [alert addAction:okAction];
+    [self presentViewController:alert animated:YES completion:nil];
+}
+-(void)willPresentAlertView:(UIAlertView *)alertView{
+    for (UIView *tempView in alertView.subviews) {
+        
+        if ([tempView isKindOfClass:[UILabel class]]) {
+            //当该控件为一个UILable时
+            UILabel *tempLabel = (UILabel*)tempView;
+            if ([tempLabel.text isEqualToString:alertView.message]) {
+                //调整对齐方式
+                tempLabel.textAlignment = NSTextAlignmentLeft;
+                //调整字体的大小
+                [tempLabel setFont:[UIFont systemFontOfSize:15]];
+                [tempLabel setTextColor:[UIColor redColor]];
+            }
+        }
+    }
+    
+}
+-(void)Time:(TiaoView *)view{
+    
+    [view removeFromSuperview];
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.tabBarController.tabBar.hidden = YES;
+    
+}
+
+
+
 - (void)leftBarButtonItemClick
 {
     [self.navigationController popViewControllerAnimated:YES];
 }
+
+-(void)pushController:(NSInteger)type{
+    if(type){
+    }else{
+        ShopViewController * service = [[ShopViewController alloc]init];
+        [self.navigationController pushViewController:service animated:YES];
+    }
+}
+
+
 @end

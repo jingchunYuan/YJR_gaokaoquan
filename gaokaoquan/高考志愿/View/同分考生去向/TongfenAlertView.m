@@ -1,29 +1,23 @@
+
 //
-//  TongWeiAlertView.m
+//  TongfenAlertView.m
 //  gaokaoquan
 //
-//  Created by 高考圈 on 16/10/15.
+//  Created by 高考圈 on 16/10/17.
 //  Copyright © 2016年 袁静茹. All rights reserved.
 //
 
-#import "TongWeiAlertView.h"
+#import "TongfenAlertView.h"
 
-@interface TongWeiAlertView()
+@interface TongfenAlertView()
 @property (nonatomic,strong)UIButton * okBtn;
 @property (nonatomic,strong)UIButton * cancelBtn;
 @property (nonatomic,strong)UILabel * titleLb;
 @property (nonatomic,strong)UILabel * msgLb;
 @property (nonatomic,strong)UIButton * exitBtn;
 @end
-@implementation TongWeiAlertView
+@implementation TongfenAlertView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
 -(instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
         self.backgroundColor = [UIColor whiteColor];
@@ -87,7 +81,7 @@
             break;
             //购买
         case 2:
-           break;
+            break;
             //暂不考虑
         case 3:
             [self.delegate pushController:0];
@@ -113,4 +107,6 @@
     _cancelTitle = cancelTitle;
     [_cancelBtn setTitle:_cancelTitle forState:UIControlStateNormal];
 }
+
+
 @end

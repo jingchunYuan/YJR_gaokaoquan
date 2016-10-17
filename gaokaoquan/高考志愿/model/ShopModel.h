@@ -1,14 +1,14 @@
 //
-//  ShopServiceModel.h
+//  ShopModel.h
 //  gaokaoquan
 //
-//  Created by 高考圈 on 16/10/15.
+//  Created by 高考圈 on 16/10/17.
 //  Copyright © 2016年 袁静茹. All rights reserved.
 //
 
-#import "JSONModel.h"
+#import <Foundation/Foundation.h>
 
-@interface ShopServiceModel : NSObject
+@interface ShopModel : NSObject
 @property (nonatomic,copy) NSString * Id;
 @property (nonatomic,assign) NSInteger uid;
 @property (nonatomic,copy) NSString * title;
@@ -22,4 +22,5 @@
 @property (nonatomic,copy) NSString * coupon;
 @property (nonatomic,copy) NSString * couponimg;
 @property (nonatomic,copy) NSString *bank;
+
 @end
