@@ -25,6 +25,16 @@
     [super viewDidLoad];
     [self layoutUI];
 }
+
+-(void)layoutUI{
+    self.view.backgroundColor = UIColorRGB(245, 245, 245);
+    self.navigationItem.title = @"购买服务";
+    [self.view addSubview:self.table];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem initWithImageName:@"返回" highlightedImage:nil title:nil target:self action:@selector(leftBarButtonItemClick)];
+}
+
+
+
 -(UITableView *)table{
     if (!_table) {
         _table = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64) style:UITableViewStylePlain];
@@ -111,27 +121,22 @@
     }
     return height;
 }
--(void)layoutUI{
-    self.view.backgroundColor = UIColorRGB(245, 245, 245);
-    self.navigationItem.title = @"购买服务";
-    [self.view addSubview:self.table];
-}
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
     return 10;
 }
+
+
+- (void)leftBarButtonItemClick
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
+
 
 @end

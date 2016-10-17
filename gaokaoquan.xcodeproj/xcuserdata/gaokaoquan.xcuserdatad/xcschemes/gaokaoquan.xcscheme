@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "73536D2C1D6EBF9300CDD8A5"
-               BuildableName = "gaokaoquan.app"
+               BuildableName = "&#x9ad8;&#x8003;&#x5708;.app"
                BlueprintName = "gaokaoquan"
                ReferencedContainer = "container:gaokaoquan.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "73536D2C1D6EBF9300CDD8A5"
-            BuildableName = "gaokaoquan.app"
+            BuildableName = "&#x9ad8;&#x8003;&#x5708;.app"
             BlueprintName = "gaokaoquan"
             ReferencedContainer = "container:gaokaoquan.xcodeproj">
          </BuildableReference>
@@ -56,7 +56,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "73536D2C1D6EBF9300CDD8A5"
-            BuildableName = "gaokaoquan.app"
+            BuildableName = "&#x9ad8;&#x8003;&#x5708;.app"
             BlueprintName = "gaokaoquan"
             ReferencedContainer = "container:gaokaoquan.xcodeproj">
          </BuildableReference>
@@ -75,7 +75,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "73536D2C1D6EBF9300CDD8A5"
-            BuildableName = "gaokaoquan.app"
+            BuildableName = "&#x9ad8;&#x8003;&#x5708;.app"
             BlueprintName = "gaokaoquan"
             ReferencedContainer = "container:gaokaoquan.xcodeproj">
          </BuildableReference>

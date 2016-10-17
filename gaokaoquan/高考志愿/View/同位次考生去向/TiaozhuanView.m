@@ -83,7 +83,7 @@
         
         for (int i=0; i<2;i++) {
             
-            UIButton * button = [[UIButton alloc]initWithFrame:XMRECT6(CGRectMake((275/2)*i,150, (275/2), 40))];
+            UIButton * button = [[UIButton alloc]initWithFrame:XMRECT6(CGRectMake((275/2)*i,150, (275/2), 50))];
             
             [white_view addSubview:button];
             

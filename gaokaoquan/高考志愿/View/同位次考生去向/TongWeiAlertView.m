@@ -54,7 +54,7 @@
     _okBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     _okBtn.layer.masksToBounds = YES;
     _okBtn.layer.cornerRadius = 4;
-    _okBtn.frame = CGRectMake(40, 90, frame.size.width-80, 30);
+    _okBtn.frame = CGRectMake(70, 90, frame.size.width-150, 35);
     _okBtn.backgroundColor = [UIColor yellowColor];
     [_okBtn setTitle:_nextTitle forState:UIControlStateNormal];
     [_okBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
@@ -64,7 +64,7 @@
     _cancelBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     _cancelBtn.layer.masksToBounds = YES;
     _cancelBtn.layer.cornerRadius = 4;
-    _cancelBtn.frame = CGRectMake(40, 140, frame.size.width-80, 30);
+    _cancelBtn.frame = CGRectMake(70, 140, frame.size.width-150, 35);
     _cancelBtn.backgroundColor = [UIColor cyanColor];
     [_cancelBtn setTitle:_cancelTitle forState:UIControlStateNormal];
     [_cancelBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
