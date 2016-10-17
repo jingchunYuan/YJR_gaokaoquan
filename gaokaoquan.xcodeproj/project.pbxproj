@@ -285,6 +285,7 @@
 		2245C9581D9B715D00433D4C /* jiantou-da@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2245C9541D9B715D00433D4C /* jiantou-da@3x.png */; };
 		2245C9591D9B715D00433D4C /* jiantou-xiao@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2245C9551D9B715D00433D4C /* jiantou-xiao@2x.png */; };
 		2245C95A1D9B715D00433D4C /* jiantou-xiao@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2245C9561D9B715D00433D4C /* jiantou-xiao@3x.png */; };
+		22464AA71DB1F397009A281F /* TongWeiAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22464AA61DB1F397009A281F /* TongWeiAlertView.m */; };
 		2246885B1D9CF8450053656E /* TongweiciViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2246885A1D9CF8450053656E /* TongweiciViewController.m */; };
 		2246885E1D9CF8890053656E /* TongweiciModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2246885D1D9CF8890053656E /* TongweiciModel.m */; };
 		224688611D9CF8B60053656E /* TongweiciTableCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 224688601D9CF8B60053656E /* TongweiciTableCellModel.m */; };
@@ -408,6 +409,21 @@
 		2261C88B1D8924B50084E930 /* 形状-26-副本-3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2261C8891D8924B50084E930 /* 形状-26-副本-3@3x.png */; };
 		2261C88C1D8924B50084E930 /* 形状-26-副本-3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2261C88A1D8924B50084E930 /* 形状-26-副本-3@2x.png */; };
 		2261CB541D792DB000C0C430 /* TecherModel+Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 2261CB531D792DB000C0C430 /* TecherModel+Request.m */; };
+		226203041DB23A7A002CA1E8 /* ShopServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 226203031DB23A7A002CA1E8 /* ShopServiceViewController.m */; };
+		226203071DB23C26002CA1E8 /* ShopServiceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 226203061DB23C26002CA1E8 /* ShopServiceModel.m */; };
+		2262030A1DB23D8B002CA1E8 /* ShopServiceModel+Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 226203091DB23D8B002CA1E8 /* ShopServiceModel+Request.m */; };
+		2262030F1DB2438E002CA1E8 /* ServiceFirstCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2262030D1DB2438E002CA1E8 /* ServiceFirstCell.m */; };
+		226203101DB2438E002CA1E8 /* ServiceFirstCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2262030E1DB2438E002CA1E8 /* ServiceFirstCell.xib */; };
+		226203141DB24473002CA1E8 /* ServiceSecondCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 226203121DB24473002CA1E8 /* ServiceSecondCell.m */; };
+		226203151DB24473002CA1E8 /* ServiceSecondCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 226203131DB24473002CA1E8 /* ServiceSecondCell.xib */; };
+		226203191DB24640002CA1E8 /* ServiceThirdCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 226203171DB24640002CA1E8 /* ServiceThirdCell.m */; };
+		2262031A1DB24640002CA1E8 /* ServiceThirdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 226203181DB24640002CA1E8 /* ServiceThirdCell.xib */; };
+		2262031E1DB249ED002CA1E8 /* ServiceFourthCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2262031C1DB249ED002CA1E8 /* ServiceFourthCell.m */; };
+		2262031F1DB249ED002CA1E8 /* ServiceFourthCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2262031D1DB249ED002CA1E8 /* ServiceFourthCell.xib */; };
+		226203231DB24C0B002CA1E8 /* ServiceFifthCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 226203211DB24C0B002CA1E8 /* ServiceFifthCell.m */; };
+		226203241DB24C0B002CA1E8 /* ServiceFifthCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 226203221DB24C0B002CA1E8 /* ServiceFifthCell.xib */; };
+		226203281DB24D79002CA1E8 /* ServiceSixthCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 226203261DB24D79002CA1E8 /* ServiceSixthCell.m */; };
+		226203291DB24D79002CA1E8 /* ServiceSixthCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 226203271DB24D79002CA1E8 /* ServiceSixthCell.xib */; };
 		2268C0881D8261B5004D8E85 /* FengyunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2268C0861D8261B5004D8E85 /* FengyunViewController.m */; };
 		2268C0891D8261B5004D8E85 /* FengyunViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2268C0871D8261B5004D8E85 /* FengyunViewController.xib */; };
 		2268C08D1D82B50A004D8E85 /* FengyunTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2268C08B1D82B50A004D8E85 /* FengyunTableViewCell.m */; };
@@ -1272,6 +1288,8 @@
 		2245C9541D9B715D00433D4C /* jiantou-da@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jiantou-da@3x.png"; sourceTree = "<group>"; };
 		2245C9551D9B715D00433D4C /* jiantou-xiao@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jiantou-xiao@2x.png"; sourceTree = "<group>"; };
 		2245C9561D9B715D00433D4C /* jiantou-xiao@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jiantou-xiao@3x.png"; sourceTree = "<group>"; };
+		22464AA51DB1F397009A281F /* TongWeiAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TongWeiAlertView.h; sourceTree = "<group>"; };
+		22464AA61DB1F397009A281F /* TongWeiAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TongWeiAlertView.m; sourceTree = "<group>"; };
 		224688591D9CF8450053656E /* TongweiciViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TongweiciViewController.h; sourceTree = "<group>"; };
 		2246885A1D9CF8450053656E /* TongweiciViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TongweiciViewController.m; sourceTree = "<group>"; };
 		2246885C1D9CF8890053656E /* TongweiciModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TongweiciModel.h; sourceTree = "<group>"; };
@@ -1421,6 +1439,30 @@
 		2261C88A1D8924B50084E930 /* 形状-26-副本-3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "形状-26-副本-3@2x.png"; sourceTree = "<group>"; };
 		2261CB521D792DB000C0C430 /* TecherModel+Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TecherModel+Request.h"; sourceTree = "<group>"; };
 		2261CB531D792DB000C0C430 /* TecherModel+Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TecherModel+Request.m"; sourceTree = "<group>"; };
+		226203021DB23A7A002CA1E8 /* ShopServiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopServiceViewController.h; sourceTree = "<group>"; };
+		226203031DB23A7A002CA1E8 /* ShopServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopServiceViewController.m; sourceTree = "<group>"; };
+		226203051DB23C26002CA1E8 /* ShopServiceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopServiceModel.h; sourceTree = "<group>"; };
+		226203061DB23C26002CA1E8 /* ShopServiceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopServiceModel.m; sourceTree = "<group>"; };
+		226203081DB23D8B002CA1E8 /* ShopServiceModel+Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ShopServiceModel+Request.h"; sourceTree = "<group>"; };
+		226203091DB23D8B002CA1E8 /* ShopServiceModel+Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ShopServiceModel+Request.m"; sourceTree = "<group>"; };
+		2262030C1DB2438E002CA1E8 /* ServiceFirstCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceFirstCell.h; sourceTree = "<group>"; };
+		2262030D1DB2438E002CA1E8 /* ServiceFirstCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceFirstCell.m; sourceTree = "<group>"; };
+		2262030E1DB2438E002CA1E8 /* ServiceFirstCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServiceFirstCell.xib; sourceTree = "<group>"; };
+		226203111DB24473002CA1E8 /* ServiceSecondCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceSecondCell.h; sourceTree = "<group>"; };
+		226203121DB24473002CA1E8 /* ServiceSecondCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceSecondCell.m; sourceTree = "<group>"; };
+		226203131DB24473002CA1E8 /* ServiceSecondCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServiceSecondCell.xib; sourceTree = "<group>"; };
+		226203161DB24640002CA1E8 /* ServiceThirdCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceThirdCell.h; sourceTree = "<group>"; };
+		226203171DB24640002CA1E8 /* ServiceThirdCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceThirdCell.m; sourceTree = "<group>"; };
+		226203181DB24640002CA1E8 /* ServiceThirdCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServiceThirdCell.xib; sourceTree = "<group>"; };
+		2262031B1DB249ED002CA1E8 /* ServiceFourthCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceFourthCell.h; sourceTree = "<group>"; };
+		2262031C1DB249ED002CA1E8 /* ServiceFourthCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceFourthCell.m; sourceTree = "<group>"; };
+		2262031D1DB249ED002CA1E8 /* ServiceFourthCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServiceFourthCell.xib; sourceTree = "<group>"; };
+		226203201DB24C0B002CA1E8 /* ServiceFifthCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceFifthCell.h; sourceTree = "<group>"; };
+		226203211DB24C0B002CA1E8 /* ServiceFifthCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceFifthCell.m; sourceTree = "<group>"; };
+		226203221DB24C0B002CA1E8 /* ServiceFifthCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServiceFifthCell.xib; sourceTree = "<group>"; };
+		226203251DB24D79002CA1E8 /* ServiceSixthCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceSixthCell.h; sourceTree = "<group>"; };
+		226203261DB24D79002CA1E8 /* ServiceSixthCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceSixthCell.m; sourceTree = "<group>"; };
+		226203271DB24D79002CA1E8 /* ServiceSixthCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServiceSixthCell.xib; sourceTree = "<group>"; };
 		2268C0851D8261B5004D8E85 /* FengyunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FengyunViewController.h; sourceTree = "<group>"; };
 		2268C0861D8261B5004D8E85 /* FengyunViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FengyunViewController.m; sourceTree = "<group>"; };
 		2268C0871D8261B5004D8E85 /* FengyunViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FengyunViewController.xib; sourceTree = "<group>"; };
@@ -3128,6 +3170,7 @@
 		2246884E1D9CF20C0053656E /* 同位次考生去向 */ = {
 			isa = PBXGroup;
 			children = (
+				2262030B1DB24349002CA1E8 /* 购买服务 */,
 				224688C51D9D41C60053656E /* TongweiciView.h */,
 				224688C61D9D41C60053656E /* TongweiciView.m */,
 				224688C21D9D41C60053656E /* TongweiciTableViewCell.h */,
@@ -3135,6 +3178,8 @@
 				224688C41D9D41C60053656E /* TongweiciTableViewCell.xib */,
 				2261B4EA1DAE1726001DD531 /* TiaozhuanView.h */,
 				2261B4EB1DAE1726001DD531 /* TiaozhuanView.m */,
+				22464AA51DB1F397009A281F /* TongWeiAlertView.h */,
+				22464AA61DB1F397009A281F /* TongWeiAlertView.m */,
 			);
 			path = "同位次考生去向";
 			sourceTree = "<group>";
@@ -3144,6 +3189,8 @@
 			children = (
 				224688591D9CF8450053656E /* TongweiciViewController.h */,
 				2246885A1D9CF8450053656E /* TongweiciViewController.m */,
+				226203021DB23A7A002CA1E8 /* ShopServiceViewController.h */,
+				226203031DB23A7A002CA1E8 /* ShopServiceViewController.m */,
 			);
 			path = "同位次考生去向";
 			sourceTree = "<group>";
@@ -3155,6 +3202,10 @@
 				2246885D1D9CF8890053656E /* TongweiciModel.m */,
 				2246885F1D9CF8B60053656E /* TongweiciTableCellModel.h */,
 				224688601D9CF8B60053656E /* TongweiciTableCellModel.m */,
+				226203051DB23C26002CA1E8 /* ShopServiceModel.h */,
+				226203061DB23C26002CA1E8 /* ShopServiceModel.m */,
+				226203081DB23D8B002CA1E8 /* ShopServiceModel+Request.h */,
+				226203091DB23D8B002CA1E8 /* ShopServiceModel+Request.m */,
 			);
 			path = "同位次考生去向";
 			sourceTree = "<group>";
@@ -3388,6 +3439,31 @@
 			);
 			name = Controller;
 			path = ../../../../../Controller;
+			sourceTree = "<group>";
+		};
+		2262030B1DB24349002CA1E8 /* 购买服务 */ = {
+			isa = PBXGroup;
+			children = (
+				2262030C1DB2438E002CA1E8 /* ServiceFirstCell.h */,
+				2262030D1DB2438E002CA1E8 /* ServiceFirstCell.m */,
+				2262030E1DB2438E002CA1E8 /* ServiceFirstCell.xib */,
+				226203111DB24473002CA1E8 /* ServiceSecondCell.h */,
+				226203121DB24473002CA1E8 /* ServiceSecondCell.m */,
+				226203131DB24473002CA1E8 /* ServiceSecondCell.xib */,
+				226203161DB24640002CA1E8 /* ServiceThirdCell.h */,
+				226203171DB24640002CA1E8 /* ServiceThirdCell.m */,
+				226203181DB24640002CA1E8 /* ServiceThirdCell.xib */,
+				2262031B1DB249ED002CA1E8 /* ServiceFourthCell.h */,
+				2262031C1DB249ED002CA1E8 /* ServiceFourthCell.m */,
+				2262031D1DB249ED002CA1E8 /* ServiceFourthCell.xib */,
+				226203201DB24C0B002CA1E8 /* ServiceFifthCell.h */,
+				226203211DB24C0B002CA1E8 /* ServiceFifthCell.m */,
+				226203221DB24C0B002CA1E8 /* ServiceFifthCell.xib */,
+				226203251DB24D79002CA1E8 /* ServiceSixthCell.h */,
+				226203261DB24D79002CA1E8 /* ServiceSixthCell.m */,
+				226203271DB24D79002CA1E8 /* ServiceSixthCell.xib */,
+			);
+			name = "购买服务";
 			sourceTree = "<group>";
 		};
 		22750EFA1D9E4713005B3653 /* 录取概率测试 */ = {
@@ -4848,7 +4924,7 @@
 				TargetAttributes = {
 					73536D2C1D6EBF9300CDD8A5 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = W5TJTQ52N7;
+						DevelopmentTeam = 2RG96DPB3Y;
 					};
 				};
 			};
@@ -5022,6 +5098,7 @@
 				8498D9521D868CDF00169695 /* 邀请注册@2x.png in Resources */,
 				2249D4121D880D7E00813C72 /* 高校查询@3x.png in Resources */,
 				2249D4071D880D7E00813C72 /* 根据职业插对口专业@2x.png in Resources */,
+				226203151DB24473002CA1E8 /* ServiceSecondCell.xib in Resources */,
 				224BCF021D95317C00CBFBAA /* 问答社区-@2x.png in Resources */,
 				184B37FA1D88EEA600B094AC /* 意见反馈_1@2x.png in Resources */,
 				2249D3F61D880D7E00813C72 /* 同分考生去向@3x.png in Resources */,
@@ -5060,6 +5137,7 @@
 				8498D9561D868CDF00169695 /* nav_bg@3x.png in Resources */,
 				18B3DFF91D8656C600929D0C /* JYLectureTableViewCell.xib in Resources */,
 				8498D8EE1D868CDF00169695 /* baikuang@2x.png in Resources */,
+				226203291DB24D79002CA1E8 /* ServiceSixthCell.xib in Resources */,
 				225F9D571D8E391A00D9729C /* HeaderView.xib in Resources */,
 				18B3DFFD1D8656C600929D0C /* JYMyAnswerView.xib in Resources */,
 				22A392CC1D98FFE9000F683E /* 下拉@2x.png in Resources */,
@@ -5110,9 +5188,11 @@
 				2249D38E1D87E06E00813C72 /* nimingxuanzhong@2x.png in Resources */,
 				224BCEE91D94DA2D00CBFBAA /* gaoxiaochaxun-sanjiaoxing-hui@2x.png in Resources */,
 				2249D3F31D880D7E00813C72 /* 同位次考生去向@2x.png in Resources */,
+				226203101DB2438E002CA1E8 /* ServiceFirstCell.xib in Resources */,
 				2228B9851D93D3CF0078B6DE /* JYIndependentableViewCell.xib in Resources */,
 				18C265331D92707100D25C7F /* yibandaxue@3x.png in Resources */,
 				2249D3FD1D880D7E00813C72 /* 志愿填报讲座@2x.png in Resources */,
+				226203241DB24C0B002CA1E8 /* ServiceFifthCell.xib in Resources */,
 				2249D3331D879F2400813C72 /* mianfeitiwen@2x.png in Resources */,
 				184B37EF1D88EDB500B094AC /* fangkuang-xuanzhong_1@2x.png in Resources */,
 				2245C9581D9B715D00433D4C /* jiantou-da@3x.png in Resources */,
@@ -5180,6 +5260,7 @@
 				22A392CA1D98FFE9000F683E /* 路径@3x.png in Resources */,
 				8498D91E1D868CDF00169695 /* vip0@3x副本.png in Resources */,
 				FC0486D41D7C38E00052EDB6 /* TecherViewController.xib in Resources */,
+				2262031F1DB249ED002CA1E8 /* ServiceFourthCell.xib in Resources */,
 				2228B9891D93D3CF0078B6DE /* JYJuniorCollegeTableViewCell.xib in Resources */,
 				84DC7FF21D702A8E00612E20 /* LICENSE_jsonmodel.txt in Resources */,
 				2249D45F1D880D8600813C72 /* 搜索@3x.png in Resources */,
@@ -5240,6 +5321,7 @@
 				8498D9511D868CDF00169695 /* 秒表@3x.png in Resources */,
 				181EA3361D962371009A1CDD /* JYGaoXiaoView.xib in Resources */,
 				2249D32C1D879EA200813C72 /* yinxiang@3x.png in Resources */,
+				2262031A1DB24640002CA1E8 /* ServiceThirdCell.xib in Resources */,
 				18742CA71D954050001E0FCC /* JYView.xib in Resources */,
 				184B37FD1D88EEA600B094AC /* xiugaimima_1@2x.png in Resources */,
 				8498D9381D868CDF00169695 /* wendashequhuida@3x.png in Resources */,
@@ -5301,11 +5383,13 @@
 				84F596A71DAA3AFC00963298 /* AchievementTrackingViewController.m in Sources */,
 				840554351DAF83830099DF4F /* AdmissionsArticlesCell.m in Sources */,
 				84DC7EA91D6EF85900612E20 /* BaseViewController.m in Sources */,
+				226203281DB24D79002CA1E8 /* ServiceSixthCell.m in Sources */,
 				FC0486C71D7AEF020052EDB6 /* MASCompositeConstraint.m in Sources */,
 				224782011DA88B830090ED4E /* AcceptanceProbabilityViewController.m in Sources */,
 				223CA5111D92195300E6ECD1 /* WishViewController.m in Sources */,
 				FC0486E11D7C39850052EDB6 /* JieshaoView.m in Sources */,
 				22DBFAC71D9BE5EE002085C3 /* OccupationController.m in Sources */,
+				2262030A1DB23D8B002CA1E8 /* ShopServiceModel+Request.m in Sources */,
 				224688611D9CF8B60053656E /* TongweiciTableCellModel.m in Sources */,
 				18B3E0491D8656EE00929D0C /* JYMyGoldModel.m in Sources */,
 				224688B31D9D401E0053656E /* TestModel.m in Sources */,
@@ -5353,6 +5437,7 @@
 				224C76F81D9A808C00AADE8C /* CollegeYinxiangModel+Request.m in Sources */,
 				18B3E04F1D8656EE00929D0C /* JYTutorAppDetailModel.m in Sources */,
 				847AD57B1D9E370B006068E1 /* KaiSheGaoXiaoCell.m in Sources */,
+				226203141DB24473002CA1E8 /* ServiceSecondCell.m in Sources */,
 				185231DF1D94DD5500C1BBF5 /* JYJobViewController.m in Sources */,
 				84DC809F1D70370900612E20 /* UIImageView+HighlightedWebCache.m in Sources */,
 				185EFF481D938E1200CAE928 /* JYIndependentSchoolModel.m in Sources */,
@@ -5405,6 +5490,7 @@
 				84DC7F4A1D7029BC00612E20 /* FMDatabaseQueue.m in Sources */,
 				223E25651D9679ED0095291E /* CollegeMajorFirstCell.m in Sources */,
 				18B3DFFE1D8656C600929D0C /* JYMyExperienceView.m in Sources */,
+				2262031E1DB249ED002CA1E8 /* ServiceFourthCell.m in Sources */,
 				18C2655A1D92989000D25C7F /* JYSchoolFriendModel.m in Sources */,
 				223CA5211D9219A000E6ECD1 /* GaoxiaochaxunModel.m in Sources */,
 				FC0486EB1D7C39DB0052EDB6 /* YinxiangCell.m in Sources */,
@@ -5421,6 +5507,7 @@
 				84F596F11DAB6A9F00963298 /* JiuYeQingKuangCell.m in Sources */,
 				18B3E0FC1D88409A00929D0C /* JYTutorAnswerViewController.m in Sources */,
 				840554291DAF72330099DF4F /* GeneralModel.m in Sources */,
+				226203041DB23A7A002CA1E8 /* ShopServiceViewController.m in Sources */,
 				84F596EA1DAB67EC00963298 /* MajorDetalJiuYeQingKuangModel.m in Sources */,
 				18742C9F1D952244001E0FCC /* JYMajorModel.m in Sources */,
 				84DC809A1D70370900612E20 /* SDWebImagePrefetcher.m in Sources */,
@@ -5448,10 +5535,12 @@
 				8405542C1DAF72BB0099DF4F /* GeneralModel+Request.m in Sources */,
 				FC0486CA1D7AEF020052EDB6 /* MASLayoutConstraint.m in Sources */,
 				22DBFADE1D9BEA26002085C3 /* MajorViewController.m in Sources */,
+				22464AA71DB1F397009A281F /* TongWeiAlertView.m in Sources */,
 				184B05901D9A0CB500537329 /* JYStudyAnswerModel.m in Sources */,
 				2268C0941D82BD6C004D8E85 /* fengyunModel+Request.m in Sources */,
 				18B3E0F51D883F6800929D0C /* JYTutorinformHeadView.m in Sources */,
 				185EFF4B1D93AADB00CAE928 /* JYJunjorCollegeViewController.m in Sources */,
+				2262030F1DB2438E002CA1E8 /* ServiceFirstCell.m in Sources */,
 				58F4DE6E1D81435A00723B4B /* AFNetworkReachabilityManager.m in Sources */,
 				84F596E41DAB4B4D00963298 /* MajorDetalXueYouPingLunModel.m in Sources */,
 				FC0486CE1D7AEF020052EDB6 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
@@ -5540,6 +5629,7 @@
 				FCAA0E141D70865C00A8A99A /* ManModel+Request.m in Sources */,
 				8498D9AD1D868F4600169695 /* PersonTableViewCell.m in Sources */,
 				84DC80041D702AB800612E20 /* ZJScrollPageView.m in Sources */,
+				226203071DB23C26002CA1E8 /* ShopServiceModel.m in Sources */,
 				840554301DAF79010099DF4F /* SchoolGaiKuangCell.m in Sources */,
 				18B3DFC21D86569D00929D0C /* JYMyMessageTableViewController.m in Sources */,
 				84DC7F471D7029BC00612E20 /* FMDatabase.m in Sources */,
@@ -5608,6 +5698,7 @@
 				2228B94A1D9376150078B6DE /* JYSchoolFriendTableViewCell.m in Sources */,
 				847F00541D801AD700B25581 /* AddImpressionController.m in Sources */,
 				223CA52B1D921ADF00E6ECD1 /* UniversitySearchCell.m in Sources */,
+				226203191DB24640002CA1E8 /* ServiceThirdCell.m in Sources */,
 				2252FB1E1DACBD240010C83B /* LuquTableViewCell.m in Sources */,
 				180E097B1D9A8FBC00605793 /* JYSameTableviewCellModel.m in Sources */,
 				2261B4F41DAE46ED001DD531 /* MoniViewController.m in Sources */,
@@ -5668,6 +5759,7 @@
 				18B3E0FF1D8840D300929D0C /* JYSettingViewController.m in Sources */,
 				181EA3341D962364009A1CDD /* JYGaoXiaoView.m in Sources */,
 				18B3E0061D8656C600929D0C /* JYMyServiceFootView.m in Sources */,
+				226203231DB24C0B002CA1E8 /* ServiceFifthCell.m in Sources */,
 				18B3DF721D8654A200929D0C /* MJExtensionConst.m in Sources */,
 				84DC7FF01D702A8E00612E20 /* JSONKeyMapper.m in Sources */,
 				1811651B1D8D5882002EE814 /* STUI.m in Sources */,
@@ -5799,7 +5891,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = W5TJTQ52N7;
+				DEVELOPMENT_TEAM = 2RG96DPB3Y;
 				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/gaokaoquan/PrefixHeader.pch";
@@ -5819,7 +5911,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = W5TJTQ52N7;
+				DEVELOPMENT_TEAM = 2RG96DPB3Y;
 				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/gaokaoquan/PrefixHeader.pch";

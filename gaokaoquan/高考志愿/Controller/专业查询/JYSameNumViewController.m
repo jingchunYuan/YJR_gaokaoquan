@@ -52,7 +52,11 @@
     UIImageView *imageview = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, KWIDTH, KWIDTH * 0.6)];
     [scrollview addSubview:imageview];
     
-    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(10, CGRectGetMaxY(imageview.frame) + 10, 100, 20)];
+    UIImageView *image = [[UIImageView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(imageview.frame) + 10, 25, 25)];
+    image.image = [UIImage imageNamed:@"同位次考生去向等页面的纸张图标.png"];
+    [scrollview addSubview:image];
+        
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(30, CGRectGetMaxY(imageview.frame) + 10, 100, 20)];
     [scrollview addSubview:label];
     label.font = [UIFont systemFontOfSize:15];
     
@@ -115,7 +119,7 @@
     
     UIButton *Buy = [UIButton buttonWithType:UIButtonTypeCustom];
     Buy.backgroundColor = [UIColor orangeColor];
-    [Buy setTitle:@"立即购买" forState:UIControlStateNormal];
+    [Buy setTitle:@"立即购买(32.00元/30次)" forState:UIControlStateNormal];
     [Buy setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.view addSubview:Buy];
     

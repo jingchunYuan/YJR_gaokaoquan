@@ -14,12 +14,14 @@
 #import "Masonry.h"
 #import "TongweiciView.h"
 #import "TiaozhuanView.h"
+#import "TongWeiAlertView.h"
+#import "ShopServiceViewController.h"
 
 #define selfWith self.view.bounds.size.width
 #define selfHeight self.view.bounds.size.height
 #define selfBacground [UIColor colorWithRed:240/255.0 green:240/255.0 blue:240/255.0 alpha:1.0]
 
-@interface TongweiciViewController ()<TiaozhuanViewDelegate>
+@interface TongweiciViewController ()<TiaozhuanViewDelegate,TongWeiAlertDelegate>
 
 @property (nonatomic,strong) UIButton *btn;
 
@@ -34,7 +36,9 @@
 @end
 
 @implementation TongweiciViewController
-
+{
+    TongWeiAlertView * alertView;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -54,7 +58,11 @@
     UIImageView *imageview = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, KWIDTH, KWIDTH * 0.6)];
     [scrollview addSubview:imageview];
     
-    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(10, CGRectGetMaxY(imageview.frame) + 10, 100, 20)];
+    UIImageView *image = [[UIImageView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(imageview.frame) + 10, 25, 25)];
+    image.image = [UIImage imageNamed:@"同位次考生去向等页面的纸张图标.png"];
+    [scrollview addSubview:image];
+    
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(30, CGRectGetMaxY(imageview.frame) + 10, 150, 20)];
     [scrollview addSubview:label];
     label.font = [UIFont systemFontOfSize:15];
     
@@ -136,6 +144,14 @@
     self.tableview = tableview;
     tableview.hidden = YES;
     
+    alertView = [[TongWeiAlertView alloc]initWithFrame:CGRectMake(20, 0.2*SCREEN_HEIGHT, SCREEN_WIDTH-40, 0.3*SCREEN_HEIGHT)];
+    alertView.hidden = YES;
+    alertView.title = @"温馨提示";
+    alertView.message = @"购买VIP套餐性价比更高哦~";
+    alertView.nextTitle = @"什么是VIP套餐";
+    alertView.cancelTitle = @"暂时不考虑";
+    alertView.delegate = self;
+    [self.view addSubview:alertView];
     
 }
 
@@ -162,17 +178,39 @@
 }
 
 -(void)BuyClick:(UIButton *) btn{
-    TiaozhuanView * alert=[[TiaozhuanView alloc]init];
-    
-    alert.frame=CGRectMake(0, 0, selfWith, selfHeight);
-    
-    alert.backgroundColor=selfBacground;
-    
-    [alert TiaozhuanViewTitle:@"温馨提示" message:@"购买VIP套餐性价比更高哦~" delegate:self canButton:@"什么是VIP套餐" otherButton:@"暂不考虑"];
-    
-    [alert showAlert];
+    alertView.hidden = !alertView.hidden;
 }
+-(void)createAlert{
+    UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"购买VIP套餐性价比更高哦~" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"购买VIP套餐性价比更高哦~" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"暂时不考虑" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    // 添加操作
+    [alert addAction:cancelAction];
+    [alert addAction:okAction];
+    [self presentViewController:alert animated:YES completion:nil];
+}
+-(void)willPresentAlertView:(UIAlertView *)alertView{
+    for (UIView *tempView in alertView.subviews) {
+        
+        if ([tempView isKindOfClass:[UILabel class]]) {
+            //当该控件为一个UILable时
+            UILabel *tempLabel = (UILabel*)tempView;
+            if ([tempLabel.text isEqualToString:alertView.message]) {
+                //调整对齐方式
+                tempLabel.textAlignment = NSTextAlignmentLeft;
+                //调整字体的大小
+                [tempLabel setFont:[UIFont systemFontOfSize:15]];
+                [tempLabel setTextColor:[UIColor redColor]];
+            }
+        }
+    }
 
+}
 -(void)Time:(TiaozhuanView *)view{
     
     [view removeFromSuperview];
@@ -203,6 +241,13 @@
     
 }
 
+-(void)pushController:(NSInteger)type{
+    if(type){
+    }else{
+        ShopServiceViewController * serviceController = [[ShopServiceViewController alloc]init];
+        [self.navigationController pushViewController:serviceController animated:YES];
+    }
+}
 
 
 @end

@@ -67,7 +67,7 @@
 }
 -(void)layoutUI{
     
-    self.navigationItem.leftBarButtonItem= [UIBarButtonItem initWithImageName:@"返回" highlightedImage:nil title:nil target:self action:@selector(leftBarButtonItemClick)];
+    self.navigationItem.leftBarButtonItem= [UIBarButtonItem initWithImageName:@"返回" highlightedImage:nil title:nil target:self action:@selector(leftBarItemClick)];
     //加载表格试图
     [self.view addSubview:self.table];
     
@@ -505,5 +505,8 @@
     }
     return _dataArr;
 }
-
+-(void)leftBarItemClick{
+    self.tabBarController.tabBar.hidden = NO;
+    [self.navigationController popViewControllerAnimated:YES];
+}
 @end
