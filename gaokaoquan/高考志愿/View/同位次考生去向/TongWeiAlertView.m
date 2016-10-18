@@ -81,15 +81,20 @@
 -(void)operateClicked:(UIButton *)sender{
     self.hidden = YES;
     switch (sender.tag) {
-            //退出
         case 1:
-            
+            NSLog(@"yjc  : 1");
             break;
-            //购买
+            
+            
         case 2:
+            NSLog(@"yjc  : 2");
+
            break;
-            //暂不考虑
+            
+            
         case 3:
+            NSLog(@"yjc  : 3");
+
             [self.delegate pushController:0];
             break;
             
