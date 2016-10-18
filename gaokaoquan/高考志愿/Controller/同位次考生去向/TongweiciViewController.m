@@ -21,34 +21,76 @@
 #define selfHeight self.view.bounds.size.height
 #define selfBacground [UIColor colorWithRed:240/255.0 green:240/255.0 blue:240/255.0 alpha:1.0]
 
-@interface TongweiciViewController ()<TiaozhuanViewDelegate,TongWeiAlertDelegate>
+@interface TongweiciViewController ()<TongWeiAlertDelegate>
 
 @property (nonatomic,strong) UIButton *btn;
-
 @property (nonatomic,strong) UIButton *btn2;
-
 @property (nonatomic,strong) TongweiciView *tableview;
-
 @property (nonatomic,assign) BOOL ISShow;
-
 @property (nonatomic,strong) UIImageView *imageview;
 
 @end
 
-@implementation TongweiciViewController
-{
+@implementation TongweiciViewController {
+    
     TongWeiAlertView * alertView;
+    
 }
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     [self setUI];
-
     
 }
 
-- (void)setUI
-{
+
+#pragma mark -
+#pragma mark - TongWeiAlertDelegate
+-(void)pushController:(NSInteger)type{
+    if(type){
+        
+    }else{
+        //跳转到购买页面
+        ShopServiceViewController * serviceController = [[ShopServiceViewController alloc]init];
+        [self.navigationController pushViewController:serviceController animated:YES];
+    }
+}
+
+- (void)buttonClick:(UIButton *)btn {
+    self.tableview.hidden = YES;
+    self.imageview.hidden = NO;
+    btn.backgroundColor = [UIColor colorWithRed:85/255.0 green:193/255.0 blue:231/255.0 alpha:1];
+    [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    self.btn2.backgroundColor = [UIColor colorWithRed:235/255.0 green:235/255.0 blue:235/255.0 alpha:1];
+    [self.btn2 setTitleColor:[UIColor colorWithRed:85/255.0 green:193/255.0 blue:231/255.0 alpha:1] forState:UIControlStateNormal];
+}
+
+- (void)button2Click:(UIButton *)btn {
+    self.imageview.hidden = YES;
+    self.tableview.hidden = NO;
+    btn.backgroundColor = [UIColor colorWithRed:85/255.0 green:193/255.0 blue:231/255.0 alpha:1];
+    [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    self.btn.backgroundColor = [UIColor colorWithRed:235/255.0 green:235/255.0 blue:235/255.0 alpha:1];
+    [self.btn setTitleColor:[UIColor colorWithRed:85/255.0 green:193/255.0 blue:231/255.0 alpha:1] forState:UIControlStateNormal];
+}
+
+-(void)BuyClick:(UIButton *) btn{
+    
+    if (YES) {//登陆的情况
+        //跳转到：同位次考生去向查询页面
+        NSLog(@"跳转到：同位次考生去向查询页面");
+        
+        
+        
+    }else {//未登录的情况
+        alertView.hidden = !alertView.hidden;
+    }
+    
+}
+
+- (void)setUI {
+    
     self.view.backgroundColor = [UIColor whiteColor];
     UIScrollView *scrollview = [[UIScrollView alloc]initWithFrame:self.view.bounds];
     [self.view addSubview:scrollview];
@@ -125,7 +167,14 @@
     
     UIButton *Buy = [UIButton buttonWithType:UIButtonTypeCustom];
     Buy.backgroundColor = [UIColor orangeColor];
-    [Buy setTitle:@"立即购买(32.00元/30次)" forState:UIControlStateNormal];
+    
+    //判断是否登录了
+    if (YES) { //登陆了
+        [Buy setTitle:@"立即使用(可用次数17)" forState:UIControlStateNormal];
+    }else {
+        [Buy setTitle:@"立即购买(32.00元/30次)" forState:UIControlStateNormal];
+    }
+    
     [Buy setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [Buy addTarget:self action:@selector(BuyClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:Buy];
@@ -155,99 +204,22 @@
     
 }
 
-- (void)buttonClick:(UIButton *)btn
-{
-    self.tableview.hidden = YES;
-    self.imageview.hidden = NO;
-    btn.backgroundColor = [UIColor colorWithRed:85/255.0 green:193/255.0 blue:231/255.0 alpha:1];
-    [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    self.btn2.backgroundColor = [UIColor colorWithRed:235/255.0 green:235/255.0 blue:235/255.0 alpha:1];
-    [self.btn2 setTitleColor:[UIColor colorWithRed:85/255.0 green:193/255.0 blue:231/255.0 alpha:1] forState:UIControlStateNormal];
-    
-}
-
-- (void)button2Click:(UIButton *)btn
-{
-    self.imageview.hidden = YES;
-    self.tableview.hidden = NO;
-    btn.backgroundColor = [UIColor colorWithRed:85/255.0 green:193/255.0 blue:231/255.0 alpha:1];
-    [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    self.btn.backgroundColor = [UIColor colorWithRed:235/255.0 green:235/255.0 blue:235/255.0 alpha:1];
-    [self.btn setTitleColor:[UIColor colorWithRed:85/255.0 green:193/255.0 blue:231/255.0 alpha:1] forState:UIControlStateNormal];
-    
-}
-
--(void)BuyClick:(UIButton *) btn{
-    alertView.hidden = !alertView.hidden;
-}
--(void)createAlert{
-    UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"购买VIP套餐性价比更高哦~" preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"购买VIP套餐性价比更高哦~" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        
-    }];
-    
-    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"暂时不考虑" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        
-    }];
-    // 添加操作
-    [alert addAction:cancelAction];
-    [alert addAction:okAction];
-    [self presentViewController:alert animated:YES completion:nil];
-}
--(void)willPresentAlertView:(UIAlertView *)alertView{
-    for (UIView *tempView in alertView.subviews) {
-        
-        if ([tempView isKindOfClass:[UILabel class]]) {
-            //当该控件为一个UILable时
-            UILabel *tempLabel = (UILabel*)tempView;
-            if ([tempLabel.text isEqualToString:alertView.message]) {
-                //调整对齐方式
-                tempLabel.textAlignment = NSTextAlignmentLeft;
-                //调整字体的大小
-                [tempLabel setFont:[UIFont systemFontOfSize:15]];
-                [tempLabel setTextColor:[UIColor redColor]];
-            }
-        }
-    }
-
-}
--(void)Time:(TiaozhuanView *)view{
-    
-    [view removeFromSuperview];
-    
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
+- (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     self.tabBarController.tabBar.hidden = YES;
-    
 }
 
-- (void)leftBarButtonItemClick
-{
+- (void)leftBarButtonItemClick {
     [self.navigationController popViewControllerAnimated:YES];
 }
-//- (void)BuyClick:(UIButton *)btn
-//{
-////    JYStudyAnswerViewController *answer = [[JYStudyAnswerViewController alloc]init];
-////    [self.navigationController pushViewController:answer animated:YES];
-//    
-//}
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     
 }
 
--(void)pushController:(NSInteger)type{
-    if(type){
-    }else{
-        ShopServiceViewController * serviceController = [[ShopServiceViewController alloc]init];
-        [self.navigationController pushViewController:serviceController animated:YES];
-    }
-}
 
 
 @end
+
+
