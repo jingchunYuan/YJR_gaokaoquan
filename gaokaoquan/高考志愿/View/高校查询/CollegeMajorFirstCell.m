@@ -43,7 +43,7 @@
     
     [self.yearBtn setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, 0, self.yearBtn.zj_width/2 - 10)];
     [self.yearBtn setImageEdgeInsets:UIEdgeInsetsMake(0, self.yearBtn.zj_width/2 + 10, 0, 0)];
-
+    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

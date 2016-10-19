@@ -16,6 +16,7 @@
 #import "TiaozhuanView.h"
 #import "TongWeiAlertView.h"
 #import "ShopServiceViewController.h"
+#import "ShiyongViewController.h"
 
 #define selfWith self.view.bounds.size.width
 #define selfHeight self.view.bounds.size.height
@@ -49,7 +50,11 @@
 #pragma mark - TongWeiAlertDelegate
 -(void)pushController:(NSInteger)type{
     if(type){
+        //跳转到查询页面
+        ShiyongViewController *shiyong = [[ShiyongViewController alloc]init];
+        [self.navigationController pushViewController:shiyong animated:YES];
         
+
     }else{
         //跳转到购买页面
         ShopServiceViewController * serviceController = [[ShopServiceViewController alloc]init];
@@ -80,8 +85,8 @@
     if (YES) {//登陆的情况
         //跳转到：同位次考生去向查询页面
         NSLog(@"跳转到：同位次考生去向查询页面");
-        
-        
+        ShiyongViewController *shiyong = [[ShiyongViewController alloc]init];
+        [self.navigationController pushViewController:shiyong  animated:YES];
         
     }else {//未登录的情况
         alertView.hidden = !alertView.hidden;

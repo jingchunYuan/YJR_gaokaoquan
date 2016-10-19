@@ -403,6 +403,8 @@
 		2252FB1E1DACBD240010C83B /* LuquTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2252FB1C1DACBD240010C83B /* LuquTableViewCell.m */; };
 		2252FB1F1DACBD240010C83B /* LuquTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2252FB1D1DACBD240010C83B /* LuquTableViewCell.xib */; };
 		2252FB221DACBD5D0010C83B /* LuquShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2252FB211DACBD5D0010C83B /* LuquShowView.m */; };
+		225BF2691DB7589D0087BB1F /* TongweiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 225BF2681DB7589D0087BB1F /* TongweiView.m */; };
+		225BF26B1DB758B10087BB1F /* TongweiView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 225BF26A1DB758B10087BB1F /* TongweiView.xib */; };
 		225F9D561D8E391A00D9729C /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 225F9D541D8E391A00D9729C /* HeaderView.m */; };
 		225F9D571D8E391A00D9729C /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 225F9D551D8E391A00D9729C /* HeaderView.xib */; };
 		2261B4EC1DAE1726001DD531 /* TiaozhuanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2261B4EB1DAE1726001DD531 /* TiaozhuanView.m */; };
@@ -435,6 +437,8 @@
 		226B20E41D98CAE400513711 /* JobModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 226B20E31D98CAE400513711 /* JobModel.m */; };
 		22724DD41DAA475F00495995 /* ZhiyuanTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22724DD21DAA475F00495995 /* ZhiyuanTableViewCell.m */; };
 		22724DD51DAA475F00495995 /* ZhiyuanTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22724DD31DAA475F00495995 /* ZhiyuanTableViewCell.xib */; };
+		228F26E31DB76B6A00BCFB5A /* ShiyongModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 228F26E21DB76B6A00BCFB5A /* ShiyongModel.m */; };
+		229131671DB788FF00602817 /* ShiyongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229131661DB788FF00602817 /* ShiyongViewController.m */; };
 		22A392C91D98FFE9000F683E /* 路径@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A392C51D98FFE9000F683E /* 路径@2x.png */; };
 		22A392CA1D98FFE9000F683E /* 路径@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A392C61D98FFE9000F683E /* 路径@3x.png */; };
 		22A392CB1D98FFE9000F683E /* 下拉@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A392C71D98FFE9000F683E /* 下拉@3x.png */; };
@@ -1462,6 +1466,9 @@
 		2252FB1D1DACBD240010C83B /* LuquTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LuquTableViewCell.xib; path = "gaokaoquan/高考志愿/Controller/双人志愿系统/Controller/LuquTableViewCell.xib"; sourceTree = SOURCE_ROOT; };
 		2252FB201DACBD5D0010C83B /* LuquShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LuquShowView.h; path = "gaokaoquan/高考志愿/Controller/双人志愿系统/Controller/LuquShowView.h"; sourceTree = SOURCE_ROOT; };
 		2252FB211DACBD5D0010C83B /* LuquShowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LuquShowView.m; path = "gaokaoquan/高考志愿/Controller/双人志愿系统/Controller/LuquShowView.m"; sourceTree = SOURCE_ROOT; };
+		225BF2671DB7589D0087BB1F /* TongweiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TongweiView.h; sourceTree = "<group>"; };
+		225BF2681DB7589D0087BB1F /* TongweiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TongweiView.m; sourceTree = "<group>"; };
+		225BF26A1DB758B10087BB1F /* TongweiView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TongweiView.xib; sourceTree = "<group>"; };
 		225F9D531D8E391A00D9729C /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
 		225F9D541D8E391A00D9729C /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
 		225F9D551D8E391A00D9729C /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
@@ -1513,6 +1520,10 @@
 		22724DD11DAA475F00495995 /* ZhiyuanTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhiyuanTableViewCell.h; sourceTree = "<group>"; };
 		22724DD21DAA475F00495995 /* ZhiyuanTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhiyuanTableViewCell.m; sourceTree = "<group>"; };
 		22724DD31DAA475F00495995 /* ZhiyuanTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZhiyuanTableViewCell.xib; sourceTree = "<group>"; };
+		228F26E11DB76B6A00BCFB5A /* ShiyongModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShiyongModel.h; sourceTree = "<group>"; };
+		228F26E21DB76B6A00BCFB5A /* ShiyongModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShiyongModel.m; sourceTree = "<group>"; };
+		229131651DB788FF00602817 /* ShiyongViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShiyongViewController.h; sourceTree = "<group>"; };
+		229131661DB788FF00602817 /* ShiyongViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShiyongViewController.m; sourceTree = "<group>"; };
 		22A392C51D98FFE9000F683E /* 路径@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "路径@2x.png"; sourceTree = "<group>"; };
 		22A392C61D98FFE9000F683E /* 路径@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "路径@3x.png"; sourceTree = "<group>"; };
 		22A392C71D98FFE9000F683E /* 下拉@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "下拉@3x.png"; sourceTree = "<group>"; };
@@ -3260,6 +3271,7 @@
 			isa = PBXGroup;
 			children = (
 				2262030B1DB24349002CA1E8 /* 购买服务 */,
+				22480B7A1DB5E8D2007FF458 /* 使用服务 */,
 				224688C51D9D41C60053656E /* TongweiciView.h */,
 				224688C61D9D41C60053656E /* TongweiciView.m */,
 				224688C21D9D41C60053656E /* TongweiciTableViewCell.h */,
@@ -3278,6 +3290,8 @@
 			children = (
 				224688591D9CF8450053656E /* TongweiciViewController.h */,
 				2246885A1D9CF8450053656E /* TongweiciViewController.m */,
+				229131651DB788FF00602817 /* ShiyongViewController.h */,
+				229131661DB788FF00602817 /* ShiyongViewController.m */,
 				226203021DB23A7A002CA1E8 /* ShopServiceViewController.h */,
 				226203031DB23A7A002CA1E8 /* ShopServiceViewController.m */,
 			);
@@ -3295,6 +3309,8 @@
 				226203061DB23C26002CA1E8 /* ShopServiceModel.m */,
 				226203081DB23D8B002CA1E8 /* ShopServiceModel+Request.h */,
 				226203091DB23D8B002CA1E8 /* ShopServiceModel+Request.m */,
+				228F26E11DB76B6A00BCFB5A /* ShiyongModel.h */,
+				228F26E21DB76B6A00BCFB5A /* ShiyongModel.m */,
 			);
 			path = "同位次考生去向";
 			sourceTree = "<group>";
@@ -3341,6 +3357,16 @@
 				2261B4ED1DAE4607001DD531 /* 模拟志愿填报 */,
 			);
 			path = "智能填报";
+			sourceTree = "<group>";
+		};
+		22480B7A1DB5E8D2007FF458 /* 使用服务 */ = {
+			isa = PBXGroup;
+			children = (
+				225BF2671DB7589D0087BB1F /* TongweiView.h */,
+				225BF2681DB7589D0087BB1F /* TongweiView.m */,
+				225BF26A1DB758B10087BB1F /* TongweiView.xib */,
+			);
+			path = "使用服务";
 			sourceTree = "<group>";
 		};
 		2249D33D1D87DD4400813C72 /* 高校查询小图标 */ = {
@@ -5302,6 +5328,7 @@
 				FC0486EC1D7C39DB0052EDB6 /* YinxiangCell.xib in Resources */,
 				22DBFA8F1D9BE33D002085C3 /* OccupationCell.xib in Resources */,
 				8498D9A41D868F4600169695 /* AskQuestionsController.xib in Resources */,
+				225BF26B1DB758B10087BB1F /* TongweiView.xib in Resources */,
 				2249D4061D880D7E00813C72 /* 根据分数选大学@3x.png in Resources */,
 				8498D8D51D868CDF00169695 /* wodeziliao@3x.png in Resources */,
 				1894D2431D89517A00522860 /* guanzhu-wenzhang@3x.png in Resources */,
@@ -5590,6 +5617,7 @@
 				1813FE221D8BC85000B937DE /* JYHDCountModel.m in Sources */,
 				224688BC1D9D40E30053656E /* TestView.m in Sources */,
 				224688C01D9D40FA0053656E /* TestTableViewCell.m in Sources */,
+				225BF2691DB7589D0087BB1F /* TongweiView.m in Sources */,
 				18B3E0081D8656C600929D0C /* JYMYServiceTableViewCell.m in Sources */,
 				18B3DFB71D86569D00929D0C /* JYAppointmentViewController.m in Sources */,
 				18B3DFBB1D86569D00929D0C /* JYIndentViewController.m in Sources */,
@@ -5670,6 +5698,7 @@
 				18B3DFC51D86569D00929D0C /* JYServiceCenterViewController.m in Sources */,
 				84F596E01DAB486200963298 /* XueYouPingJiaCell.m in Sources */,
 				84F596F11DAB6A9F00963298 /* JiuYeQingKuangCell.m in Sources */,
+				228F26E31DB76B6A00BCFB5A /* ShiyongModel.m in Sources */,
 				18B3E0FC1D88409A00929D0C /* JYTutorAnswerViewController.m in Sources */,
 				840554291DAF72330099DF4F /* GeneralModel.m in Sources */,
 				226203041DB23A7A002CA1E8 /* ShopServiceViewController.m in Sources */,
@@ -5689,6 +5718,7 @@
 				224C77031D9AA5DF00AADE8C /* JYSameNumViewController.m in Sources */,
 				84DC7FF11D702A8E00612E20 /* JSONValueTransformer.m in Sources */,
 				84DC80991D70370900612E20 /* SDWebImageManager.m in Sources */,
+				229131671DB788FF00602817 /* ShiyongViewController.m in Sources */,
 				18B3E0521D8656EE00929D0C /* JYTutorinformModel.m in Sources */,
 				FCABFC441D6F420C005199C7 /* Util.m in Sources */,
 				22DBFABC1D9BE560002085C3 /* RATreeNodeItem+Private.m in Sources */,
